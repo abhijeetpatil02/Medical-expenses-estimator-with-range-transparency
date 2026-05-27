@@ -1,0 +1,70 @@
+
+ <!-- this is after adding some new requirment -->
+  <!DOCTYPE html>
+<html>
+<head>
+    <title>Hospital Predictor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <img src="logo.png" alt="Logo" srcset="" height="150px" width="300px" style="border-radius: 20px;">
+    <h1>Medical expenses estimator</h1>
+
+    <form id="predictForm">
+        <label>Disease:</label><br>
+        <input type="text" id="disease" required><br><br>
+
+        <label>City:</label><br>
+        <input type="text" id="city" required><br><br>
+
+        <button type="submit">Estimate Expenses</button>
+    </form>
+
+    <h2 id="result"></h2>
+
+    <script>
+        document.getElementById("predictForm").addEventListener("submit", async function(e) {
+            e.preventDefault();
+
+            const disease = document.getElementById("disease").value;
+            const city = document.getElementById("city").value;
+
+            const response = await fetch("/predict", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify({
+                    disease,
+                    city
+                })
+            });
+
+            const data = await response.json();
+
+            const resultDiv = document.getElementById("result");
+            resultDiv.style.display = "block";
+            
+            let resultHTML = `City: ${data.city}<br><br>`;
+            
+            if (data.predictions && data.predictions.govt) {
+                resultHTML += `
+                    <strong>Government Hospital</strong><br>
+                    Hospital Name: ${data.predictions.govt.hospital_name}<br>
+                    Estimated Minimum Cost: ₹${data.predictions.govt.predicted_cost}<br><br>
+                `;
+            }
+            if (data.predictions && data.predictions.private) {
+                resultHTML += `
+                    <strong>Private Hospital</strong><br>
+                    Hospital Name: ${data.predictions.private.hospital_name}<br>
+                    Estimated Minimum Cost: ₹${data.predictions.private.predicted_cost}<br>
+                `;
+            }
+            
+            resultDiv.innerHTML = resultHTML;
+        });
+    </script>
+
+</body>
+</html>

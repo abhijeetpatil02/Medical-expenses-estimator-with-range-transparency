@@ -1,0 +1,219 @@
+<!--    AFTER DATABASE CONNECTION -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Cost Predictor - Welcome</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="auth.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="left-panel">
+            <div class="overlay"></div>
+            <div class="content">
+                <h1>Hospital Cost Predictor</h1>
+                <p>Empowering you to make informed decisions about healthcare costs. Access accurate predictions
+                    instantly.</p>
+            </div>
+        </div>
+        <div class="right-panel">
+            <div class="auth-box">
+                <div class="toggle-container">
+                    <button class="toggle-btn active" id="btn-login" onclick="switchTab('login')">Login</button>
+                    <button class="toggle-btn" id="btn-signup" onclick="switchTab('signup')">Sign Up</button>
+                    <div class="toggle-indicator" id="indicator"></div>
+                </div>
+
+                <form id="login-form" class="auth-form active">
+                    <h2>Welcome Back</h2>
+                    <div class="input-group">
+                        <label for="login-email">Email</label>
+                        <input type="email" id="login-email" name="email" placeholder="Enter your email" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="login-password">Password</label>
+                        <input type="password" id="login-password" name="password" placeholder="Enter your password"
+                            required>
+                    </div>
+                    <div class="options">
+                        <label class="remember">
+                            <input type="checkbox"> Remember me
+                        </label>
+                        <a href="#" class="forgot">Forgot Password?</a>
+                    </div>
+                    <button type="submit" class="primary-btn">Sign In</button>
+                </form>
+
+                <form id="signup-form" class="auth-form">
+                    <h2>Create Account</h2>
+                    <div class="input-group">
+                        <label for="signup-name">Full Name</label>
+                        <input type="text" id="signup-name" name="name" placeholder="Enter your name" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="signup-email">Email</label>
+                        <input type="email" id="signup-email" name="email" placeholder="Enter your email" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="signup-password">Password</label>
+                        <input type="password" id="signup-password" name="password" placeholder="Create a password"
+                            required>
+                    </div>
+                    <button type="submit" class="primary-btn">Create Account</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- <script>
+        function switchTab(tab) {
+            const loginForm = document.getElementById('login-form');
+            const signupForm = document.getElementById('signup-form');
+            const indicator = document.getElementById('indicator');
+            const btnLogin = document.getElementById('btn-login');
+            const btnSignup = document.getElementById('btn-signup');
+
+            if (tab === 'login') {
+                loginForm.classList.add('active');
+                signupForm.classList.remove('active');
+                indicator.style.transform = 'translateX(0)';
+                btnLogin.classList.add('active');
+                btnSignup.classList.remove('active');
+            } else {
+                signupForm.classList.add('active');
+                loginForm.classList.remove('active');
+                indicator.style.transform = 'translateX(100%)';
+                btnSignup.classList.add('active');
+                btnLogin.classList.remove('active');
+            }
+        }
+
+        // CONNECTED TO PYTHON BACKEND: Login Handle
+        document.getElementById('login-form').addEventListener('submit', function (e) {
+            e.preventDefault(); 
+            
+            const email = document.getElementById('login-email').value;
+            const password = document.getElementById('login-password').value;
+
+            fetch('/api/login', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ email: email, password: password })
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    window.location.href = '/index.html'; // Redirect to home dashboard
+                } else {
+                    alert(data.message); // Inform user of bad login credentials
+                }
+            })
+            .catch(err => console.error('Error:', err));
+        });
+
+        // CONNECTED TO PYTHON BACKEND: Signup Handle
+        document.getElementById('signup-form').addEventListener('submit', function (e) {
+            e.preventDefault(); 
+
+            const name = document.getElementById('signup-name').value;
+            const email = document.getElementById('signup-email').value;
+            const password = document.getElementById('signup-password').value;
+
+            fetch('/api/signup', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ name: name, email: email, password: password })
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    alert('Registration complete! Please log in.');
+                    // switchTab('login'); // Automatically switches back to login layout
+                    window.location.href = '/index.html';
+                } else {
+                    alert(data.message);
+                }
+            })
+            .catch(err => console.error('Error:', err));
+        });
+    </script> -->
+
+    <script>
+        function switchTab(tab) {
+            const loginForm = document.getElementById('login-form');
+            const signupForm = document.getElementById('signup-form');
+            const indicator = document.getElementById('indicator');
+            const btnLogin = document.getElementById('btn-login');
+            const btnSignup = document.getElementById('btn-signup');
+
+            if (tab === 'login') {
+                loginForm.classList.add('active');
+                signupForm.classList.remove('active');
+                indicator.style.transform = 'translateX(0)';
+                btnLogin.classList.add('active');
+                btnSignup.classList.remove('active');
+            } else {
+                signupForm.classList.add('active');
+                loginForm.classList.remove('active');
+                indicator.style.transform = 'translateX(100%)';
+                btnSignup.classList.add('active');
+                btnLogin.classList.remove('active');
+            }
+        }
+
+        // CHANGE HERE: Handle Login form with Flask API
+        document.getElementById('login-form').addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            const email = document.getElementById('login-email').value;
+            const password = document.getElementById('login-password').value;
+
+            fetch('/api/login', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ email: email, password: password })
+            })
+                .then(response => response.json())
+                .then(data => {
+                    if (data.success) {
+                        window.location.href = '/index.html'; // Successfully logs in and goes to dashboard
+                    } else {
+                        alert(data.message); // Shows database errors or wrong password alerts
+                    }
+                })
+                .catch(err => console.error('Error:', err));
+        });
+
+        // CHANGE HERE: Handle Signup form with Flask API
+        document.getElementById('signup-form').addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            const name = document.getElementById('signup-name').value;
+            const email = document.getElementById('signup-email').value;
+            const password = document.getElementById('signup-password').value;
+
+            fetch('/api/signup', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ name: name, email: email, password: password })
+            })
+                .then(response => response.json())
+                .then(data => {
+                    if (data.success) {
+                        alert('Registration complete!');
+                        window.location.href = '/index.html';
+                    } else {
+                        alert(data.message);
+                    }
+                })
+                .catch(err => console.error('Error:', err));
+        });
+    </script>
+</body>
+
+</html>

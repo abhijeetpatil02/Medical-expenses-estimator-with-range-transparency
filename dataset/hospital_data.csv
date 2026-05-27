@@ -1,0 +1,826 @@
+Disease,Hospital_Type,Hospital_Name,Cost,City
+Appendicitis,Govt,Community Health Centre Sullia,20500,Sullia
+Cancer,Private,KVG Medical College Hospital Sullia,171500,Sullia
+Heart Disease,Private,Srinivasa Hospital Puttur,139000,Puttur
+Hypertension,Private,Jain Hospital Moodabidri,20000,Moodabidri
+Liver Disease,Private,Srinivasa Hospital Moodabidri,54500,Moodabidri
+Asthma,Private,Srinivasa Hospital Moodabidri,20000,Moodabidri
+Pneumonia,Govt,Government Hospital Uppinangady,13000,Uppinangady
+Kidney Stone,Govt,Samudaya Arogya Kendra Bantwal,20000,Bantwal
+Cancer,Govt,Primary Health Centre Kadaba,86500,Puttur
+Appendicitis,Private,Canara Hospital Puttur,50500,Puttur
+Diabetes,Govt,Primary Health Centre Padubidri,9500,Karkala
+Pregnancy,Govt,Primary Health Centre Padubidri,26500,Karkala
+Diabetes,Private,KS Hegde Medical Academy NITTE Deralakatte,12500,Mangaluru
+Pregnancy,Govt,Community Health Centre Vamanapadavu,21500,Bantwal
+Pneumonia,Govt,Primary Health Centre Nanthoor,8500,Moodabidri
+Diabetes,Govt,Primary Health Centre Sampaje,8000,Uppinangady
+Dengue,Private,Shri Dharmasthala Manjunatheshwara Hospital Dharmasthala,16000,Belthangady
+Dengue,Private,Jain Hospital Moodabidri,12500,Moodabidri
+Hypertension,Govt,Taluk Hospital Karkala,4500,Karkala
+Liver Disease,Private,Suraksha Hospital Mulki,74000,Mulki
+Appendicitis,Private,District Hospital Bantwal Private Wing,65500,Bantwal
+Heart Disease,Private,Sharada Hospital Puttur,141500,Puttur
+Appendicitis,Govt,Taluk Hospital Sullia,20500,Sullia
+Pregnancy,Private,Shri Dharmasthala Manjunatheshwara Hospital Dharmasthala,59500,Belthangady
+Diabetes,Govt,Primary Health Centre Padubidri,7000,Karkala
+Liver Disease,Govt,Primary Health Centre Nanthoor,24500,Moodabidri
+Dengue,Private,Shree Durgaparameshwari Hospital Puttur,10000,Puttur
+Pneumonia,Private,Srinivasa Hospital Puttur,24500,Puttur
+Fever,Private,Narayana Hospital Uppinangady,6000,Uppinangady
+Pregnancy,Govt,Taluk Hospital Karkala,20500,Karkala
+Liver Disease,Private,Janatha Hospital Sullia,65500,Sullia
+Heart Disease,Govt,Primary Health Centre Vittal,83000,Puttur
+Pregnancy,Private,Vivekananda Hospital Bantwal,60000,Bantwal
+Appendicitis,Private,Sanjeevini Hospital Sullia,62000,Sullia
+Liver Disease,Govt,ESIC Hospital Kadri,44000,Mangaluru
+Hypertension,Govt,Primary Health Centre Nanthoor,5500,Moodabidri
+Dengue,Govt,Government Ayurvedic Dispensary Puttur,6000,Puttur
+Cancer,Private,Vivekananda Hospital Bantwal,180000,Bantwal
+Fever,Private,Srinivasa Hospital Mulki,5000,Mulki
+Diabetes,Private,KVG Medical College Hospital Sullia,17500,Sullia
+Cancer,Govt,Government Hospital Mulki,99000,Mulki
+Hypertension,Govt,Primary Health Centre Vittal,8000,Puttur
+Asthma,Private,Alva's Health Centre Moodabidri,19500,Moodabidri
+Asthma,Private,Jain Hospital Moodabidri,17500,Moodabidri
+Pregnancy,Private,Sudha Hospital Karkala,59500,Karkala
+Typhoid,Govt,Government Hospital Uppinangady,3000,Sullia
+Pregnancy,Govt,Primary Health Centre Vittal Bantwal,16500,Bantwal
+Pregnancy,Private,Narayana Hrudayalaya Extension Karkala,54000,Karkala
+Kidney Stone,Private,SDM Medical College Hospital Dharwad Extension Ujire,43500,Belthangady
+Dengue,Private,Shree Kshethra Dharmasthala Rural Development Project Hospital,12500,Belthangady
+Fever,Govt,Government Hospital Mulki,1500,Mulki
+Kidney Stone,Private,KVG Medical College Hospital Sullia,42000,Sullia
+Fracture,Govt,Primary Health Centre Kadaba,16000,Puttur
+Asthma,Private,Sanjeevini Hospital Sullia,21500,Sullia
+Diabetes,Govt,Primary Health Centre Kadaba,7000,Puttur
+Cancer,Govt,General Hospital Puttur,98500,Puttur
+Dengue,Private,KVG Medical College Hospital Sullia,13500,Sullia
+Asthma,Private,City Medical Centre Moodabidri,19000,Moodabidri
+Kidney Stone,Private,District Hospital Bantwal Private Wing,41500,Bantwal
+Asthma,Govt,Primary Health Centre Ujire,8000,Belthangady
+Hypertension,Govt,Community Health Centre Karkala,6500,Karkala
+Diabetes,Govt,Primary Health Centre Padubidri,8000,Karkala
+Asthma,Private,Sai Hospital Bantwal,18000,Bantwal
+Pregnancy,Private,SDM Medical College Hospital Dharwad Extension Ujire,55500,Belthangady
+Fever,Private,Srinivasa Hospital Mulki,4500,Mulki
+Hypertension,Private,Prakash Hospital Bantwal,11000,Bantwal
+Hypertension,Govt,Community Health Centre Uppinangady,7500,Uppinangady
+Pregnancy,Private,Mahatma Gandhi Memorial Hospital Belthangady,67000,Belthangady
+Surgery,Private,Canara Hospital Puttur,78000,Puttur
+Pneumonia,Private,Srinivasa Hospital Puttur,24500,Puttur
+Liver Disease,Govt,Primary Health Centre Sampaje,43500,Uppinangady
+Hypertension,Govt,Primary Health Centre Vittal Bantwal,4000,Bantwal
+Asthma,Govt,Community Health Centre Moodabidri,10500,Moodabidri
+Fever,Private,Netravathi Hospital Uppinangady,6000,Uppinangady
+Dengue,Govt,Government Ayurvedic Dispensary Puttur,8000,Puttur
+Hypertension,Private,Netravathi Hospital Uppinangady,10000,Uppinangady
+Pneumonia,Private,Narayana Hospital Uppinangady,16000,Uppinangady
+Heart Disease,Govt,Community Health Centre Karkala,80000,Karkala
+Heart Disease,Private,Janatha Hospital Sullia,138500,Sullia
+Pneumonia,Govt,Government Hospital Venur,10500,Belthangady
+Fracture,Private,Pooja Hospital Uppinangady,32000,Uppinangady
+Kidney Stone,Govt,Community Health Centre Moodabidri,23500,Moodabidri
+Cancer,Private,Srinivasa Hospital Moodabidri,193000,Moodabidri
+Surgery,Private,Samanvaya Hospital Bantwal,83500,Bantwal
+Diabetes,Govt,Primary Health Centre Kadaba,8500,Puttur
+Fracture,Private,Narayana Hospital Uppinangady,22500,Uppinangady
+Pneumonia,Private,Canara Hospital Puttur,16500,Puttur
+Liver Disease,Private,Sri Bhuvanendra Hospital Karkala,64000,Karkala
+Appendicitis,Private,Sanjeevini Hospital Sullia,66000,Sullia
+Cancer,Private,Sai Hospital Bantwal,182000,Bantwal
+Dengue,Private,Sri Durgaparameshwari Hospital Moodabidri,14000,Moodabidri
+Heart Disease,Govt,Community Health Centre Vamanapadavu,95000,Bantwal
+Appendicitis,Govt,Taluk Hospital Sullia,19000,Sullia
+Fracture,Private,Sai Hospital Bantwal,27500,Bantwal
+Typhoid,Private,Sahyadri Hospital Sullia,13500,Sullia
+Fracture,Govt,Primary Health Centre Kadaba,13000,Puttur
+Heart Disease,Govt,Primary Health Centre Bellare,90000,Sullia
+Asthma,Private,Prakash Hospital Bantwal,17500,Bantwal
+Surgery,Govt,Community Health Centre Karkala,41000,Karkala
+Typhoid,Govt,Government Hospital Moodbidri Bantwal Taluk,2500,Bantwal
+Pregnancy,Private,Srinivasa Hospital Mulki,61500,Mulki
+Fracture,Private,Netravathi Hospital Uppinangady,34500,Uppinangady
+Surgery,Private,KS Hegde Medical Academy NITTE Deralakatte,75500,Mangaluru
+Dengue,Private,Netravathi Hospital Uppinangady,17000,Uppinangady
+Liver Disease,Govt,Urban Primary Health Centre Bunder,23500,Mangaluru
+Cancer,Private,Sri Durgaparameshwari Hospital Moodabidri,182500,Moodabidri
+Pregnancy,Govt,Government Hospital Moodbidri Bantwal Taluk,20500,Bantwal
+Pneumonia,Govt,Taluk Hospital Moodabidri,10500,Moodabidri
+Dengue,Govt,Government Dispensary Moodabidri,4500,Moodabidri
+Heart Disease,Govt,Government Ayurvedic Dispensary Puttur,96000,Puttur
+Appendicitis,Govt,Samudaya Arogya Kendra Bantwal,31000,Bantwal
+Dengue,Govt,Government Ayurvedic Hospital Mangaluru,8000,Mangaluru
+Diabetes,Govt,Taluk Hospital Karkala,8000,Karkala
+Fracture,Govt,Community Health Centre Uppinangady,14000,Uppinangady
+Typhoid,Govt,Government Hospital Uppinangady,5500,Sullia
+Appendicitis,Private,Sanjeevini Hospital Sullia,65000,Sullia
+Asthma,Private,Jain Hospital Moodabidri,18500,Moodabidri
+Diabetes,Govt,Government Hospital Uppinangady,8000,Sullia
+Hypertension,Private,Lourdes Hospital Mangaluru,12500,Mangaluru
+Fever,Govt,Government Hospital Venur,1500,Belthangady
+Liver Disease,Private,Netravathi Hospital Uppinangady,75000,Uppinangady
+Pregnancy,Govt,Community Health Centre Dharmasthala,18500,Belthangady
+Asthma,Private,Sri Durgaparameshwari Hospital Moodabidri,15000,Moodabidri
+Appendicitis,Private,Shri Dharmasthala Manjunatheshwara Hospital Dharmasthala,60500,Belthangady
+Surgery,Govt,Community Health Centre Vamanapadavu,51000,Bantwal
+Pneumonia,Govt,Primary Health Centre Vittal,11000,Puttur
+Appendicitis,Govt,Urban Primary Health Centre Bunder,20000,Mangaluru
+Fever,Govt,Government Hospital Uppinangady,1500,Uppinangady
+Fracture,Private,Shridhar Hospital Mulki,24000,Mulki
+Fever,Private,Sri Bhuvanendra Hospital Karkala,5000,Karkala
+Heart Disease,Govt,Government Lady Goschen Hospital Maidan Road,77500,Mangaluru
+Cancer,Govt,Primary Health Centre Nanthoor,83500,Moodabidri
+Typhoid,Govt,Taluk Hospital Karkala,5000,Karkala
+Fever,Private,Kudige Memorial Hospital Mangaluru,5500,Mangaluru
+Surgery,Govt,Government Hospital Mulki,51000,Mulki
+Asthma,Private,City Medical Centre Moodabidri,19500,Moodabidri
+Fracture,Govt,Community Health Centre Karkala,11000,Karkala
+Asthma,Govt,Community Health Centre Sullia,10500,Sullia
+Dengue,Govt,Taluk Hospital Moodabidri,8500,Moodabidri
+Appendicitis,Govt,Community Health Centre Karkala,24000,Karkala
+Liver Disease,Private,Alva's Health Centre Moodabidri,67500,Moodabidri
+Pneumonia,Govt,Government Dispensary Moodabidri,7500,Moodabidri
+Surgery,Govt,Urban Primary Health Centre Bunder,42500,Mangaluru
+Heart Disease,Govt,Wenlock District Hospital Hampankatta,86500,Mangaluru
+Diabetes,Private,Netravathi Hospital Uppinangady,17500,Uppinangady
+Fracture,Govt,Community Health Centre Karkala,12000,Karkala
+Asthma,Govt,Primary Health Centre Nanthoor,7500,Moodabidri
+Liver Disease,Govt,Wenlock District Hospital Hampankatta,20500,Mangaluru
+Pregnancy,Private,Shree Kshethra Dharmasthala Rural Development Project Hospital,62000,Belthangady
+Diabetes,Private,Netravathi Hospital Uppinangady,17000,Uppinangady
+Dengue,Private,Sanjeevini Hospital Sullia,13500,Sullia
+Cancer,Govt,Community Health Centre Vamanapadavu,99500,Bantwal
+Kidney Stone,Private,Vijaya Hospital Belthangady,42000,Belthangady
+Fever,Private,Unity Hospital Mangaluru,4500,Mangaluru
+Hypertension,Private,Jain Hospital Moodabidri,18500,Moodabidri
+Hypertension,Private,Srinivasa Hospital Moodabidri,15500,Moodabidri
+Kidney Stone,Private,Srinivasa Hospital Moodabidri,39500,Moodabidri
+Dengue,Govt,Community Health Centre Uppinangady,4500,Uppinangady
+Asthma,Govt,Primary Health Centre Nanthoor,10500,Moodabidri
+Hypertension,Govt,Government Hospital Venur,4000,Belthangady
+Cancer,Private,Dr BR Ambedkar Medical Institute Bantwal,153000,Bantwal
+Dengue,Private,Canara Hospital Puttur,16500,Puttur
+Liver Disease,Private,Vinayaka Hospital Sullia,63500,Sullia
+Asthma,Private,KVG Medical College Hospital Sullia,12500,Sullia
+Typhoid,Govt,Community Health Centre Dharmasthala,4500,Belthangady
+Asthma,Govt,Community Health Centre Moodabidri,6500,Moodabidri
+Diabetes,Govt,Community Health Centre Puttur,6500,Puttur
+Asthma,Govt,Government Hospital Uppinangady,9500,Sullia
+Typhoid,Govt,Government Hospital Uppinangady,2500,Sullia
+Appendicitis,Private,Deenabandhu Hospital Karkala,54000,Karkala
+Dengue,Govt,Community Health Centre Dharmasthala,6000,Belthangady
+Dengue,Govt,Primary Health Centre Ujire,5000,Belthangady
+Pregnancy,Private,Dr BR Ambedkar Medical Institute Bantwal,62500,Bantwal
+Surgery,Private,Prashanth Hospital Puttur,70000,Puttur
+Fever,Private,Suraksha Hospital Mulki,4500,Mulki
+Asthma,Govt,Taluk Hospital Moodabidri,10500,Moodabidri
+Kidney Stone,Private,Kudige Memorial Hospital Mangaluru,33000,Mangaluru
+Diabetes,Private,Sharada Hospital Puttur,14000,Puttur
+Appendicitis,Private,Bhagavathi Hospital Belthangady,64500,Belthangady
+Diabetes,Govt,Community Health Centre Karkala,7000,Karkala
+Pregnancy,Private,Samanvaya Hospital Bantwal,66500,Bantwal
+Kidney Stone,Govt,Taluk Hospital Karkala,16500,Karkala
+Pneumonia,Private,Netravathi Hospital Uppinangady,18500,Uppinangady
+Typhoid,Private,Yenepoya Specialty Hospital Kodiyalbail,12500,Mangaluru
+Surgery,Private,Shridhar Hospital Mulki,86000,Mulki
+Diabetes,Govt,Wenlock District Hospital Hampankatta,8000,Mangaluru
+Pregnancy,Govt,Primary Health Centre Ujire,26000,Belthangady
+Surgery,Private,Om Hospital Balmatta,63500,Mangaluru
+Hypertension,Private,Sai Hospital Bantwal,18000,Bantwal
+Pregnancy,Govt,Samudaya Arogya Kendra Bantwal,24000,Bantwal
+Typhoid,Private,Sri Durgaparameshwari Hospital Moodabidri,11500,Moodabidri
+Typhoid,Private,Mahatma Gandhi Memorial Hospital Belthangady,10000,Belthangady
+Typhoid,Govt,Community Health Centre Karkala,4500,Karkala
+Cancer,Govt,Primary Health Centre Guthigar,122500,Sullia
+Fever,Private,Sudha Hospital Karkala,4000,Karkala
+Pneumonia,Govt,Taluk Hospital Belthangady,11500,Belthangady
+Surgery,Private,Shree Hospital Uppinangady,63000,Uppinangady
+Fracture,Govt,Primary Health Centre Padubidri,12000,Karkala
+Typhoid,Govt,Primary Health Centre Ujire,6000,Belthangady
+Kidney Stone,Govt,Primary Health Centre Ujire,22000,Belthangady
+Fracture,Govt,Community Health Centre Uppinangady,17000,Uppinangady
+Fever,Private,Pooja Hospital Uppinangady,5500,Uppinangady
+Fever,Private,Narayana Hospital Uppinangady,3500,Uppinangady
+Kidney Stone,Private,Narayana Hrudayalaya Extension Karkala,36500,Karkala
+Pregnancy,Private,Shri Dharmasthala Manjunatheshwara Hospital Dharmasthala,54500,Belthangady
+Hypertension,Govt,Taluk Hospital Moodabidri,6000,Moodabidri
+Diabetes,Govt,Taluk Hospital Puttur,9000,Puttur
+Fever,Govt,Urban Primary Health Centre Surathkal,2000,Mangaluru
+Liver Disease,Govt,Primary Health Centre Vittal,30500,Puttur
+Fever,Govt,Government Hospital Uppinangady,1500,Uppinangady
+Liver Disease,Private,Sri Durgaparameshwari Hospital Moodabidri,80500,Moodabidri
+Cancer,Private,Mahatma Gandhi Memorial Hospital Belthangady,171000,Belthangady
+Fever,Govt,Taluk Hospital Belthangady,1500,Belthangady
+Fever,Private,Indiana Hospital & Heart Institute Kankanady,4000,Mangaluru
+Appendicitis,Govt,Primary Health Centre Vittal Bantwal,16000,Bantwal
+Fracture,Private,Shridhar Hospital Mulki,33000,Mulki
+Pregnancy,Private,Jain Hospital Moodabidri,63000,Moodabidri
+Liver Disease,Private,Narayana Hrudayalaya Extension Karkala,54000,Karkala
+Diabetes,Govt,Taluk Hospital Puttur,8000,Puttur
+Fracture,Private,Deenabandhu Hospital Karkala,33500,Karkala
+Liver Disease,Private,Suraksha Hospital Mulki,75500,Mulki
+Appendicitis,Private,Sri Bhuvanendra Hospital Karkala,52000,Karkala
+Fever,Govt,Primary Health Centre Sampaje,1500,Uppinangady
+Pneumonia,Private,Shree Kshethra Dharmasthala Rural Development Project Hospital,22000,Belthangady
+Cancer,Govt,Community Health Centre Sullia,95500,Sullia
+Surgery,Private,AJ Hospital Kadri Hills,83500,Mangaluru
+Kidney Stone,Private,Netravathi Hospital Uppinangady,37500,Uppinangady
+Dengue,Govt,Primary Health Centre Nanthoor,5500,Moodabidri
+Diabetes,Private,Sharada Hospital Puttur,15000,Puttur
+Kidney Stone,Private,KVG Medical College Hospital Sullia,38000,Sullia
+Dengue,Private,Sunrise Hospital Mangaluru,12000,Mangaluru
+Hypertension,Private,Shree Durgaparameshwari Hospital Puttur,13000,Puttur
+Pneumonia,Private,Sri Durgaparameshwari Hospital Moodabidri,28000,Moodabidri
+Typhoid,Govt,Primary Health Centre Naravi,5000,Belthangady
+Pregnancy,Govt,Taluk Hospital Moodabidri,21000,Moodabidri
+Fracture,Private,Prakash Hospital Bantwal,32000,Bantwal
+Heart Disease,Private,Indiana Hospital & Heart Institute Kankanady,156000,Mangaluru
+Heart Disease,Govt,Wenlock District Hospital Hampankatta,88000,Mangaluru
+Kidney Stone,Govt,Government Hospital Moodbidri Bantwal Taluk,16500,Bantwal
+Heart Disease,Govt,Taluk Hospital Sullia,90000,Sullia
+Surgery,Govt,Wenlock District Hospital Hampankatta,54000,Mangaluru
+Dengue,Govt,Government Dispensary Moodabidri,7000,Moodabidri
+Diabetes,Private,Deenabandhu Hospital Karkala,14000,Karkala
+Cancer,Private,Vinayaka Hospital Sullia,175000,Sullia
+Fever,Private,Sri Bhuvanendra Hospital Karkala,5500,Karkala
+Typhoid,Govt,Community Health Centre Moodabidri,3500,Moodabidri
+Dengue,Govt,Community Health Centre Sullia,6000,Sullia
+Asthma,Private,Sudha Hospital Karkala,20500,Karkala
+Typhoid,Private,Mahatma Gandhi Memorial Hospital Belthangady,8000,Belthangady
+Fracture,Private,Pooja Hospital Uppinangady,22500,Uppinangady
+Heart Disease,Govt,Primary Health Centre Kadaba,89500,Puttur
+Dengue,Private,Sri Durgaparameshwari Hospital Moodabidri,16000,Moodabidri
+Liver Disease,Private,Dhanvanthari Hospital Puttur,63500,Puttur
+Dengue,Govt,Primary Health Centre Kadaba,4500,Puttur
+Heart Disease,Private,Sri Bhuvanendra Hospital Karkala,143500,Karkala
+Fracture,Govt,Community Health Centre Uppinangady,15500,Uppinangady
+Surgery,Private,Canara Hospital Puttur,63500,Puttur
+Surgery,Private,Om Hospital Balmatta,78000,Mangaluru
+Pneumonia,Govt,Taluk Hospital Moodabidri,11000,Moodabidri
+Pregnancy,Private,Samanvaya Hospital Bantwal,54500,Bantwal
+Pregnancy,Govt,Primary Health Centre Paladka,20000,Mulki
+Kidney Stone,Private,Sanjeevini Hospital Sullia,35000,Sullia
+Dengue,Private,City Medical Centre Moodabidri,17000,Moodabidri
+Fever,Govt,Government Hospital Mulki,1500,Mulki
+Hypertension,Private,Jain Hospital Moodabidri,11500,Moodabidri
+Surgery,Private,Netravathi Hospital Uppinangady,83000,Uppinangady
+Fever,Private,Narayana Hospital Uppinangady,5000,Uppinangady
+Kidney Stone,Govt,Primary Health Centre Bellare,17500,Sullia
+Surgery,Govt,Primary Health Centre Kadaba,57500,Puttur
+Kidney Stone,Private,Pooja Hospital Uppinangady,42500,Uppinangady
+Hypertension,Govt,Primary Health Centre Padubidri,6000,Karkala
+Surgery,Govt,Community Health Centre Uppinangady,50000,Uppinangady
+Pneumonia,Private,Alva's Health Centre Moodabidri,19000,Moodabidri
+Fever,Govt,Government Ayurvedic Hospital Mangaluru,2000,Mangaluru
+Pregnancy,Govt,Community Health Centre Karkala,28000,Karkala
+Diabetes,Private,Pragathi Hospital Puttur,16000,Puttur
+Appendicitis,Govt,Primary Health Centre Naravi,18500,Belthangady
+Fever,Govt,Primary Health Centre Sampaje,1500,Uppinangady
+Fracture,Private,Narayana Hrudayalaya Extension Karkala,29000,Karkala
+Fracture,Govt,Primary Health Centre Naravi,10500,Belthangady
+Pneumonia,Private,Sri Durgaparameshwari Hospital Moodabidri,25500,Moodabidri
+Hypertension,Private,Narayana Hospital Uppinangady,18500,Uppinangady
+Liver Disease,Private,Vijaya Hospital Belthangady,78000,Belthangady
+Heart Disease,Private,Sudha Hospital Karkala,139500,Karkala
+Cancer,Govt,Primary Health Centre Bellare,95000,Sullia
+Heart Disease,Private,Dhanvanthari Hospital Puttur,168500,Puttur
+Cancer,Private,Canara Hospital Puttur,205000,Puttur
+Pneumonia,Govt,Urban Primary Health Centre Kavoor,8500,Mangaluru
+Cancer,Govt,Taluk Hospital Moodabidri,122500,Moodabidri
+Kidney Stone,Govt,Community Health Centre Moodabidri,22000,Moodabidri
+Heart Disease,Private,Justice K S Hegde Charitable Hospital Deralakatte,144500,Mangaluru
+Typhoid,Private,Sai Hospital Bantwal,9500,Bantwal
+Diabetes,Govt,Primary Health Centre Bellare,6500,Sullia
+Cancer,Private,Samanvaya Hospital Bantwal,200500,Bantwal
+Surgery,Govt,Taluk Hospital Karkala,44500,Karkala
+Typhoid,Govt,Primary Health Centre Padubidri,5000,Karkala
+Dengue,Private,Netravathi Hospital Uppinangady,13500,Uppinangady
+Surgery,Private,Shree Durgaparameshwari Hospital Puttur,88000,Puttur
+Pregnancy,Govt,Primary Health Centre Nanthoor,25000,Moodabidri
+Asthma,Govt,Community Health Centre Vamanapadavu,10000,Bantwal
+Fracture,Private,Mahatma Gandhi Memorial Hospital Belthangady,32000,Belthangady
+Hypertension,Private,Pooja Hospital Uppinangady,14500,Uppinangady
+Typhoid,Private,Sanjeevini Hospital Sullia,13500,Sullia
+Pregnancy,Govt,Taluk Hospital Karkala,17500,Karkala
+Diabetes,Private,Sudha Hospital Karkala,13500,Karkala
+Dengue,Govt,Urban Primary Health Centre Kulur,7000,Mangaluru
+Appendicitis,Govt,Government Ayurvedic Dispensary Puttur,29000,Puttur
+Surgery,Govt,Government Hospital Uppinangady,45000,Uppinangady
+Cancer,Govt,Community Health Centre Vamanapadavu,84500,Bantwal
+Typhoid,Private,Vivekananda Hospital Bantwal,12500,Bantwal
+Pneumonia,Govt,Community Health Centre Uppinangady,7500,Uppinangady
+Asthma,Govt,Primary Health Centre Nanthoor,7500,Moodabidri
+Kidney Stone,Govt,Primary Health Centre Bellare,23500,Sullia
+Pneumonia,Govt,Primary Health Centre Kadaba,9500,Puttur
+Cancer,Private,KVG Medical College Hospital Sullia,158500,Sullia
+Asthma,Govt,Community Health Centre Moodabidri,8500,Moodabidri
+Pregnancy,Govt,Community Health Centre Vamanapadavu,26000,Bantwal
+Kidney Stone,Private,Deenabandhu Hospital Karkala,38000,Karkala
+Typhoid,Private,Sanjeevini Hospital Sullia,7500,Sullia
+Cancer,Private,Dhanvanthari Hospital Puttur,156500,Puttur
+Fever,Private,Shridhar Hospital Mulki,5500,Mulki
+Hypertension,Private,Shree Kshethra Dharmasthala Rural Development Project Hospital,13000,Belthangady
+Diabetes,Private,Deenabandhu Hospital Karkala,17500,Karkala
+Kidney Stone,Private,City Medical Centre Moodabidri,41000,Moodabidri
+Pneumonia,Private,City Medical Centre Moodabidri,26000,Moodabidri
+Pregnancy,Govt,Community Health Centre Dharmasthala,17500,Belthangady
+Dengue,Govt,Primary Health Centre Nanthoor,5500,Moodabidri
+Kidney Stone,Govt,Community Health Centre Uppinangady,17500,Uppinangady
+Asthma,Private,Sri Bhuvanendra Hospital Karkala,17000,Karkala
+Hypertension,Govt,Community Health Centre Moodabidri,4500,Moodabidri
+Fever,Govt,Community Health Centre Uppinangady,2000,Uppinangady
+Heart Disease,Private,SDM Medical College Hospital Dharwad Extension Ujire,151500,Belthangady
+Typhoid,Private,Sri Durgaparameshwari Hospital Moodabidri,13000,Moodabidri
+Pregnancy,Govt,Community Health Centre Moodabidri,20500,Moodabidri
+Diabetes,Private,Sanjeevini Hospital Sullia,13500,Sullia
+Liver Disease,Private,Sahyadri Hospital Sullia,87500,Sullia
+Pneumonia,Private,Bhagavathi Hospital Belthangady,23000,Belthangady
+Asthma,Govt,Taluk Hospital Karkala,7500,Karkala
+Heart Disease,Govt,Community Health Centre Vamanapadavu,86000,Bantwal
+Diabetes,Govt,Community Health Centre Karkala,5500,Karkala
+Liver Disease,Govt,General Hospital Puttur,22000,Puttur
+Appendicitis,Govt,Primary Health Centre Ullal,27500,Mangaluru
+Liver Disease,Govt,Government Ayurvedic Dispensary Puttur,36000,Puttur
+Typhoid,Private,Mahatma Gandhi Memorial Hospital Belthangady,12000,Belthangady
+Pneumonia,Govt,Urban Primary Health Centre Kulur,7500,Mangaluru
+Hypertension,Private,Shree Hospital Uppinangady,20000,Uppinangady
+Dengue,Private,SDM Medical College Hospital Dharwad Extension Ujire,12000,Belthangady
+Heart Disease,Govt,Community Health Centre Dharmasthala,92500,Belthangady
+Appendicitis,Govt,Primary Health Centre Vittal Bantwal,33000,Bantwal
+Cancer,Govt,Taluk Hospital Moodabidri,89500,Moodabidri
+Diabetes,Govt,Government Hospital Uppinangady,7500,Uppinangady
+Diabetes,Private,Yenepoya Medical College Hospital Deralakatte,16500,Mangaluru
+Diabetes,Private,Deenabandhu Hospital Karkala,17500,Karkala
+Typhoid,Govt,Government Dispensary Moodabidri,5500,Moodabidri
+Surgery,Govt,Primary Health Centre Padubidri,54000,Karkala
+Fracture,Private,Narayana Hrudayalaya Extension Karkala,35000,Karkala
+Cancer,Govt,Government Dispensary Moodabidri,101000,Moodabidri
+Diabetes,Govt,Primary Health Centre Kadaba,8000,Puttur
+Heart Disease,Govt,Taluk Hospital Belthangady,90500,Belthangady
+Liver Disease,Private,Narayana Hrudayalaya Extension Karkala,57000,Karkala
+Pneumonia,Private,Yenepoya Medical College Hospital Deralakatte,18000,Mangaluru
+Liver Disease,Govt,Government Hospital Uppinangady,26000,Sullia
+Fracture,Private,Shree Hospital Uppinangady,30000,Uppinangady
+Cancer,Govt,Community Health Centre Moodabidri,107000,Moodabidri
+Pneumonia,Private,Vijaya Hospital Belthangady,29500,Belthangady
+Pneumonia,Private,Canara Hospital Puttur,20500,Puttur
+Surgery,Private,Deenabandhu Hospital Karkala,72000,Karkala
+Kidney Stone,Private,KVG Medical College Hospital Sullia,41500,Sullia
+Pneumonia,Private,City Medical Centre Moodabidri,19000,Moodabidri
+Appendicitis,Govt,Primary Health Centre Guthigar,18500,Sullia
+Fever,Private,Srinivasa Hospital Mulki,4000,Mulki
+Typhoid,Govt,Samudaya Arogya Kendra Bantwal,3000,Bantwal
+Fracture,Private,Sudha Hospital Karkala,33500,Karkala
+Appendicitis,Govt,Government Hospital Mulki,25500,Mulki
+Hypertension,Private,Narayana Hrudayalaya Extension Karkala,18000,Karkala
+Appendicitis,Private,KVG Medical College & Hospital Sullia Road Puttur,53000,Puttur
+Fracture,Private,Sri Bhuvanendra Hospital Karkala,23000,Karkala
+Pregnancy,Private,Narayana Hrudayalaya Extension Karkala,61500,Karkala
+Typhoid,Govt,Taluk General Hospital Mangaluru,4000,Mangaluru
+Dengue,Private,Sharada Hospital Puttur,16500,Puttur
+Heart Disease,Govt,Community Health Centre Puttur,89000,Puttur
+Liver Disease,Private,Pooja Hospital Uppinangady,60500,Uppinangady
+Kidney Stone,Govt,Community Health Centre Uppinangady,18500,Uppinangady
+Kidney Stone,Private,Vijaya Hospital Belthangady,37000,Belthangady
+Hypertension,Govt,Primary Health Centre Vittal,6500,Puttur
+Heart Disease,Govt,Government Hospital Uppinangady,75000,Sullia
+Asthma,Govt,Community Health Centre Moodabidri,9500,Moodabidri
+Dengue,Govt,Primary Health Centre Sampaje,8000,Uppinangady
+Cancer,Private,Suraksha Hospital Mulki,200000,Mulki
+Appendicitis,Govt,Primary Health Centre Sampaje,27000,Uppinangady
+Appendicitis,Private,Shridhar Hospital Mulki,56000,Mulki
+Liver Disease,Govt,Primary Health Centre Ujire,43000,Belthangady
+Liver Disease,Private,Prashanth Hospital Puttur,66500,Puttur
+Appendicitis,Private,AJ Hospital & Research Centre Bejai,61500,Mangaluru
+Kidney Stone,Govt,Primary Health Centre Bellare,21000,Sullia
+Heart Disease,Govt,Government Ayurvedic Dispensary Puttur,85500,Puttur
+Surgery,Private,Pooja Hospital Uppinangady,83000,Uppinangady
+Kidney Stone,Private,Jain Hospital Moodabidri,37000,Moodabidri
+Asthma,Private,Shree Kshethra Dharmasthala Rural Development Project Hospital,14000,Belthangady
+Hypertension,Private,Deenabandhu Hospital Karkala,14500,Karkala
+Dengue,Govt,Government Hospital Venur,6000,Belthangady
+Fever,Govt,Community Health Centre Mulki,2500,Mulki
+Typhoid,Private,Deenabandhu Hospital Karkala,10500,Karkala
+Appendicitis,Private,AJ Hospital & Research Centre Bejai,66000,Mangaluru
+Appendicitis,Private,KVG Medical College Hospital Sullia,47000,Sullia
+Cancer,Govt,Taluk Hospital BC Road Bantwal,120500,Bantwal
+Pregnancy,Govt,Community Health Centre Mulki,17500,Mulki
+Fever,Govt,Community Health Centre Mulki,2000,Mulki
+Dengue,Private,Srinivasa Hospital Sullia,15000,Sullia
+Fracture,Govt,Taluk Hospital BC Road Bantwal,13000,Bantwal
+Dengue,Private,Narayana Hospital Uppinangady,10000,Uppinangady
+Hypertension,Govt,Samudaya Arogya Kendra Bantwal,5000,Bantwal
+Appendicitis,Private,Narayana Hospital Uppinangady,52500,Uppinangady
+Surgery,Private,Shridhar Hospital Mulki,66000,Mulki
+Liver Disease,Govt,Primary Health Centre Nanthoor,44500,Moodabidri
+Heart Disease,Private,Sudha Hospital Karkala,164000,Karkala
+Fever,Private,Vijaya Hospital Belthangady,5500,Belthangady
+Appendicitis,Govt,Primary Health Centre Paladka,28000,Mulki
+Kidney Stone,Govt,Taluk Hospital Sullia,21500,Sullia
+Dengue,Private,KMC Hospital Jyothi Circle,15000,Mangaluru
+Liver Disease,Private,Yenepoya Medical College Hospital Deralakatte,61500,Mangaluru
+Heart Disease,Private,SDM Medical College Hospital Dharwad Extension Ujire,146500,Belthangady
+Pneumonia,Private,KVG Medical College & Hospital Sullia Road Puttur,15500,Puttur
+Typhoid,Govt,Primary Health Centre Ujire,3500,Belthangady
+Pregnancy,Private,Prakash Hospital Bantwal,51500,Bantwal
+Typhoid,Private,Shree Kshethra Dharmasthala Rural Development Project Hospital,12500,Belthangady
+Cancer,Govt,Samudaya Arogya Kendra Bantwal,105000,Bantwal
+Asthma,Govt,Primary Health Centre Ujire,6500,Belthangady
+Kidney Stone,Govt,Community Health Centre Uppinangady,19500,Uppinangady
+Asthma,Private,Vinayaka Hospital Sullia,18000,Sullia
+Heart Disease,Private,Janatha Hospital Sullia,171000,Sullia
+Fever,Private,Shree Hospital Uppinangady,5500,Uppinangady
+Surgery,Govt,Government Hospital Mulki,57500,Mulki
+Cancer,Govt,Primary Health Centre Ujire,107000,Belthangady
+Surgery,Private,Om Hospital Balmatta,81000,Mangaluru
+Typhoid,Private,Janatha Hospital Sullia,12500,Sullia
+Heart Disease,Private,Sanjeevini Hospital Sullia,137000,Sullia
+Appendicitis,Govt,Taluk Hospital Karkala,26500,Karkala
+Appendicitis,Private,Deenabandhu Hospital Karkala,65000,Karkala
+Diabetes,Private,Sri Bhuvanendra Hospital Karkala,13500,Karkala
+Heart Disease,Private,Mahatma Gandhi Memorial Hospital Belthangady,163000,Belthangady
+Pneumonia,Private,Alva's Health Centre Moodabidri,19000,Moodabidri
+Typhoid,Govt,Primary Health Centre Sampaje,5500,Uppinangady
+Pregnancy,Private,City Medical Centre Moodabidri,65000,Moodabidri
+Typhoid,Govt,Government Dispensary Moodabidri,5500,Moodabidri
+Diabetes,Private,Narayana Hospital Uppinangady,14500,Uppinangady
+Pneumonia,Private,Jain Hospital Moodabidri,27500,Moodabidri
+Fever,Private,Narayana Hospital Uppinangady,6000,Uppinangady
+Fever,Private,Bhagavathi Hospital Belthangady,5500,Belthangady
+Liver Disease,Govt,Community Health Centre Sullia,42000,Sullia
+Kidney Stone,Govt,Primary Health Centre Naravi,19500,Belthangady
+Pneumonia,Private,Yenepoya Medical College Hospital Deralakatte,26500,Mangaluru
+Dengue,Private,Pooja Hospital Uppinangady,14500,Uppinangady
+Typhoid,Private,Sanjeevini Hospital Sullia,11000,Sullia
+Cancer,Govt,Taluk Hospital Puttur,118500,Puttur
+Kidney Stone,Private,Sudha Hospital Karkala,34000,Karkala
+Fracture,Govt,Primary Health Centre Ujire,14000,Belthangady
+Liver Disease,Govt,Primary Health Centre Bellare,40000,Sullia
+Cancer,Govt,Primary Health Centre Guthigar,102500,Sullia
+Hypertension,Govt,Community Health Centre Uppinangady,5000,Uppinangady
+Surgery,Private,Samanvaya Hospital Bantwal,67500,Bantwal
+Pneumonia,Govt,Community Health Centre Puttur,13000,Puttur
+Typhoid,Private,Narayana Hospital Uppinangady,7500,Uppinangady
+Heart Disease,Private,Kasturba Hospital Manipal Mangaluru,147500,Mangaluru
+Fever,Govt,Primary Health Centre Sampaje,2000,Uppinangady
+Kidney Stone,Private,District Hospital Bantwal Private Wing,42500,Bantwal
+Fracture,Govt,Primary Health Centre Sampaje,13000,Uppinangady
+Liver Disease,Govt,Government Hospital Venur,30500,Belthangady
+Hypertension,Private,Srinivas Institute of Medical Sciences Mangaluru,11000,Mangaluru
+Liver Disease,Govt,Community Health Centre Karkala,34500,Karkala
+Appendicitis,Govt,Community Health Centre Uppinangady,25000,Uppinangady
+Asthma,Private,Mahatma Gandhi Memorial Hospital Belthangady,13500,Belthangady
+Fracture,Govt,Community Health Centre Karkala,11500,Karkala
+Surgery,Govt,Primary Health Centre Sampaje,43500,Uppinangady
+Liver Disease,Govt,Government Hospital Mulki,42000,Mulki
+Fracture,Govt,Primary Health Centre Vittal Bantwal,12500,Bantwal
+Kidney Stone,Govt,Government Dispensary Moodabidri,20000,Moodabidri
+Liver Disease,Private,Shridhar Hospital Mulki,52000,Mulki
+Liver Disease,Govt,Community Health Centre Karkala,38500,Karkala
+Heart Disease,Govt,Primary Health Centre Guthigar,88000,Sullia
+Fracture,Private,Mahatma Gandhi Memorial Hospital Belthangady,35500,Belthangady
+Liver Disease,Govt,Primary Health Centre Padubidri,43000,Karkala
+Fracture,Govt,Primary Health Centre Padubidri,14000,Karkala
+Fever,Govt,Government Hospital Uppinangady,1500,Uppinangady
+Surgery,Govt,Primary Health Centre Paladka,49500,Mulki
+Fracture,Private,Vivekananda Hospital Bantwal,27500,Bantwal
+Surgery,Private,Pooja Hospital Uppinangady,74000,Uppinangady
+Fever,Govt,Primary Health Centre Sampaje,2000,Uppinangady
+Fever,Private,Shree Hospital Uppinangady,4500,Uppinangady
+Heart Disease,Private,KVG Medical College & Hospital Sullia Road Puttur,138500,Puttur
+Liver Disease,Govt,Primary Health Centre Ujire,38500,Belthangady
+Typhoid,Govt,Primary Health Centre Naravi,5500,Belthangady
+Diabetes,Govt,Government Ayurvedic Dispensary Puttur,8000,Puttur
+Heart Disease,Private,Dr BR Ambedkar Medical Institute Bantwal,169000,Bantwal
+Asthma,Private,City Medical Centre Moodabidri,13500,Moodabidri
+Heart Disease,Private,Sudha Hospital Karkala,168000,Karkala
+Appendicitis,Private,Srinivasa Hospital Mulki,45000,Mulki
+Asthma,Govt,Taluk Hospital BC Road Bantwal,8000,Bantwal
+Dengue,Private,Prashanth Hospital Puttur,16000,Puttur
+Fracture,Govt,Primary Health Centre Padubidri,13500,Karkala
+Pregnancy,Govt,Taluk Hospital Karkala,26000,Karkala
+Asthma,Govt,Community Health Centre Moodabidri,6000,Moodabidri
+Hypertension,Govt,Primary Health Centre Sampaje,7500,Uppinangady
+Asthma,Private,Alva's Health Centre Moodabidri,17500,Moodabidri
+Hypertension,Private,Alva's Health Centre Moodabidri,14000,Moodabidri
+Pneumonia,Govt,Primary Health Centre Naravi,10000,Belthangady
+Cancer,Govt,Community Health Centre Moodabidri,109500,Moodabidri
+Pregnancy,Private,Srinivasa Hospital Moodabidri,58000,Moodabidri
+Liver Disease,Private,Pragathi Hospital Puttur,58000,Puttur
+Kidney Stone,Private,Janatha Hospital Sullia,38500,Sullia
+Typhoid,Private,SDM Medical College Hospital Dharwad Extension Ujire,14000,Belthangady
+Hypertension,Private,Shree Kshethra Dharmasthala Rural Development Project Hospital,13500,Belthangady
+Asthma,Govt,Taluk Hospital Moodabidri,6500,Moodabidri
+Appendicitis,Govt,Government Hospital Venur,33500,Belthangady
+Diabetes,Private,Narayana Hrudayalaya Extension Karkala,17000,Karkala
+Surgery,Private,District Hospital Bantwal Private Wing,75500,Bantwal
+Diabetes,Private,Lourdes Hospital Mangaluru,15500,Mangaluru
+Surgery,Private,Dhanvanthari Hospital Puttur,71500,Puttur
+Surgery,Private,Pooja Hospital Uppinangady,69000,Uppinangady
+Cancer,Private,Mahatma Gandhi Memorial Hospital Belthangady,181000,Belthangady
+Pregnancy,Govt,Taluk Hospital Belthangady,16500,Belthangady
+Asthma,Private,Jain Hospital Moodabidri,12000,Moodabidri
+Pregnancy,Private,Sudha Hospital Karkala,58000,Karkala
+Kidney Stone,Private,Alva's Health Centre Moodabidri,35000,Moodabidri
+Typhoid,Private,Deenabandhu Hospital Karkala,12000,Karkala
+Pregnancy,Govt,Taluk Hospital Moodabidri,17000,Moodabidri
+Pregnancy,Private,Jain Hospital Moodabidri,66000,Moodabidri
+Typhoid,Govt,Primary Health Centre Sampaje,3000,Uppinangady
+Liver Disease,Govt,Government Hospital Uppinangady,23500,Sullia
+Appendicitis,Govt,Primary Health Centre Padubidri,29000,Karkala
+Fracture,Private,Sudha Hospital Karkala,28000,Karkala
+Diabetes,Govt,Urban Primary Health Centre Surathkal,7500,Mangaluru
+Heart Disease,Govt,Government Lady Goschen Hospital Maidan Road,78000,Mangaluru
+Asthma,Govt,Community Health Centre Vamanapadavu,7000,Bantwal
+Typhoid,Govt,Taluk Hospital Belthangady,5500,Belthangady
+Fracture,Govt,Primary Health Centre Padubidri,11500,Karkala
+Liver Disease,Govt,Primary Health Centre Sampaje,30000,Uppinangady
+Surgery,Private,AJ Hospital Kadri Hills,84500,Mangaluru
+Typhoid,Govt,Urban Primary Health Centre Bunder,4000,Mangaluru
+Appendicitis,Govt,Primary Health Centre Paladka,16500,Mulki
+Diabetes,Govt,Community Health Centre Uppinangady,5500,Uppinangady
+Appendicitis,Private,Shree Kshethra Dharmasthala Rural Development Project Hospital,50500,Belthangady
+Pregnancy,Private,Vivekananda Hospital Bantwal,54500,Bantwal
+Pneumonia,Govt,Primary Health Centre Nanthoor,13000,Moodabidri
+Fracture,Govt,Community Health Centre Mulki,10500,Mulki
+Appendicitis,Private,Shree Hospital Uppinangady,54000,Uppinangady
+Hypertension,Govt,Government Dispensary Moodabidri,4500,Moodabidri
+Cancer,Private,Vinayaka Hospital Sullia,167500,Sullia
+Diabetes,Private,Sudha Hospital Karkala,11500,Karkala
+Fever,Private,Shree Hospital Uppinangady,5000,Uppinangady
+Asthma,Private,Dr BR Ambedkar Medical Institute Bantwal,13000,Bantwal
+Heart Disease,Govt,Primary Health Centre Ujire,89000,Belthangady
+Kidney Stone,Govt,Primary Health Centre Naravi,17000,Belthangady
+Asthma,Private,Prakash Hospital Bantwal,22000,Bantwal
+Heart Disease,Govt,Taluk Hospital Karkala,96500,Karkala
+Heart Disease,Govt,Primary Health Centre Vittal,90000,Puttur
+Typhoid,Private,Vinayaka Hospital Sullia,8000,Sullia
+Diabetes,Private,Sharada Hospital Puttur,15500,Puttur
+Typhoid,Private,Bhagavathi Hospital Belthangady,13000,Belthangady
+Diabetes,Private,Srinivasa Hospital Puttur,14500,Puttur
+Surgery,Govt,Taluk Hospital Puttur,39000,Puttur
+Dengue,Govt,Community Health Centre Moodabidri,7000,Moodabidri
+Surgery,Private,Sudha Hospital Karkala,67000,Karkala
+Liver Disease,Govt,Taluk Hospital Karkala,37000,Karkala
+Fever,Private,Shree Hospital Uppinangady,4500,Uppinangady
+Fever,Govt,Primary Health Centre Padubidri,2000,Karkala
+Heart Disease,Govt,Taluk Hospital Sullia,80500,Sullia
+Fracture,Govt,Primary Health Centre Kadaba,15000,Puttur
+Asthma,Govt,Samudaya Arogya Kendra Bantwal,9000,Bantwal
+Cancer,Private,Dr BR Ambedkar Medical Institute Bantwal,165500,Bantwal
+Dengue,Private,City Hospital Mangaluru,15500,Mangaluru
+Typhoid,Private,Unity Hospital Mangaluru,12500,Mangaluru
+Fever,Govt,Primary Health Centre Sampaje,1500,Uppinangady
+Surgery,Govt,General Hospital Puttur,37000,Puttur
+Hypertension,Govt,Government Ayurvedic Dispensary Puttur,8000,Puttur
+Pneumonia,Private,Narayana Hospital Uppinangady,29000,Uppinangady
+Fracture,Govt,Government Hospital Uppinangady,14500,Uppinangady
+Cancer,Private,Bhagavathi Hospital Belthangady,195500,Belthangady
+Dengue,Govt,Government Hospital Uppinangady,5000,Uppinangady
+Heart Disease,Private,Sahyadri Hospital Sullia,141000,Sullia
+Pneumonia,Govt,Government Ayurvedic Dispensary Puttur,11000,Puttur
+Cancer,Govt,Community Health Centre Mulki,85000,Mulki
+Hypertension,Private,Shree Durgaparameshwari Hospital Puttur,10500,Puttur
+Diabetes,Private,Sharada Hospital Puttur,18000,Puttur
+Surgery,Govt,Taluk Hospital Puttur,58000,Puttur
+Hypertension,Govt,Primary Health Centre Sampaje,7000,Uppinangady
+Liver Disease,Govt,Primary Health Centre Nanthoor,26000,Moodabidri
+Hypertension,Private,City Hospital Mangaluru,15500,Mangaluru
+Diabetes,Govt,Primary Health Centre Kadaba,9500,Puttur
+Liver Disease,Private,KMC Hospital Attavar,55000,Mangaluru
+Liver Disease,Govt,Government Hospital Uppinangady,23500,Sullia
+Kidney Stone,Private,Srinivasa Hospital Sullia,42000,Sullia
+Appendicitis,Govt,Primary Health Centre Guthigar,27500,Sullia
+Diabetes,Govt,Government Hospital Uppinangady,7500,Sullia
+Hypertension,Private,Sharada Hospital Puttur,18000,Puttur
+Kidney Stone,Private,Srinivasa Hospital Moodabidri,39000,Moodabidri
+Fever,Private,Vijaya Hospital Belthangady,5000,Belthangady
+Cancer,Private,Srinivasa Hospital Moodabidri,185500,Moodabidri
+Surgery,Govt,ESIC Hospital Kadri,56000,Mangaluru
+Asthma,Private,Prakash Hospital Bantwal,19500,Bantwal
+Hypertension,Govt,Primary Health Centre Sampaje,5000,Uppinangady
+Typhoid,Govt,Primary Health Centre Ullal,3000,Mangaluru
+Appendicitis,Private,Shree Durgaparameshwari Hospital Puttur,44500,Puttur
+Pregnancy,Govt,Primary Health Centre Paladka,18000,Mulki
+Asthma,Govt,Primary Health Centre Bellare,11000,Sullia
+Pregnancy,Private,Shridhar Hospital Mulki,62000,Mulki
+Surgery,Govt,Government Hospital Uppinangady,52000,Uppinangady
+Hypertension,Govt,Community Health Centre Dharmasthala,8500,Belthangady
+Fever,Govt,Taluk Hospital Karkala,1500,Karkala
+Hypertension,Private,Deenabandhu Hospital Karkala,10500,Karkala
+Appendicitis,Private,Sahyadri Hospital Sullia,42000,Sullia
+Hypertension,Govt,Government Dispensary Moodabidri,5000,Moodabidri
+Fever,Private,Narayana Hospital Uppinangady,4500,Uppinangady
+Liver Disease,Govt,Government Hospital Uppinangady,42500,Uppinangady
+Heart Disease,Private,Sharada Hospital Puttur,170000,Puttur
+Fracture,Govt,Government Hospital Uppinangady,18000,Uppinangady
+Pneumonia,Govt,Taluk Hospital Belthangady,9000,Belthangady
+Fracture,Private,Shree Durgaparameshwari Hospital Puttur,22500,Puttur
+Surgery,Govt,Taluk Hospital BC Road Bantwal,38000,Bantwal
+Cancer,Govt,Government Dispensary Moodabidri,92500,Moodabidri
+Dengue,Private,Pragathi Hospital Puttur,17500,Puttur
+Typhoid,Private,Narayana Hospital Uppinangady,8000,Uppinangady
+Fever,Govt,Government Hospital Uppinangady,2500,Uppinangady
+Cancer,Private,Srinivasa Hospital Puttur,179000,Puttur
+Surgery,Govt,Government Ayurvedic Dispensary Puttur,53000,Puttur
+Heart Disease,Private,Deenabandhu Hospital Karkala,149000,Karkala
+Heart Disease,Private,Janatha Hospital Sullia,144500,Sullia
+Fever,Private,Suraksha Hospital Mulki,3500,Mulki
+Hypertension,Govt,ESIC Hospital Kadri,6500,Mangaluru
+Cancer,Private,Suraksha Hospital Mulki,196000,Mulki
+Hypertension,Govt,Government Dispensary Moodabidri,9000,Moodabidri
+Liver Disease,Private,KMC Hospital Attavar,89500,Mangaluru
+Hypertension,Govt,Urban Primary Health Centre Kulur,9000,Mangaluru
+Hypertension,Govt,Primary Health Centre Sampaje,4500,Uppinangady
+Surgery,Private,Pooja Hospital Uppinangady,70000,Uppinangady
+Pneumonia,Govt,Primary Health Centre Vittal,9000,Puttur
+Fracture,Private,Sri Bhuvanendra Hospital Karkala,27000,Karkala
+Dengue,Private,Netravathi Hospital Uppinangady,14500,Uppinangady
+Appendicitis,Private,Sai Hospital Bantwal,66500,Bantwal
+Dengue,Private,Jain Hospital Moodabidri,14500,Moodabidri
+Asthma,Govt,Samudaya Arogya Kendra Bantwal,7500,Bantwal
+Kidney Stone,Govt,Taluk Hospital BC Road Bantwal,19500,Bantwal
+Pneumonia,Govt,Primary Health Centre Nanthoor,8000,Moodabidri
+Fever,Govt,Wenlock District Hospital Hampankatta,1500,Mangaluru
+Diabetes,Private,Narayana Hrudayalaya Extension Karkala,16000,Karkala
+Cancer,Govt,Community Health Centre Sullia,110000,Sullia
+Kidney Stone,Govt,Government Dispensary Moodabidri,22500,Moodabidri
+Typhoid,Govt,Primary Health Centre Sampaje,4000,Uppinangady
+Dengue,Govt,Taluk Hospital Puttur,8000,Puttur
+Pneumonia,Govt,Urban Primary Health Centre Kavoor,10000,Mangaluru
+Diabetes,Govt,Taluk Hospital Karkala,9500,Karkala
+Hypertension,Govt,Primary Health Centre Ujire,7000,Belthangady
+Kidney Stone,Govt,Government Lady Goschen Hospital Maidan Road,20500,Mangaluru
+Fracture,Govt,Taluk Hospital BC Road Bantwal,17000,Bantwal
+Heart Disease,Private,District Hospital Bantwal Private Wing,144500,Bantwal
+Heart Disease,Govt,Primary Health Centre Padubidri,78500,Karkala
+Appendicitis,Govt,Taluk Hospital Belthangady,17500,Belthangady
+Hypertension,Govt,Primary Health Centre Kadaba,5500,Puttur
+Fever,Govt,Community Health Centre Mulki,1500,Mulki
+Cancer,Govt,Community Health Centre Sullia,112500,Sullia
+Dengue,Govt,Urban Primary Health Centre Surathkal,8000,Mangaluru
+Kidney Stone,Govt,Government Hospital Uppinangady,22000,Sullia
+Fever,Govt,Government Hospital Uppinangady,2000,Uppinangady
+Fracture,Govt,Government Hospital Venur,16500,Belthangady
+Cancer,Private,Shridhar Hospital Mulki,201000,Mulki
+Dengue,Private,Canara Hospital Puttur,15500,Puttur
+Fever,Govt,Taluk Hospital Karkala,1500,Karkala
+Pneumonia,Private,Mahatma Gandhi Memorial Hospital Belthangady,15000,Belthangady
+Pregnancy,Private,Sri Durgaparameshwari Hospital Moodabidri,65500,Moodabidri
+Asthma,Govt,Taluk Hospital Moodabidri,9000,Moodabidri
+Pneumonia,Govt,Primary Health Centre Ujire,9000,Belthangady
+Hypertension,Private,Shri Dharmasthala Manjunatheshwara Hospital Dharmasthala,15500,Belthangady
+Pregnancy,Govt,Samudaya Arogya Kendra Bantwal,26000,Bantwal
+Appendicitis,Private,Sanjeevini Hospital Sullia,50000,Sullia
+Asthma,Govt,Primary Health Centre Padubidri,9500,Karkala
+Appendicitis,Govt,Taluk Hospital Sullia,31000,Sullia
+Surgery,Govt,Community Health Centre Uppinangady,52500,Uppinangady
+Diabetes,Private,KVG Medical College & Hospital Sullia Road Puttur,11500,Puttur
+Dengue,Govt,Government Hospital Uppinangady,8500,Sullia
+Surgery,Govt,Taluk Hospital BC Road Bantwal,43500,Bantwal
+Typhoid,Govt,Primary Health Centre Bellare,4000,Sullia
+Cancer,Private,Vinayaka Hospital Sullia,159500,Sullia
+Cancer,Private,Sanjeevini Hospital Sullia,156000,Sullia
+Kidney Stone,Private,District Hospital Bantwal Private Wing,41000,Bantwal
+Asthma,Govt,Primary Health Centre Padubidri,8500,Karkala
+Fever,Govt,Government Hospital Uppinangady,1500,Uppinangady
+Diabetes,Govt,Community Health Centre Mulki,6500,Mangaluru
+Liver Disease,Private,Bhagavathi Hospital Belthangady,61500,Belthangady
+Kidney Stone,Private,Lourdes Hospital Mangaluru,36500,Mangaluru
+Cancer,Govt,Government Hospital Moodbidri Bantwal Taluk,118000,Bantwal
+Appendicitis,Private,Dr BR Ambedkar Medical Institute Bantwal,54000,Bantwal
+Fracture,Govt,Government Hospital Uppinangady,10500,Uppinangady
+Dengue,Govt,Government Hospital Uppinangady,4000,Uppinangady
+Diabetes,Private,Sudha Hospital Karkala,17500,Karkala
+Cancer,Private,City Medical Centre Moodabidri,181500,Moodabidri
+Kidney Stone,Govt,Community Health Centre Sullia,18500,Sullia
+Surgery,Govt,Taluk Hospital Puttur,52000,Puttur
+Asthma,Govt,Primary Health Centre Nanthoor,9500,Moodabidri
+Typhoid,Private,Jain Hospital Moodabidri,13500,Moodabidri
+Pregnancy,Govt,Government Hospital Venur,25000,Belthangady
+Fracture,Govt,Government Hospital Mulki,11500,Mulki
+Cancer,Govt,Primary Health Centre Ujire,102000,Belthangady
+Surgery,Govt,Government Ayurvedic Hospital Mangaluru,45500,Mangaluru
+Surgery,Govt,Government Hospital Uppinangady,53000,Uppinangady
+Diabetes,Govt,General Hospital Puttur,6500,Puttur
+Pregnancy,Govt,Primary Health Centre Padubidri,23500,Karkala
+Hypertension,Private,Alva's Health Centre Moodabidri,13000,Moodabidri
+Dengue,Private,Jain Hospital Moodabidri,18000,Moodabidri
+Pregnancy,Private,Shridhar Hospital Mulki,67000,Mulki
+Hypertension,Govt,Community Health Centre Vamanapadavu,4500,Bantwal
+Surgery,Govt,Rural Maternity & Child Welfare Centre Kaup,43000,Mangaluru
+Dengue,Private,Narayana Hospital Uppinangady,11500,Uppinangady
+Cancer,Govt,Samudaya Arogya Kendra Bantwal,86500,Bantwal
+Asthma,Private,Shri Dharmasthala Manjunatheshwara Hospital Dharmasthala,19500,Belthangady
+Diabetes,Private,Pragathi Hospital Puttur,12500,Puttur
+Appendicitis,Govt,Community Health Centre Puttur,32000,Puttur
+Typhoid,Govt,Primary Health Centre Ujire,2500,Belthangady
+Liver Disease,Govt,Primary Health Centre Guthigar,20500,Sullia
+Appendicitis,Govt,ESIC Hospital Kadri,25000,Mangaluru
+Fever,Govt,Primary Health Centre Paladka,2000,Mulki
+Asthma,Private,Sudha Hospital Karkala,13500,Karkala
+Surgery,Govt,Government Ayurvedic Hospital Mangaluru,48500,Mangaluru
+Asthma,Govt,Taluk Hospital BC Road Bantwal,10500,Bantwal
+Kidney Stone,Govt,Urban Primary Health Centre Kulur,20000,Mangaluru
+Typhoid,Private,Samanvaya Hospital Bantwal,10000,Bantwal
+Heart Disease,Govt,Samudaya Arogya Kendra Bantwal,82500,Bantwal
+Fracture,Govt,Primary Health Centre Padubidri,15000,Karkala
+Fracture,Private,Pragathi Hospital Puttur,35500,Puttur
+Pregnancy,Private,Sudha Hospital Karkala,66500,Karkala
+Kidney Stone,Private,Jain Hospital Moodabidri,43000,Moodabidri
+Heart Disease,Govt,Taluk Hospital Karkala,77000,Karkala
+Fracture,Private,Sri Bhuvanendra Hospital Karkala,34000,Karkala
+Liver Disease,Private,Sahyadri Hospital Sullia,61000,Sullia
+Diabetes,Govt,Community Health Centre Puttur,9500,Puttur
+Pneumonia,Govt,Taluk Hospital Moodabidri,11500,Moodabidri
+Fracture,Private,Sri Bhuvanendra Hospital Karkala,35000,Karkala
+Pneumonia,Govt,Primary Health Centre Nanthoor,12000,Moodabidri
+Cancer,Govt,Government Hospital Venur,104500,Belthangady
+Typhoid,Govt,Taluk Hospital Sullia,5500,Sullia
+Heart Disease,Govt,Primary Health Centre Padubidri,78500,Karkala
+Surgery,Private,Narayana Hrudayalaya Extension Karkala,75500,Karkala
+Asthma,Govt,Government Hospital Venur,9500,Belthangady
+Diabetes,Govt,Community Health Centre Karkala,7500,Karkala
+Kidney Stone,Private,Pooja Hospital Uppinangady,42000,Uppinangady
+Cancer,Govt,Primary Health Centre Paladka,102000,Mulki
+Typhoid,Private,Sudha Hospital Karkala,11500,Karkala
+Pneumonia,Private,Mahatma Gandhi Memorial Hospital Belthangady,27000,Belthangady
+Cancer,Private,City Medical Centre Moodabidri,183500,Moodabidri
+Kidney Stone,Govt,Taluk Hospital Moodabidri,18000,Moodabidri
+Dengue,Govt,Taluk Hospital Sullia,4500,Sullia
+Fracture,Private,Pooja Hospital Uppinangady,27500,Uppinangady
+Pneumonia,Private,KS Hegde Medical Academy NITTE Deralakatte,24000,Mangaluru
+Asthma,Private,Srinivasa Hospital Moodabidri,17000,Moodabidri
+Appendicitis,Govt,Government Ayurvedic Dispensary Puttur,21500,Puttur
+Dengue,Govt,Government Hospital Uppinangady,4500,Uppinangady
+Pneumonia,Govt,Community Health Centre Dharmasthala,11500,Belthangady
+Heart Disease,Private,Pragathi Hospital Puttur,172000,Puttur
+Liver Disease,Private,Shree Hospital Uppinangady,73000,Uppinangady
+Liver Disease,Govt,Government Hospital Mulki,38500,Mulki
+Fracture,Private,Shridhar Hospital Mulki,28000,Mulki
+Cancer,Private,Prakash Hospital Bantwal,193500,Bantwal
+Typhoid,Private,Netravathi Hospital Uppinangady,8000,Uppinangady
+Liver Disease,Govt,Community Health Centre Mulki,37000,Mulki
+Typhoid,Private,AJ Hospital & Research Centre Bejai,8000,Mangaluru
+Fever,Govt,Government Hospital Mulki,2000,Mulki
+Liver Disease,Private,Bhagavathi Hospital Belthangady,66500,Belthangady
+Pregnancy,Govt,Government Dispensary Moodabidri,26000,Moodabidri
+Pregnancy,Private,Shri Dharmasthala Manjunatheshwara Hospital Dharmasthala,64000,Belthangady
+Pregnancy,Private,Jain Hospital Moodabidri,54500,Moodabidri
+Heart Disease,Private,Deenabandhu Hospital Karkala,163000,Karkala
+Kidney Stone,Private,Yenepoya Medical College Hospital Deralakatte,33000,Mangaluru
+Dengue,Govt,Government Ayurvedic Dispensary Puttur,7000,Puttur
+Hypertension,Govt,Rural Maternity & Child Welfare Centre Kaup,8000,Mangaluru
+Fever,Govt,Community Health Centre Dharmasthala,2500,Belthangady
+Liver Disease,Private,Janatha Hospital Sullia,72000,Sullia
+Surgery,Private,Srinivasa Hospital Mulki,66500,Mulki
+Pneumonia,Private,Alva's Health Centre Moodabidri,20500,Moodabidri
+Kidney Stone,Govt,Primary Health Centre Padubidri,21500,Karkala
+Pneumonia,Govt,Primary Health Centre Nanthoor,8000,Moodabidri
+Pregnancy,Govt,Government Hospital Venur,16000,Belthangady
+Appendicitis,Private,Yenepoya Medical College Hospital Deralakatte,48000,Mangaluru
+Diabetes,Private,Sharada Hospital Puttur,16000,Puttur
+Heart Disease,Govt,Primary Health Centre Padubidri,78500,Karkala
+Hypertension,Private,Shree Hospital Uppinangady,12000,Uppinangady
+Dengue,Govt,Government Hospital Uppinangady,8500,Uppinangady
+Surgery,Private,Canara Hospital Puttur,61500,Puttur
+Cancer,Private,Alva's Health Centre Moodabidri,171000,Moodabidri
+Hypertension,Private,Pooja Hospital Uppinangady,13500,Uppinangady
+Pneumonia,Private,Shri Dharmasthala Manjunatheshwara Hospital Dharmasthala,22500,Belthangady
+Liver Disease,Private,Srinivasa Hospital Sullia,60500,Sullia
+Pneumonia,Private,Srinivasa Hospital Moodabidri,18500,Moodabidri
+Heart Disease,Private,Prakash Hospital Bantwal,157000,Bantwal
+Hypertension,Private,District Hospital Bantwal Private Wing,18500,Bantwal
+Fracture,Govt,Government Hospital Mulki,16000,Mulki
+Appendicitis,Govt,Community Health Centre Uppinangady,26000,Uppinangady
+Kidney Stone,Govt,Urban Primary Health Centre Kavoor,17000,Mangaluru
+Fracture,Govt,Taluk Hospital Karkala,17500,Karkala
+Diabetes,Govt,Community Health Centre Karkala,6000,Karkala
+Asthma,Private,Sai Hospital Bantwal,13000,Bantwal
+Surgery,Govt,Primary Health Centre Vittal,36000,Puttur
+Pneumonia,Govt,Government Ayurvedic Dispensary Puttur,13000,Puttur
+Kidney Stone,Govt,Taluk Hospital Sullia,20000,Sullia
+Kidney Stone,Govt,Taluk Hospital Moodabidri,18500,Moodabidri
+Appendicitis,Govt,Taluk Hospital Belthangady,29000,Belthangady
+Appendicitis,Private,Shridhar Hospital Mulki,59000,Mulki
+Pneumonia,Govt,Government Hospital Uppinangady,11500,Uppinangady
+Typhoid,Govt,Government Hospital Uppinangady,5000,Sullia
+Fracture,Private,Vijaya Hospital Belthangady,33000,Belthangady
+Pneumonia,Govt,Taluk Hospital Moodabidri,8500,Moodabidri
+Dengue,Govt,Community Health Centre Moodabidri,4000,Moodabidri
+Fever,Private,Narayana Hospital Uppinangady,4500,Uppinangady
+Diabetes,Private,KVG Medical College Hospital Sullia,14500,Sullia
+Typhoid,Govt,Community Health Centre Vamanapadavu,4000,Bantwal
+Pregnancy,Private,Sudha Hospital Karkala,66500,Karkala
+Appendicitis,Private,Shree Hospital Uppinangady,58500,Uppinangady
+Dengue,Govt,Primary Health Centre Vittal,4000,Puttur
+Pneumonia,Private,Prashanth Hospital Puttur,17500,Puttur
+Kidney Stone,Govt,Primary Health Centre Padubidri,20500,Karkala
+Asthma,Private,City Medical Centre Moodabidri,14500,Moodabidri
+Heart Disease,Private,KVG Medical College Hospital Sullia,149000,Sullia
+Heart Disease,Govt,Taluk Hospital Sullia,79000,Sullia
+Asthma,Govt,Community Health Centre Moodabidri,8000,Moodabidri
+Fracture,Private,Shree Durgaparameshwari Hospital Puttur,36500,Puttur
+Pregnancy,Govt,Samudaya Arogya Kendra Bantwal,19500,Bantwal
+Pregnancy,Govt,Primary Health Centre Nanthoor,24000,Moodabidri
