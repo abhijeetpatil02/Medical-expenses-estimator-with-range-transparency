@@ -1,7 +1,7 @@
 # database
 from database import get_db_connection
 # this is adding some new requirment
-from flask import Flask, render_template, request, jsonify, send_from_directory, session
+from flask import Flask, render_template, request, jsonify, send_from_directory, session, redirect
 from flask_cors import CORS
 # apelling
 import difflib
@@ -155,6 +155,12 @@ def index_page():
     if 'user_email' in session:
         return render_template('index.html')
     return "<h1>Access Denied. Please <a href='/'>Login</a> first.</h1>"
+
+# Logout Route
+@app.route('/logout')
+def logout():
+    session.clear()
+    return redirect('/')
 
 # 4. API Endpoint for Signup
 @app.route('/api/signup', methods=['POST'])

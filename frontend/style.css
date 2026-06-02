@@ -1,70 +1,385 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f7f6;
-    color: #333;
+/* Import Outfit Font */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap');
+
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+}
+
+body {
+    background-color: #f3f6fd;
+    color: #1e293b;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 40px 20px;
+}
+
+.dashboard-container {
+    width: 100%;
+    max-width: 960px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    min-height: 100vh;
+    gap: 30px;
 }
 
-h1 {
-    color: #2c3e50;
+.top-nav {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: -10px;
+}
+
+.logout-btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 18px;
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    color: #64748b;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.02);
+}
+
+.logout-btn:hover {
+    color: #ef4444;
+    border-color: #fca5a5;
+    background: #fef2f2;
+    box-shadow: 0 8px 15px rgba(239, 68, 68, 0.05);
+}
+
+.logout-icon {
+    width: 18px;
+    height: 18px;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.logo-wrapper {
     margin-bottom: 20px;
 }
 
-form {
-    background: #ffffff;
-    padding: 30px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    width: 300px;
+.app-logo {
+    height: 90px;
+    width: auto;
+    border-radius: 16px;
+    object-fit: contain;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+    background-color: #fff;
+    padding: 6px;
 }
 
-label {
-    font-weight: bold;
-    color: #555;
+.header h1 {
+    font-size: 36px;
+    font-weight: 800;
+    color: #0f172a;
+    letter-spacing: -0.5px;
+    margin-bottom: 8px;
 }
 
-input[type="text"], select {
-    width: 100%;
-    padding: 10px;
-    margin-top: 5px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-    font-size: 14px;
-}
-
-button {
-    width: 100%;
-    background-color: #3498db;
-    color: white;
-    padding: 12px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
+.header .subtitle {
     font-size: 16px;
-    font-weight: bold;
-    transition: background-color 0.3s;
+    color: #64748b;
+    font-weight: 400;
 }
 
-button:hover {
-    background-color: #2980b9;
+/* Card layout for the estimator form */
+.card {
+    background: #ffffff;
+    border-radius: 24px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.04);
+    border: 1px solid #e2e8f0;
+    width: 100%;
+    max-width: 500px;
+    padding: 35px;
+    transition: transform 0.3s ease;
 }
 
-#result {
-    margin-top: 25px;
-    color: #27ae60;
-    background: #e8f8f5;
-    padding: 20px;
-    border-radius: 8px;
-    border-left: 5px solid #2ecc71;
+.input-group {
+    margin-bottom: 22px;
+}
+
+.input-group label {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    color: #334155;
+    margin-bottom: 8px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 14px 16px;
+    border: 1.5px solid #e2e8f0;
+    border-radius: 12px;
+    font-size: 15px;
+    color: #0f172a;
+    background: #f8fafc;
+    transition: all 0.3s ease;
+}
+
+.input-group input::placeholder {
+    color: #94a3b8;
+}
+
+.input-group input:focus {
+    outline: none;
+    border-color: #3b82f6;
+    background: #fff;
+    box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.1);
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 15px;
+    background: #3b82f6;
+    color: #fff;
+    border: none;
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 4px 12px rgba(59, 130, 246, 0.2);
+}
+
+.submit-btn:hover {
+    background: #2563eb;
+    box-shadow: 0 8px 20px rgba(59, 130, 246, 0.3);
+    transform: translateY(-2px);
+}
+
+.submit-btn:active {
+    transform: translateY(0);
+}
+
+.btn-icon {
+    width: 20px;
+    height: 20px;
+    transition: transform 0.3s ease;
+}
+
+.submit-btn:hover .btn-icon {
+    transform: translateX(4px);
+}
+
+/* Results Section styling */
+.results-wrapper {
     display: none;
-    width: 300px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 24px;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.city-info-banner {
+    grid-column: 1 / -1;
+    background: #eff6ff;
+    border: 1px solid #bfdbfe;
+    border-radius: 12px;
+    padding: 12px 20px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 15px;
+    color: #1e40af;
+    font-weight: 500;
+    margin-bottom: 4px;
+}
+
+.city-info-banner svg {
+    width: 20px;
+    height: 20px;
+    color: #3b82f6;
+}
+
+.hospital-card {
+    background: #ffffff;
+    border-radius: 24px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
+    padding: 30px;
+    border: 1.5px solid #e2e8f0;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+}
+
+.hospital-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+}
+
+.hospital-card.govt {
+    border-top: 6px solid #10b981;
+}
+
+.hospital-card.private {
+    border-top: 6px solid #6366f1;
+}
+
+.animate-card {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: cardFadeIn 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes cardFadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.badge {
+    padding: 6px 12px;
+    border-radius: 50px;
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.75px;
+    width: fit-content;
+}
+
+.govt .badge {
+    background-color: #ecfdf5;
+    color: #059669;
+}
+
+.private .badge {
+    background-color: #e0e7ff;
+    color: #4f46e5;
+}
+
+.hospital-name {
+    font-size: 22px;
+    font-weight: 700;
+    color: #0f172a;
+    line-height: 1.35;
+    margin-bottom: 20px;
+}
+
+.cost-section {
+    background: #f8fafc;
+    border-radius: 16px;
+    padding: 20px;
+    margin-bottom: 24px;
+    border: 1px solid #f1f5f9;
+}
+
+.cost-label {
+    font-size: 12px;
+    font-weight: 600;
+    color: #64748b;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 6px;
+}
+
+.cost-value-wrapper {
+    display: flex;
+    align-items: baseline;
+    gap: 4px;
+}
+
+.cost-currency {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.cost-value {
+    font-size: 34px;
+    font-weight: 800;
+    letter-spacing: -0.5px;
+}
+
+.govt .cost-currency, .govt .cost-value {
+    color: #10b981;
+}
+
+.private .cost-currency, .private .cost-value {
+    color: #6366f1;
+}
+
+.details-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: auto;
+}
+
+.detail-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    font-size: 14.5px;
+    color: #475569;
+    line-height: 1.5;
+}
+
+.detail-icon {
+    flex-shrink: 0;
+    width: 20px;
+    height: 20px;
+    color: #94a3b8;
+    margin-top: 1px;
+}
+
+/* Response message/error styling */
+.error-message {
+    background-color: #fef2f2;
+    border: 1.5px solid #fecaca;
+    color: #dc2626;
+    border-radius: 12px;
+    padding: 15px 20px;
+    font-size: 14.5px;
+    font-weight: 500;
+    width: 100%;
+    max-width: 500px;
+    display: none;
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* Responsive adjust */
+@media (max-width: 768px) {
+    .dashboard-container {
+        gap: 20px;
+    }
+    
+    .header h1 {
+        font-size: 28px;
+    }
+    
+    .results-wrapper {
+        grid-template-columns: 1fr;
+    }
+    
+    .card {
+        padding: 25px;
+    }
 }

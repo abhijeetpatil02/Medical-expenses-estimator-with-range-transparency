@@ -1,76 +1,189 @@
-
- <!-- this is after adding some new requirment -->
-  <!DOCTYPE html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>Hospital Predictor</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Cost Predictor - Dashboard</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <img src="logo.png" alt="Logo" srcset="" height="150px" width="300px" style="border-radius: 20px;">
-    <h1>Medical expenses estimator</h1>
+    <div class="dashboard-container">
+        <div class="top-nav">
+            <a href="/logout" class="logout-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" class="logout-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1" />
+                </svg>
+                <span>Logout</span>
+            </a>
+        </div>
 
-    <form id="predictForm">
-        <label>Disease:</label><br>
-        <input type="text" id="disease" required><br><br>
+        <header class="header">
+            <div class="logo-wrapper">
+                <img src="logo.png" alt="Logo" class="app-logo">
+            </div>
+            <h1>Medical Expenses Estimator</h1>
+            <p class="subtitle">Enter disease and city to compare Government vs. Private hospital estimates</p>
+        </header>
 
-        <label>City:</label><br>
-        <input type="text" id="city" required><br><br>
+        <div class="card search-card">
+            <form id="predictForm">
+                <div class="input-group">
+                    <label for="disease">Disease Name</label>
+                    <input type="text" id="disease" placeholder="e.g. Fever, Malaria, Heart Disease" required autocomplete="off">
+                </div>
 
-        <button type="submit">Estimate Expenses</button>
-    </form>
+                <div class="input-group">
+                    <label for="city">City Name</label>
+                    <input type="text" id="city" placeholder="e.g. Pune, Mumbai, Delhi" required autocomplete="off">
+                </div>
 
-    <h2 id="result"></h2>
+                <button type="submit" class="submit-btn">
+                    <span>Estimate & Compare</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="btn-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                    </svg>
+                </button>
+            </form>
+        </div>
+
+        <div id="errorMessage" class="error-message"></div>
+
+        <div id="resultsWrapper" class="results-wrapper"></div>
+    </div>
 
     <script>
         document.getElementById("predictForm").addEventListener("submit", async function(e) {
             e.preventDefault();
 
-            const disease = document.getElementById("disease").value;
-            const city = document.getElementById("city").value;
+            const disease = document.getElementById("disease").value.trim();
+            const city = document.getElementById("city").value.trim();
+            const resultsWrapper = document.getElementById("resultsWrapper");
+            const errorMessage = document.getElementById("errorMessage");
 
-            const response = await fetch("/predict", {
-                method: "POST",
-                headers: {
-                    "Content-Type": "application/json"
-                },
-                body: JSON.stringify({
-                    disease,
-                    city
-                })
-            });
+            try {
+                const response = await fetch("/predict", {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json"
+                    },
+                    body: JSON.stringify({ disease, city })
+                });
 
-            const data = await response.json();
+                const data = await response.json();
 
-            const resultDiv = document.getElementById("result");
-            resultDiv.style.display = "block";
-            
-            let resultHTML = `City: ${data.city}<br><br>`;
-            
-            if (data.predictions && data.predictions.govt) {
-                resultHTML += `
-                    <strong>Government Hospital</strong><br>
-                    Hospital Name: ${data.predictions.govt.hospital_name}<br>
-                    Hospital Type: ${data.predictions.govt.hospital_type}<br>
-                    Address: ${data.predictions.govt.address}<br>
-                    Contact: ${data.predictions.govt.contact}<br>
-                    Estimated Minimum Cost: ₹${data.predictions.govt.predicted_cost}<br><br>
+                if (!response.ok) {
+                    throw new Error(data.error || "An error occurred. Please verify inputs and try again.");
+                }
+
+                // Hide error message
+                errorMessage.style.display = "none";
+                resultsWrapper.style.display = "grid";
+
+                let htmlContent = `
+                    <div class="city-info-banner">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                        </svg>
+                        <span>Comparison for <strong>${data.disease}</strong> in <strong>${data.city}</strong></span>
+                    </div>
                 `;
+
+                if (data.predictions) {
+                    // Govt Hospital Card
+                    if (data.predictions.govt) {
+                        const govt = data.predictions.govt;
+                        htmlContent += `
+                            <div class="hospital-card govt animate-card">
+                                <div class="card-header">
+                                    <span class="badge">Government Hospital</span>
+                                </div>
+                                <h3 class="hospital-name">${govt.hospital_name}</h3>
+                                <div class="cost-section">
+                                    <div class="cost-label">Estimated Minimum Cost</div>
+                                    <div class="cost-value-wrapper">
+                                        <span class="cost-currency">₹</span>
+                                        <span class="cost-value">${Number(govt.predicted_cost).toLocaleString('en-IN')}</span>
+                                    </div>
+                                </div>
+                                <div class="details-list">
+                                    <div class="detail-item">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="detail-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+                                        </svg>
+                                        <div><strong>Type:</strong> ${govt.hospital_type}</div>
+                                    </div>
+                                    <div class="detail-item">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="detail-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                                        </svg>
+                                        <div><strong>Address:</strong> ${govt.address}</div>
+                                    </div>
+                                    <div class="detail-item">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="detail-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.94.725l.548 2.2a1 1 0 01-.321.988l-1.305.98a10.582 10.582 0 004.872 4.872l.98-1.305a1 1 0 01.988-.321l2.2.548a1 1 0 01.725.94V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                                        </svg>
+                                        <div><strong>Contact:</strong> ${govt.contact}</div>
+                                    </div>
+                                </div>
+                            </div>
+                        `;
+                    }
+
+                    // Private Hospital Card
+                    if (data.predictions.private) {
+                        const pvt = data.predictions.private;
+                        htmlContent += `
+                            <div class="hospital-card private animate-card" style="animation-delay: 0.1s;">
+                                <div class="card-header">
+                                    <span class="badge">Private Hospital</span>
+                                </div>
+                                <h3 class="hospital-name">${pvt.hospital_name}</h3>
+                                <div class="cost-section">
+                                    <div class="cost-label">Estimated Minimum Cost</div>
+                                    <div class="cost-value-wrapper">
+                                        <span class="cost-currency">₹</span>
+                                        <span class="cost-value">${Number(pvt.predicted_cost).toLocaleString('en-IN')}</span>
+                                    </div>
+                                </div>
+                                <div class="details-list">
+                                    <div class="detail-item">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="detail-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+                                        </svg>
+                                        <div><strong>Type:</strong> ${pvt.hospital_type}</div>
+                                    </div>
+                                    <div class="detail-item">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="detail-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                                        </svg>
+                                        <div><strong>Address:</strong> ${pvt.address}</div>
+                                    </div>
+                                    <div class="detail-item">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="detail-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.94.725l.548 2.2a1 1 0 01-.321.988l-1.305.98a10.582 10.582 0 004.872 4.872l.98-1.305a1 1 0 01.988-.321l2.2.548a1 1 0 01.725.94V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                                        </svg>
+                                        <div><strong>Contact:</strong> ${pvt.contact}</div>
+                                    </div>
+                                </div>
+                            </div>
+                        `;
+                    }
+                }
+
+                resultsWrapper.innerHTML = htmlContent;
+                resultsWrapper.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+
+            } catch (err) {
+                resultsWrapper.style.display = "none";
+                errorMessage.textContent = err.message;
+                errorMessage.style.display = "block";
+                errorMessage.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
             }
-            if (data.predictions && data.predictions.private) {
-                resultHTML += `
-                    <strong>Private Hospital</strong><br>
-                    Hospital Name: ${data.predictions.private.hospital_name}<br>
-                    Hospital Type: ${data.predictions.private.hospital_type}<br>
-                    Address: ${data.predictions.private.address}<br>
-                    Contact: ${data.predictions.private.contact}<br>
-                    Estimated Minimum Cost: ₹${data.predictions.private.predicted_cost}<br>
-                `;
-            }
-            
-            resultDiv.innerHTML = resultHTML;
         });
     </script>
-
 </body>
 </html>
