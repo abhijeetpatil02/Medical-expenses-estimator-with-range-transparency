@@ -1,826 +1,1251 @@
-Disease,Hospital_Type,Hospital_Name,Cost,City
-Appendicitis,Govt,Community Health Centre Sullia,20500,Sullia
-Cancer,Private,KVG Medical College Hospital Sullia,171500,Sullia
-Heart Disease,Private,Srinivasa Hospital Puttur,139000,Puttur
-Hypertension,Private,Jain Hospital Moodabidri,20000,Moodabidri
-Liver Disease,Private,Srinivasa Hospital Moodabidri,54500,Moodabidri
-Asthma,Private,Srinivasa Hospital Moodabidri,20000,Moodabidri
-Pneumonia,Govt,Government Hospital Uppinangady,13000,Uppinangady
-Kidney Stone,Govt,Samudaya Arogya Kendra Bantwal,20000,Bantwal
-Cancer,Govt,Primary Health Centre Kadaba,86500,Puttur
-Appendicitis,Private,Canara Hospital Puttur,50500,Puttur
-Diabetes,Govt,Primary Health Centre Padubidri,9500,Karkala
-Pregnancy,Govt,Primary Health Centre Padubidri,26500,Karkala
-Diabetes,Private,KS Hegde Medical Academy NITTE Deralakatte,12500,Mangaluru
-Pregnancy,Govt,Community Health Centre Vamanapadavu,21500,Bantwal
-Pneumonia,Govt,Primary Health Centre Nanthoor,8500,Moodabidri
-Diabetes,Govt,Primary Health Centre Sampaje,8000,Uppinangady
-Dengue,Private,Shri Dharmasthala Manjunatheshwara Hospital Dharmasthala,16000,Belthangady
-Dengue,Private,Jain Hospital Moodabidri,12500,Moodabidri
-Hypertension,Govt,Taluk Hospital Karkala,4500,Karkala
-Liver Disease,Private,Suraksha Hospital Mulki,74000,Mulki
-Appendicitis,Private,District Hospital Bantwal Private Wing,65500,Bantwal
-Heart Disease,Private,Sharada Hospital Puttur,141500,Puttur
-Appendicitis,Govt,Taluk Hospital Sullia,20500,Sullia
-Pregnancy,Private,Shri Dharmasthala Manjunatheshwara Hospital Dharmasthala,59500,Belthangady
-Diabetes,Govt,Primary Health Centre Padubidri,7000,Karkala
-Liver Disease,Govt,Primary Health Centre Nanthoor,24500,Moodabidri
-Dengue,Private,Shree Durgaparameshwari Hospital Puttur,10000,Puttur
-Pneumonia,Private,Srinivasa Hospital Puttur,24500,Puttur
-Fever,Private,Narayana Hospital Uppinangady,6000,Uppinangady
-Pregnancy,Govt,Taluk Hospital Karkala,20500,Karkala
-Liver Disease,Private,Janatha Hospital Sullia,65500,Sullia
-Heart Disease,Govt,Primary Health Centre Vittal,83000,Puttur
-Pregnancy,Private,Vivekananda Hospital Bantwal,60000,Bantwal
-Appendicitis,Private,Sanjeevini Hospital Sullia,62000,Sullia
-Liver Disease,Govt,ESIC Hospital Kadri,44000,Mangaluru
-Hypertension,Govt,Primary Health Centre Nanthoor,5500,Moodabidri
-Dengue,Govt,Government Ayurvedic Dispensary Puttur,6000,Puttur
-Cancer,Private,Vivekananda Hospital Bantwal,180000,Bantwal
-Fever,Private,Srinivasa Hospital Mulki,5000,Mulki
-Diabetes,Private,KVG Medical College Hospital Sullia,17500,Sullia
-Cancer,Govt,Government Hospital Mulki,99000,Mulki
-Hypertension,Govt,Primary Health Centre Vittal,8000,Puttur
-Asthma,Private,Alva's Health Centre Moodabidri,19500,Moodabidri
-Asthma,Private,Jain Hospital Moodabidri,17500,Moodabidri
-Pregnancy,Private,Sudha Hospital Karkala,59500,Karkala
-Typhoid,Govt,Government Hospital Uppinangady,3000,Sullia
-Pregnancy,Govt,Primary Health Centre Vittal Bantwal,16500,Bantwal
-Pregnancy,Private,Narayana Hrudayalaya Extension Karkala,54000,Karkala
-Kidney Stone,Private,SDM Medical College Hospital Dharwad Extension Ujire,43500,Belthangady
-Dengue,Private,Shree Kshethra Dharmasthala Rural Development Project Hospital,12500,Belthangady
-Fever,Govt,Government Hospital Mulki,1500,Mulki
-Kidney Stone,Private,KVG Medical College Hospital Sullia,42000,Sullia
-Fracture,Govt,Primary Health Centre Kadaba,16000,Puttur
-Asthma,Private,Sanjeevini Hospital Sullia,21500,Sullia
-Diabetes,Govt,Primary Health Centre Kadaba,7000,Puttur
-Cancer,Govt,General Hospital Puttur,98500,Puttur
-Dengue,Private,KVG Medical College Hospital Sullia,13500,Sullia
-Asthma,Private,City Medical Centre Moodabidri,19000,Moodabidri
-Kidney Stone,Private,District Hospital Bantwal Private Wing,41500,Bantwal
-Asthma,Govt,Primary Health Centre Ujire,8000,Belthangady
-Hypertension,Govt,Community Health Centre Karkala,6500,Karkala
-Diabetes,Govt,Primary Health Centre Padubidri,8000,Karkala
-Asthma,Private,Sai Hospital Bantwal,18000,Bantwal
-Pregnancy,Private,SDM Medical College Hospital Dharwad Extension Ujire,55500,Belthangady
-Fever,Private,Srinivasa Hospital Mulki,4500,Mulki
-Hypertension,Private,Prakash Hospital Bantwal,11000,Bantwal
-Hypertension,Govt,Community Health Centre Uppinangady,7500,Uppinangady
-Pregnancy,Private,Mahatma Gandhi Memorial Hospital Belthangady,67000,Belthangady
-Surgery,Private,Canara Hospital Puttur,78000,Puttur
-Pneumonia,Private,Srinivasa Hospital Puttur,24500,Puttur
-Liver Disease,Govt,Primary Health Centre Sampaje,43500,Uppinangady
-Hypertension,Govt,Primary Health Centre Vittal Bantwal,4000,Bantwal
-Asthma,Govt,Community Health Centre Moodabidri,10500,Moodabidri
-Fever,Private,Netravathi Hospital Uppinangady,6000,Uppinangady
-Dengue,Govt,Government Ayurvedic Dispensary Puttur,8000,Puttur
-Hypertension,Private,Netravathi Hospital Uppinangady,10000,Uppinangady
-Pneumonia,Private,Narayana Hospital Uppinangady,16000,Uppinangady
-Heart Disease,Govt,Community Health Centre Karkala,80000,Karkala
-Heart Disease,Private,Janatha Hospital Sullia,138500,Sullia
-Pneumonia,Govt,Government Hospital Venur,10500,Belthangady
-Fracture,Private,Pooja Hospital Uppinangady,32000,Uppinangady
-Kidney Stone,Govt,Community Health Centre Moodabidri,23500,Moodabidri
-Cancer,Private,Srinivasa Hospital Moodabidri,193000,Moodabidri
-Surgery,Private,Samanvaya Hospital Bantwal,83500,Bantwal
-Diabetes,Govt,Primary Health Centre Kadaba,8500,Puttur
-Fracture,Private,Narayana Hospital Uppinangady,22500,Uppinangady
-Pneumonia,Private,Canara Hospital Puttur,16500,Puttur
-Liver Disease,Private,Sri Bhuvanendra Hospital Karkala,64000,Karkala
-Appendicitis,Private,Sanjeevini Hospital Sullia,66000,Sullia
-Cancer,Private,Sai Hospital Bantwal,182000,Bantwal
-Dengue,Private,Sri Durgaparameshwari Hospital Moodabidri,14000,Moodabidri
-Heart Disease,Govt,Community Health Centre Vamanapadavu,95000,Bantwal
-Appendicitis,Govt,Taluk Hospital Sullia,19000,Sullia
-Fracture,Private,Sai Hospital Bantwal,27500,Bantwal
-Typhoid,Private,Sahyadri Hospital Sullia,13500,Sullia
-Fracture,Govt,Primary Health Centre Kadaba,13000,Puttur
-Heart Disease,Govt,Primary Health Centre Bellare,90000,Sullia
-Asthma,Private,Prakash Hospital Bantwal,17500,Bantwal
-Surgery,Govt,Community Health Centre Karkala,41000,Karkala
-Typhoid,Govt,Government Hospital Moodbidri Bantwal Taluk,2500,Bantwal
-Pregnancy,Private,Srinivasa Hospital Mulki,61500,Mulki
-Fracture,Private,Netravathi Hospital Uppinangady,34500,Uppinangady
-Surgery,Private,KS Hegde Medical Academy NITTE Deralakatte,75500,Mangaluru
-Dengue,Private,Netravathi Hospital Uppinangady,17000,Uppinangady
-Liver Disease,Govt,Urban Primary Health Centre Bunder,23500,Mangaluru
-Cancer,Private,Sri Durgaparameshwari Hospital Moodabidri,182500,Moodabidri
-Pregnancy,Govt,Government Hospital Moodbidri Bantwal Taluk,20500,Bantwal
-Pneumonia,Govt,Taluk Hospital Moodabidri,10500,Moodabidri
-Dengue,Govt,Government Dispensary Moodabidri,4500,Moodabidri
-Heart Disease,Govt,Government Ayurvedic Dispensary Puttur,96000,Puttur
-Appendicitis,Govt,Samudaya Arogya Kendra Bantwal,31000,Bantwal
-Dengue,Govt,Government Ayurvedic Hospital Mangaluru,8000,Mangaluru
-Diabetes,Govt,Taluk Hospital Karkala,8000,Karkala
-Fracture,Govt,Community Health Centre Uppinangady,14000,Uppinangady
-Typhoid,Govt,Government Hospital Uppinangady,5500,Sullia
-Appendicitis,Private,Sanjeevini Hospital Sullia,65000,Sullia
-Asthma,Private,Jain Hospital Moodabidri,18500,Moodabidri
-Diabetes,Govt,Government Hospital Uppinangady,8000,Sullia
-Hypertension,Private,Lourdes Hospital Mangaluru,12500,Mangaluru
-Fever,Govt,Government Hospital Venur,1500,Belthangady
-Liver Disease,Private,Netravathi Hospital Uppinangady,75000,Uppinangady
-Pregnancy,Govt,Community Health Centre Dharmasthala,18500,Belthangady
-Asthma,Private,Sri Durgaparameshwari Hospital Moodabidri,15000,Moodabidri
-Appendicitis,Private,Shri Dharmasthala Manjunatheshwara Hospital Dharmasthala,60500,Belthangady
-Surgery,Govt,Community Health Centre Vamanapadavu,51000,Bantwal
-Pneumonia,Govt,Primary Health Centre Vittal,11000,Puttur
-Appendicitis,Govt,Urban Primary Health Centre Bunder,20000,Mangaluru
-Fever,Govt,Government Hospital Uppinangady,1500,Uppinangady
-Fracture,Private,Shridhar Hospital Mulki,24000,Mulki
-Fever,Private,Sri Bhuvanendra Hospital Karkala,5000,Karkala
-Heart Disease,Govt,Government Lady Goschen Hospital Maidan Road,77500,Mangaluru
-Cancer,Govt,Primary Health Centre Nanthoor,83500,Moodabidri
-Typhoid,Govt,Taluk Hospital Karkala,5000,Karkala
-Fever,Private,Kudige Memorial Hospital Mangaluru,5500,Mangaluru
-Surgery,Govt,Government Hospital Mulki,51000,Mulki
-Asthma,Private,City Medical Centre Moodabidri,19500,Moodabidri
-Fracture,Govt,Community Health Centre Karkala,11000,Karkala
-Asthma,Govt,Community Health Centre Sullia,10500,Sullia
-Dengue,Govt,Taluk Hospital Moodabidri,8500,Moodabidri
-Appendicitis,Govt,Community Health Centre Karkala,24000,Karkala
-Liver Disease,Private,Alva's Health Centre Moodabidri,67500,Moodabidri
-Pneumonia,Govt,Government Dispensary Moodabidri,7500,Moodabidri
-Surgery,Govt,Urban Primary Health Centre Bunder,42500,Mangaluru
-Heart Disease,Govt,Wenlock District Hospital Hampankatta,86500,Mangaluru
-Diabetes,Private,Netravathi Hospital Uppinangady,17500,Uppinangady
-Fracture,Govt,Community Health Centre Karkala,12000,Karkala
-Asthma,Govt,Primary Health Centre Nanthoor,7500,Moodabidri
-Liver Disease,Govt,Wenlock District Hospital Hampankatta,20500,Mangaluru
-Pregnancy,Private,Shree Kshethra Dharmasthala Rural Development Project Hospital,62000,Belthangady
-Diabetes,Private,Netravathi Hospital Uppinangady,17000,Uppinangady
-Dengue,Private,Sanjeevini Hospital Sullia,13500,Sullia
-Cancer,Govt,Community Health Centre Vamanapadavu,99500,Bantwal
-Kidney Stone,Private,Vijaya Hospital Belthangady,42000,Belthangady
-Fever,Private,Unity Hospital Mangaluru,4500,Mangaluru
-Hypertension,Private,Jain Hospital Moodabidri,18500,Moodabidri
-Hypertension,Private,Srinivasa Hospital Moodabidri,15500,Moodabidri
-Kidney Stone,Private,Srinivasa Hospital Moodabidri,39500,Moodabidri
-Dengue,Govt,Community Health Centre Uppinangady,4500,Uppinangady
-Asthma,Govt,Primary Health Centre Nanthoor,10500,Moodabidri
-Hypertension,Govt,Government Hospital Venur,4000,Belthangady
-Cancer,Private,Dr BR Ambedkar Medical Institute Bantwal,153000,Bantwal
-Dengue,Private,Canara Hospital Puttur,16500,Puttur
-Liver Disease,Private,Vinayaka Hospital Sullia,63500,Sullia
-Asthma,Private,KVG Medical College Hospital Sullia,12500,Sullia
-Typhoid,Govt,Community Health Centre Dharmasthala,4500,Belthangady
-Asthma,Govt,Community Health Centre Moodabidri,6500,Moodabidri
-Diabetes,Govt,Community Health Centre Puttur,6500,Puttur
-Asthma,Govt,Government Hospital Uppinangady,9500,Sullia
-Typhoid,Govt,Government Hospital Uppinangady,2500,Sullia
-Appendicitis,Private,Deenabandhu Hospital Karkala,54000,Karkala
-Dengue,Govt,Community Health Centre Dharmasthala,6000,Belthangady
-Dengue,Govt,Primary Health Centre Ujire,5000,Belthangady
-Pregnancy,Private,Dr BR Ambedkar Medical Institute Bantwal,62500,Bantwal
-Surgery,Private,Prashanth Hospital Puttur,70000,Puttur
-Fever,Private,Suraksha Hospital Mulki,4500,Mulki
-Asthma,Govt,Taluk Hospital Moodabidri,10500,Moodabidri
-Kidney Stone,Private,Kudige Memorial Hospital Mangaluru,33000,Mangaluru
-Diabetes,Private,Sharada Hospital Puttur,14000,Puttur
-Appendicitis,Private,Bhagavathi Hospital Belthangady,64500,Belthangady
-Diabetes,Govt,Community Health Centre Karkala,7000,Karkala
-Pregnancy,Private,Samanvaya Hospital Bantwal,66500,Bantwal
-Kidney Stone,Govt,Taluk Hospital Karkala,16500,Karkala
-Pneumonia,Private,Netravathi Hospital Uppinangady,18500,Uppinangady
-Typhoid,Private,Yenepoya Specialty Hospital Kodiyalbail,12500,Mangaluru
-Surgery,Private,Shridhar Hospital Mulki,86000,Mulki
-Diabetes,Govt,Wenlock District Hospital Hampankatta,8000,Mangaluru
-Pregnancy,Govt,Primary Health Centre Ujire,26000,Belthangady
-Surgery,Private,Om Hospital Balmatta,63500,Mangaluru
-Hypertension,Private,Sai Hospital Bantwal,18000,Bantwal
-Pregnancy,Govt,Samudaya Arogya Kendra Bantwal,24000,Bantwal
-Typhoid,Private,Sri Durgaparameshwari Hospital Moodabidri,11500,Moodabidri
-Typhoid,Private,Mahatma Gandhi Memorial Hospital Belthangady,10000,Belthangady
-Typhoid,Govt,Community Health Centre Karkala,4500,Karkala
-Cancer,Govt,Primary Health Centre Guthigar,122500,Sullia
-Fever,Private,Sudha Hospital Karkala,4000,Karkala
-Pneumonia,Govt,Taluk Hospital Belthangady,11500,Belthangady
-Surgery,Private,Shree Hospital Uppinangady,63000,Uppinangady
-Fracture,Govt,Primary Health Centre Padubidri,12000,Karkala
-Typhoid,Govt,Primary Health Centre Ujire,6000,Belthangady
-Kidney Stone,Govt,Primary Health Centre Ujire,22000,Belthangady
-Fracture,Govt,Community Health Centre Uppinangady,17000,Uppinangady
-Fever,Private,Pooja Hospital Uppinangady,5500,Uppinangady
-Fever,Private,Narayana Hospital Uppinangady,3500,Uppinangady
-Kidney Stone,Private,Narayana Hrudayalaya Extension Karkala,36500,Karkala
-Pregnancy,Private,Shri Dharmasthala Manjunatheshwara Hospital Dharmasthala,54500,Belthangady
-Hypertension,Govt,Taluk Hospital Moodabidri,6000,Moodabidri
-Diabetes,Govt,Taluk Hospital Puttur,9000,Puttur
-Fever,Govt,Urban Primary Health Centre Surathkal,2000,Mangaluru
-Liver Disease,Govt,Primary Health Centre Vittal,30500,Puttur
-Fever,Govt,Government Hospital Uppinangady,1500,Uppinangady
-Liver Disease,Private,Sri Durgaparameshwari Hospital Moodabidri,80500,Moodabidri
-Cancer,Private,Mahatma Gandhi Memorial Hospital Belthangady,171000,Belthangady
-Fever,Govt,Taluk Hospital Belthangady,1500,Belthangady
-Fever,Private,Indiana Hospital & Heart Institute Kankanady,4000,Mangaluru
-Appendicitis,Govt,Primary Health Centre Vittal Bantwal,16000,Bantwal
-Fracture,Private,Shridhar Hospital Mulki,33000,Mulki
-Pregnancy,Private,Jain Hospital Moodabidri,63000,Moodabidri
-Liver Disease,Private,Narayana Hrudayalaya Extension Karkala,54000,Karkala
-Diabetes,Govt,Taluk Hospital Puttur,8000,Puttur
-Fracture,Private,Deenabandhu Hospital Karkala,33500,Karkala
-Liver Disease,Private,Suraksha Hospital Mulki,75500,Mulki
-Appendicitis,Private,Sri Bhuvanendra Hospital Karkala,52000,Karkala
-Fever,Govt,Primary Health Centre Sampaje,1500,Uppinangady
-Pneumonia,Private,Shree Kshethra Dharmasthala Rural Development Project Hospital,22000,Belthangady
-Cancer,Govt,Community Health Centre Sullia,95500,Sullia
-Surgery,Private,AJ Hospital Kadri Hills,83500,Mangaluru
-Kidney Stone,Private,Netravathi Hospital Uppinangady,37500,Uppinangady
-Dengue,Govt,Primary Health Centre Nanthoor,5500,Moodabidri
-Diabetes,Private,Sharada Hospital Puttur,15000,Puttur
-Kidney Stone,Private,KVG Medical College Hospital Sullia,38000,Sullia
-Dengue,Private,Sunrise Hospital Mangaluru,12000,Mangaluru
-Hypertension,Private,Shree Durgaparameshwari Hospital Puttur,13000,Puttur
-Pneumonia,Private,Sri Durgaparameshwari Hospital Moodabidri,28000,Moodabidri
-Typhoid,Govt,Primary Health Centre Naravi,5000,Belthangady
-Pregnancy,Govt,Taluk Hospital Moodabidri,21000,Moodabidri
-Fracture,Private,Prakash Hospital Bantwal,32000,Bantwal
-Heart Disease,Private,Indiana Hospital & Heart Institute Kankanady,156000,Mangaluru
-Heart Disease,Govt,Wenlock District Hospital Hampankatta,88000,Mangaluru
-Kidney Stone,Govt,Government Hospital Moodbidri Bantwal Taluk,16500,Bantwal
-Heart Disease,Govt,Taluk Hospital Sullia,90000,Sullia
-Surgery,Govt,Wenlock District Hospital Hampankatta,54000,Mangaluru
-Dengue,Govt,Government Dispensary Moodabidri,7000,Moodabidri
-Diabetes,Private,Deenabandhu Hospital Karkala,14000,Karkala
-Cancer,Private,Vinayaka Hospital Sullia,175000,Sullia
-Fever,Private,Sri Bhuvanendra Hospital Karkala,5500,Karkala
-Typhoid,Govt,Community Health Centre Moodabidri,3500,Moodabidri
-Dengue,Govt,Community Health Centre Sullia,6000,Sullia
-Asthma,Private,Sudha Hospital Karkala,20500,Karkala
-Typhoid,Private,Mahatma Gandhi Memorial Hospital Belthangady,8000,Belthangady
-Fracture,Private,Pooja Hospital Uppinangady,22500,Uppinangady
-Heart Disease,Govt,Primary Health Centre Kadaba,89500,Puttur
-Dengue,Private,Sri Durgaparameshwari Hospital Moodabidri,16000,Moodabidri
-Liver Disease,Private,Dhanvanthari Hospital Puttur,63500,Puttur
-Dengue,Govt,Primary Health Centre Kadaba,4500,Puttur
-Heart Disease,Private,Sri Bhuvanendra Hospital Karkala,143500,Karkala
-Fracture,Govt,Community Health Centre Uppinangady,15500,Uppinangady
-Surgery,Private,Canara Hospital Puttur,63500,Puttur
-Surgery,Private,Om Hospital Balmatta,78000,Mangaluru
-Pneumonia,Govt,Taluk Hospital Moodabidri,11000,Moodabidri
-Pregnancy,Private,Samanvaya Hospital Bantwal,54500,Bantwal
-Pregnancy,Govt,Primary Health Centre Paladka,20000,Mulki
-Kidney Stone,Private,Sanjeevini Hospital Sullia,35000,Sullia
-Dengue,Private,City Medical Centre Moodabidri,17000,Moodabidri
-Fever,Govt,Government Hospital Mulki,1500,Mulki
-Hypertension,Private,Jain Hospital Moodabidri,11500,Moodabidri
-Surgery,Private,Netravathi Hospital Uppinangady,83000,Uppinangady
-Fever,Private,Narayana Hospital Uppinangady,5000,Uppinangady
-Kidney Stone,Govt,Primary Health Centre Bellare,17500,Sullia
-Surgery,Govt,Primary Health Centre Kadaba,57500,Puttur
-Kidney Stone,Private,Pooja Hospital Uppinangady,42500,Uppinangady
-Hypertension,Govt,Primary Health Centre Padubidri,6000,Karkala
-Surgery,Govt,Community Health Centre Uppinangady,50000,Uppinangady
-Pneumonia,Private,Alva's Health Centre Moodabidri,19000,Moodabidri
-Fever,Govt,Government Ayurvedic Hospital Mangaluru,2000,Mangaluru
-Pregnancy,Govt,Community Health Centre Karkala,28000,Karkala
-Diabetes,Private,Pragathi Hospital Puttur,16000,Puttur
-Appendicitis,Govt,Primary Health Centre Naravi,18500,Belthangady
-Fever,Govt,Primary Health Centre Sampaje,1500,Uppinangady
-Fracture,Private,Narayana Hrudayalaya Extension Karkala,29000,Karkala
-Fracture,Govt,Primary Health Centre Naravi,10500,Belthangady
-Pneumonia,Private,Sri Durgaparameshwari Hospital Moodabidri,25500,Moodabidri
-Hypertension,Private,Narayana Hospital Uppinangady,18500,Uppinangady
-Liver Disease,Private,Vijaya Hospital Belthangady,78000,Belthangady
-Heart Disease,Private,Sudha Hospital Karkala,139500,Karkala
-Cancer,Govt,Primary Health Centre Bellare,95000,Sullia
-Heart Disease,Private,Dhanvanthari Hospital Puttur,168500,Puttur
-Cancer,Private,Canara Hospital Puttur,205000,Puttur
-Pneumonia,Govt,Urban Primary Health Centre Kavoor,8500,Mangaluru
-Cancer,Govt,Taluk Hospital Moodabidri,122500,Moodabidri
-Kidney Stone,Govt,Community Health Centre Moodabidri,22000,Moodabidri
-Heart Disease,Private,Justice K S Hegde Charitable Hospital Deralakatte,144500,Mangaluru
-Typhoid,Private,Sai Hospital Bantwal,9500,Bantwal
-Diabetes,Govt,Primary Health Centre Bellare,6500,Sullia
-Cancer,Private,Samanvaya Hospital Bantwal,200500,Bantwal
-Surgery,Govt,Taluk Hospital Karkala,44500,Karkala
-Typhoid,Govt,Primary Health Centre Padubidri,5000,Karkala
-Dengue,Private,Netravathi Hospital Uppinangady,13500,Uppinangady
-Surgery,Private,Shree Durgaparameshwari Hospital Puttur,88000,Puttur
-Pregnancy,Govt,Primary Health Centre Nanthoor,25000,Moodabidri
-Asthma,Govt,Community Health Centre Vamanapadavu,10000,Bantwal
-Fracture,Private,Mahatma Gandhi Memorial Hospital Belthangady,32000,Belthangady
-Hypertension,Private,Pooja Hospital Uppinangady,14500,Uppinangady
-Typhoid,Private,Sanjeevini Hospital Sullia,13500,Sullia
-Pregnancy,Govt,Taluk Hospital Karkala,17500,Karkala
-Diabetes,Private,Sudha Hospital Karkala,13500,Karkala
-Dengue,Govt,Urban Primary Health Centre Kulur,7000,Mangaluru
-Appendicitis,Govt,Government Ayurvedic Dispensary Puttur,29000,Puttur
-Surgery,Govt,Government Hospital Uppinangady,45000,Uppinangady
-Cancer,Govt,Community Health Centre Vamanapadavu,84500,Bantwal
-Typhoid,Private,Vivekananda Hospital Bantwal,12500,Bantwal
-Pneumonia,Govt,Community Health Centre Uppinangady,7500,Uppinangady
-Asthma,Govt,Primary Health Centre Nanthoor,7500,Moodabidri
-Kidney Stone,Govt,Primary Health Centre Bellare,23500,Sullia
-Pneumonia,Govt,Primary Health Centre Kadaba,9500,Puttur
-Cancer,Private,KVG Medical College Hospital Sullia,158500,Sullia
-Asthma,Govt,Community Health Centre Moodabidri,8500,Moodabidri
-Pregnancy,Govt,Community Health Centre Vamanapadavu,26000,Bantwal
-Kidney Stone,Private,Deenabandhu Hospital Karkala,38000,Karkala
-Typhoid,Private,Sanjeevini Hospital Sullia,7500,Sullia
-Cancer,Private,Dhanvanthari Hospital Puttur,156500,Puttur
-Fever,Private,Shridhar Hospital Mulki,5500,Mulki
-Hypertension,Private,Shree Kshethra Dharmasthala Rural Development Project Hospital,13000,Belthangady
-Diabetes,Private,Deenabandhu Hospital Karkala,17500,Karkala
-Kidney Stone,Private,City Medical Centre Moodabidri,41000,Moodabidri
-Pneumonia,Private,City Medical Centre Moodabidri,26000,Moodabidri
-Pregnancy,Govt,Community Health Centre Dharmasthala,17500,Belthangady
-Dengue,Govt,Primary Health Centre Nanthoor,5500,Moodabidri
-Kidney Stone,Govt,Community Health Centre Uppinangady,17500,Uppinangady
-Asthma,Private,Sri Bhuvanendra Hospital Karkala,17000,Karkala
-Hypertension,Govt,Community Health Centre Moodabidri,4500,Moodabidri
-Fever,Govt,Community Health Centre Uppinangady,2000,Uppinangady
-Heart Disease,Private,SDM Medical College Hospital Dharwad Extension Ujire,151500,Belthangady
-Typhoid,Private,Sri Durgaparameshwari Hospital Moodabidri,13000,Moodabidri
-Pregnancy,Govt,Community Health Centre Moodabidri,20500,Moodabidri
-Diabetes,Private,Sanjeevini Hospital Sullia,13500,Sullia
-Liver Disease,Private,Sahyadri Hospital Sullia,87500,Sullia
-Pneumonia,Private,Bhagavathi Hospital Belthangady,23000,Belthangady
-Asthma,Govt,Taluk Hospital Karkala,7500,Karkala
-Heart Disease,Govt,Community Health Centre Vamanapadavu,86000,Bantwal
-Diabetes,Govt,Community Health Centre Karkala,5500,Karkala
-Liver Disease,Govt,General Hospital Puttur,22000,Puttur
-Appendicitis,Govt,Primary Health Centre Ullal,27500,Mangaluru
-Liver Disease,Govt,Government Ayurvedic Dispensary Puttur,36000,Puttur
-Typhoid,Private,Mahatma Gandhi Memorial Hospital Belthangady,12000,Belthangady
-Pneumonia,Govt,Urban Primary Health Centre Kulur,7500,Mangaluru
-Hypertension,Private,Shree Hospital Uppinangady,20000,Uppinangady
-Dengue,Private,SDM Medical College Hospital Dharwad Extension Ujire,12000,Belthangady
-Heart Disease,Govt,Community Health Centre Dharmasthala,92500,Belthangady
-Appendicitis,Govt,Primary Health Centre Vittal Bantwal,33000,Bantwal
-Cancer,Govt,Taluk Hospital Moodabidri,89500,Moodabidri
-Diabetes,Govt,Government Hospital Uppinangady,7500,Uppinangady
-Diabetes,Private,Yenepoya Medical College Hospital Deralakatte,16500,Mangaluru
-Diabetes,Private,Deenabandhu Hospital Karkala,17500,Karkala
-Typhoid,Govt,Government Dispensary Moodabidri,5500,Moodabidri
-Surgery,Govt,Primary Health Centre Padubidri,54000,Karkala
-Fracture,Private,Narayana Hrudayalaya Extension Karkala,35000,Karkala
-Cancer,Govt,Government Dispensary Moodabidri,101000,Moodabidri
-Diabetes,Govt,Primary Health Centre Kadaba,8000,Puttur
-Heart Disease,Govt,Taluk Hospital Belthangady,90500,Belthangady
-Liver Disease,Private,Narayana Hrudayalaya Extension Karkala,57000,Karkala
-Pneumonia,Private,Yenepoya Medical College Hospital Deralakatte,18000,Mangaluru
-Liver Disease,Govt,Government Hospital Uppinangady,26000,Sullia
-Fracture,Private,Shree Hospital Uppinangady,30000,Uppinangady
-Cancer,Govt,Community Health Centre Moodabidri,107000,Moodabidri
-Pneumonia,Private,Vijaya Hospital Belthangady,29500,Belthangady
-Pneumonia,Private,Canara Hospital Puttur,20500,Puttur
-Surgery,Private,Deenabandhu Hospital Karkala,72000,Karkala
-Kidney Stone,Private,KVG Medical College Hospital Sullia,41500,Sullia
-Pneumonia,Private,City Medical Centre Moodabidri,19000,Moodabidri
-Appendicitis,Govt,Primary Health Centre Guthigar,18500,Sullia
-Fever,Private,Srinivasa Hospital Mulki,4000,Mulki
-Typhoid,Govt,Samudaya Arogya Kendra Bantwal,3000,Bantwal
-Fracture,Private,Sudha Hospital Karkala,33500,Karkala
-Appendicitis,Govt,Government Hospital Mulki,25500,Mulki
-Hypertension,Private,Narayana Hrudayalaya Extension Karkala,18000,Karkala
-Appendicitis,Private,KVG Medical College & Hospital Sullia Road Puttur,53000,Puttur
-Fracture,Private,Sri Bhuvanendra Hospital Karkala,23000,Karkala
-Pregnancy,Private,Narayana Hrudayalaya Extension Karkala,61500,Karkala
-Typhoid,Govt,Taluk General Hospital Mangaluru,4000,Mangaluru
-Dengue,Private,Sharada Hospital Puttur,16500,Puttur
-Heart Disease,Govt,Community Health Centre Puttur,89000,Puttur
-Liver Disease,Private,Pooja Hospital Uppinangady,60500,Uppinangady
-Kidney Stone,Govt,Community Health Centre Uppinangady,18500,Uppinangady
-Kidney Stone,Private,Vijaya Hospital Belthangady,37000,Belthangady
-Hypertension,Govt,Primary Health Centre Vittal,6500,Puttur
-Heart Disease,Govt,Government Hospital Uppinangady,75000,Sullia
-Asthma,Govt,Community Health Centre Moodabidri,9500,Moodabidri
-Dengue,Govt,Primary Health Centre Sampaje,8000,Uppinangady
-Cancer,Private,Suraksha Hospital Mulki,200000,Mulki
-Appendicitis,Govt,Primary Health Centre Sampaje,27000,Uppinangady
-Appendicitis,Private,Shridhar Hospital Mulki,56000,Mulki
-Liver Disease,Govt,Primary Health Centre Ujire,43000,Belthangady
-Liver Disease,Private,Prashanth Hospital Puttur,66500,Puttur
-Appendicitis,Private,AJ Hospital & Research Centre Bejai,61500,Mangaluru
-Kidney Stone,Govt,Primary Health Centre Bellare,21000,Sullia
-Heart Disease,Govt,Government Ayurvedic Dispensary Puttur,85500,Puttur
-Surgery,Private,Pooja Hospital Uppinangady,83000,Uppinangady
-Kidney Stone,Private,Jain Hospital Moodabidri,37000,Moodabidri
-Asthma,Private,Shree Kshethra Dharmasthala Rural Development Project Hospital,14000,Belthangady
-Hypertension,Private,Deenabandhu Hospital Karkala,14500,Karkala
-Dengue,Govt,Government Hospital Venur,6000,Belthangady
-Fever,Govt,Community Health Centre Mulki,2500,Mulki
-Typhoid,Private,Deenabandhu Hospital Karkala,10500,Karkala
-Appendicitis,Private,AJ Hospital & Research Centre Bejai,66000,Mangaluru
-Appendicitis,Private,KVG Medical College Hospital Sullia,47000,Sullia
-Cancer,Govt,Taluk Hospital BC Road Bantwal,120500,Bantwal
-Pregnancy,Govt,Community Health Centre Mulki,17500,Mulki
-Fever,Govt,Community Health Centre Mulki,2000,Mulki
-Dengue,Private,Srinivasa Hospital Sullia,15000,Sullia
-Fracture,Govt,Taluk Hospital BC Road Bantwal,13000,Bantwal
-Dengue,Private,Narayana Hospital Uppinangady,10000,Uppinangady
-Hypertension,Govt,Samudaya Arogya Kendra Bantwal,5000,Bantwal
-Appendicitis,Private,Narayana Hospital Uppinangady,52500,Uppinangady
-Surgery,Private,Shridhar Hospital Mulki,66000,Mulki
-Liver Disease,Govt,Primary Health Centre Nanthoor,44500,Moodabidri
-Heart Disease,Private,Sudha Hospital Karkala,164000,Karkala
-Fever,Private,Vijaya Hospital Belthangady,5500,Belthangady
-Appendicitis,Govt,Primary Health Centre Paladka,28000,Mulki
-Kidney Stone,Govt,Taluk Hospital Sullia,21500,Sullia
-Dengue,Private,KMC Hospital Jyothi Circle,15000,Mangaluru
-Liver Disease,Private,Yenepoya Medical College Hospital Deralakatte,61500,Mangaluru
-Heart Disease,Private,SDM Medical College Hospital Dharwad Extension Ujire,146500,Belthangady
-Pneumonia,Private,KVG Medical College & Hospital Sullia Road Puttur,15500,Puttur
-Typhoid,Govt,Primary Health Centre Ujire,3500,Belthangady
-Pregnancy,Private,Prakash Hospital Bantwal,51500,Bantwal
-Typhoid,Private,Shree Kshethra Dharmasthala Rural Development Project Hospital,12500,Belthangady
-Cancer,Govt,Samudaya Arogya Kendra Bantwal,105000,Bantwal
-Asthma,Govt,Primary Health Centre Ujire,6500,Belthangady
-Kidney Stone,Govt,Community Health Centre Uppinangady,19500,Uppinangady
-Asthma,Private,Vinayaka Hospital Sullia,18000,Sullia
-Heart Disease,Private,Janatha Hospital Sullia,171000,Sullia
-Fever,Private,Shree Hospital Uppinangady,5500,Uppinangady
-Surgery,Govt,Government Hospital Mulki,57500,Mulki
-Cancer,Govt,Primary Health Centre Ujire,107000,Belthangady
-Surgery,Private,Om Hospital Balmatta,81000,Mangaluru
-Typhoid,Private,Janatha Hospital Sullia,12500,Sullia
-Heart Disease,Private,Sanjeevini Hospital Sullia,137000,Sullia
-Appendicitis,Govt,Taluk Hospital Karkala,26500,Karkala
-Appendicitis,Private,Deenabandhu Hospital Karkala,65000,Karkala
-Diabetes,Private,Sri Bhuvanendra Hospital Karkala,13500,Karkala
-Heart Disease,Private,Mahatma Gandhi Memorial Hospital Belthangady,163000,Belthangady
-Pneumonia,Private,Alva's Health Centre Moodabidri,19000,Moodabidri
-Typhoid,Govt,Primary Health Centre Sampaje,5500,Uppinangady
-Pregnancy,Private,City Medical Centre Moodabidri,65000,Moodabidri
-Typhoid,Govt,Government Dispensary Moodabidri,5500,Moodabidri
-Diabetes,Private,Narayana Hospital Uppinangady,14500,Uppinangady
-Pneumonia,Private,Jain Hospital Moodabidri,27500,Moodabidri
-Fever,Private,Narayana Hospital Uppinangady,6000,Uppinangady
-Fever,Private,Bhagavathi Hospital Belthangady,5500,Belthangady
-Liver Disease,Govt,Community Health Centre Sullia,42000,Sullia
-Kidney Stone,Govt,Primary Health Centre Naravi,19500,Belthangady
-Pneumonia,Private,Yenepoya Medical College Hospital Deralakatte,26500,Mangaluru
-Dengue,Private,Pooja Hospital Uppinangady,14500,Uppinangady
-Typhoid,Private,Sanjeevini Hospital Sullia,11000,Sullia
-Cancer,Govt,Taluk Hospital Puttur,118500,Puttur
-Kidney Stone,Private,Sudha Hospital Karkala,34000,Karkala
-Fracture,Govt,Primary Health Centre Ujire,14000,Belthangady
-Liver Disease,Govt,Primary Health Centre Bellare,40000,Sullia
-Cancer,Govt,Primary Health Centre Guthigar,102500,Sullia
-Hypertension,Govt,Community Health Centre Uppinangady,5000,Uppinangady
-Surgery,Private,Samanvaya Hospital Bantwal,67500,Bantwal
-Pneumonia,Govt,Community Health Centre Puttur,13000,Puttur
-Typhoid,Private,Narayana Hospital Uppinangady,7500,Uppinangady
-Heart Disease,Private,Kasturba Hospital Manipal Mangaluru,147500,Mangaluru
-Fever,Govt,Primary Health Centre Sampaje,2000,Uppinangady
-Kidney Stone,Private,District Hospital Bantwal Private Wing,42500,Bantwal
-Fracture,Govt,Primary Health Centre Sampaje,13000,Uppinangady
-Liver Disease,Govt,Government Hospital Venur,30500,Belthangady
-Hypertension,Private,Srinivas Institute of Medical Sciences Mangaluru,11000,Mangaluru
-Liver Disease,Govt,Community Health Centre Karkala,34500,Karkala
-Appendicitis,Govt,Community Health Centre Uppinangady,25000,Uppinangady
-Asthma,Private,Mahatma Gandhi Memorial Hospital Belthangady,13500,Belthangady
-Fracture,Govt,Community Health Centre Karkala,11500,Karkala
-Surgery,Govt,Primary Health Centre Sampaje,43500,Uppinangady
-Liver Disease,Govt,Government Hospital Mulki,42000,Mulki
-Fracture,Govt,Primary Health Centre Vittal Bantwal,12500,Bantwal
-Kidney Stone,Govt,Government Dispensary Moodabidri,20000,Moodabidri
-Liver Disease,Private,Shridhar Hospital Mulki,52000,Mulki
-Liver Disease,Govt,Community Health Centre Karkala,38500,Karkala
-Heart Disease,Govt,Primary Health Centre Guthigar,88000,Sullia
-Fracture,Private,Mahatma Gandhi Memorial Hospital Belthangady,35500,Belthangady
-Liver Disease,Govt,Primary Health Centre Padubidri,43000,Karkala
-Fracture,Govt,Primary Health Centre Padubidri,14000,Karkala
-Fever,Govt,Government Hospital Uppinangady,1500,Uppinangady
-Surgery,Govt,Primary Health Centre Paladka,49500,Mulki
-Fracture,Private,Vivekananda Hospital Bantwal,27500,Bantwal
-Surgery,Private,Pooja Hospital Uppinangady,74000,Uppinangady
-Fever,Govt,Primary Health Centre Sampaje,2000,Uppinangady
-Fever,Private,Shree Hospital Uppinangady,4500,Uppinangady
-Heart Disease,Private,KVG Medical College & Hospital Sullia Road Puttur,138500,Puttur
-Liver Disease,Govt,Primary Health Centre Ujire,38500,Belthangady
-Typhoid,Govt,Primary Health Centre Naravi,5500,Belthangady
-Diabetes,Govt,Government Ayurvedic Dispensary Puttur,8000,Puttur
-Heart Disease,Private,Dr BR Ambedkar Medical Institute Bantwal,169000,Bantwal
-Asthma,Private,City Medical Centre Moodabidri,13500,Moodabidri
-Heart Disease,Private,Sudha Hospital Karkala,168000,Karkala
-Appendicitis,Private,Srinivasa Hospital Mulki,45000,Mulki
-Asthma,Govt,Taluk Hospital BC Road Bantwal,8000,Bantwal
-Dengue,Private,Prashanth Hospital Puttur,16000,Puttur
-Fracture,Govt,Primary Health Centre Padubidri,13500,Karkala
-Pregnancy,Govt,Taluk Hospital Karkala,26000,Karkala
-Asthma,Govt,Community Health Centre Moodabidri,6000,Moodabidri
-Hypertension,Govt,Primary Health Centre Sampaje,7500,Uppinangady
-Asthma,Private,Alva's Health Centre Moodabidri,17500,Moodabidri
-Hypertension,Private,Alva's Health Centre Moodabidri,14000,Moodabidri
-Pneumonia,Govt,Primary Health Centre Naravi,10000,Belthangady
-Cancer,Govt,Community Health Centre Moodabidri,109500,Moodabidri
-Pregnancy,Private,Srinivasa Hospital Moodabidri,58000,Moodabidri
-Liver Disease,Private,Pragathi Hospital Puttur,58000,Puttur
-Kidney Stone,Private,Janatha Hospital Sullia,38500,Sullia
-Typhoid,Private,SDM Medical College Hospital Dharwad Extension Ujire,14000,Belthangady
-Hypertension,Private,Shree Kshethra Dharmasthala Rural Development Project Hospital,13500,Belthangady
-Asthma,Govt,Taluk Hospital Moodabidri,6500,Moodabidri
-Appendicitis,Govt,Government Hospital Venur,33500,Belthangady
-Diabetes,Private,Narayana Hrudayalaya Extension Karkala,17000,Karkala
-Surgery,Private,District Hospital Bantwal Private Wing,75500,Bantwal
-Diabetes,Private,Lourdes Hospital Mangaluru,15500,Mangaluru
-Surgery,Private,Dhanvanthari Hospital Puttur,71500,Puttur
-Surgery,Private,Pooja Hospital Uppinangady,69000,Uppinangady
-Cancer,Private,Mahatma Gandhi Memorial Hospital Belthangady,181000,Belthangady
-Pregnancy,Govt,Taluk Hospital Belthangady,16500,Belthangady
-Asthma,Private,Jain Hospital Moodabidri,12000,Moodabidri
-Pregnancy,Private,Sudha Hospital Karkala,58000,Karkala
-Kidney Stone,Private,Alva's Health Centre Moodabidri,35000,Moodabidri
-Typhoid,Private,Deenabandhu Hospital Karkala,12000,Karkala
-Pregnancy,Govt,Taluk Hospital Moodabidri,17000,Moodabidri
-Pregnancy,Private,Jain Hospital Moodabidri,66000,Moodabidri
-Typhoid,Govt,Primary Health Centre Sampaje,3000,Uppinangady
-Liver Disease,Govt,Government Hospital Uppinangady,23500,Sullia
-Appendicitis,Govt,Primary Health Centre Padubidri,29000,Karkala
-Fracture,Private,Sudha Hospital Karkala,28000,Karkala
-Diabetes,Govt,Urban Primary Health Centre Surathkal,7500,Mangaluru
-Heart Disease,Govt,Government Lady Goschen Hospital Maidan Road,78000,Mangaluru
-Asthma,Govt,Community Health Centre Vamanapadavu,7000,Bantwal
-Typhoid,Govt,Taluk Hospital Belthangady,5500,Belthangady
-Fracture,Govt,Primary Health Centre Padubidri,11500,Karkala
-Liver Disease,Govt,Primary Health Centre Sampaje,30000,Uppinangady
-Surgery,Private,AJ Hospital Kadri Hills,84500,Mangaluru
-Typhoid,Govt,Urban Primary Health Centre Bunder,4000,Mangaluru
-Appendicitis,Govt,Primary Health Centre Paladka,16500,Mulki
-Diabetes,Govt,Community Health Centre Uppinangady,5500,Uppinangady
-Appendicitis,Private,Shree Kshethra Dharmasthala Rural Development Project Hospital,50500,Belthangady
-Pregnancy,Private,Vivekananda Hospital Bantwal,54500,Bantwal
-Pneumonia,Govt,Primary Health Centre Nanthoor,13000,Moodabidri
-Fracture,Govt,Community Health Centre Mulki,10500,Mulki
-Appendicitis,Private,Shree Hospital Uppinangady,54000,Uppinangady
-Hypertension,Govt,Government Dispensary Moodabidri,4500,Moodabidri
-Cancer,Private,Vinayaka Hospital Sullia,167500,Sullia
-Diabetes,Private,Sudha Hospital Karkala,11500,Karkala
-Fever,Private,Shree Hospital Uppinangady,5000,Uppinangady
-Asthma,Private,Dr BR Ambedkar Medical Institute Bantwal,13000,Bantwal
-Heart Disease,Govt,Primary Health Centre Ujire,89000,Belthangady
-Kidney Stone,Govt,Primary Health Centre Naravi,17000,Belthangady
-Asthma,Private,Prakash Hospital Bantwal,22000,Bantwal
-Heart Disease,Govt,Taluk Hospital Karkala,96500,Karkala
-Heart Disease,Govt,Primary Health Centre Vittal,90000,Puttur
-Typhoid,Private,Vinayaka Hospital Sullia,8000,Sullia
-Diabetes,Private,Sharada Hospital Puttur,15500,Puttur
-Typhoid,Private,Bhagavathi Hospital Belthangady,13000,Belthangady
-Diabetes,Private,Srinivasa Hospital Puttur,14500,Puttur
-Surgery,Govt,Taluk Hospital Puttur,39000,Puttur
-Dengue,Govt,Community Health Centre Moodabidri,7000,Moodabidri
-Surgery,Private,Sudha Hospital Karkala,67000,Karkala
-Liver Disease,Govt,Taluk Hospital Karkala,37000,Karkala
-Fever,Private,Shree Hospital Uppinangady,4500,Uppinangady
-Fever,Govt,Primary Health Centre Padubidri,2000,Karkala
-Heart Disease,Govt,Taluk Hospital Sullia,80500,Sullia
-Fracture,Govt,Primary Health Centre Kadaba,15000,Puttur
-Asthma,Govt,Samudaya Arogya Kendra Bantwal,9000,Bantwal
-Cancer,Private,Dr BR Ambedkar Medical Institute Bantwal,165500,Bantwal
-Dengue,Private,City Hospital Mangaluru,15500,Mangaluru
-Typhoid,Private,Unity Hospital Mangaluru,12500,Mangaluru
-Fever,Govt,Primary Health Centre Sampaje,1500,Uppinangady
-Surgery,Govt,General Hospital Puttur,37000,Puttur
-Hypertension,Govt,Government Ayurvedic Dispensary Puttur,8000,Puttur
-Pneumonia,Private,Narayana Hospital Uppinangady,29000,Uppinangady
-Fracture,Govt,Government Hospital Uppinangady,14500,Uppinangady
-Cancer,Private,Bhagavathi Hospital Belthangady,195500,Belthangady
-Dengue,Govt,Government Hospital Uppinangady,5000,Uppinangady
-Heart Disease,Private,Sahyadri Hospital Sullia,141000,Sullia
-Pneumonia,Govt,Government Ayurvedic Dispensary Puttur,11000,Puttur
-Cancer,Govt,Community Health Centre Mulki,85000,Mulki
-Hypertension,Private,Shree Durgaparameshwari Hospital Puttur,10500,Puttur
-Diabetes,Private,Sharada Hospital Puttur,18000,Puttur
-Surgery,Govt,Taluk Hospital Puttur,58000,Puttur
-Hypertension,Govt,Primary Health Centre Sampaje,7000,Uppinangady
-Liver Disease,Govt,Primary Health Centre Nanthoor,26000,Moodabidri
-Hypertension,Private,City Hospital Mangaluru,15500,Mangaluru
-Diabetes,Govt,Primary Health Centre Kadaba,9500,Puttur
-Liver Disease,Private,KMC Hospital Attavar,55000,Mangaluru
-Liver Disease,Govt,Government Hospital Uppinangady,23500,Sullia
-Kidney Stone,Private,Srinivasa Hospital Sullia,42000,Sullia
-Appendicitis,Govt,Primary Health Centre Guthigar,27500,Sullia
-Diabetes,Govt,Government Hospital Uppinangady,7500,Sullia
-Hypertension,Private,Sharada Hospital Puttur,18000,Puttur
-Kidney Stone,Private,Srinivasa Hospital Moodabidri,39000,Moodabidri
-Fever,Private,Vijaya Hospital Belthangady,5000,Belthangady
-Cancer,Private,Srinivasa Hospital Moodabidri,185500,Moodabidri
-Surgery,Govt,ESIC Hospital Kadri,56000,Mangaluru
-Asthma,Private,Prakash Hospital Bantwal,19500,Bantwal
-Hypertension,Govt,Primary Health Centre Sampaje,5000,Uppinangady
-Typhoid,Govt,Primary Health Centre Ullal,3000,Mangaluru
-Appendicitis,Private,Shree Durgaparameshwari Hospital Puttur,44500,Puttur
-Pregnancy,Govt,Primary Health Centre Paladka,18000,Mulki
-Asthma,Govt,Primary Health Centre Bellare,11000,Sullia
-Pregnancy,Private,Shridhar Hospital Mulki,62000,Mulki
-Surgery,Govt,Government Hospital Uppinangady,52000,Uppinangady
-Hypertension,Govt,Community Health Centre Dharmasthala,8500,Belthangady
-Fever,Govt,Taluk Hospital Karkala,1500,Karkala
-Hypertension,Private,Deenabandhu Hospital Karkala,10500,Karkala
-Appendicitis,Private,Sahyadri Hospital Sullia,42000,Sullia
-Hypertension,Govt,Government Dispensary Moodabidri,5000,Moodabidri
-Fever,Private,Narayana Hospital Uppinangady,4500,Uppinangady
-Liver Disease,Govt,Government Hospital Uppinangady,42500,Uppinangady
-Heart Disease,Private,Sharada Hospital Puttur,170000,Puttur
-Fracture,Govt,Government Hospital Uppinangady,18000,Uppinangady
-Pneumonia,Govt,Taluk Hospital Belthangady,9000,Belthangady
-Fracture,Private,Shree Durgaparameshwari Hospital Puttur,22500,Puttur
-Surgery,Govt,Taluk Hospital BC Road Bantwal,38000,Bantwal
-Cancer,Govt,Government Dispensary Moodabidri,92500,Moodabidri
-Dengue,Private,Pragathi Hospital Puttur,17500,Puttur
-Typhoid,Private,Narayana Hospital Uppinangady,8000,Uppinangady
-Fever,Govt,Government Hospital Uppinangady,2500,Uppinangady
-Cancer,Private,Srinivasa Hospital Puttur,179000,Puttur
-Surgery,Govt,Government Ayurvedic Dispensary Puttur,53000,Puttur
-Heart Disease,Private,Deenabandhu Hospital Karkala,149000,Karkala
-Heart Disease,Private,Janatha Hospital Sullia,144500,Sullia
-Fever,Private,Suraksha Hospital Mulki,3500,Mulki
-Hypertension,Govt,ESIC Hospital Kadri,6500,Mangaluru
-Cancer,Private,Suraksha Hospital Mulki,196000,Mulki
-Hypertension,Govt,Government Dispensary Moodabidri,9000,Moodabidri
-Liver Disease,Private,KMC Hospital Attavar,89500,Mangaluru
-Hypertension,Govt,Urban Primary Health Centre Kulur,9000,Mangaluru
-Hypertension,Govt,Primary Health Centre Sampaje,4500,Uppinangady
-Surgery,Private,Pooja Hospital Uppinangady,70000,Uppinangady
-Pneumonia,Govt,Primary Health Centre Vittal,9000,Puttur
-Fracture,Private,Sri Bhuvanendra Hospital Karkala,27000,Karkala
-Dengue,Private,Netravathi Hospital Uppinangady,14500,Uppinangady
-Appendicitis,Private,Sai Hospital Bantwal,66500,Bantwal
-Dengue,Private,Jain Hospital Moodabidri,14500,Moodabidri
-Asthma,Govt,Samudaya Arogya Kendra Bantwal,7500,Bantwal
-Kidney Stone,Govt,Taluk Hospital BC Road Bantwal,19500,Bantwal
-Pneumonia,Govt,Primary Health Centre Nanthoor,8000,Moodabidri
-Fever,Govt,Wenlock District Hospital Hampankatta,1500,Mangaluru
-Diabetes,Private,Narayana Hrudayalaya Extension Karkala,16000,Karkala
-Cancer,Govt,Community Health Centre Sullia,110000,Sullia
-Kidney Stone,Govt,Government Dispensary Moodabidri,22500,Moodabidri
-Typhoid,Govt,Primary Health Centre Sampaje,4000,Uppinangady
-Dengue,Govt,Taluk Hospital Puttur,8000,Puttur
-Pneumonia,Govt,Urban Primary Health Centre Kavoor,10000,Mangaluru
-Diabetes,Govt,Taluk Hospital Karkala,9500,Karkala
-Hypertension,Govt,Primary Health Centre Ujire,7000,Belthangady
-Kidney Stone,Govt,Government Lady Goschen Hospital Maidan Road,20500,Mangaluru
-Fracture,Govt,Taluk Hospital BC Road Bantwal,17000,Bantwal
-Heart Disease,Private,District Hospital Bantwal Private Wing,144500,Bantwal
-Heart Disease,Govt,Primary Health Centre Padubidri,78500,Karkala
-Appendicitis,Govt,Taluk Hospital Belthangady,17500,Belthangady
-Hypertension,Govt,Primary Health Centre Kadaba,5500,Puttur
-Fever,Govt,Community Health Centre Mulki,1500,Mulki
-Cancer,Govt,Community Health Centre Sullia,112500,Sullia
-Dengue,Govt,Urban Primary Health Centre Surathkal,8000,Mangaluru
-Kidney Stone,Govt,Government Hospital Uppinangady,22000,Sullia
-Fever,Govt,Government Hospital Uppinangady,2000,Uppinangady
-Fracture,Govt,Government Hospital Venur,16500,Belthangady
-Cancer,Private,Shridhar Hospital Mulki,201000,Mulki
-Dengue,Private,Canara Hospital Puttur,15500,Puttur
-Fever,Govt,Taluk Hospital Karkala,1500,Karkala
-Pneumonia,Private,Mahatma Gandhi Memorial Hospital Belthangady,15000,Belthangady
-Pregnancy,Private,Sri Durgaparameshwari Hospital Moodabidri,65500,Moodabidri
-Asthma,Govt,Taluk Hospital Moodabidri,9000,Moodabidri
-Pneumonia,Govt,Primary Health Centre Ujire,9000,Belthangady
-Hypertension,Private,Shri Dharmasthala Manjunatheshwara Hospital Dharmasthala,15500,Belthangady
-Pregnancy,Govt,Samudaya Arogya Kendra Bantwal,26000,Bantwal
-Appendicitis,Private,Sanjeevini Hospital Sullia,50000,Sullia
-Asthma,Govt,Primary Health Centre Padubidri,9500,Karkala
-Appendicitis,Govt,Taluk Hospital Sullia,31000,Sullia
-Surgery,Govt,Community Health Centre Uppinangady,52500,Uppinangady
-Diabetes,Private,KVG Medical College & Hospital Sullia Road Puttur,11500,Puttur
-Dengue,Govt,Government Hospital Uppinangady,8500,Sullia
-Surgery,Govt,Taluk Hospital BC Road Bantwal,43500,Bantwal
-Typhoid,Govt,Primary Health Centre Bellare,4000,Sullia
-Cancer,Private,Vinayaka Hospital Sullia,159500,Sullia
-Cancer,Private,Sanjeevini Hospital Sullia,156000,Sullia
-Kidney Stone,Private,District Hospital Bantwal Private Wing,41000,Bantwal
-Asthma,Govt,Primary Health Centre Padubidri,8500,Karkala
-Fever,Govt,Government Hospital Uppinangady,1500,Uppinangady
-Diabetes,Govt,Community Health Centre Mulki,6500,Mangaluru
-Liver Disease,Private,Bhagavathi Hospital Belthangady,61500,Belthangady
-Kidney Stone,Private,Lourdes Hospital Mangaluru,36500,Mangaluru
-Cancer,Govt,Government Hospital Moodbidri Bantwal Taluk,118000,Bantwal
-Appendicitis,Private,Dr BR Ambedkar Medical Institute Bantwal,54000,Bantwal
-Fracture,Govt,Government Hospital Uppinangady,10500,Uppinangady
-Dengue,Govt,Government Hospital Uppinangady,4000,Uppinangady
-Diabetes,Private,Sudha Hospital Karkala,17500,Karkala
-Cancer,Private,City Medical Centre Moodabidri,181500,Moodabidri
-Kidney Stone,Govt,Community Health Centre Sullia,18500,Sullia
-Surgery,Govt,Taluk Hospital Puttur,52000,Puttur
-Asthma,Govt,Primary Health Centre Nanthoor,9500,Moodabidri
-Typhoid,Private,Jain Hospital Moodabidri,13500,Moodabidri
-Pregnancy,Govt,Government Hospital Venur,25000,Belthangady
-Fracture,Govt,Government Hospital Mulki,11500,Mulki
-Cancer,Govt,Primary Health Centre Ujire,102000,Belthangady
-Surgery,Govt,Government Ayurvedic Hospital Mangaluru,45500,Mangaluru
-Surgery,Govt,Government Hospital Uppinangady,53000,Uppinangady
-Diabetes,Govt,General Hospital Puttur,6500,Puttur
-Pregnancy,Govt,Primary Health Centre Padubidri,23500,Karkala
-Hypertension,Private,Alva's Health Centre Moodabidri,13000,Moodabidri
-Dengue,Private,Jain Hospital Moodabidri,18000,Moodabidri
-Pregnancy,Private,Shridhar Hospital Mulki,67000,Mulki
-Hypertension,Govt,Community Health Centre Vamanapadavu,4500,Bantwal
-Surgery,Govt,Rural Maternity & Child Welfare Centre Kaup,43000,Mangaluru
-Dengue,Private,Narayana Hospital Uppinangady,11500,Uppinangady
-Cancer,Govt,Samudaya Arogya Kendra Bantwal,86500,Bantwal
-Asthma,Private,Shri Dharmasthala Manjunatheshwara Hospital Dharmasthala,19500,Belthangady
-Diabetes,Private,Pragathi Hospital Puttur,12500,Puttur
-Appendicitis,Govt,Community Health Centre Puttur,32000,Puttur
-Typhoid,Govt,Primary Health Centre Ujire,2500,Belthangady
-Liver Disease,Govt,Primary Health Centre Guthigar,20500,Sullia
-Appendicitis,Govt,ESIC Hospital Kadri,25000,Mangaluru
-Fever,Govt,Primary Health Centre Paladka,2000,Mulki
-Asthma,Private,Sudha Hospital Karkala,13500,Karkala
-Surgery,Govt,Government Ayurvedic Hospital Mangaluru,48500,Mangaluru
-Asthma,Govt,Taluk Hospital BC Road Bantwal,10500,Bantwal
-Kidney Stone,Govt,Urban Primary Health Centre Kulur,20000,Mangaluru
-Typhoid,Private,Samanvaya Hospital Bantwal,10000,Bantwal
-Heart Disease,Govt,Samudaya Arogya Kendra Bantwal,82500,Bantwal
-Fracture,Govt,Primary Health Centre Padubidri,15000,Karkala
-Fracture,Private,Pragathi Hospital Puttur,35500,Puttur
-Pregnancy,Private,Sudha Hospital Karkala,66500,Karkala
-Kidney Stone,Private,Jain Hospital Moodabidri,43000,Moodabidri
-Heart Disease,Govt,Taluk Hospital Karkala,77000,Karkala
-Fracture,Private,Sri Bhuvanendra Hospital Karkala,34000,Karkala
-Liver Disease,Private,Sahyadri Hospital Sullia,61000,Sullia
-Diabetes,Govt,Community Health Centre Puttur,9500,Puttur
-Pneumonia,Govt,Taluk Hospital Moodabidri,11500,Moodabidri
-Fracture,Private,Sri Bhuvanendra Hospital Karkala,35000,Karkala
-Pneumonia,Govt,Primary Health Centre Nanthoor,12000,Moodabidri
-Cancer,Govt,Government Hospital Venur,104500,Belthangady
-Typhoid,Govt,Taluk Hospital Sullia,5500,Sullia
-Heart Disease,Govt,Primary Health Centre Padubidri,78500,Karkala
-Surgery,Private,Narayana Hrudayalaya Extension Karkala,75500,Karkala
-Asthma,Govt,Government Hospital Venur,9500,Belthangady
-Diabetes,Govt,Community Health Centre Karkala,7500,Karkala
-Kidney Stone,Private,Pooja Hospital Uppinangady,42000,Uppinangady
-Cancer,Govt,Primary Health Centre Paladka,102000,Mulki
-Typhoid,Private,Sudha Hospital Karkala,11500,Karkala
-Pneumonia,Private,Mahatma Gandhi Memorial Hospital Belthangady,27000,Belthangady
-Cancer,Private,City Medical Centre Moodabidri,183500,Moodabidri
-Kidney Stone,Govt,Taluk Hospital Moodabidri,18000,Moodabidri
-Dengue,Govt,Taluk Hospital Sullia,4500,Sullia
-Fracture,Private,Pooja Hospital Uppinangady,27500,Uppinangady
-Pneumonia,Private,KS Hegde Medical Academy NITTE Deralakatte,24000,Mangaluru
-Asthma,Private,Srinivasa Hospital Moodabidri,17000,Moodabidri
-Appendicitis,Govt,Government Ayurvedic Dispensary Puttur,21500,Puttur
-Dengue,Govt,Government Hospital Uppinangady,4500,Uppinangady
-Pneumonia,Govt,Community Health Centre Dharmasthala,11500,Belthangady
-Heart Disease,Private,Pragathi Hospital Puttur,172000,Puttur
-Liver Disease,Private,Shree Hospital Uppinangady,73000,Uppinangady
-Liver Disease,Govt,Government Hospital Mulki,38500,Mulki
-Fracture,Private,Shridhar Hospital Mulki,28000,Mulki
-Cancer,Private,Prakash Hospital Bantwal,193500,Bantwal
-Typhoid,Private,Netravathi Hospital Uppinangady,8000,Uppinangady
-Liver Disease,Govt,Community Health Centre Mulki,37000,Mulki
-Typhoid,Private,AJ Hospital & Research Centre Bejai,8000,Mangaluru
-Fever,Govt,Government Hospital Mulki,2000,Mulki
-Liver Disease,Private,Bhagavathi Hospital Belthangady,66500,Belthangady
-Pregnancy,Govt,Government Dispensary Moodabidri,26000,Moodabidri
-Pregnancy,Private,Shri Dharmasthala Manjunatheshwara Hospital Dharmasthala,64000,Belthangady
-Pregnancy,Private,Jain Hospital Moodabidri,54500,Moodabidri
-Heart Disease,Private,Deenabandhu Hospital Karkala,163000,Karkala
-Kidney Stone,Private,Yenepoya Medical College Hospital Deralakatte,33000,Mangaluru
-Dengue,Govt,Government Ayurvedic Dispensary Puttur,7000,Puttur
-Hypertension,Govt,Rural Maternity & Child Welfare Centre Kaup,8000,Mangaluru
-Fever,Govt,Community Health Centre Dharmasthala,2500,Belthangady
-Liver Disease,Private,Janatha Hospital Sullia,72000,Sullia
-Surgery,Private,Srinivasa Hospital Mulki,66500,Mulki
-Pneumonia,Private,Alva's Health Centre Moodabidri,20500,Moodabidri
-Kidney Stone,Govt,Primary Health Centre Padubidri,21500,Karkala
-Pneumonia,Govt,Primary Health Centre Nanthoor,8000,Moodabidri
-Pregnancy,Govt,Government Hospital Venur,16000,Belthangady
-Appendicitis,Private,Yenepoya Medical College Hospital Deralakatte,48000,Mangaluru
-Diabetes,Private,Sharada Hospital Puttur,16000,Puttur
-Heart Disease,Govt,Primary Health Centre Padubidri,78500,Karkala
-Hypertension,Private,Shree Hospital Uppinangady,12000,Uppinangady
-Dengue,Govt,Government Hospital Uppinangady,8500,Uppinangady
-Surgery,Private,Canara Hospital Puttur,61500,Puttur
-Cancer,Private,Alva's Health Centre Moodabidri,171000,Moodabidri
-Hypertension,Private,Pooja Hospital Uppinangady,13500,Uppinangady
-Pneumonia,Private,Shri Dharmasthala Manjunatheshwara Hospital Dharmasthala,22500,Belthangady
-Liver Disease,Private,Srinivasa Hospital Sullia,60500,Sullia
-Pneumonia,Private,Srinivasa Hospital Moodabidri,18500,Moodabidri
-Heart Disease,Private,Prakash Hospital Bantwal,157000,Bantwal
-Hypertension,Private,District Hospital Bantwal Private Wing,18500,Bantwal
-Fracture,Govt,Government Hospital Mulki,16000,Mulki
-Appendicitis,Govt,Community Health Centre Uppinangady,26000,Uppinangady
-Kidney Stone,Govt,Urban Primary Health Centre Kavoor,17000,Mangaluru
-Fracture,Govt,Taluk Hospital Karkala,17500,Karkala
-Diabetes,Govt,Community Health Centre Karkala,6000,Karkala
-Asthma,Private,Sai Hospital Bantwal,13000,Bantwal
-Surgery,Govt,Primary Health Centre Vittal,36000,Puttur
-Pneumonia,Govt,Government Ayurvedic Dispensary Puttur,13000,Puttur
-Kidney Stone,Govt,Taluk Hospital Sullia,20000,Sullia
-Kidney Stone,Govt,Taluk Hospital Moodabidri,18500,Moodabidri
-Appendicitis,Govt,Taluk Hospital Belthangady,29000,Belthangady
-Appendicitis,Private,Shridhar Hospital Mulki,59000,Mulki
-Pneumonia,Govt,Government Hospital Uppinangady,11500,Uppinangady
-Typhoid,Govt,Government Hospital Uppinangady,5000,Sullia
-Fracture,Private,Vijaya Hospital Belthangady,33000,Belthangady
-Pneumonia,Govt,Taluk Hospital Moodabidri,8500,Moodabidri
-Dengue,Govt,Community Health Centre Moodabidri,4000,Moodabidri
-Fever,Private,Narayana Hospital Uppinangady,4500,Uppinangady
-Diabetes,Private,KVG Medical College Hospital Sullia,14500,Sullia
-Typhoid,Govt,Community Health Centre Vamanapadavu,4000,Bantwal
-Pregnancy,Private,Sudha Hospital Karkala,66500,Karkala
-Appendicitis,Private,Shree Hospital Uppinangady,58500,Uppinangady
-Dengue,Govt,Primary Health Centre Vittal,4000,Puttur
-Pneumonia,Private,Prashanth Hospital Puttur,17500,Puttur
-Kidney Stone,Govt,Primary Health Centre Padubidri,20500,Karkala
-Asthma,Private,City Medical Centre Moodabidri,14500,Moodabidri
-Heart Disease,Private,KVG Medical College Hospital Sullia,149000,Sullia
-Heart Disease,Govt,Taluk Hospital Sullia,79000,Sullia
-Asthma,Govt,Community Health Centre Moodabidri,8000,Moodabidri
-Fracture,Private,Shree Durgaparameshwari Hospital Puttur,36500,Puttur
-Pregnancy,Govt,Samudaya Arogya Kendra Bantwal,19500,Bantwal
-Pregnancy,Govt,Primary Health Centre Nanthoor,24000,Moodabidri
+Disease,Hospital_Type,Hospital_Name,Cost,City,Address,Contact
+Pregnancy,Private,Mahalasa Hospital Nelyadi,52000,Nelyadi,Nelyadi - 574221,08257-265900
+Malaria,Private,Pragathi Hospital Puttur,14000,Puttur,"Main Road, Puttur - 574201",08251-231100
+Heart Disease,Private,Gurupura Hospital,148500,Gurupura,"Main Road, Gurupura - 575016",0824-2284200
+Typhoid,Govt,Primary Health Centre Venur,5500,Venur,Venur Town - 574237,08256-262100
+Skin Disease,Private,SDM Medical College Hospital Ujire,11500,Ujire,"SDM Campus, Ujire - 574240",08256-248500
+Heart Disease,Private,Kinnigoli Hospital,167000,Kinnigoli,"Main Road, Kinnigoli - 574150",0824-2293200
+UTI,Govt,Primary Health Centre Gurupura,6000,Gurupura,"Gurupura, Mangaluru Taluk - 575016",0824-2284011
+Liver Disease,Private,SDM Ayurvedic Hospital Dharmasthala,88500,Dharmasthala,Dharmasthala - 574216,08256-277333
+Hypertension,Govt,Primary Health Centre Ujire,9000,Ujire,"Ujire, Belthangady Taluk - 574240",08256-248011
+UTI,Private,Srinivas Hospital Surathkal,10000,Surathkal,"Surathkal Main Road, Mangaluru - 575014",0824-2474500
+Tuberculosis,Private,Nethravathi Medical Centre Bellare,29000,Bellare,Bellare - 574212,08257-261300
+Jaundice,Private,Prakash Hospital Bantwal,15000,Bantwal,"Main Road, Bantwal - 574219",08255-232800
+Heart Disease,Private,Nelyadi Clinic & Hospital,164000,Nelyadi,"Main Road, Nelyadi - 574221",08257-265800
+UTI,Govt,Primary Health Centre Ujire,4500,Ujire,"Ujire, Belthangady Taluk - 574240",08256-248011
+Gastroenteritis,Private,AJ Hospital & Research Centre Bejai,15000,Mangaluru,"NH 66, Kuntikana, Bejai, Mangaluru - 575004",0824-2225533
+Typhoid,Govt,Primary Health Centre Gurupura,2500,Gurupura,"Gurupura, Mangaluru Taluk - 575016",0824-2284011
+Tuberculosis,Private,Kukke Hospital Subramanya,15500,Subramanya,"Main Road, Subramanya - 574238",08257-258200
+Malaria,Private,Prakash Hospital Surathkal,11000,Surathkal,"NH 66 Surathkal, Mangaluru - 575014",0824-2476001
+Asthma,Govt,Taluk Hospital Kadaba,7000,Kadaba,"Hospital Road, Kadaba - 574221",08257-265011
+Heart Disease,Private,Alva's Health Centre Moodabidri,160000,Moodabidri,"Alva's Education Foundation, Moodabidri - 574227",0824-2386500
+Kidney Stone,Govt,Government Hospital Bantwal PHC,21500,Bantwal,"Bantwal Town, DK - 574219",08255-232100
+Gastroenteritis,Private,Panemangalore Hospital,8500,Panemangalore,"Main Road, Panemangalore - 574236",0824-2239200
+Eye Disease,Private,Mahatma Gandhi Memorial Hospital Belthangady,33500,Belthangady,Belthangady Main Road - 574214,08256-230500
+Surgery,Private,Sai Sanjeevini Hospital Gurupura,60500,Gurupura,Gurupura - 575016,0824-2284300
+UTI,Govt,Government Dispensary Nelyadi,3000,Nelyadi,Nelyadi Town - 574221,08257-265300
+Dengue,Private,Yenepoya Medical College Hospital,14500,Mangaluru,"University Road, Deralakatte, Mangaluru - 575018",0824-2204668
+Eye Disease,Private,SDM Medical College Hospital Ujire,18500,Ujire,"SDM Campus, Ujire - 574240",08256-248500
+Anaemia,Govt,Primary Health Centre Panemangalore,5500,Panemangalore,"Panemangalore, DK - 574236",0824-2239011
+Anaemia,Govt,Primary Health Centre Panambur,5000,Panambur,"Panambur Beach Road, Mangaluru - 575010",0824-2408001
+Cancer,Govt,General Hospital Puttur,116000,Puttur,"Hospital Road, Puttur - 574201",08251-230295
+Diabetes,Private,Dhanvanthari Hospital Puttur,15000,Puttur,Puttur - 574201,08251-231300
+Kidney Stone,Govt,Government Dispensary Nelyadi,23500,Nelyadi,Nelyadi Town - 574221,08257-265300
+Tuberculosis,Govt,Primary Health Centre Vittal,6500,Vittal,"Vittal Town, Bantwal Taluk - 574243",08255-231011
+Ear Infection,Private,Sharavathi Hospital Subramanya,8500,Subramanya,"Temple Road, Subramanya - 574238",08257-258400
+Fracture,Private,KMC Hospital Jyothi Circle,22500,Mangaluru,"Dr BR Ambedkar Circle, Balmatta, Mangaluru - 575001",0824-2871000
+Fracture,Govt,Taluk Hospital Moodabidri,11500,Moodabidri,"Hospital Road, Moodabidri - 574227",0824-2386011
+Cancer,Govt,Community Health Centre Kadaba,99000,Kadaba,Kadaba Town - 574221,08257-265100
+Fracture,Govt,Primary Health Centre Dharmasthala,17000,Dharmasthala,Dharmasthala Town - 574216,08256-277100
+UTI,Govt,Primary Health Centre Panambur,4500,Surathkal,"Panambur, Mangaluru - 575010",0824-2408001
+UTI,Govt,General Hospital Puttur,4500,Puttur,"Hospital Road, Puttur - 574201",08251-230295
+Typhoid,Private,Mahalasa Hospital Nelyadi,9500,Nelyadi,Nelyadi - 574221,08257-265900
+UTI,Private,Srinivasa Hospital Mulki,11500,Mulki,"Main Road, Mulki - 574154",0824-2296200
+Typhoid,Govt,Urban Primary Health Centre Bunder,2500,Mangaluru,"Bunder, Mangaluru - 575001",0824-2440101
+Heart Disease,Private,Netravathi Hospital Uppinangady,168000,Uppinangady,"Main Road, Uppinangady - 574241",08251-232200
+Skin Disease,Private,Sai Sanjeevini Hospital Kinnigoli,7000,Kinnigoli,Kinnigoli - 574150,0824-2293300
+Surgery,Govt,General Hospital Puttur,46500,Puttur,"Hospital Road, Puttur - 574201",08251-230295
+Skin Disease,Private,Pooja Hospital Uppinangady,8000,Uppinangady,Uppinangady - 574241,08251-232400
+Liver Disease,Private,Dawa Hospital Ullal,77500,Ullal,Ullal Town Road - 574146,0824-2279200
+Dengue,Private,Janatha Hospital Sullia,14000,Sullia,Sullia Town - 574239,08257-234100
+Appendicitis,Private,Sai Sanjeevini Hospital Gurupura,54000,Gurupura,Gurupura - 575016,0824-2284300
+Typhoid,Private,Sri Durga Hospital Bantwal,7500,Bantwal,"BC Road, Bantwal - 574219",08255-233001
+Pneumonia,Govt,Government Hospital Vittal,9500,Vittal,"Main Road, Vittal - 574243",08255-231100
+Gastroenteritis,Private,Sri Durgaparameshwari Hospital Moodabidri,14500,Moodabidri,Moodabidri - 574227,0824-2386600
+Skin Disease,Govt,Urban Primary Health Centre Surathkal,3500,Surathkal,"NITK Campus Road, Surathkal - 575014",0824-2474055
+Jaundice,Private,Father Muller Medical College Hospital,17500,Mangaluru,"Father Muller Road, Kankanady, Mangaluru - 575002",0824-2238000
+Anaemia,Private,Durgaparameshwari Hospital Subramanya,13000,Subramanya,Subramanya - 574238,08257-258300
+Appendicitis,Govt,Primary Health Centre Kateel,19000,Kateel,"Kateel, Dakshina Kannada - 574272",0824-2298011
+Asthma,Private,Shridhar Hospital Mulki,16500,Mulki,Mulki Junction - 574154,0824-2296300
+Gastroenteritis,Private,Navami Hospital Bantwal,14500,Bantwal,Bantwal - 574219,08255-232900
+Dengue,Private,Netravathi Hospital Ujire,17500,Ujire,"Main Road, Ujire - 574240",08256-248200
+Typhoid,Private,KVG Medical College & Hospital Puttur Road,9000,Puttur,"Sullia Road, Puttur - 574201",08251-230600
+Diabetes,Govt,Government Hospital Kateel,9000,Kateel,Kateel Town - 574272,0824-2298100
+Tuberculosis,Govt,Government Dispensary Bellare,6000,Bellare,Bellare Town - 574212,08257-261100
+Eye Disease,Govt,Primary Health Centre Panemangalore,14000,Panemangalore,"Panemangalore, DK - 574236",0824-2239011
+Pneumonia,Govt,Primary Health Centre Nelyadi,11500,Nelyadi,"Nelyadi, Kadaba Taluk - 574221",08257-265201
+Typhoid,Govt,Primary Health Centre Dharmasthala,6000,Dharmasthala,Dharmasthala Town - 574216,08256-277100
+Tuberculosis,Private,Alva's Health Centre Moodabidri,23500,Moodabidri,"Alva's Education Foundation, Moodabidri - 574227",0824-2386500
+Fever,Govt,Primary Health Centre Subramanya,2000,Subramanya,Subramanya - 574238,08257-258100
+Cancer,Private,Srinivasa Hospital Kateel,153500,Kateel,Kateel - 574272,0824-2298400
+Tuberculosis,Govt,Government Hospital Mulki,5500,Mulki,"Town Road, Mulki - 574154",0824-2296022
+Asthma,Govt,Government Hospital Bantwal PHC,10000,Bantwal,"Bantwal Town, DK - 574219",08255-232100
+Fever,Govt,Primary Health Centre Uppinangady,2000,Uppinangady,Uppinangady Town - 574241,08251-232100
+Thyroid Disorder,Govt,Government Hospital Venur,6000,Venur,"Venur, Belthangady Taluk - 574237",08256-262011
+Dengue,Govt,Primary Health Centre Kinnigoli,7500,Kinnigoli,"Kinnigoli, Mangaluru Taluk - 574150",0824-2293011
+Gastroenteritis,Private,Gurupura Hospital,15500,Gurupura,"Main Road, Gurupura - 575016",0824-2284200
+Pregnancy,Private,Mahalasa Hospital Nelyadi,67000,Nelyadi,Nelyadi - 574221,08257-265900
+Fever,Govt,Primary Health Centre Nelyadi,1500,Nelyadi,"Nelyadi, Kadaba Taluk - 574221",08257-265201
+Thyroid Disorder,Private,Dawa Hospital Ullal,12500,Ullal,Ullal Town Road - 574146,0824-2279200
+Hypertension,Govt,Government Ayurvedic Dispensary Puttur,4500,Puttur,"Market Road, Puttur - 574201",08251-230500
+Heart Disease,Private,Sri Krishna Hospital Sullia,160500,Sullia,Sullia Main Road - 574239,08257-234400
+Fever,Govt,Community Health Centre Belthangady,2000,Belthangady,Belthangady Town - 574214,08256-230100
+Fracture,Private,Kukke Hospital Subramanya,30500,Subramanya,"Main Road, Subramanya - 574238",08257-258200
+Fracture,Private,Bellare Hospital,30500,Bellare,"Main Road, Bellare - 574212",08257-261200
+Appendicitis,Govt,Urban Primary Health Centre Surathkal,23500,Surathkal,"NITK Campus Road, Surathkal - 575014",0824-2474055
+Typhoid,Private,Narayana Hospital Panambur,9000,Panambur,"Baikampady, Panambur - 575011",0824-2408300
+Surgery,Private,Samanvaya Hospital Bantwal,63000,Bantwal,Bantwal Town Road - 574219,08255-232700
+Hypertension,Private,Panchalingeshwara Hospital Vittal,10500,Vittal,Vittal Town - 574243,08255-231300
+Typhoid,Govt,Port Trust Hospital Panambur,3000,Panambur,"NMPT Colony, Panambur - 575010",0824-2407700
+Liver Disease,Private,Netravathi Hospital Uppinangady,66500,Uppinangady,"Main Road, Uppinangady - 574241",08251-232200
+Dengue,Govt,Primary Health Centre Ullal,4500,Ullal,"Chitrapu, Ullal - 574146",0824-2279022
+UTI,Private,Kateel Medical Centre,12000,Kateel,"Main Road, Kateel - 574272",0824-2298300
+Gastroenteritis,Private,Prakash Hospital Surathkal,10000,Surathkal,"NH 66 Surathkal, Mangaluru - 575014",0824-2476001
+UTI,Govt,Government Hospital Uppinangady,5500,Uppinangady,"Uppinangady, Puttur Taluk - 574241",08251-232011
+Eye Disease,Private,Srinivas Institute of Medical Sciences,34500,Mangaluru,"Mukka, Surathkal, Mangaluru - 574146",0824-2477000
+Malaria,Govt,Primary Health Centre Panemangalore,5000,Panemangalore,"Panemangalore, DK - 574236",0824-2239011
+Kidney Stone,Private,Sri Krishna Hospital Sullia,41000,Sullia,Sullia Main Road - 574239,08257-234400
+Thyroid Disorder,Govt,Primary Health Centre Nanthoor,4500,Nanthoor,"Nanthoor, Bantwal Taluk - 574219",08255-239011
+Malaria,Private,Durgaparameshwari Hospital Subramanya,14000,Subramanya,Subramanya - 574238,08257-258300
+Pregnancy,Govt,Taluk Hospital BC Road Bantwal,17000,Bantwal,"BC Road, Bantwal - 574219",08255-232024
+Cancer,Govt,Government Hospital Kukke Subramanya,107500,Subramanya,Subramanya Town - 574238,08257-258011
+Anaemia,Private,Nethravathi Medical Centre Bellare,10500,Bellare,Bellare - 574212,08257-261300
+Jaundice,Private,Nelyadi Clinic & Hospital,16000,Nelyadi,"Main Road, Nelyadi - 574221",08257-265800
+Cancer,Private,Srinivasa Clinic Panemangalore,176000,Panemangalore,Panemangalore - 574236,0824-2239300
+Tuberculosis,Private,Coastal Nursing Home Panemangalore,17000,Panemangalore,Panemangalore - 574236,0824-2239400
+Ear Infection,Govt,Primary Health Centre Ullal,3000,Ullal,"Chitrapu, Ullal - 574146",0824-2279022
+Fracture,Govt,Government Ayurvedic Hospital Mangaluru,16000,Mangaluru,"Court Road, Mangaluru - 575001",0824-2426555
+Surgery,Govt,Government Hospital Uppinangady,55500,Uppinangady,"Uppinangady, Puttur Taluk - 574241",08251-232011
+Malaria,Govt,Community Health Centre Kadaba,6000,Kadaba,Kadaba Town - 574221,08257-265100
+Asthma,Govt,Government Hospital Kateel,10000,Kateel,Kateel Town - 574272,0824-2298100
+Kidney Stone,Private,Coastal Nursing Home Panemangalore,35000,Panemangalore,Panemangalore - 574236,0824-2239400
+Surgery,Govt,Primary Health Centre Vittal,48000,Vittal,"Vittal Town, Bantwal Taluk - 574243",08255-231011
+Heart Disease,Govt,Urban Primary Health Centre Surathkal,76500,Surathkal,"NITK Campus Road, Surathkal - 575014",0824-2474055
+Eye Disease,Private,Durgaparameshwari Hospital Kateel,40000,Kateel,"Temple Road, Kateel - 574272",0824-2298200
+Hypertension,Private,Sri Durgaparameshwari Hospital Moodabidri,15000,Moodabidri,Moodabidri - 574227,0824-2386600
+Malaria,Govt,Primary Health Centre Dharmasthala,7500,Dharmasthala,Dharmasthala Town - 574216,08256-277100
+Jaundice,Private,Udupi Hospital Ujire,21000,Ujire,Ujire - 574240,08256-248300
+Asthma,Private,Sealand Hospital Ullal,19000,Ullal,"Someshwara, Ullal - 574146",0824-2278001
+Hypertension,Private,Narayana Hrudayalaya Surathkal,11000,Surathkal,"NITK Road, Surathkal, Mangaluru - 575014",0824-2470000
+Diabetes,Private,KVG Medical College Hospital Sullia,16500,Sullia,"Kurunjibag, Sullia - 574327",08257-232608
+Anaemia,Govt,Urban Primary Health Centre Kulur,4000,Mangaluru,"Kulur, Mangaluru - 575013",0824-2287011
+Ear Infection,Private,Durgaparameshwari Hospital Kadaba,6500,Kadaba,Kadaba - 574221,08257-265600
+Skin Disease,Govt,Government Hospital Ullal,3500,Ullal,"Ullal Town, Dakshina Kannada - 574146",0824-2279011
+Dengue,Govt,Community Health Centre Dharmasthala,6500,Dharmasthala,Dharmasthala - 574216,08256-277011
+Pregnancy,Govt,Primary Health Centre Ujire,21000,Ujire,"Ujire, Belthangady Taluk - 574240",08256-248011
+Pneumonia,Private,Sealand Hospital Ullal,21500,Ullal,"Someshwara, Ullal - 574146",0824-2278001
+Asthma,Private,Sri Krishna Hospital Sullia,15500,Sullia,Sullia Main Road - 574239,08257-234400
+Cancer,Private,Bhagavathi Hospital Belthangady,202000,Belthangady,Belthangady - 574214,08256-230600
+Thyroid Disorder,Private,Srinivas Institute of Medical Sciences,16000,Mangaluru,"Mukka, Surathkal, Mangaluru - 574146",0824-2477000
+Cancer,Govt,Community Health Centre Moodabidri,102500,Moodabidri,Moodabidri Town - 574227,0824-2386100
+Fever,Govt,Government Ayurvedic Hospital Mangaluru,1500,Mangaluru,"Court Road, Mangaluru - 575001",0824-2426555
+Cancer,Private,Shanthi Hospital Gurupura,195000,Gurupura,Gurupura - 575016,0824-2284400
+UTI,Private,Shree Durgaparameshwari Hospital BC Road,9000,Bantwal,"BC Road, Bantwal - 574219",08255-232600
+Pneumonia,Private,Sahyadri Medical Centre Venur,25500,Venur,Venur - 574237,08256-262300
+Pneumonia,Govt,Government Hospital Uppinangady,12000,Uppinangady,"Uppinangady, Puttur Taluk - 574241",08251-232011
+Malaria,Private,Dharmasthala Rural Hospital,12500,Dharmasthala,"Temple Road, Dharmasthala - 574216",08256-277555
+Diabetes,Govt,Government Dispensary Nelyadi,8500,Nelyadi,Nelyadi Town - 574221,08257-265300
+UTI,Govt,Primary Health Centre Subramanya,4500,Subramanya,Subramanya - 574238,08257-258100
+Malaria,Govt,Primary Health Centre Vittal,4000,Bantwal,"Vittal, Bantwal Taluk - 574243",08255-231011
+Pneumonia,Govt,Community Health Centre Ullal,9500,Ullal,Ullal Main Road - 574146,0824-2279100
+Pneumonia,Private,Sri Krishna Hospital Sullia,24500,Sullia,Sullia Main Road - 574239,08257-234400
+UTI,Govt,Primary Health Centre Nanthoor,4500,Nanthoor,"Nanthoor, Bantwal Taluk - 574219",08255-239011
+Surgery,Private,Shridhar Hospital Mulki,79000,Mulki,Mulki Junction - 574154,0824-2296300
+Liver Disease,Private,Navami Hospital Bantwal,87000,Bantwal,Bantwal - 574219,08255-232900
+Eye Disease,Private,Shree Durgaparameshwari Hospital BC Road,16500,Bantwal,"BC Road, Bantwal - 574219",08255-232600
+Anaemia,Private,Nelyadi Clinic & Hospital,8500,Nelyadi,"Main Road, Nelyadi - 574221",08257-265800
+Surgery,Govt,Primary Health Centre Kateel,38000,Kateel,"Kateel, Dakshina Kannada - 574272",0824-2298011
+Appendicitis,Govt,Community Health Centre Belthangady,22500,Belthangady,Belthangady Town - 574214,08256-230100
+UTI,Private,Sri Sai Hospital Nanthoor,9000,Nanthoor,Nanthoor - 574219,08255-239400
+Anaemia,Private,Shree Kshethra Dharmasthala RDPR Hospital,9000,Dharmasthala,Dharmasthala - 574216,08256-277444
+Skin Disease,Private,Panemangalore Hospital,5500,Panemangalore,"Main Road, Panemangalore - 574236",0824-2239200
+Pregnancy,Govt,Primary Health Centre Vittal,22000,Vittal,"Vittal Town, Bantwal Taluk - 574243",08255-231011
+UTI,Private,Durgaparameshwari Hospital Kadaba,10500,Kadaba,Kadaba - 574221,08257-265600
+Tuberculosis,Govt,Community Health Centre Gurupura,6500,Gurupura,Gurupura - 575016,0824-2284100
+Heart Disease,Private,Nethravathi Medical Centre Bellare,136500,Bellare,Bellare - 574212,08257-261300
+Fever,Private,Dawa Hospital Ullal,4500,Ullal,Ullal Town Road - 574146,0824-2279200
+Kidney Stone,Private,Coastal Care Hospital Panambur,38500,Panambur,Baikampady Industrial Area - 575011,0824-2408400
+Eye Disease,Private,Srinivasa Hospital Panambur,37000,Panambur,"Panambur Road, Mangaluru - 575010",0824-2408200
+Tuberculosis,Govt,Government Dispensary Nelyadi,7000,Nelyadi,Nelyadi Town - 574221,08257-265300
+Asthma,Private,Udupi Hospital Ujire,18500,Ujire,Ujire - 574240,08256-248300
+Ear Infection,Govt,Government Hospital Ullal,2000,Ullal,"Ullal Town, Dakshina Kannada - 574146",0824-2279011
+Heart Disease,Private,Shri Dharmasthala Manjunatheshwara Hospital Dharmasthala,172000,Belthangady,Dharmasthala - 574216,08256-277222
+Jaundice,Govt,Community Health Centre Dharmasthala,7500,Dharmasthala,Dharmasthala - 574216,08256-277011
+Liver Disease,Govt,Primary Health Centre Bellare,39500,Sullia,"Bellare, Sullia Taluk - 574212",08257-233200
+Thyroid Disorder,Govt,Urban Primary Health Centre Kavoor,6500,Mangaluru,"Kavoor, Mangaluru - 574143",0824-2285033
+Gastroenteritis,Private,Durgaparameshwari Hospital Subramanya,12000,Subramanya,Subramanya - 574238,08257-258300
+Hypertension,Private,Canara Hospital Puttur,18000,Puttur,Puttur Main Road - 574201,08251-231500
+Heart Disease,Private,Durgaparameshwari Hospital Subramanya,158500,Subramanya,Subramanya - 574238,08257-258300
+Fever,Private,Mahalasa Hospital Nelyadi,5000,Nelyadi,Nelyadi - 574221,08257-265900
+Typhoid,Govt,Community Health Centre Sullia,5000,Sullia,Sullia Town - 574239,08257-233100
+Malaria,Govt,Urban Primary Health Centre Surathkal,5000,Surathkal,"NITK Campus Road, Surathkal - 575014",0824-2474055
+Dengue,Govt,Primary Health Centre Panemangalore,6000,Panemangalore,"Panemangalore, DK - 574236",0824-2239011
+Ear Infection,Govt,Government Hospital Surathkal,2500,Surathkal,"Surathkal, Mangaluru - 575014",0824-2474133
+Cancer,Private,Dharmasthala Rural Hospital,172500,Dharmasthala,"Temple Road, Dharmasthala - 574216",08256-277555
+Pregnancy,Private,Shridhar Hospital Mulki,62500,Mulki,Mulki Junction - 574154,0824-2296300
+Surgery,Private,Coastal Hospital Surathkal,69000,Surathkal,"Surathkal Road, Mangaluru - 575014",0824-2478002
+Kidney Stone,Private,Sharavathi Hospital Subramanya,36000,Subramanya,"Temple Road, Subramanya - 574238",08257-258400
+Heart Disease,Private,SDM Medical College Hospital Ujire,164000,Ujire,"SDM Campus, Ujire - 574240",08256-248500
+Liver Disease,Private,Coastal Hospital Kinnigoli,66500,Kinnigoli,Kinnigoli - 574150,0824-2293400
+Fever,Govt,Government Dispensary Bellare,2500,Bellare,Bellare Town - 574212,08257-261100
+Surgery,Govt,Community Health Sub-Centre Panemangalore,47500,Panemangalore,Panemangalore - 574236,0824-2239100
+Tuberculosis,Govt,Port Trust Hospital Panambur,5500,Panambur,"NMPT Colony, Panambur - 575010",0824-2407700
+Eye Disease,Govt,Government Dispensary Nanthoor,11500,Nanthoor,Nanthoor - 574219,08255-239100
+Kidney Stone,Private,SDM Medical College Hospital Ujire,40500,Ujire,"SDM Campus, Ujire - 574240",08256-248500
+Dengue,Private,Bhagavathi Hospital Belthangady,12000,Belthangady,Belthangady - 574214,08256-230600
+Fracture,Govt,Government Hospital Kateel,12000,Kateel,Kateel Town - 574272,0824-2298100
+Diabetes,Private,Shri Dharmasthala Manjunatheshwara Hospital Dharmasthala,14000,Belthangady,Dharmasthala - 574216,08256-277222
+Skin Disease,Govt,Government Hospital Venur,3500,Venur,"Venur, Belthangady Taluk - 574237",08256-262011
+Heart Disease,Govt,Community Health Centre Puttur,85500,Puttur,Puttur Town - 574201,08251-230300
+Fever,Private,Coastal Hospital Kinnigoli,4000,Kinnigoli,Kinnigoli - 574150,0824-2293400
+Ear Infection,Govt,Community Health Centre Kadaba,4500,Kadaba,Kadaba Town - 574221,08257-265100
+Pneumonia,Private,Dharmasthala Rural Hospital,25500,Dharmasthala,"Temple Road, Dharmasthala - 574216",08256-277555
+Asthma,Private,Coastal Nursing Home Panemangalore,13000,Panemangalore,Panemangalore - 574236,0824-2239400
+Anaemia,Private,Durgaparameshwari Hospital Kateel,12500,Kateel,"Temple Road, Kateel - 574272",0824-2298200
+Liver Disease,Govt,Primary Health Centre Bellare,33000,Bellare,"Bellare, Sullia Taluk - 574212",08257-261011
+Liver Disease,Govt,Primary Health Centre Kinnigoli,40500,Kinnigoli,"Kinnigoli, Mangaluru Taluk - 574150",0824-2293011
+Gastroenteritis,Private,Bellare Hospital,8500,Bellare,"Main Road, Bellare - 574212",08257-261200
+Thyroid Disorder,Private,Kinnigoli Hospital,14000,Kinnigoli,"Main Road, Kinnigoli - 574150",0824-2293200
+Pneumonia,Private,Sri Durgaparameshwari Hospital Moodabidri,22500,Moodabidri,Moodabidri - 574227,0824-2386600
+Skin Disease,Private,KVG Medical College Hospital Sullia,11500,Sullia,"Kurunjibag, Sullia - 574327",08257-232608
+Cancer,Govt,Government Ayurvedic Hospital Mangaluru,100000,Mangaluru,"Court Road, Mangaluru - 575001",0824-2426555
+Typhoid,Private,Durgaparameshwari Hospital Subramanya,11500,Subramanya,Subramanya - 574238,08257-258300
+Anaemia,Private,Netravathi Hospital Ujire,12500,Ujire,"Main Road, Ujire - 574240",08256-248200
+UTI,Govt,Primary Health Centre Dharmasthala,4000,Dharmasthala,Dharmasthala Town - 574216,08256-277100
+Pneumonia,Govt,Primary Health Centre Panambur,11500,Panambur,"Panambur Beach Road, Mangaluru - 575010",0824-2408001
+Tuberculosis,Govt,Primary Health Centre Vittal,3500,Bantwal,"Vittal, Bantwal Taluk - 574243",08255-231011
+Thyroid Disorder,Govt,Community Health Centre Kadaba,4500,Kadaba,Kadaba Town - 574221,08257-265100
+Malaria,Private,Nelyadi Clinic & Hospital,12500,Nelyadi,"Main Road, Nelyadi - 574221",08257-265800
+Anaemia,Private,Coastal Hospital Kinnigoli,10000,Kinnigoli,Kinnigoli - 574150,0824-2293400
+Diabetes,Govt,Government Hospital Kukke Subramanya,9000,Subramanya,Subramanya Town - 574238,08257-258011
+Pregnancy,Private,Vittal Hospital,66000,Vittal,Vittal Main Road - 574243,08255-231200
+Typhoid,Govt,Government Hospital Kukke Subramanya,5500,Subramanya,Subramanya Town - 574238,08257-258011
+Heart Disease,Govt,Government Hospital Bantwal PHC,79500,Bantwal,"Bantwal Town, DK - 574219",08255-232100
+Anaemia,Private,Sharada Hospital Puttur,13000,Puttur,Puttur - 574201,08251-231400
+Anaemia,Govt,Community Health Centre Gurupura,5500,Gurupura,Gurupura - 575016,0824-2284100
+Jaundice,Govt,Primary Health Centre Gurupura,9500,Gurupura,"Gurupura, Mangaluru Taluk - 575016",0824-2284011
+Heart Disease,Govt,Primary Health Centre Gurupura,83000,Gurupura,"Gurupura, Mangaluru Taluk - 575016",0824-2284011
+Eye Disease,Private,Ullal Nursing Home,27500,Ullal,"Main Road, Ullal - 574146",0824-2279400
+Asthma,Govt,Government Hospital Ujire,7500,Ujire,Ujire Town - 574240,08256-248100
+Appendicitis,Govt,Community Health Centre Gurupura,25500,Gurupura,Gurupura - 575016,0824-2284100
+Eye Disease,Govt,Community Health Sub-Centre Kinnigoli,14500,Kinnigoli,Kinnigoli Town - 574150,0824-2293100
+Thyroid Disorder,Private,Sahyadri Clinic Bellare,15500,Bellare,Bellare - 574212,08257-261400
+Heart Disease,Private,Shridhar Hospital Mulki,142000,Mulki,Mulki Junction - 574154,0824-2296300
+Liver Disease,Govt,Community Health Sub-Centre Panemangalore,35000,Panemangalore,Panemangalore - 574236,0824-2239100
+Dengue,Private,Sai Sanjeevini Hospital Kinnigoli,12000,Kinnigoli,Kinnigoli - 574150,0824-2293300
+Diabetes,Govt,Community Health Centre Mulki,8000,Mulki,"Mulki, Dakshina Kannada - 574154",0824-2296011
+Fever,Govt,Primary Health Centre Vittal,1500,Bantwal,"Vittal, Bantwal Taluk - 574243",08255-231011
+Kidney Stone,Govt,Primary Health Centre Paladka,22500,Mulki,"Paladka, Mulki - 574154",0824-2296100
+Malaria,Private,Narayana Hospital Panambur,13000,Panambur,"Baikampady, Panambur - 575011",0824-2408300
+Cancer,Private,Pooja Hospital Uppinangady,197500,Uppinangady,Uppinangady - 574241,08251-232400
+Skin Disease,Govt,Government Hospital Mulki,2500,Mulki,"Town Road, Mulki - 574154",0824-2296022
+Malaria,Govt,Urban Primary Health Centre Kavoor,6000,Mangaluru,"Kavoor, Mangaluru - 574143",0824-2285033
+Appendicitis,Private,Srinivasa Hospital Kadaba,52500,Kadaba,"Main Road, Kadaba - 574221",08257-265500
+Liver Disease,Govt,Government Hospital Kukke Subramanya,22500,Subramanya,Subramanya Town - 574238,08257-258011
+Fracture,Govt,Primary Health Centre Panemangalore,14000,Panemangalore,"Panemangalore, DK - 574236",0824-2239011
+Gastroenteritis,Private,Narayana Hospital Panambur,16000,Panambur,"Baikampady, Panambur - 575011",0824-2408300
+Diabetes,Govt,Government Hospital Ujire,6500,Ujire,Ujire Town - 574240,08256-248100
+Dengue,Govt,Government Hospital Venur,8000,Venur,"Venur, Belthangady Taluk - 574237",08256-262011
+Ear Infection,Private,Srinivasa Clinic Panemangalore,9000,Panemangalore,Panemangalore - 574236,0824-2239300
+Diabetes,Private,Shanthi Hospital Gurupura,17000,Gurupura,Gurupura - 575016,0824-2284400
+Thyroid Disorder,Govt,Port Trust Hospital Panambur,6500,Panambur,"NMPT Colony, Panambur - 575010",0824-2407700
+Fracture,Private,Janatha Hospital Sullia,34000,Sullia,Sullia Town - 574239,08257-234100
+Kidney Stone,Govt,Primary Health Centre Bellare,17500,Bellare,"Bellare, Sullia Taluk - 574212",08257-261011
+Jaundice,Private,SDM Ayurvedic Hospital Dharmasthala,19500,Dharmasthala,Dharmasthala - 574216,08256-277333
+Hypertension,Govt,Community Health Centre Ullal,8000,Ullal,Ullal Main Road - 574146,0824-2279100
+Asthma,Govt,Government Hospital Venur,8500,Venur,"Venur, Belthangady Taluk - 574237",08256-262011
+Skin Disease,Private,Sahyadri Clinic Bellare,11000,Bellare,Bellare - 574212,08257-261400
+Thyroid Disorder,Govt,Primary Health Centre Guthigar,5000,Sullia,"Guthigar, Sullia - 574239",08257-233300
+Thyroid Disorder,Govt,Government Hospital Kateel,6000,Kateel,Kateel Town - 574272,0824-2298100
+Gastroenteritis,Private,Srinivasa Hospital Puttur,12000,Puttur,"KS Road, Puttur - 574201",08251-231000
+Appendicitis,Govt,Primary Health Centre Panemangalore,25000,Panemangalore,"Panemangalore, DK - 574236",0824-2239011
+Skin Disease,Govt,Primary Health Centre Dharmasthala,3500,Dharmasthala,Dharmasthala Town - 574216,08256-277100
+Ear Infection,Govt,Community Health Centre Sullia,3500,Sullia,Sullia Town - 574239,08257-233100
+Tuberculosis,Private,Sharada Hospital Puttur,16500,Puttur,Puttur - 574201,08251-231400
+Asthma,Private,Shanthi Hospital Kadaba,15000,Kadaba,Kadaba Town - 574221,08257-265700
+Malaria,Private,Sai Sanjeevini Hospital Gurupura,12000,Gurupura,Gurupura - 575016,0824-2284300
+Diabetes,Private,Srinivas Hospital Surathkal,13000,Surathkal,"Surathkal Main Road, Mangaluru - 575014",0824-2474500
+Ear Infection,Govt,Primary Health Centre Vittal,2000,Vittal,"Vittal Town, Bantwal Taluk - 574243",08255-231011
+Tuberculosis,Private,Narayana Hospital Panambur,29000,Panambur,"Baikampady, Panambur - 575011",0824-2408300
+Tuberculosis,Govt,Government Hospital Venur,5000,Belthangady,"Venur, Belthangady Taluk - 574237",08256-230300
+Pneumonia,Private,Durgaparameshwari Hospital Subramanya,25500,Subramanya,Subramanya - 574238,08257-258300
+Ear Infection,Govt,Community Health Centre Gurupura,3000,Gurupura,Gurupura - 575016,0824-2284100
+Asthma,Private,Durgaparameshwari Hospital Kateel,19500,Kateel,"Temple Road, Kateel - 574272",0824-2298200
+Liver Disease,Private,Shanthi Hospital Kadaba,84500,Kadaba,Kadaba Town - 574221,08257-265700
+Malaria,Private,Karavali Hospital Mulki,11500,Mulki,"NH 66, Mulki - 574154",0824-2296400
+Appendicitis,Private,Kalanjali Hospital Vittal,66500,Vittal,Vittal - 574243,08255-231500
+Pregnancy,Govt,Government Dispensary Bellare,19000,Bellare,Bellare Town - 574212,08257-261100
+Pregnancy,Private,Mahatma Gandhi Memorial Hospital Belthangady,57500,Belthangady,Belthangady Main Road - 574214,08256-230500
+Appendicitis,Private,Sharada Hospital Puttur,60000,Puttur,Puttur - 574201,08251-231400
+Thyroid Disorder,Govt,Primary Health Centre Vittal,4000,Vittal,"Vittal Town, Bantwal Taluk - 574243",08255-231011
+Ear Infection,Govt,Primary Health Centre Dharmasthala,2500,Dharmasthala,Dharmasthala Town - 574216,08256-277100
+Gastroenteritis,Govt,Taluk Hospital Moodabidri,6500,Moodabidri,"Hospital Road, Moodabidri - 574227",0824-2386011
+Fever,Govt,Community Health Centre Gurupura,1500,Gurupura,Gurupura - 575016,0824-2284100
+Heart Disease,Govt,Primary Health Centre Panambur,91000,Panambur,"Panambur Beach Road, Mangaluru - 575010",0824-2408001
+Hypertension,Govt,Government Hospital Vittal,5000,Vittal,"Main Road, Vittal - 574243",08255-231100
+Gastroenteritis,Private,Shanthi Hospital Kadaba,15500,Kadaba,Kadaba Town - 574221,08257-265700
+Liver Disease,Govt,Government Hospital Ullal,24000,Ullal,"Ullal Town, Dakshina Kannada - 574146",0824-2279011
+Liver Disease,Private,Nanthoor Community Hospital,80500,Nanthoor,Nanthoor - 574219,08255-239300
+Kidney Stone,Private,Nethravathi Medical Centre Bellare,42500,Bellare,Bellare - 574212,08257-261300
+Liver Disease,Private,Srinivasa Hospital Kateel,63500,Kateel,Kateel - 574272,0824-2298400
+Thyroid Disorder,Private,Srinivasa Hospital Panambur,16000,Panambur,"Panambur Road, Mangaluru - 575010",0824-2408200
+Skin Disease,Private,Durgaparameshwari Hospital Kateel,6500,Kateel,"Temple Road, Kateel - 574272",0824-2298200
+Skin Disease,Govt,Primary Health Centre Gurupura,2500,Gurupura,"Gurupura, Mangaluru Taluk - 575016",0824-2284011
+Surgery,Private,Venur Hospital,83500,Venur,"Main Road, Venur - 574237",08256-262200
+Asthma,Private,Shri Dharmasthala Manjunatheshwara Hospital Dharmasthala,18500,Belthangady,Dharmasthala - 574216,08256-277222
+Fracture,Govt,Government Hospital Mulki,14500,Mulki,"Town Road, Mulki - 574154",0824-2296022
+Surgery,Govt,Government Dispensary Bellare,51500,Bellare,Bellare Town - 574212,08257-261100
+Heart Disease,Private,Vinayaka Hospital Sullia,148500,Sullia,Sullia - 574239,08257-234300
+Gastroenteritis,Private,Venur Hospital,13000,Venur,"Main Road, Venur - 574237",08256-262200
+Pneumonia,Govt,Government Hospital Mulki,9500,Mulki,"Town Road, Mulki - 574154",0824-2296022
+Eye Disease,Private,Jain Hospital Moodabidri,39500,Moodabidri,"Temple Road, Moodabidri - 574227",0824-2386700
+Surgery,Private,Shanthi Hospital Kadaba,77000,Kadaba,Kadaba Town - 574221,08257-265700
+Appendicitis,Private,Karavali Hospital Mulki,53500,Mulki,"NH 66, Mulki - 574154",0824-2296400
+Skin Disease,Private,Sahyadri Hospital Vittal,8500,Vittal,"NH 75, Vittal - 574243",08255-231400
+Dengue,Private,Kukke Hospital Subramanya,10000,Subramanya,"Main Road, Subramanya - 574238",08257-258200
+Ear Infection,Private,Netravathi Hospital Ujire,6000,Ujire,"Main Road, Ujire - 574240",08256-248200
+Asthma,Private,Durgaparameshwari Hospital Subramanya,15500,Subramanya,Subramanya - 574238,08257-258300
+Ear Infection,Private,Srinivasa Hospital Moodabidri,8500,Moodabidri,Moodabidri Main Road - 574227,0824-2386800
+Pneumonia,Private,Karavali Hospital Mulki,18000,Mulki,"NH 66, Mulki - 574154",0824-2296400
+Fever,Govt,Taluk Hospital Sullia,1500,Sullia,"Hospital Road, Sullia - 574239",08257-233010
+Dengue,Govt,Government Hospital Ujire,5500,Ujire,Ujire Town - 574240,08256-248100
+Jaundice,Private,Vittal Hospital,23000,Vittal,Vittal Main Road - 574243,08255-231200
+Pneumonia,Govt,Primary Health Centre Bellare,11000,Bellare,"Bellare, Sullia Taluk - 574212",08257-261011
+Surgery,Govt,Government Dispensary Nelyadi,37000,Nelyadi,Nelyadi Town - 574221,08257-265300
+Malaria,Govt,Community Health Centre Sullia,6000,Sullia,Sullia Town - 574239,08257-233100
+Thyroid Disorder,Private,City Medical Centre Moodabidri,15500,Moodabidri,Moodabidri - 574227,0824-2386900
+UTI,Private,Saraswathi Hospital Uppinangady,13000,Uppinangady,Uppinangady - 574241,08251-232500
+Surgery,Private,Udupi Hospital Ujire,66500,Ujire,Ujire - 574240,08256-248300
+Skin Disease,Govt,Primary Health Centre Panemangalore,2000,Panemangalore,"Panemangalore, DK - 574236",0824-2239011
+Ear Infection,Private,Vittal Hospital,10000,Vittal,Vittal Main Road - 574243,08255-231200
+Hypertension,Private,Kateel Medical Centre,19500,Kateel,"Main Road, Kateel - 574272",0824-2298300
+Pregnancy,Govt,Community Health Centre Sullia,27000,Sullia,Sullia Town - 574239,08257-233100
+Surgery,Private,Narayana Hospital Panambur,69500,Panambur,"Baikampady, Panambur - 575011",0824-2408300
+Hypertension,Govt,Community Health Sub-Centre Panemangalore,6000,Panemangalore,Panemangalore - 574236,0824-2239100
+Typhoid,Govt,Primary Health Centre Ujire,5000,Ujire,"Ujire, Belthangady Taluk - 574240",08256-248011
+UTI,Govt,Primary Health Centre Kateel,5500,Kateel,"Kateel, Dakshina Kannada - 574272",0824-2298011
+Ear Infection,Private,Shanthi Hospital Gurupura,7000,Gurupura,Gurupura - 575016,0824-2284400
+Liver Disease,Govt,Government Dispensary Nanthoor,36000,Nanthoor,Nanthoor - 574219,08255-239100
+Diabetes,Govt,Primary Health Centre Nanthoor,9000,Nanthoor,"Nanthoor, Bantwal Taluk - 574219",08255-239011
+Appendicitis,Private,Kinnigoli Hospital,45500,Kinnigoli,"Main Road, Kinnigoli - 574150",0824-2293200
+Cancer,Govt,Government Hospital Ujire,118000,Ujire,Ujire Town - 574240,08256-248100
+Skin Disease,Private,Dawa Hospital Ullal,7500,Ullal,Ullal Town Road - 574146,0824-2279200
+Anaemia,Private,Karavali Hospital Mulki,8500,Mulki,"NH 66, Mulki - 574154",0824-2296400
+Anaemia,Govt,Government Hospital Surathkal,3500,Surathkal,"Surathkal, Mangaluru - 575014",0824-2474133
+Hypertension,Govt,Government Dispensary Bellare,5500,Bellare,Bellare Town - 574212,08257-261100
+Diabetes,Govt,Government Hospital Bantwal PHC,7500,Bantwal,"Bantwal Town, DK - 574219",08255-232100
+Liver Disease,Private,Sahyadri Medical Centre Venur,61500,Venur,Venur - 574237,08256-262300
+Jaundice,Private,Shree Hospital Uppinangady,15500,Uppinangady,Uppinangady - 574241,08251-232300
+Asthma,Private,Coastal Hospital Kinnigoli,16500,Kinnigoli,Kinnigoli - 574150,0824-2293400
+Cancer,Private,Nelyadi Clinic & Hospital,166500,Nelyadi,"Main Road, Nelyadi - 574221",08257-265800
+Dengue,Private,Coastal Care Hospital Panambur,12500,Panambur,Baikampady Industrial Area - 575011,0824-2408400
+UTI,Govt,Primary Health Centre Nanthoor,5500,Nanthoor,"Nanthoor, Bantwal Taluk - 574219",08255-239011
+Kidney Stone,Govt,Wenlock District Hospital,19000,Mangaluru,"Bibi Alabi Road, Hampankatta, Mangaluru - 575001",0824-2421351
+UTI,Govt,Government Dispensary Bellare,3000,Bellare,Bellare Town - 574212,08257-261100
+Heart Disease,Govt,Primary Health Centre Ujire,97500,Ujire,"Ujire, Belthangady Taluk - 574240",08256-248011
+Appendicitis,Govt,Community Health Centre Vamanapadavu,22500,Bantwal,"Vamanapadavu, Bantwal - 574241",08255-232200
+Malaria,Govt,Primary Health Centre Bellare,7000,Bellare,"Bellare, Sullia Taluk - 574212",08257-261011
+Dengue,Govt,Primary Health Centre Nelyadi,6500,Nelyadi,"Nelyadi, Kadaba Taluk - 574221",08257-265201
+Anaemia,Private,Coastal Nursing Home Panemangalore,12000,Panemangalore,Panemangalore - 574236,0824-2239400
+Eye Disease,Private,Sri Sai Hospital Nanthoor,16000,Nanthoor,Nanthoor - 574219,08255-239400
+Tuberculosis,Private,Srinivasa Hospital Kadaba,24500,Kadaba,"Main Road, Kadaba - 574221",08257-265500
+Ear Infection,Govt,Primary Health Centre Nelyadi,3000,Nelyadi,"Nelyadi, Kadaba Taluk - 574221",08257-265201
+Asthma,Govt,Government Dispensary Moodabidri,10500,Moodabidri,"Main Road, Moodabidri - 574227",0824-2386200
+Fracture,Govt,Primary Health Centre Vittal,14500,Vittal,"Vittal Town, Bantwal Taluk - 574243",08255-231011
+Skin Disease,Private,Shridhar Hospital Mulki,6000,Mulki,Mulki Junction - 574154,0824-2296300
+Eye Disease,Govt,Community Health Centre Puttur,7500,Puttur,Puttur Town - 574201,08251-230300
+Pneumonia,Govt,Government Hospital Kukke Subramanya,11500,Subramanya,Subramanya Town - 574238,08257-258011
+Fever,Govt,Primary Health Centre Paladka,1500,Mulki,"Paladka, Mulki - 574154",0824-2296100
+Typhoid,Private,Srinivasa Hospital Kadaba,8500,Kadaba,"Main Road, Kadaba - 574221",08257-265500
+Thyroid Disorder,Govt,Taluk Hospital Moodabidri,5000,Moodabidri,"Hospital Road, Moodabidri - 574227",0824-2386011
+Liver Disease,Govt,Government Hospital Mulki,29500,Mulki,"Town Road, Mulki - 574154",0824-2296022
+Jaundice,Govt,Government Hospital Venur,9500,Venur,"Venur, Belthangady Taluk - 574237",08256-262011
+Gastroenteritis,Govt,Government Hospital Kukke Subramanya,3000,Subramanya,Subramanya Town - 574238,08257-258011
+Pneumonia,Private,Kinnigoli Hospital,30000,Kinnigoli,"Main Road, Kinnigoli - 574150",0824-2293200
+Gastroenteritis,Govt,Government Hospital Venur,4000,Venur,"Venur, Belthangady Taluk - 574237",08256-262011
+Malaria,Private,Kinnigoli Hospital,15500,Kinnigoli,"Main Road, Kinnigoli - 574150",0824-2293200
+Ear Infection,Private,Sai Sanjeevini Hospital Kinnigoli,9000,Kinnigoli,Kinnigoli - 574150,0824-2293300
+Ear Infection,Private,KVG Medical College Hospital Sullia,9000,Sullia,"Kurunjibag, Sullia - 574327",08257-232608
+Fracture,Private,Srinivasa Hospital Venur,33500,Venur,Venur - 574237,08256-262400
+Appendicitis,Private,Prakash Hospital Bantwal,49000,Bantwal,"Main Road, Bantwal - 574219",08255-232800
+Dengue,Private,Sahyadri Medical Centre Venur,10500,Venur,Venur - 574237,08256-262300
+Fracture,Govt,Primary Health Centre Nanthoor,15000,Nanthoor,"Nanthoor, Bantwal Taluk - 574219",08255-239011
+Jaundice,Govt,Primary Health Centre Ujire,9500,Ujire,"Ujire, Belthangady Taluk - 574240",08256-248011
+Ear Infection,Private,Shridhar Hospital Mulki,9000,Mulki,Mulki Junction - 574154,0824-2296300
+Hypertension,Private,Vijaya Hospital Belthangady,14000,Belthangady,Belthangady Town - 574214,08256-230700
+Kidney Stone,Govt,Primary Health Centre Guthigar,18000,Sullia,"Guthigar, Sullia - 574239",08257-233300
+Liver Disease,Private,Canara Hospital Puttur,89000,Puttur,Puttur Main Road - 574201,08251-231500
+Liver Disease,Govt,Government Dispensary Moodabidri,44000,Moodabidri,"Main Road, Moodabidri - 574227",0824-2386200
+Pregnancy,Govt,Primary Health Centre Kateel,21000,Kateel,"Kateel, Dakshina Kannada - 574272",0824-2298011
+UTI,Govt,Primary Health Centre Panambur,3000,Panambur,"Panambur Beach Road, Mangaluru - 575010",0824-2408001
+Skin Disease,Govt,Government Hospital Venur,2000,Belthangady,"Venur, Belthangady Taluk - 574237",08256-230300
+Appendicitis,Private,Alva's Health Centre Moodabidri,59500,Moodabidri,"Alva's Education Foundation, Moodabidri - 574227",0824-2386500
+Dengue,Private,Sahyadri Hospital Vittal,11500,Vittal,"NH 75, Vittal - 574243",08255-231400
+Diabetes,Private,Jain Hospital Moodabidri,12000,Moodabidri,"Temple Road, Moodabidri - 574227",0824-2386700
+Asthma,Private,Sahyadri Clinic Bellare,21000,Bellare,Bellare - 574212,08257-261400
+Fracture,Govt,Primary Health Centre Vittal,13500,Bantwal,"Vittal, Bantwal Taluk - 574243",08255-231011
+Gastroenteritis,Govt,Primary Health Centre Kateel,5000,Kateel,"Kateel, Dakshina Kannada - 574272",0824-2298011
+Eye Disease,Govt,Taluk Hospital Kadaba,8500,Kadaba,"Hospital Road, Kadaba - 574221",08257-265011
+Appendicitis,Govt,Community Health Sub-Centre Kinnigoli,20500,Kinnigoli,Kinnigoli Town - 574150,0824-2293100
+Tuberculosis,Private,Shanthi Hospital Gurupura,29000,Gurupura,Gurupura - 575016,0824-2284400
+Kidney Stone,Private,Unity Hospital Mangaluru,32500,Mangaluru,"Mangaladevi Road, Mangaluru - 575003",0824-2222222
+Gastroenteritis,Govt,Primary Health Centre Gurupura,6500,Gurupura,"Gurupura, Mangaluru Taluk - 575016",0824-2284011
+Tuberculosis,Govt,Primary Health Centre Uppinangady,6000,Uppinangady,Uppinangady Town - 574241,08251-232100
+Asthma,Private,KVG Medical College & Hospital Puttur Road,13000,Puttur,"Sullia Road, Puttur - 574201",08251-230600
+Gastroenteritis,Private,Vijaya Hospital Belthangady,14500,Belthangady,Belthangady Town - 574214,08256-230700
+Diabetes,Govt,Government Dispensary Moodabidri,7500,Moodabidri,"Main Road, Moodabidri - 574227",0824-2386200
+Surgery,Private,Shri Dharmasthala Manjunatheshwara Hospital Dharmasthala,69500,Belthangady,Dharmasthala - 574216,08256-277222
+Liver Disease,Govt,Community Health Centre Puttur,27500,Puttur,Puttur Town - 574201,08251-230300
+Kidney Stone,Private,Sri Durga Hospital Bantwal,40500,Bantwal,"BC Road, Bantwal - 574219",08255-233001
+Ear Infection,Private,Sri Sai Hospital Nanthoor,9500,Nanthoor,Nanthoor - 574219,08255-239400
+Tuberculosis,Private,SDM Ayurvedic Hospital Dharmasthala,28500,Dharmasthala,Dharmasthala - 574216,08256-277333
+Ear Infection,Govt,Primary Health Centre Nanthoor,3000,Nanthoor,"Nanthoor, Bantwal Taluk - 574219",08255-239011
+Thyroid Disorder,Govt,Government Dispensary Bellare,7500,Bellare,Bellare Town - 574212,08257-261100
+Fracture,Govt,Community Health Centre Sullia,14000,Sullia,Sullia Town - 574239,08257-233100
+Pneumonia,Govt,Taluk Hospital Sullia,10500,Sullia,"Hospital Road, Sullia - 574239",08257-233010
+Tuberculosis,Private,Vijaya Hospital Belthangady,16000,Belthangady,Belthangady Town - 574214,08256-230700
+Kidney Stone,Private,Mahatma Gandhi Memorial Hospital Belthangady,43500,Belthangady,Belthangady Main Road - 574214,08256-230500
+Typhoid,Govt,Primary Health Centre Panemangalore,5000,Panemangalore,"Panemangalore, DK - 574236",0824-2239011
+Eye Disease,Private,Nelyadi Clinic & Hospital,26000,Nelyadi,"Main Road, Nelyadi - 574221",08257-265800
+Jaundice,Private,Durgaparameshwari Hospital Kateel,22000,Kateel,"Temple Road, Kateel - 574272",0824-2298200
+Skin Disease,Govt,Taluk Hospital Sullia,3500,Sullia,"Hospital Road, Sullia - 574239",08257-233010
+Typhoid,Private,Srinivasa Hospital Kateel,11500,Kateel,Kateel - 574272,0824-2298400
+Typhoid,Govt,Primary Health Centre Vittal,4500,Vittal,"Vittal Town, Bantwal Taluk - 574243",08255-231011
+Diabetes,Govt,Primary Health Centre Bellare,8500,Bellare,"Bellare, Sullia Taluk - 574212",08257-261011
+Cancer,Private,Samanvaya Hospital Bantwal,163000,Bantwal,Bantwal Town Road - 574219,08255-232700
+UTI,Govt,Community Health Centre Ullal,3000,Ullal,Ullal Main Road - 574146,0824-2279100
+Tuberculosis,Govt,Primary Health Centre Ullal,5000,Ullal,"Chitrapu, Ullal - 574146",0824-2279022
+Pregnancy,Govt,Community Health Centre Gurupura,19000,Gurupura,Gurupura - 575016,0824-2284100
+Jaundice,Govt,Primary Health Centre Panemangalore,6000,Panemangalore,"Panemangalore, DK - 574236",0824-2239011
+Pregnancy,Private,Sahyadri Clinic Bellare,65500,Bellare,Bellare - 574212,08257-261400
+Hypertension,Govt,Primary Health Centre Nelyadi,5000,Nelyadi,"Nelyadi, Kadaba Taluk - 574221",08257-265201
+Fracture,Private,Srinivasa Clinic Panemangalore,35500,Panemangalore,Panemangalore - 574236,0824-2239300
+Hypertension,Govt,Primary Health Centre Gurupura,7500,Gurupura,"Gurupura, Mangaluru Taluk - 575016",0824-2284011
+Skin Disease,Private,Vijaya Hospital Belthangady,9000,Belthangady,Belthangady Town - 574214,08256-230700
+Kidney Stone,Govt,Government Dispensary Moodabidri,17000,Moodabidri,"Main Road, Moodabidri - 574227",0824-2386200
+Jaundice,Private,Coastal Hospital Kinnigoli,24500,Kinnigoli,Kinnigoli - 574150,0824-2293400
+Fracture,Private,Srinivasa Hospital Mulki,25500,Mulki,"Main Road, Mulki - 574154",0824-2296200
+Diabetes,Govt,Primary Health Centre Ullal,9500,Ullal,"Chitrapu, Ullal - 574146",0824-2279022
+Pregnancy,Private,Sahyadri Hospital Sullia,52500,Sullia,Sullia - 574239,08257-234200
+Heart Disease,Private,Prashanth Hospital Puttur,158000,Puttur,"Town Hall Road, Puttur - 574201",08251-231200
+Liver Disease,Govt,Government Hospital Venur,40500,Belthangady,"Venur, Belthangady Taluk - 574237",08256-230300
+Kidney Stone,Govt,Community Health Centre Gurupura,20000,Gurupura,Gurupura - 575016,0824-2284100
+Thyroid Disorder,Private,Shanthi Hospital Kadaba,15500,Kadaba,Kadaba Town - 574221,08257-265700
+Liver Disease,Govt,Primary Health Centre Dharmasthala,27000,Dharmasthala,Dharmasthala Town - 574216,08256-277100
+Surgery,Govt,Primary Health Centre Nanthoor,49000,Nanthoor,"Nanthoor, Bantwal Taluk - 574219",08255-239011
+Fever,Govt,Primary Health Centre Dharmasthala,1500,Dharmasthala,Dharmasthala Town - 574216,08256-277100
+Jaundice,Govt,Primary Health Centre Nelyadi,9500,Kadaba,"Nelyadi, Kadaba - 574221",08257-265200
+Hypertension,Private,Mahalasa Hospital Nelyadi,16500,Nelyadi,Nelyadi - 574221,08257-265900
+Asthma,Govt,Government Hospital Ullal,7000,Ullal,"Ullal Town, Dakshina Kannada - 574146",0824-2279011
+Tuberculosis,Private,Dawa Hospital Ullal,16500,Ullal,Ullal Town Road - 574146,0824-2279200
+Anaemia,Govt,Government Hospital Vittal,3000,Vittal,"Main Road, Vittal - 574243",08255-231100
+Appendicitis,Private,Bhagavathi Hospital Belthangady,60000,Belthangady,Belthangady - 574214,08256-230600
+Asthma,Private,Netravathi Hospital Uppinangady,20000,Uppinangady,"Main Road, Uppinangady - 574241",08251-232200
+Malaria,Govt,Primary Health Centre Kinnigoli,4500,Kinnigoli,"Kinnigoli, Mangaluru Taluk - 574150",0824-2293011
+Kidney Stone,Govt,Community Health Sub-Centre Kinnigoli,17000,Kinnigoli,Kinnigoli Town - 574150,0824-2293100
+Anaemia,Govt,Government Dispensary Nanthoor,3000,Nanthoor,Nanthoor - 574219,08255-239100
+Gastroenteritis,Govt,Primary Health Centre Panambur,6500,Surathkal,"Panambur, Mangaluru - 575010",0824-2408001
+Appendicitis,Private,Sealand Hospital Ullal,51000,Ullal,"Someshwara, Ullal - 574146",0824-2278001
+Dengue,Govt,Community Health Centre Kadaba,7000,Kadaba,Kadaba Town - 574221,08257-265100
+Gastroenteritis,Private,SDM Medical College Hospital Ujire,13500,Ujire,"SDM Campus, Ujire - 574240",08256-248500
+Ear Infection,Private,Sahyadri Clinic Bellare,11500,Bellare,Bellare - 574212,08257-261400
+UTI,Govt,Community Health Centre Kadaba,5500,Kadaba,Kadaba Town - 574221,08257-265100
+Ear Infection,Private,Bhagavathi Hospital Belthangady,11500,Belthangady,Belthangady - 574214,08256-230600
+Appendicitis,Govt,Primary Health Centre Ullal,32500,Ullal,"Chitrapu, Ullal - 574146",0824-2279022
+Cancer,Govt,Primary Health Centre Naravi,101500,Belthangady,"Naravi, Belthangady - 574214",08256-230200
+Surgery,Private,Kateel Medical Centre,77000,Kateel,"Main Road, Kateel - 574272",0824-2298300
+Anaemia,Govt,Government Dispensary Bellare,2500,Bellare,Bellare Town - 574212,08257-261100
+Kidney Stone,Private,Jain Hospital Moodabidri,37500,Moodabidri,"Temple Road, Moodabidri - 574227",0824-2386700
+Gastroenteritis,Govt,Community Health Centre Vamanapadavu,6000,Bantwal,"Vamanapadavu, Bantwal - 574241",08255-232200
+Typhoid,Govt,Primary Health Centre Naravi,4500,Belthangady,"Naravi, Belthangady - 574214",08256-230200
+Hypertension,Private,Sahyadri Clinic Bellare,16500,Bellare,Bellare - 574212,08257-261400
+Pregnancy,Private,Srinivasa Hospital Kateel,66000,Kateel,Kateel - 574272,0824-2298400
+Appendicitis,Govt,Taluk Hospital Kadaba,18000,Kadaba,"Hospital Road, Kadaba - 574221",08257-265011
+Pneumonia,Govt,Primary Health Centre Kinnigoli,10500,Kinnigoli,"Kinnigoli, Mangaluru Taluk - 574150",0824-2293011
+Jaundice,Govt,Port Trust Hospital Panambur,7500,Panambur,"NMPT Colony, Panambur - 575010",0824-2407700
+Skin Disease,Private,Sri Sai Hospital Nanthoor,5500,Nanthoor,Nanthoor - 574219,08255-239400
+Diabetes,Private,Shridhar Hospital Nanthoor,11000,Nanthoor,"Main Road, Nanthoor - 574219",08255-239200
+Diabetes,Private,SDM Ayurvedic Hospital Dharmasthala,18000,Dharmasthala,Dharmasthala - 574216,08256-277333
+Appendicitis,Private,Sahyadri Medical Centre Venur,46000,Venur,Venur - 574237,08256-262300
+Liver Disease,Private,Srinivas Hospital Surathkal,67500,Surathkal,"Surathkal Main Road, Mangaluru - 575014",0824-2474500
+Eye Disease,Private,Venur Hospital,26500,Venur,"Main Road, Venur - 574237",08256-262200
+Anaemia,Private,Shridhar Hospital Nanthoor,12000,Nanthoor,"Main Road, Nanthoor - 574219",08255-239200
+UTI,Private,Sri Krishna Hospital Sullia,12500,Sullia,Sullia Main Road - 574239,08257-234400
+Diabetes,Private,Coastal Hospital Kinnigoli,12000,Kinnigoli,Kinnigoli - 574150,0824-2293400
+Fever,Govt,Primary Health Centre Panemangalore,2500,Panemangalore,"Panemangalore, DK - 574236",0824-2239011
+Dengue,Govt,Government Hospital Surathkal,6000,Surathkal,"Surathkal, Mangaluru - 575014",0824-2474133
+Dengue,Govt,Government Dispensary Nanthoor,5000,Nanthoor,Nanthoor - 574219,08255-239100
+Ear Infection,Private,Shree Durgaparameshwari Hospital BC Road,8000,Bantwal,"BC Road, Bantwal - 574219",08255-232600
+Surgery,Private,Sahyadri Hospital Vittal,87000,Vittal,"NH 75, Vittal - 574243",08255-231400
+Pneumonia,Private,Srinivasa Hospital Kateel,23500,Kateel,Kateel - 574272,0824-2298400
+Hypertension,Private,Shree Hospital Uppinangady,16500,Uppinangady,Uppinangady - 574241,08251-232300
+Ear Infection,Private,Coastal Care Hospital Panambur,8500,Panambur,Baikampady Industrial Area - 575011,0824-2408400
+Asthma,Govt,Community Health Sub-Centre Kinnigoli,8500,Kinnigoli,Kinnigoli Town - 574150,0824-2293100
+Jaundice,Private,Sai Sanjeevini Hospital Gurupura,18500,Gurupura,Gurupura - 575016,0824-2284300
+Hypertension,Govt,Primary Health Centre Nelyadi,6000,Kadaba,"Nelyadi, Kadaba - 574221",08257-265200
+Skin Disease,Private,Venur Hospital,11500,Venur,"Main Road, Venur - 574237",08256-262200
+Thyroid Disorder,Private,Vinayaka Hospital Sullia,15000,Sullia,Sullia - 574239,08257-234300
+Tuberculosis,Private,Coastal Hospital Surathkal,30000,Surathkal,"Surathkal Road, Mangaluru - 575014",0824-2478002
+Dengue,Govt,Government Ayurvedic Hospital Mangaluru,5500,Mangaluru,"Court Road, Mangaluru - 575001",0824-2426555
+Cancer,Private,Ullal Nursing Home,202500,Ullal,"Main Road, Ullal - 574146",0824-2279400
+Skin Disease,Private,Durgaparameshwari Hospital Subramanya,7500,Subramanya,Subramanya - 574238,08257-258300
+Ear Infection,Govt,Community Health Sub-Centre Panemangalore,2500,Panemangalore,Panemangalore - 574236,0824-2239100
+Gastroenteritis,Govt,Primary Health Centre Nanthoor,4000,Nanthoor,"Nanthoor, Bantwal Taluk - 574219",08255-239011
+Cancer,Private,Coastal Care Hospital Panambur,199000,Panambur,Baikampady Industrial Area - 575011,0824-2408400
+Kidney Stone,Govt,Primary Health Centre Panambur,17000,Panambur,"Panambur Beach Road, Mangaluru - 575010",0824-2408001
+Kidney Stone,Private,Panemangalore Hospital,41000,Panemangalore,"Main Road, Panemangalore - 574236",0824-2239200
+UTI,Private,Nelyadi Clinic & Hospital,7500,Nelyadi,"Main Road, Nelyadi - 574221",08257-265800
+Asthma,Govt,Primary Health Centre Naravi,7500,Belthangady,"Naravi, Belthangady - 574214",08256-230200
+Malaria,Govt,Primary Health Centre Panambur,5500,Panambur,"Panambur Beach Road, Mangaluru - 575010",0824-2408001
+UTI,Govt,Primary Health Centre Kinnigoli,4500,Kinnigoli,"Kinnigoli, Mangaluru Taluk - 574150",0824-2293011
+Surgery,Private,Indiana Hospital & Heart Institute,69500,Mangaluru,"Pumpwell Circle, Kankanady, Mangaluru - 575002",0824-2457799
+Surgery,Govt,Community Health Centre Ullal,35000,Ullal,Ullal Main Road - 574146,0824-2279100
+Fever,Private,Kateel Medical Centre,6000,Kateel,"Main Road, Kateel - 574272",0824-2298300
+Ear Infection,Govt,Primary Health Centre Kinnigoli,3000,Kinnigoli,"Kinnigoli, Mangaluru Taluk - 574150",0824-2293011
+Gastroenteritis,Govt,Urban Primary Health Centre Bunder,5500,Mangaluru,"Bunder, Mangaluru - 575001",0824-2440101
+Thyroid Disorder,Private,Canara Hospital Puttur,15500,Puttur,Puttur Main Road - 574201,08251-231500
+Pneumonia,Govt,Urban Primary Health Centre Kavoor,9000,Mangaluru,"Kavoor, Mangaluru - 574143",0824-2285033
+Typhoid,Govt,Government Hospital Mulki,5000,Mulki,"Town Road, Mulki - 574154",0824-2296022
+Pregnancy,Govt,Community Health Sub-Centre Panemangalore,17500,Panemangalore,Panemangalore - 574236,0824-2239100
+Anaemia,Govt,Taluk Hospital Moodabidri,3500,Moodabidri,"Hospital Road, Moodabidri - 574227",0824-2386011
+Jaundice,Govt,Primary Health Centre Kateel,9000,Kateel,"Kateel, Dakshina Kannada - 574272",0824-2298011
+Thyroid Disorder,Private,Shree Kshethra Dharmasthala RDPR Hospital,11000,Dharmasthala,Dharmasthala - 574216,08256-277444
+Typhoid,Private,Venur Hospital,9000,Venur,"Main Road, Venur - 574237",08256-262200
+Eye Disease,Govt,Primary Health Centre Panambur,13000,Panambur,"Panambur Beach Road, Mangaluru - 575010",0824-2408001
+Gastroenteritis,Govt,Community Health Centre Ullal,3000,Ullal,Ullal Main Road - 574146,0824-2279100
+Cancer,Private,Canara Hospital Puttur,155000,Puttur,Puttur Main Road - 574201,08251-231500
+Thyroid Disorder,Govt,Government Hospital Kukke Subramanya,6500,Subramanya,Subramanya Town - 574238,08257-258011
+Pneumonia,Govt,Primary Health Centre Nelyadi,11000,Kadaba,"Nelyadi, Kadaba - 574221",08257-265200
+Fever,Private,Shridhar Hospital Mulki,5000,Mulki,Mulki Junction - 574154,0824-2296300
+Kidney Stone,Private,Gurupura Hospital,38000,Gurupura,"Main Road, Gurupura - 575016",0824-2284200
+Heart Disease,Private,Prakash Hospital Bantwal,145500,Bantwal,"Main Road, Bantwal - 574219",08255-232800
+Tuberculosis,Govt,Primary Health Centre Panemangalore,4500,Panemangalore,"Panemangalore, DK - 574236",0824-2239011
+Asthma,Govt,Primary Health Centre Gurupura,7500,Gurupura,"Gurupura, Mangaluru Taluk - 575016",0824-2284011
+Tuberculosis,Private,Saraswathi Hospital Uppinangady,21000,Uppinangady,Uppinangady - 574241,08251-232500
+Diabetes,Private,Nelyadi Clinic & Hospital,13500,Nelyadi,"Main Road, Nelyadi - 574221",08257-265800
+Pregnancy,Private,Shridhar Hospital Nanthoor,54000,Nanthoor,"Main Road, Nanthoor - 574219",08255-239200
+Eye Disease,Govt,Primary Health Centre Naravi,13000,Belthangady,"Naravi, Belthangady - 574214",08256-230200
+Fever,Govt,Government Hospital Venur,2500,Venur,"Venur, Belthangady Taluk - 574237",08256-262011
+Thyroid Disorder,Private,Udupi Hospital Ujire,16500,Ujire,Ujire - 574240,08256-248300
+Diabetes,Private,Srinivas Institute of Medical Sciences,17000,Mangaluru,"Mukka, Surathkal, Mangaluru - 574146",0824-2477000
+Dengue,Private,Nethravathi Medical Centre Bellare,11500,Bellare,Bellare - 574212,08257-261300
+Kidney Stone,Private,Sealand Hospital Ullal,43000,Ullal,"Someshwara, Ullal - 574146",0824-2278001
+Tuberculosis,Govt,Government Hospital Ujire,5500,Ujire,Ujire Town - 574240,08256-248100
+Ear Infection,Private,Kateel Medical Centre,9000,Kateel,"Main Road, Kateel - 574272",0824-2298300
+Tuberculosis,Private,Sahyadri Medical Centre Venur,27000,Venur,Venur - 574237,08256-262300
+Dengue,Private,Dharmasthala Rural Hospital,12500,Dharmasthala,"Temple Road, Dharmasthala - 574216",08256-277555
+Kidney Stone,Private,SDM Ayurvedic Hospital Dharmasthala,37000,Dharmasthala,Dharmasthala - 574216,08256-277333
+UTI,Govt,Community Health Centre Sullia,4500,Sullia,Sullia Town - 574239,08257-233100
+Asthma,Private,Vinayaka Hospital Sullia,15500,Sullia,Sullia - 574239,08257-234300
+Jaundice,Govt,Government Hospital Bantwal PHC,6500,Bantwal,"Bantwal Town, DK - 574219",08255-232100
+Eye Disease,Govt,Primary Health Centre Subramanya,14500,Subramanya,Subramanya - 574238,08257-258100
+Anaemia,Private,SDM Ayurvedic Hospital Dharmasthala,8000,Dharmasthala,Dharmasthala - 574216,08256-277333
+UTI,Private,Dharmasthala Rural Hospital,7500,Dharmasthala,"Temple Road, Dharmasthala - 574216",08256-277555
+Cancer,Private,Udupi Hospital Ujire,168000,Ujire,Ujire - 574240,08256-248300
+Pneumonia,Private,Vijaya Hospital Belthangady,21000,Belthangady,Belthangady Town - 574214,08256-230700
+Typhoid,Govt,Primary Health Centre Uppinangady,3000,Uppinangady,Uppinangady Town - 574241,08251-232100
+Pneumonia,Private,Srinivasa Hospital Kadaba,26000,Kadaba,"Main Road, Kadaba - 574221",08257-265500
+Fever,Private,Sahyadri Medical Centre Venur,5500,Venur,Venur - 574237,08256-262300
+Skin Disease,Private,Sai Sanjeevini Hospital Gurupura,9500,Gurupura,Gurupura - 575016,0824-2284300
+Eye Disease,Govt,Primary Health Centre Panambur,9500,Surathkal,"Panambur, Mangaluru - 575010",0824-2408001
+Jaundice,Govt,Government Dispensary Bellare,9500,Bellare,Bellare Town - 574212,08257-261100
+Appendicitis,Govt,Government Hospital Venur,25000,Venur,"Venur, Belthangady Taluk - 574237",08256-262011
+Hypertension,Govt,Government Dispensary Nanthoor,8000,Nanthoor,Nanthoor - 574219,08255-239100
+Thyroid Disorder,Private,Durgaparameshwari Hospital Subramanya,14500,Subramanya,Subramanya - 574238,08257-258300
+Pneumonia,Govt,Community Health Sub-Centre Panemangalore,13500,Panemangalore,Panemangalore - 574236,0824-2239100
+Appendicitis,Govt,Primary Health Centre Nelyadi,19500,Nelyadi,"Nelyadi, Kadaba Taluk - 574221",08257-265201
+Dengue,Govt,Community Health Centre Sullia,7000,Sullia,Sullia Town - 574239,08257-233100
+Malaria,Govt,Government Dispensary Nelyadi,7500,Nelyadi,Nelyadi Town - 574221,08257-265300
+Diabetes,Private,Srinivasa Hospital Kateel,14000,Kateel,Kateel - 574272,0824-2298400
+Appendicitis,Govt,Community Health Centre Ullal,23500,Ullal,Ullal Main Road - 574146,0824-2279100
+Tuberculosis,Govt,Primary Health Centre Nanthoor,5500,Nanthoor,"Nanthoor, Bantwal Taluk - 574219",08255-239011
+Malaria,Private,Srinivasa Hospital Kadaba,10000,Kadaba,"Main Road, Kadaba - 574221",08257-265500
+Gastroenteritis,Govt,Primary Health Centre Nelyadi,6000,Nelyadi,"Nelyadi, Kadaba Taluk - 574221",08257-265201
+Fracture,Govt,Primary Health Centre Kinnigoli,12000,Kinnigoli,"Kinnigoli, Mangaluru Taluk - 574150",0824-2293011
+Anaemia,Govt,Government Dispensary Nelyadi,5500,Nelyadi,Nelyadi Town - 574221,08257-265300
+Pneumonia,Private,Sai Sanjeevini Hospital Gurupura,27500,Gurupura,Gurupura - 575016,0824-2284300
+Pneumonia,Private,Coastal Nursing Home Panemangalore,21000,Panemangalore,Panemangalore - 574236,0824-2239400
+Appendicitis,Govt,Government Dispensary Bellare,27000,Bellare,Bellare Town - 574212,08257-261100
+Ear Infection,Govt,Government Hospital Uppinangady,3500,Uppinangady,"Uppinangady, Puttur Taluk - 574241",08251-232011
+Appendicitis,Govt,Primary Health Centre Nanthoor,33000,Nanthoor,"Nanthoor, Bantwal Taluk - 574219",08255-239011
+Asthma,Govt,Government Hospital Uppinangady,9000,Uppinangady,"Uppinangady, Puttur Taluk - 574241",08251-232011
+Jaundice,Govt,Government Dispensary Moodabidri,8000,Moodabidri,"Main Road, Moodabidri - 574227",0824-2386200
+Typhoid,Private,Unity Hospital Mangaluru,13000,Mangaluru,"Mangaladevi Road, Mangaluru - 575003",0824-2222222
+Heart Disease,Govt,Community Health Centre Dharmasthala,82500,Dharmasthala,Dharmasthala - 574216,08256-277011
+Pregnancy,Private,Sai Sanjeevini Hospital Kinnigoli,53500,Kinnigoli,Kinnigoli - 574150,0824-2293300
+UTI,Govt,Government Hospital Vittal,4500,Vittal,"Main Road, Vittal - 574243",08255-231100
+Pneumonia,Govt,Community Health Centre Puttur,9500,Puttur,Puttur Town - 574201,08251-230300
+Pregnancy,Govt,Primary Health Centre Ullal,27500,Ullal,"Chitrapu, Ullal - 574146",0824-2279022
+Jaundice,Private,Srinivasa Hospital Venur,25000,Venur,Venur - 574237,08256-262400
+Skin Disease,Private,Prakash Hospital Bantwal,10500,Bantwal,"Main Road, Bantwal - 574219",08255-232800
+Surgery,Govt,Urban Primary Health Centre Surathkal,52500,Surathkal,"NITK Campus Road, Surathkal - 575014",0824-2474055
+Surgery,Govt,Primary Health Centre Panambur,45000,Panambur,"Panambur Beach Road, Mangaluru - 575010",0824-2408001
+Skin Disease,Govt,Government Hospital Kateel,1500,Kateel,Kateel Town - 574272,0824-2298100
+Typhoid,Govt,Government Dispensary Bellare,5500,Bellare,Bellare Town - 574212,08257-261100
+Typhoid,Govt,Taluk Hospital Moodabidri,3000,Moodabidri,"Hospital Road, Moodabidri - 574227",0824-2386011
+Anaemia,Govt,Government Hospital Ullal,5500,Ullal,"Ullal Town, Dakshina Kannada - 574146",0824-2279011
+UTI,Private,Durgaparameshwari Hospital Subramanya,12000,Subramanya,Subramanya - 574238,08257-258300
+Jaundice,Private,Sahyadri Clinic Bellare,28000,Bellare,Bellare - 574212,08257-261400
+Malaria,Private,Durgaparameshwari Hospital Kateel,12000,Kateel,"Temple Road, Kateel - 574272",0824-2298200
+Typhoid,Govt,Primary Health Centre Kinnigoli,2500,Kinnigoli,"Kinnigoli, Mangaluru Taluk - 574150",0824-2293011
+Skin Disease,Govt,Government Dispensary Nelyadi,3500,Nelyadi,Nelyadi Town - 574221,08257-265300
+Typhoid,Private,Vijaya Hospital Belthangady,10000,Belthangady,Belthangady Town - 574214,08256-230700
+Liver Disease,Private,Alva's Health Centre Moodabidri,87000,Moodabidri,"Alva's Education Foundation, Moodabidri - 574227",0824-2386500
+Pneumonia,Private,Sri Sai Hospital Nanthoor,16000,Nanthoor,Nanthoor - 574219,08255-239400
+Gastroenteritis,Govt,Primary Health Centre Bellare,7000,Bellare,"Bellare, Sullia Taluk - 574212",08257-261011
+Ear Infection,Govt,Primary Health Centre Venur,4500,Venur,Venur Town - 574237,08256-262100
+Typhoid,Private,Coastal Hospital Surathkal,12500,Surathkal,"Surathkal Road, Mangaluru - 575014",0824-2478002
+Eye Disease,Private,Shanthi Hospital Gurupura,25500,Gurupura,Gurupura - 575016,0824-2284400
+Liver Disease,Private,Srinivasa Clinic Panemangalore,65000,Panemangalore,Panemangalore - 574236,0824-2239300
+Fever,Govt,Government Hospital Vittal,2500,Vittal,"Main Road, Vittal - 574243",08255-231100
+Hypertension,Private,Navami Hospital Bantwal,12000,Bantwal,Bantwal - 574219,08255-232900
+Fracture,Private,Panemangalore Hospital,24000,Panemangalore,"Main Road, Panemangalore - 574236",0824-2239200
+Hypertension,Govt,Community Health Centre Moodabidri,7500,Moodabidri,Moodabidri Town - 574227,0824-2386100
+Cancer,Govt,Primary Health Centre Kinnigoli,122000,Kinnigoli,"Kinnigoli, Mangaluru Taluk - 574150",0824-2293011
+Jaundice,Private,Shridhar Hospital Mulki,24000,Mulki,Mulki Junction - 574154,0824-2296300
+Tuberculosis,Private,Coastal Hospital Kinnigoli,26500,Kinnigoli,Kinnigoli - 574150,0824-2293400
+Pneumonia,Govt,Primary Health Centre Dharmasthala,11500,Dharmasthala,Dharmasthala Town - 574216,08256-277100
+Tuberculosis,Govt,Government Lady Goschen Hospital,4500,Mangaluru,"Maidan Road, Mangaluru - 575001",0824-2440305
+Skin Disease,Govt,Primary Health Centre Panambur,2500,Panambur,"Panambur Beach Road, Mangaluru - 575010",0824-2408001
+Fracture,Private,Durgaparameshwari Hospital Kateel,28000,Kateel,"Temple Road, Kateel - 574272",0824-2298200
+Malaria,Govt,Taluk Hospital Belthangady,6000,Belthangady,"Hospital Road, Belthangady - 574214",08256-230011
+Dengue,Private,Srinivasa Hospital Kateel,16500,Kateel,Kateel - 574272,0824-2298400
+Pregnancy,Govt,Primary Health Centre Nelyadi,27500,Kadaba,"Nelyadi, Kadaba - 574221",08257-265200
+Jaundice,Private,Srinivasa Hospital Moodabidri,18500,Moodabidri,Moodabidri Main Road - 574227,0824-2386800
+Tuberculosis,Private,Netravathi Hospital Ujire,22500,Ujire,"Main Road, Ujire - 574240",08256-248200
+Malaria,Private,Venur Hospital,12000,Venur,"Main Road, Venur - 574237",08256-262200
+Malaria,Govt,Primary Health Centre Ullal,6500,Ullal,"Chitrapu, Ullal - 574146",0824-2279022
+Tuberculosis,Govt,Government Hospital Kukke Subramanya,4500,Subramanya,Subramanya Town - 574238,08257-258011
+Tuberculosis,Govt,Primary Health Centre Venur,6500,Venur,Venur Town - 574237,08256-262100
+Gastroenteritis,Govt,Community Health Sub-Centre Panemangalore,3000,Panemangalore,Panemangalore - 574236,0824-2239100
+Malaria,Private,Sri Sai Hospital Nanthoor,14500,Nanthoor,Nanthoor - 574219,08255-239400
+Heart Disease,Govt,Government Hospital Uppinangady,85000,Uppinangady,"Uppinangady, Puttur Taluk - 574241",08251-232011
+Skin Disease,Govt,Government Hospital Kukke Subramanya,2000,Subramanya,Subramanya Town - 574238,08257-258011
+UTI,Private,Nanthoor Community Hospital,11500,Nanthoor,Nanthoor - 574219,08255-239300
+Pregnancy,Private,Shanthi Hospital Gurupura,53000,Gurupura,Gurupura - 575016,0824-2284400
+Typhoid,Private,Shanthi Hospital Gurupura,13500,Gurupura,Gurupura - 575016,0824-2284400
+Cancer,Govt,Community Health Centre Dharmasthala,93000,Dharmasthala,Dharmasthala - 574216,08256-277011
+Kidney Stone,Private,Sai Sanjeevini Hospital Kinnigoli,41000,Kinnigoli,Kinnigoli - 574150,0824-2293300
+Fracture,Govt,Primary Health Centre Panemangalore,15000,Panemangalore,"Panemangalore, DK - 574236",0824-2239011
+Anaemia,Private,Coastal Care Hospital Panambur,7500,Panambur,Baikampady Industrial Area - 575011,0824-2408400
+Heart Disease,Govt,Primary Health Centre Panemangalore,93000,Panemangalore,"Panemangalore, DK - 574236",0824-2239011
+Hypertension,Govt,Primary Health Centre Uppinangady,6000,Uppinangady,Uppinangady Town - 574241,08251-232100
+Dengue,Govt,Community Health Centre Gurupura,6000,Gurupura,Gurupura - 575016,0824-2284100
+Surgery,Govt,Government Dispensary Moodabidri,35500,Moodabidri,"Main Road, Moodabidri - 574227",0824-2386200
+Pregnancy,Govt,Community Health Centre Mulki,21000,Mulki,"Mulki, Dakshina Kannada - 574154",0824-2296011
+Tuberculosis,Govt,Government Maternity Hospital Puttur,5000,Puttur,Puttur - 574201,08251-230400
+UTI,Private,Shri Dharmasthala Manjunatheshwara Hospital Dharmasthala,14000,Belthangady,Dharmasthala - 574216,08256-277222
+Hypertension,Private,Shanthi Hospital Gurupura,16500,Gurupura,Gurupura - 575016,0824-2284400
+Skin Disease,Govt,Primary Health Centre Uppinangady,2000,Uppinangady,Uppinangady Town - 574241,08251-232100
+Asthma,Govt,Urban Primary Health Centre Kavoor,10500,Mangaluru,"Kavoor, Mangaluru - 574143",0824-2285033
+Skin Disease,Govt,Primary Health Centre Kinnigoli,2000,Kinnigoli,"Kinnigoli, Mangaluru Taluk - 574150",0824-2293011
+Liver Disease,Private,Shridhar Hospital Mulki,88500,Mulki,Mulki Junction - 574154,0824-2296300
+Eye Disease,Private,Shri Dharmasthala Manjunatheshwara Hospital Dharmasthala,23500,Belthangady,Dharmasthala - 574216,08256-277222
+Fever,Private,Prakash Hospital Surathkal,3500,Surathkal,"NH 66 Surathkal, Mangaluru - 575014",0824-2476001
+Diabetes,Private,Shanthi Hospital Kadaba,16000,Kadaba,Kadaba Town - 574221,08257-265700
+Gastroenteritis,Govt,Community Health Sub-Centre Kinnigoli,4500,Kinnigoli,Kinnigoli Town - 574150,0824-2293100
+Diabetes,Govt,Primary Health Centre Dharmasthala,6000,Dharmasthala,Dharmasthala Town - 574216,08256-277100
+Heart Disease,Govt,Primary Health Centre Bellare,77500,Bellare,"Bellare, Sullia Taluk - 574212",08257-261011
+Hypertension,Govt,Primary Health Centre Dharmasthala,5000,Dharmasthala,Dharmasthala Town - 574216,08256-277100
+Appendicitis,Private,Durgaparameshwari Hospital Subramanya,64000,Subramanya,Subramanya - 574238,08257-258300
+Ear Infection,Private,Mahalasa Hospital Nelyadi,10000,Nelyadi,Nelyadi - 574221,08257-265900
+UTI,Govt,Primary Health Centre Venur,3500,Venur,Venur Town - 574237,08256-262100
+Skin Disease,Govt,Government Hospital Ujire,3500,Ujire,Ujire Town - 574240,08256-248100
+Jaundice,Private,Narayana Hospital Panambur,18500,Panambur,"Baikampady, Panambur - 575011",0824-2408300
+Eye Disease,Govt,Primary Health Centre Nelyadi,12500,Nelyadi,"Nelyadi, Kadaba Taluk - 574221",08257-265201
+Fracture,Govt,Primary Health Centre Panambur,15000,Surathkal,"Panambur, Mangaluru - 575010",0824-2408001
+Skin Disease,Private,Srinivasa Hospital Puttur,11500,Puttur,"KS Road, Puttur - 574201",08251-231000
+Typhoid,Private,Sahyadri Hospital Vittal,9500,Vittal,"NH 75, Vittal - 574243",08255-231400
+Dengue,Govt,Government Hospital Ullal,5000,Ullal,"Ullal Town, Dakshina Kannada - 574146",0824-2279011
+Liver Disease,Govt,Primary Health Centre Ujire,25500,Ujire,"Ujire, Belthangady Taluk - 574240",08256-248011
+Dengue,Private,Dawa Hospital Ullal,14000,Ullal,Ullal Town Road - 574146,0824-2279200
+Malaria,Govt,Community Health Centre Gurupura,7000,Gurupura,Gurupura - 575016,0824-2284100
+Heart Disease,Private,Panchalingeshwara Hospital Vittal,148000,Vittal,Vittal Town - 574243,08255-231300
+Pneumonia,Private,Navami Hospital Bantwal,26000,Bantwal,Bantwal - 574219,08255-232900
+Surgery,Private,Coastal Nursing Home Panemangalore,78000,Panemangalore,Panemangalore - 574236,0824-2239400
+Fracture,Govt,Primary Health Centre Subramanya,10500,Subramanya,Subramanya - 574238,08257-258100
+Fever,Private,SDM Medical College Hospital Ujire,5500,Ujire,"SDM Campus, Ujire - 574240",08256-248500
+Ear Infection,Govt,Community Health Centre Belthangady,4000,Belthangady,Belthangady Town - 574214,08256-230100
+Thyroid Disorder,Govt,Community Health Sub-Centre Panemangalore,5500,Panemangalore,Panemangalore - 574236,0824-2239100
+Fracture,Private,Nelyadi Clinic & Hospital,35500,Nelyadi,"Main Road, Nelyadi - 574221",08257-265800
+Eye Disease,Private,Kalanjali Hospital Vittal,24500,Vittal,Vittal - 574243,08255-231500
+Malaria,Govt,Primary Health Centre Vittal,6500,Vittal,"Vittal Town, Bantwal Taluk - 574243",08255-231011
+Asthma,Govt,Government Hospital Vittal,6500,Vittal,"Main Road, Vittal - 574243",08255-231100
+Thyroid Disorder,Govt,Primary Health Centre Dharmasthala,8000,Dharmasthala,Dharmasthala Town - 574216,08256-277100
+Diabetes,Govt,Government Hospital Uppinangady,9000,Uppinangady,"Uppinangady, Puttur Taluk - 574241",08251-232011
+Appendicitis,Govt,Primary Health Centre Vittal,30000,Vittal,"Vittal Town, Bantwal Taluk - 574243",08255-231011
+Fever,Private,Nethravathi Medical Centre Bellare,4000,Bellare,Bellare - 574212,08257-261300
+Fever,Govt,Community Health Sub-Centre Kinnigoli,2000,Kinnigoli,Kinnigoli Town - 574150,0824-2293100
+Asthma,Govt,Primary Health Centre Panemangalore,8500,Panemangalore,"Panemangalore, DK - 574236",0824-2239011
+Thyroid Disorder,Govt,Primary Health Centre Nelyadi,6500,Nelyadi,"Nelyadi, Kadaba Taluk - 574221",08257-265201
+Diabetes,Private,Sharavathi Hospital Subramanya,17500,Subramanya,"Temple Road, Subramanya - 574238",08257-258400
+Diabetes,Private,Coastal Nursing Home Panemangalore,11500,Panemangalore,Panemangalore - 574236,0824-2239400
+Liver Disease,Govt,Primary Health Centre Kateel,35000,Kateel,"Kateel, Dakshina Kannada - 574272",0824-2298011
+Pregnancy,Private,Durgaparameshwari Hospital Kadaba,50500,Kadaba,Kadaba - 574221,08257-265600
+Surgery,Govt,Community Health Centre Kadaba,50500,Kadaba,Kadaba Town - 574221,08257-265100
+Anaemia,Govt,Community Health Centre Kadaba,3500,Kadaba,Kadaba Town - 574221,08257-265100
+Tuberculosis,Private,Dr BR Ambedkar Medical Institute BC Road,17500,Bantwal,"BC Road, Bantwal - 574219",08255-232500
+Asthma,Private,Alva's Health Centre Moodabidri,21000,Moodabidri,"Alva's Education Foundation, Moodabidri - 574227",0824-2386500
+Diabetes,Private,Coastal Care Hospital Panambur,17500,Panambur,Baikampady Industrial Area - 575011,0824-2408400
+Cancer,Govt,Primary Health Centre Panambur,118000,Panambur,"Panambur Beach Road, Mangaluru - 575010",0824-2408001
+Diabetes,Private,Dr BR Ambedkar Medical Institute BC Road,14500,Bantwal,"BC Road, Bantwal - 574219",08255-232500
+Appendicitis,Private,KVG Medical College Hospital Sullia,44500,Sullia,"Kurunjibag, Sullia - 574327",08257-232608
+Eye Disease,Private,Srinivasa Hospital Puttur,21000,Puttur,"KS Road, Puttur - 574201",08251-231000
+Typhoid,Govt,Taluk Hospital Kadaba,3000,Kadaba,"Hospital Road, Kadaba - 574221",08257-265011
+Tuberculosis,Private,Karavali Hospital Mulki,24000,Mulki,"NH 66, Mulki - 574154",0824-2296400
+Anaemia,Private,Samanvaya Hospital Bantwal,7000,Bantwal,Bantwal Town Road - 574219,08255-232700
+Surgery,Govt,Primary Health Centre Paladka,45000,Mulki,"Paladka, Mulki - 574154",0824-2296100
+Anaemia,Govt,Primary Health Centre Ujire,5000,Ujire,"Ujire, Belthangady Taluk - 574240",08256-248011
+Fever,Private,KVG Medical College & Hospital Puttur Road,4500,Puttur,"Sullia Road, Puttur - 574201",08251-230600
+Thyroid Disorder,Private,Sai Sanjeevini Hospital Gurupura,17000,Gurupura,Gurupura - 575016,0824-2284300
+Pregnancy,Private,Shree Durgaparameshwari Hospital BC Road,65500,Bantwal,"BC Road, Bantwal - 574219",08255-232600
+Surgery,Private,Sharada Hospital Puttur,91500,Puttur,Puttur - 574201,08251-231400
+Liver Disease,Govt,Government Dispensary Nelyadi,29000,Nelyadi,Nelyadi Town - 574221,08257-265300
+Skin Disease,Private,Coastal Care Hospital Panambur,5000,Panambur,Baikampady Industrial Area - 575011,0824-2408400
+Thyroid Disorder,Private,Panemangalore Hospital,11000,Panemangalore,"Main Road, Panemangalore - 574236",0824-2239200
+Dengue,Govt,Government Dispensary Moodabidri,4000,Moodabidri,"Main Road, Moodabidri - 574227",0824-2386200
+Typhoid,Private,Shanthi Hospital Gurupura,10000,Gurupura,Gurupura - 575016,0824-2284400
+Pneumonia,Govt,Community Health Centre Vamanapadavu,10000,Bantwal,"Vamanapadavu, Bantwal - 574241",08255-232200
+Tuberculosis,Govt,Primary Health Centre Kinnigoli,5500,Kinnigoli,"Kinnigoli, Mangaluru Taluk - 574150",0824-2293011
+Cancer,Govt,Primary Health Centre Gurupura,101500,Gurupura,"Gurupura, Mangaluru Taluk - 575016",0824-2284011
+Kidney Stone,Govt,Community Health Sub-Centre Panemangalore,16500,Panemangalore,Panemangalore - 574236,0824-2239100
+Eye Disease,Govt,Primary Health Centre Vittal,14500,Vittal,"Vittal Town, Bantwal Taluk - 574243",08255-231011
+Pregnancy,Govt,Government Dispensary Nelyadi,19500,Nelyadi,Nelyadi Town - 574221,08257-265300
+Pneumonia,Private,Lourdes Hospital Mangaluru,21500,Mangaluru,"Bendore, Mangaluru - 575002",0824-2443333
+Heart Disease,Govt,Government Hospital Venur,92500,Venur,"Venur, Belthangady Taluk - 574237",08256-262011
+Jaundice,Govt,Urban Primary Health Centre Bunder,9000,Mangaluru,"Bunder, Mangaluru - 575001",0824-2440101
+Hypertension,Private,Durgaparameshwari Hospital Kadaba,10000,Kadaba,Kadaba - 574221,08257-265600
+Heart Disease,Govt,Community Health Centre Kadaba,82000,Kadaba,Kadaba Town - 574221,08257-265100
+Eye Disease,Govt,Community Health Centre Gurupura,10500,Gurupura,Gurupura - 575016,0824-2284100
+Anaemia,Govt,Government Maternity Hospital Puttur,3000,Puttur,Puttur - 574201,08251-230400
+Pregnancy,Govt,General Hospital Puttur,19000,Puttur,"Hospital Road, Puttur - 574201",08251-230295
+Appendicitis,Private,Panemangalore Hospital,51000,Panemangalore,"Main Road, Panemangalore - 574236",0824-2239200
+Thyroid Disorder,Private,Nelyadi Clinic & Hospital,12000,Nelyadi,"Main Road, Nelyadi - 574221",08257-265800
+Dengue,Private,Saraswathi Hospital Uppinangady,16000,Uppinangady,Uppinangady - 574241,08251-232500
+Ear Infection,Govt,Community Health Centre Moodabidri,2000,Moodabidri,Moodabidri Town - 574227,0824-2386100
+Gastroenteritis,Private,Kateel Medical Centre,15000,Kateel,"Main Road, Kateel - 574272",0824-2298300
+Hypertension,Govt,Community Health Sub-Centre Kinnigoli,9000,Kinnigoli,Kinnigoli Town - 574150,0824-2293100
+Pregnancy,Govt,Government Hospital Uppinangady,16500,Uppinangady,"Uppinangady, Puttur Taluk - 574241",08251-232011
+Appendicitis,Govt,Port Trust Hospital Panambur,29500,Panambur,"NMPT Colony, Panambur - 575010",0824-2407700
+Anaemia,Govt,Community Health Centre Mulki,4500,Mulki,"Mulki, Dakshina Kannada - 574154",0824-2296011
+Cancer,Govt,Government Hospital Vittal,104500,Vittal,"Main Road, Vittal - 574243",08255-231100
+Diabetes,Private,Kalanjali Hospital Vittal,11500,Vittal,Vittal - 574243,08255-231500
+Fracture,Govt,Primary Health Centre Ullal,13000,Ullal,"Chitrapu, Ullal - 574146",0824-2279022
+Ear Infection,Govt,Government Hospital Kukke Subramanya,4500,Subramanya,Subramanya Town - 574238,08257-258011
+Hypertension,Private,Durgaparameshwari Hospital Subramanya,16000,Subramanya,Subramanya - 574238,08257-258300
+Diabetes,Govt,Community Health Sub-Centre Kinnigoli,6000,Kinnigoli,Kinnigoli Town - 574150,0824-2293100
+Pregnancy,Private,Yenepoya Medical College Hospital,66000,Mangaluru,"University Road, Deralakatte, Mangaluru - 575018",0824-2204668
+Eye Disease,Govt,Government Dispensary Bellare,14500,Bellare,Bellare Town - 574212,08257-261100
+Hypertension,Govt,Community Health Centre Sullia,6000,Sullia,Sullia Town - 574239,08257-233100
+Skin Disease,Govt,Primary Health Centre Nelyadi,3000,Kadaba,"Nelyadi, Kadaba - 574221",08257-265200
+UTI,Private,Ullal Nursing Home,13000,Ullal,"Main Road, Ullal - 574146",0824-2279400
+Hypertension,Govt,Government Hospital Surathkal,6500,Surathkal,"Surathkal, Mangaluru - 575014",0824-2474133
+Gastroenteritis,Govt,Port Trust Hospital Panambur,5500,Panambur,"NMPT Colony, Panambur - 575010",0824-2407700
+Heart Disease,Govt,Primary Health Centre Kateel,82500,Kateel,"Kateel, Dakshina Kannada - 574272",0824-2298011
+Malaria,Govt,Government Hospital Kukke Subramanya,4000,Subramanya,Subramanya Town - 574238,08257-258011
+Kidney Stone,Private,Shree Hospital Uppinangady,43500,Uppinangady,Uppinangady - 574241,08251-232300
+Liver Disease,Private,Sahyadri Clinic Bellare,83500,Bellare,Bellare - 574212,08257-261400
+Surgery,Govt,ESIC Hospital Kadri,44500,Mangaluru,"Kadri Hills Road, Kadri, Mangaluru - 575002",0824-2212977
+Skin Disease,Private,Nelyadi Clinic & Hospital,7000,Nelyadi,"Main Road, Nelyadi - 574221",08257-265800
+Anaemia,Private,Dawa Hospital Ullal,7500,Ullal,Ullal Town Road - 574146,0824-2279200
+Fracture,Private,Kinnigoli Hospital,26000,Kinnigoli,"Main Road, Kinnigoli - 574150",0824-2293200
+Typhoid,Govt,Primary Health Centre Nanthoor,4500,Nanthoor,"Nanthoor, Bantwal Taluk - 574219",08255-239011
+Surgery,Private,Coastal Hospital Surathkal,81500,Surathkal,"Surathkal Road, Mangaluru - 575014",0824-2478002
+Fever,Govt,General Hospital Puttur,1500,Puttur,"Hospital Road, Puttur - 574201",08251-230295
+Heart Disease,Govt,Community Health Sub-Centre Kinnigoli,90500,Kinnigoli,Kinnigoli Town - 574150,0824-2293100
+Pregnancy,Govt,Primary Health Centre Subramanya,24000,Subramanya,Subramanya - 574238,08257-258100
+Fever,Private,Janatha Hospital Sullia,4500,Sullia,Sullia Town - 574239,08257-234100
+Fever,Govt,Primary Health Centre Ullal,2000,Ullal,"Chitrapu, Ullal - 574146",0824-2279022
+Dengue,Govt,Government Hospital Kateel,8500,Kateel,Kateel Town - 574272,0824-2298100
+Appendicitis,Govt,General Hospital Puttur,27000,Puttur,"Hospital Road, Puttur - 574201",08251-230295
+Typhoid,Private,Nanthoor Community Hospital,8000,Nanthoor,Nanthoor - 574219,08255-239300
+Appendicitis,Private,SDM Ayurvedic Hospital Dharmasthala,66000,Dharmasthala,Dharmasthala - 574216,08256-277333
+Jaundice,Private,Janatha Hospital Sullia,18000,Sullia,Sullia Town - 574239,08257-234100
+Fracture,Private,Jain Hospital Moodabidri,30500,Moodabidri,"Temple Road, Moodabidri - 574227",0824-2386700
+Liver Disease,Govt,Urban Primary Health Centre Surathkal,21000,Surathkal,"NITK Campus Road, Surathkal - 575014",0824-2474055
+Cancer,Govt,Government Hospital Kateel,119000,Kateel,Kateel Town - 574272,0824-2298100
+Fracture,Private,Coastal Hospital Surathkal,29000,Surathkal,"Surathkal Road, Mangaluru - 575014",0824-2478002
+Gastroenteritis,Private,Sahyadri Hospital Vittal,9000,Vittal,"NH 75, Vittal - 574243",08255-231400
+Jaundice,Private,Durgaparameshwari Hospital Subramanya,16500,Subramanya,Subramanya - 574238,08257-258300
+Eye Disease,Private,Janatha Hospital Sullia,31500,Sullia,Sullia Town - 574239,08257-234100
+Skin Disease,Govt,Government Dispensary Bellare,3500,Bellare,Bellare Town - 574212,08257-261100
+UTI,Govt,Taluk Hospital Belthangady,4500,Belthangady,"Hospital Road, Belthangady - 574214",08256-230011
+Malaria,Private,Sri Durga Hospital Bantwal,15500,Bantwal,"BC Road, Bantwal - 574219",08255-233001
+Fever,Govt,Primary Health Centre Panemangalore,1500,Panemangalore,"Panemangalore, DK - 574236",0824-2239011
+Anaemia,Govt,Taluk Hospital Belthangady,4000,Belthangady,"Hospital Road, Belthangady - 574214",08256-230011
+Tuberculosis,Govt,Primary Health Centre Guthigar,5500,Sullia,"Guthigar, Sullia - 574239",08257-233300
+Dengue,Private,Sai Sanjeevini Hospital Gurupura,15500,Gurupura,Gurupura - 575016,0824-2284300
+Gastroenteritis,Private,Shree Hospital Uppinangady,15500,Uppinangady,Uppinangady - 574241,08251-232300
+Eye Disease,Govt,Taluk Hospital BC Road Bantwal,14000,Bantwal,"BC Road, Bantwal - 574219",08255-232024
+Pregnancy,Private,Narayana Hrudayalaya Surathkal,64000,Surathkal,"NITK Road, Surathkal, Mangaluru - 575014",0824-2470000
+Pneumonia,Govt,Government Dispensary Moodabidri,9500,Moodabidri,"Main Road, Moodabidri - 574227",0824-2386200
+Diabetes,Govt,Government Hospital Surathkal,8000,Surathkal,"Surathkal, Mangaluru - 575014",0824-2474133
+Liver Disease,Govt,Community Health Centre Gurupura,25500,Gurupura,Gurupura - 575016,0824-2284100
+Diabetes,Govt,Primary Health Centre Bellare,8500,Sullia,"Bellare, Sullia Taluk - 574212",08257-233200
+Jaundice,Private,Sri Sai Hospital Nanthoor,16500,Nanthoor,Nanthoor - 574219,08255-239400
+Hypertension,Govt,Government Hospital Kukke Subramanya,7500,Subramanya,Subramanya Town - 574238,08257-258011
+Liver Disease,Govt,ESIC Hospital Kadri,41000,Mangaluru,"Kadri Hills Road, Kadri, Mangaluru - 575002",0824-2212977
+Skin Disease,Govt,Primary Health Centre Vittal,2000,Vittal,"Vittal Town, Bantwal Taluk - 574243",08255-231011
+Fracture,Govt,Government Hospital Venur,16000,Belthangady,"Venur, Belthangady Taluk - 574237",08256-230300
+Surgery,Private,Sahyadri Hospital Sullia,69500,Sullia,Sullia - 574239,08257-234200
+Diabetes,Private,Nethravathi Medical Centre Bellare,16500,Bellare,Bellare - 574212,08257-261300
+Fever,Private,Shree Durgaparameshwari Hospital BC Road,5000,Bantwal,"BC Road, Bantwal - 574219",08255-232600
+Jaundice,Govt,Government Hospital Venur,8500,Belthangady,"Venur, Belthangady Taluk - 574237",08256-230300
+Eye Disease,Private,Shridhar Hospital Mulki,34000,Mulki,Mulki Junction - 574154,0824-2296300
+Fever,Govt,Community Health Centre Moodabidri,2000,Moodabidri,Moodabidri Town - 574227,0824-2386100
+Kidney Stone,Private,Nanthoor Community Hospital,41000,Nanthoor,Nanthoor - 574219,08255-239300
+Fever,Private,Sri Sai Hospital Nanthoor,5000,Nanthoor,Nanthoor - 574219,08255-239400
+Jaundice,Govt,Community Health Centre Puttur,6500,Puttur,Puttur Town - 574201,08251-230300
+Asthma,Private,Panchalingeshwara Hospital Vittal,13000,Vittal,Vittal Town - 574243,08255-231300
+Thyroid Disorder,Govt,Community Health Sub-Centre Kinnigoli,7000,Kinnigoli,Kinnigoli Town - 574150,0824-2293100
+Asthma,Private,Narayana Hospital Panambur,14500,Panambur,"Baikampady, Panambur - 575011",0824-2408300
+Liver Disease,Govt,Primary Health Centre Vittal,24500,Vittal,"Vittal Town, Bantwal Taluk - 574243",08255-231011
+UTI,Private,Sahyadri Clinic Bellare,14000,Bellare,Bellare - 574212,08257-261400
+Pregnancy,Private,SDM Medical College Hospital Ujire,63500,Ujire,"SDM Campus, Ujire - 574240",08256-248500
+Malaria,Govt,Community Health Centre Mulki,5500,Mulki,"Mulki, Dakshina Kannada - 574154",0824-2296011
+Pregnancy,Private,Sharavathi Hospital Subramanya,52500,Subramanya,"Temple Road, Subramanya - 574238",08257-258400
+Liver Disease,Private,Shanthi Hospital Gurupura,77000,Gurupura,Gurupura - 575016,0824-2284400
+Heart Disease,Private,Coastal Nursing Home Panemangalore,167000,Panemangalore,Panemangalore - 574236,0824-2239400
+Kidney Stone,Govt,Government Maternity Hospital Puttur,20000,Puttur,Puttur - 574201,08251-230400
+Fever,Govt,Port Trust Hospital Panambur,2000,Panambur,"NMPT Colony, Panambur - 575010",0824-2407700
+Surgery,Private,Bellare Hospital,78000,Bellare,"Main Road, Bellare - 574212",08257-261200
+Pregnancy,Govt,Primary Health Centre Kinnigoli,20000,Kinnigoli,"Kinnigoli, Mangaluru Taluk - 574150",0824-2293011
+Appendicitis,Private,Nelyadi Clinic & Hospital,42000,Nelyadi,"Main Road, Nelyadi - 574221",08257-265800
+Malaria,Govt,Primary Health Centre Nanthoor,6000,Nanthoor,"Nanthoor, Bantwal Taluk - 574219",08255-239011
+Thyroid Disorder,Private,Shridhar Hospital Nanthoor,13500,Nanthoor,"Main Road, Nanthoor - 574219",08255-239200
+Liver Disease,Govt,Primary Health Centre Venur,44000,Venur,Venur Town - 574237,08256-262100
+Cancer,Private,Yenepoya Medical College Hospital,173000,Mangaluru,"University Road, Deralakatte, Mangaluru - 575018",0824-2204668
+UTI,Private,Panemangalore Hospital,7000,Panemangalore,"Main Road, Panemangalore - 574236",0824-2239200
+Thyroid Disorder,Govt,Community Health Centre Mulki,4500,Mulki,"Mulki, Dakshina Kannada - 574154",0824-2296011
+Fracture,Private,Dharmasthala Rural Hospital,25500,Dharmasthala,"Temple Road, Dharmasthala - 574216",08256-277555
+Jaundice,Govt,Community Health Centre Ullal,8000,Ullal,Ullal Main Road - 574146,0824-2279100
+Fever,Private,Mahatma Gandhi Memorial Hospital Belthangady,4000,Belthangady,Belthangady Main Road - 574214,08256-230500
+Tuberculosis,Private,Srinivasa Hospital Sullia,16500,Sullia,"Main Road, Sullia - 574239",08257-234001
+Pneumonia,Govt,Primary Health Centre Panambur,8500,Surathkal,"Panambur, Mangaluru - 575010",0824-2408001
+Skin Disease,Govt,Government Dispensary Nanthoor,1500,Nanthoor,Nanthoor - 574219,08255-239100
+Dengue,Govt,Port Trust Hospital Panambur,8000,Panambur,"NMPT Colony, Panambur - 575010",0824-2407700
+Dengue,Private,Coastal Nursing Home Panemangalore,12500,Panemangalore,Panemangalore - 574236,0824-2239400
+Gastroenteritis,Private,KVG Medical College Hospital Sullia,10500,Sullia,"Kurunjibag, Sullia - 574327",08257-232608
+Gastroenteritis,Private,Dharmasthala Rural Hospital,14000,Dharmasthala,"Temple Road, Dharmasthala - 574216",08256-277555
+Fever,Private,Durgaparameshwari Hospital Subramanya,4000,Subramanya,Subramanya - 574238,08257-258300
+Pregnancy,Private,Srinivasa Hospital Puttur,66500,Puttur,"KS Road, Puttur - 574201",08251-231000
+Appendicitis,Private,Coastal Care Hospital Panambur,66000,Panambur,Baikampady Industrial Area - 575011,0824-2408400
+Jaundice,Private,Vijaya Hospital Belthangady,22500,Belthangady,Belthangady Town - 574214,08256-230700
+Hypertension,Govt,Wenlock District Hospital,4000,Mangaluru,"Bibi Alabi Road, Hampankatta, Mangaluru - 575001",0824-2421351
+Surgery,Govt,Community Health Sub-Centre Kinnigoli,50500,Kinnigoli,Kinnigoli Town - 574150,0824-2293100
+Anaemia,Govt,Primary Health Centre Uppinangady,5500,Uppinangady,Uppinangady Town - 574241,08251-232100
+Jaundice,Private,Coastal Nursing Home Panemangalore,20000,Panemangalore,Panemangalore - 574236,0824-2239400
+Pregnancy,Govt,Port Trust Hospital Panambur,25500,Panambur,"NMPT Colony, Panambur - 575010",0824-2407700
+Asthma,Govt,Primary Health Centre Panambur,7000,Panambur,"Panambur Beach Road, Mangaluru - 575010",0824-2408001
+Asthma,Private,Sri Sai Hospital Nanthoor,12000,Nanthoor,Nanthoor - 574219,08255-239400
+UTI,Private,Sahyadri Medical Centre Venur,10500,Venur,Venur - 574237,08256-262300
+Malaria,Govt,Government Hospital Ujire,4000,Ujire,Ujire Town - 574240,08256-248100
+Dengue,Private,Sri Sai Hospital Nanthoor,15000,Nanthoor,Nanthoor - 574219,08255-239400
+Malaria,Private,Pooja Hospital Uppinangady,17000,Uppinangady,Uppinangady - 574241,08251-232400
+Liver Disease,Govt,Taluk Hospital Kadaba,45000,Kadaba,"Hospital Road, Kadaba - 574221",08257-265011
+Fracture,Govt,Community Health Centre Gurupura,12000,Gurupura,Gurupura - 575016,0824-2284100
+Typhoid,Govt,Primary Health Centre Panambur,5000,Surathkal,"Panambur, Mangaluru - 575010",0824-2408001
+Cancer,Private,Sahyadri Medical Centre Venur,162500,Venur,Venur - 574237,08256-262300
+Anaemia,Private,Srinivasa Hospital Kadaba,11000,Kadaba,"Main Road, Kadaba - 574221",08257-265500
+UTI,Private,Sharada Hospital Puttur,10000,Puttur,Puttur - 574201,08251-231400
+Heart Disease,Private,Sealand Hospital Ullal,146500,Ullal,"Someshwara, Ullal - 574146",0824-2278001
+Skin Disease,Private,Sri Durgaparameshwari Hospital Moodabidri,11000,Moodabidri,Moodabidri - 574227,0824-2386600
+Anaemia,Private,Panchalingeshwara Hospital Vittal,8500,Vittal,Vittal Town - 574243,08255-231300
+Fever,Private,Kalanjali Hospital Vittal,4500,Vittal,Vittal - 574243,08255-231500
+UTI,Govt,Government Dispensary Moodabidri,3500,Moodabidri,"Main Road, Moodabidri - 574227",0824-2386200
+Liver Disease,Govt,Primary Health Centre Panambur,28500,Panambur,"Panambur Beach Road, Mangaluru - 575010",0824-2408001
+Surgery,Private,Sharavathi Hospital Subramanya,68000,Subramanya,"Temple Road, Subramanya - 574238",08257-258400
+Jaundice,Govt,Primary Health Centre Vittal,6000,Vittal,"Vittal Town, Bantwal Taluk - 574243",08255-231011
+Fracture,Private,Dr BR Ambedkar Medical Institute BC Road,32000,Bantwal,"BC Road, Bantwal - 574219",08255-232500
+Liver Disease,Private,Udupi Hospital Ujire,53000,Ujire,Ujire - 574240,08256-248300
+Thyroid Disorder,Govt,Primary Health Centre Ujire,6000,Ujire,"Ujire, Belthangady Taluk - 574240",08256-248011
+Dengue,Govt,Government Ayurvedic Dispensary Puttur,5500,Puttur,"Market Road, Puttur - 574201",08251-230500
+Ear Infection,Private,Srinivas Hospital Surathkal,8500,Surathkal,"Surathkal Main Road, Mangaluru - 575014",0824-2474500
+Hypertension,Private,Nanthoor Community Hospital,11000,Nanthoor,Nanthoor - 574219,08255-239300
+Fracture,Govt,Government Dispensary Bellare,17500,Bellare,Bellare Town - 574212,08257-261100
+Cancer,Govt,Primary Health Centre Venur,102000,Venur,Venur Town - 574237,08256-262100
+Pregnancy,Govt,Community Health Centre Belthangady,18500,Belthangady,Belthangady Town - 574214,08256-230100
+Anaemia,Private,Shree Hospital Uppinangady,9000,Uppinangady,Uppinangady - 574241,08251-232300
+Pregnancy,Private,Sri Durgaparameshwari Hospital Moodabidri,54000,Moodabidri,Moodabidri - 574227,0824-2386600
+Liver Disease,Govt,Primary Health Centre Venur,33500,Venur,Venur Town - 574237,08256-262100
+Anaemia,Private,Srinivasa Hospital Sullia,8000,Sullia,"Main Road, Sullia - 574239",08257-234001
+Anaemia,Private,Sri Durgaparameshwari Hospital Moodabidri,12000,Moodabidri,Moodabidri - 574227,0824-2386600
+Skin Disease,Private,Srinivasa Hospital Kadaba,10000,Kadaba,"Main Road, Kadaba - 574221",08257-265500
+Pneumonia,Govt,Government Hospital Kateel,8000,Kateel,Kateel Town - 574272,0824-2298100
+Malaria,Private,SDM Medical College Hospital Ujire,18000,Ujire,"SDM Campus, Ujire - 574240",08256-248500
+Fever,Private,Sai Sanjeevini Hospital Gurupura,4000,Gurupura,Gurupura - 575016,0824-2284300
+Asthma,Govt,Primary Health Centre Dharmasthala,8500,Dharmasthala,Dharmasthala Town - 574216,08256-277100
+Malaria,Private,Bhagavathi Hospital Belthangady,11000,Belthangady,Belthangady - 574214,08256-230600
+Appendicitis,Private,Netravathi Hospital Ujire,61500,Ujire,"Main Road, Ujire - 574240",08256-248200
+Diabetes,Govt,Community Health Centre Belthangady,9000,Belthangady,Belthangady Town - 574214,08256-230100
+Fracture,Private,Shri Dharmasthala Manjunatheshwara Hospital Dharmasthala,30000,Belthangady,Dharmasthala - 574216,08256-277222
+Skin Disease,Private,Narayana Hrudayalaya Surathkal,5000,Surathkal,"NITK Road, Surathkal, Mangaluru - 575014",0824-2470000
+Gastroenteritis,Govt,Primary Health Centre Dharmasthala,7000,Dharmasthala,Dharmasthala Town - 574216,08256-277100
+Fracture,Private,Shanthi Hospital Kadaba,23000,Kadaba,Kadaba Town - 574221,08257-265700
+Typhoid,Private,Shridhar Hospital Mulki,12500,Mulki,Mulki Junction - 574154,0824-2296300
+Gastroenteritis,Govt,Community Health Centre Mulki,4500,Mulki,"Mulki, Dakshina Kannada - 574154",0824-2296011
+Malaria,Govt,Primary Health Centre Kateel,6500,Kateel,"Kateel, Dakshina Kannada - 574272",0824-2298011
+Heart Disease,Govt,Community Health Centre Belthangady,76000,Belthangady,Belthangady Town - 574214,08256-230100
+Heart Disease,Govt,Government Hospital Kukke Subramanya,97000,Subramanya,Subramanya Town - 574238,08257-258011
+UTI,Private,Sai Sanjeevini Hospital Kinnigoli,9000,Kinnigoli,Kinnigoli - 574150,0824-2293300
+Gastroenteritis,Govt,Government Maternity Hospital Puttur,5500,Puttur,Puttur - 574201,08251-230400
+Fracture,Govt,Government Ayurvedic Dispensary Puttur,13000,Puttur,"Market Road, Puttur - 574201",08251-230500
+Hypertension,Govt,Primary Health Centre Gurupura,5000,Gurupura,"Gurupura, Mangaluru Taluk - 575016",0824-2284011
+Jaundice,Govt,Government Hospital Uppinangady,7000,Uppinangady,"Uppinangady, Puttur Taluk - 574241",08251-232011
+Malaria,Private,Srinivasa Hospital Moodabidri,14000,Moodabidri,Moodabidri Main Road - 574227,0824-2386800
+Surgery,Private,Saraswathi Hospital Uppinangady,63500,Uppinangady,Uppinangady - 574241,08251-232500
+Eye Disease,Govt,Primary Health Centre Dharmasthala,13500,Dharmasthala,Dharmasthala Town - 574216,08256-277100
+Fracture,Private,Netravathi Hospital Ujire,27500,Ujire,"Main Road, Ujire - 574240",08256-248200
+Diabetes,Govt,Primary Health Centre Panemangalore,10000,Panemangalore,"Panemangalore, DK - 574236",0824-2239011
+Pneumonia,Govt,Government Hospital Venur,10000,Venur,"Venur, Belthangady Taluk - 574237",08256-262011
+Heart Disease,Govt,Primary Health Centre Ullal,83000,Ullal,"Chitrapu, Ullal - 574146",0824-2279022
+Fracture,Govt,Port Trust Hospital Panambur,17000,Panambur,"NMPT Colony, Panambur - 575010",0824-2407700
+Fever,Govt,Government Dispensary Nanthoor,2000,Nanthoor,Nanthoor - 574219,08255-239100
+Diabetes,Govt,Primary Health Centre Venur,7500,Venur,Venur Town - 574237,08256-262100
+Pneumonia,Private,Coastal Care Hospital Panambur,23000,Panambur,Baikampady Industrial Area - 575011,0824-2408400
+Diabetes,Govt,Primary Health Centre Nelyadi,6500,Kadaba,"Nelyadi, Kadaba - 574221",08257-265200
+UTI,Govt,Community Health Centre Vamanapadavu,2500,Bantwal,"Vamanapadavu, Bantwal - 574241",08255-232200
+Thyroid Disorder,Private,Mahatma Gandhi Memorial Hospital Belthangady,14500,Belthangady,Belthangady Main Road - 574214,08256-230500
+Fracture,Govt,Primary Health Centre Nelyadi,12000,Nelyadi,"Nelyadi, Kadaba Taluk - 574221",08257-265201
+Fracture,Private,Srinivasa Hospital Puttur,35000,Puttur,"KS Road, Puttur - 574201",08251-231000
+Anaemia,Govt,Taluk Hospital BC Road Bantwal,5000,Bantwal,"BC Road, Bantwal - 574219",08255-232024
+Fever,Govt,Taluk Hospital Kadaba,2000,Kadaba,"Hospital Road, Kadaba - 574221",08257-265011
+Eye Disease,Private,Coastal Nursing Home Panemangalore,32500,Panemangalore,Panemangalore - 574236,0824-2239400
+Pregnancy,Govt,Primary Health Centre Nanthoor,22500,Nanthoor,"Nanthoor, Bantwal Taluk - 574219",08255-239011
+Hypertension,Private,Srinivasa Hospital Venur,16500,Venur,Venur - 574237,08256-262400
+Ear Infection,Govt,Government Hospital Kateel,4000,Kateel,Kateel Town - 574272,0824-2298100
+Diabetes,Private,SDM Medical College Hospital Ujire,11500,Ujire,"SDM Campus, Ujire - 574240",08256-248500
+Dengue,Govt,Government Hospital Kukke Subramanya,5000,Subramanya,Subramanya Town - 574238,08257-258011
+Eye Disease,Govt,Government Hospital Ujire,10500,Ujire,Ujire Town - 574240,08256-248100
+Heart Disease,Private,Lourdes Hospital Mangaluru,149000,Mangaluru,"Bendore, Mangaluru - 575002",0824-2443333
+Appendicitis,Private,Yenepoya Specialty Hospital,52500,Mangaluru,"Deralakatte, Mangaluru - 575018",0824-2204000
+Dengue,Govt,Primary Health Centre Bellare,4500,Bellare,"Bellare, Sullia Taluk - 574212",08257-261011
+Eye Disease,Private,Sai Sanjeevini Hospital Kinnigoli,22000,Kinnigoli,Kinnigoli - 574150,0824-2293300
+Eye Disease,Govt,Primary Health Centre Ullal,13000,Ullal,"Chitrapu, Ullal - 574146",0824-2279022
+Hypertension,Govt,Primary Health Centre Panambur,6000,Panambur,"Panambur Beach Road, Mangaluru - 575010",0824-2408001
+Dengue,Private,Shanthi Hospital Kadaba,13500,Kadaba,Kadaba Town - 574221,08257-265700
+Liver Disease,Private,Sahyadri Hospital Vittal,82000,Vittal,"NH 75, Vittal - 574243",08255-231400
+Ear Infection,Private,Yenepoya Specialty Hospital,9000,Mangaluru,"Deralakatte, Mangaluru - 575018",0824-2204000
+Thyroid Disorder,Private,Shree Durgaparameshwari Hospital BC Road,16500,Bantwal,"BC Road, Bantwal - 574219",08255-232600
+UTI,Private,Udupi Hospital Ujire,10500,Ujire,Ujire - 574240,08256-248300
+Cancer,Private,Sri Sai Hospital Nanthoor,155000,Nanthoor,Nanthoor - 574219,08255-239400
+Heart Disease,Govt,Taluk Hospital Sullia,81000,Sullia,"Hospital Road, Sullia - 574239",08257-233010
+Skin Disease,Govt,Government Ayurvedic Dispensary Puttur,2500,Puttur,"Market Road, Puttur - 574201",08251-230500
+Appendicitis,Govt,Government Hospital Mulki,22000,Mulki,"Town Road, Mulki - 574154",0824-2296022
+Pneumonia,Govt,Community Health Centre Dharmasthala,10500,Dharmasthala,Dharmasthala - 574216,08256-277011
+Gastroenteritis,Govt,Government Hospital Ujire,4000,Ujire,Ujire Town - 574240,08256-248100
+Surgery,Govt,Primary Health Centre Ujire,43000,Ujire,"Ujire, Belthangady Taluk - 574240",08256-248011
+Hypertension,Private,Kinnigoli Hospital,19500,Kinnigoli,"Main Road, Kinnigoli - 574150",0824-2293200
+Surgery,Govt,Primary Health Centre Naravi,39500,Belthangady,"Naravi, Belthangady - 574214",08256-230200
+UTI,Govt,Primary Health Centre Panemangalore,3000,Panemangalore,"Panemangalore, DK - 574236",0824-2239011
+Cancer,Govt,Primary Health Centre Paladka,118500,Mulki,"Paladka, Mulki - 574154",0824-2296100
+Cancer,Govt,Primary Health Centre Bellare,97000,Bellare,"Bellare, Sullia Taluk - 574212",08257-261011
+Heart Disease,Govt,Taluk Hospital Moodabidri,89500,Moodabidri,"Hospital Road, Moodabidri - 574227",0824-2386011
+Hypertension,Govt,Government Hospital Venur,4500,Venur,"Venur, Belthangady Taluk - 574237",08256-262011
+Malaria,Govt,Primary Health Centre Venur,5000,Venur,Venur Town - 574237,08256-262100
+Skin Disease,Govt,Primary Health Centre Vittal,2000,Bantwal,"Vittal, Bantwal Taluk - 574243",08255-231011
+Anaemia,Private,Father Muller Medical College Hospital,10500,Mangaluru,"Father Muller Road, Kankanady, Mangaluru - 575002",0824-2238000
+Asthma,Govt,Community Health Centre Sullia,8000,Sullia,Sullia Town - 574239,08257-233100
+Ear Infection,Private,Dawa Hospital Ullal,10000,Ullal,Ullal Town Road - 574146,0824-2279200
+Asthma,Govt,Government Dispensary Nanthoor,10000,Nanthoor,Nanthoor - 574219,08255-239100
+Dengue,Private,Samanvaya Hospital Bantwal,10000,Bantwal,Bantwal Town Road - 574219,08255-232700
+Kidney Stone,Private,Mahalasa Hospital Nelyadi,35500,Nelyadi,Nelyadi - 574221,08257-265900
+Fever,Govt,Government Hospital Ujire,2000,Ujire,Ujire Town - 574240,08256-248100
+Eye Disease,Private,Nethravathi Medical Centre Bellare,27500,Bellare,Bellare - 574212,08257-261300
+Surgery,Private,Sri Sai Hospital Nanthoor,88500,Nanthoor,Nanthoor - 574219,08255-239400
+Tuberculosis,Private,Durgaparameshwari Hospital Kateel,22500,Kateel,"Temple Road, Kateel - 574272",0824-2298200
+Anaemia,Govt,Primary Health Centre Guthigar,4000,Sullia,"Guthigar, Sullia - 574239",08257-233300
+Jaundice,Govt,Primary Health Centre Nelyadi,9500,Nelyadi,"Nelyadi, Kadaba Taluk - 574221",08257-265201
+Cancer,Govt,Primary Health Centre Nelyadi,107000,Nelyadi,"Nelyadi, Kadaba Taluk - 574221",08257-265201
+Diabetes,Govt,Community Health Centre Puttur,8000,Puttur,Puttur Town - 574201,08251-230300
+Typhoid,Private,City Medical Centre Moodabidri,8500,Moodabidri,Moodabidri - 574227,0824-2386900
+Fracture,Private,Sri Sai Hospital Nanthoor,34000,Nanthoor,Nanthoor - 574219,08255-239400
+Surgery,Govt,Primary Health Centre Gurupura,39500,Gurupura,"Gurupura, Mangaluru Taluk - 575016",0824-2284011
+Gastroenteritis,Private,Sai Sanjeevini Hospital Gurupura,11500,Gurupura,Gurupura - 575016,0824-2284300
+Malaria,Private,Ullal Nursing Home,13500,Ullal,"Main Road, Ullal - 574146",0824-2279400
+Appendicitis,Govt,Primary Health Centre Dharmasthala,23000,Dharmasthala,Dharmasthala Town - 574216,08256-277100
+Cancer,Private,Jain Hospital Moodabidri,156500,Moodabidri,"Temple Road, Moodabidri - 574227",0824-2386700
+Kidney Stone,Govt,Primary Health Centre Uppinangady,21000,Uppinangady,Uppinangady Town - 574241,08251-232100
+Anaemia,Govt,Primary Health Centre Dharmasthala,4000,Dharmasthala,Dharmasthala Town - 574216,08256-277100
+Diabetes,Govt,Primary Health Centre Gurupura,9000,Gurupura,"Gurupura, Mangaluru Taluk - 575016",0824-2284011
+Asthma,Private,KMC Hospital Jyothi Circle,14000,Mangaluru,"Dr BR Ambedkar Circle, Balmatta, Mangaluru - 575001",0824-2871000
+Eye Disease,Govt,Wenlock District Hospital,12500,Mangaluru,"Bibi Alabi Road, Hampankatta, Mangaluru - 575001",0824-2421351
+Ear Infection,Private,Srinivasa Hospital Venur,10000,Venur,Venur - 574237,08256-262400
+Gastroenteritis,Private,Coastal Hospital Kinnigoli,13500,Kinnigoli,Kinnigoli - 574150,0824-2293400
+Fever,Govt,Primary Health Centre Panambur,2000,Surathkal,"Panambur, Mangaluru - 575010",0824-2408001
+Asthma,Private,Venur Hospital,20000,Venur,"Main Road, Venur - 574237",08256-262200
+Typhoid,Govt,Community Health Centre Gurupura,3000,Gurupura,Gurupura - 575016,0824-2284100
+Fracture,Govt,Government Hospital Uppinangady,15000,Uppinangady,"Uppinangady, Puttur Taluk - 574241",08251-232011
+Pneumonia,Private,Prakash Hospital Surathkal,19500,Surathkal,"NH 66 Surathkal, Mangaluru - 575014",0824-2476001
+Dengue,Govt,Government Hospital Vittal,4000,Vittal,"Main Road, Vittal - 574243",08255-231100
+Ear Infection,Govt,Primary Health Centre Vittal,2500,Bantwal,"Vittal, Bantwal Taluk - 574243",08255-231011
+Thyroid Disorder,Govt,Community Health Centre Vamanapadavu,8000,Bantwal,"Vamanapadavu, Bantwal - 574241",08255-232200
+Pregnancy,Private,Shree Hospital Uppinangady,66000,Uppinangady,Uppinangady - 574241,08251-232300
+Gastroenteritis,Govt,Primary Health Centre Gurupura,7000,Gurupura,"Gurupura, Mangaluru Taluk - 575016",0824-2284011
+Appendicitis,Govt,Urban Primary Health Centre Kavoor,16000,Mangaluru,"Kavoor, Mangaluru - 574143",0824-2285033
+Surgery,Private,Alva's Health Centre Moodabidri,81500,Moodabidri,"Alva's Education Foundation, Moodabidri - 574227",0824-2386500
+Diabetes,Govt,ESIC Hospital Kadri,6500,Mangaluru,"Kadri Hills Road, Kadri, Mangaluru - 575002",0824-2212977
+Liver Disease,Govt,Primary Health Centre Uppinangady,44000,Uppinangady,Uppinangady Town - 574241,08251-232100
+Jaundice,Govt,Primary Health Centre Nanthoor,6000,Nanthoor,"Nanthoor, Bantwal Taluk - 574219",08255-239011
+Heart Disease,Private,Narayana Hrudayalaya Surathkal,140500,Surathkal,"NITK Road, Surathkal, Mangaluru - 575014",0824-2470000
+Surgery,Private,Ullal Nursing Home,79500,Ullal,"Main Road, Ullal - 574146",0824-2279400
+Cancer,Private,Durgaparameshwari Hospital Subramanya,152500,Subramanya,Subramanya - 574238,08257-258300
+Ear Infection,Govt,Government Hospital Ujire,2000,Ujire,Ujire Town - 574240,08256-248100
+Cancer,Private,Sahyadri Clinic Bellare,202000,Bellare,Bellare - 574212,08257-261400
+Heart Disease,Govt,Primary Health Centre Paladka,89500,Mulki,"Paladka, Mulki - 574154",0824-2296100
+Heart Disease,Govt,Government Lady Goschen Hospital,88000,Mangaluru,"Maidan Road, Mangaluru - 575001",0824-2440305
+Typhoid,Private,Sahyadri Hospital Sullia,9500,Sullia,Sullia - 574239,08257-234200
+Jaundice,Govt,Primary Health Centre Subramanya,6500,Subramanya,Subramanya - 574238,08257-258100
+Diabetes,Private,Crescent Hospital Ullal,15500,Ullal,Ullal - 574146,0824-2279300
+Kidney Stone,Govt,Primary Health Centre Kateel,22000,Kateel,"Kateel, Dakshina Kannada - 574272",0824-2298011
+Jaundice,Govt,Community Health Centre Moodabidri,6000,Moodabidri,Moodabidri Town - 574227,0824-2386100
+Anaemia,Private,Srinivas Hospital Surathkal,10000,Surathkal,"Surathkal Main Road, Mangaluru - 575014",0824-2474500
+Kidney Stone,Private,Kalanjali Hospital Vittal,38500,Vittal,Vittal - 574243,08255-231500
+Tuberculosis,Private,Sahyadri Clinic Bellare,29500,Bellare,Bellare - 574212,08257-261400
+Thyroid Disorder,Govt,Government Hospital Ullal,7000,Ullal,"Ullal Town, Dakshina Kannada - 574146",0824-2279011
+Thyroid Disorder,Govt,Primary Health Centre Gurupura,6500,Gurupura,"Gurupura, Mangaluru Taluk - 575016",0824-2284011
+Pregnancy,Private,Srinivasa Hospital Venur,66500,Venur,Venur - 574237,08256-262400
+Heart Disease,Private,Shanthi Hospital Kadaba,159500,Kadaba,Kadaba Town - 574221,08257-265700
+Kidney Stone,Private,Srinivasa Hospital Mulki,41500,Mulki,"Main Road, Mulki - 574154",0824-2296200
+Pneumonia,Private,Kalanjali Hospital Vittal,20000,Vittal,Vittal - 574243,08255-231500
+Asthma,Private,Sai Sanjeevini Hospital Gurupura,16000,Gurupura,Gurupura - 575016,0824-2284300
+Hypertension,Govt,Government Hospital Venur,4500,Belthangady,"Venur, Belthangady Taluk - 574237",08256-230300
+Kidney Stone,Govt,Primary Health Centre Venur,23000,Venur,Venur Town - 574237,08256-262100
+Fever,Private,Shanthi Hospital Kadaba,4000,Kadaba,Kadaba Town - 574221,08257-265700
+Malaria,Govt,Primary Health Centre Uppinangady,3500,Uppinangady,Uppinangady Town - 574241,08251-232100
+Cancer,Govt,Government Hospital Uppinangady,118000,Uppinangady,"Uppinangady, Puttur Taluk - 574241",08251-232011
+UTI,Private,Srinivas Institute of Medical Sciences,10000,Mangaluru,"Mukka, Surathkal, Mangaluru - 574146",0824-2477000
+Tuberculosis,Private,Kalanjali Hospital Vittal,19500,Vittal,Vittal - 574243,08255-231500
+Hypertension,Private,Netravathi Hospital Ujire,13000,Ujire,"Main Road, Ujire - 574240",08256-248200
+Typhoid,Private,Sai Sanjeevini Hospital Kinnigoli,8500,Kinnigoli,Kinnigoli - 574150,0824-2293300
+Pneumonia,Govt,Government Hospital Venur,11000,Belthangady,"Venur, Belthangady Taluk - 574237",08256-230300
+Tuberculosis,Private,Mahalasa Hospital Nelyadi,24000,Nelyadi,Nelyadi - 574221,08257-265900
+Anaemia,Private,Mahatma Gandhi Memorial Hospital Belthangady,8000,Belthangady,Belthangady Main Road - 574214,08256-230500
+Jaundice,Govt,Primary Health Centre Paladka,7000,Mulki,"Paladka, Mulki - 574154",0824-2296100
+Hypertension,Private,Ullal Nursing Home,16500,Ullal,"Main Road, Ullal - 574146",0824-2279400
+UTI,Private,Srinivasa Hospital Moodabidri,7000,Moodabidri,Moodabidri Main Road - 574227,0824-2386800
+Surgery,Govt,Community Health Centre Sullia,46500,Sullia,Sullia Town - 574239,08257-233100
+Asthma,Govt,Primary Health Centre Bellare,10000,Bellare,"Bellare, Sullia Taluk - 574212",08257-261011
+Appendicitis,Govt,Community Health Centre Moodabidri,21000,Moodabidri,Moodabidri Town - 574227,0824-2386100
+Asthma,Govt,General Hospital Puttur,7500,Puttur,"Hospital Road, Puttur - 574201",08251-230295
+Liver Disease,Private,Srinivasa Hospital Venur,69000,Venur,Venur - 574237,08256-262400
+Malaria,Private,Unity Hospital Mangaluru,13500,Mangaluru,"Mangaladevi Road, Mangaluru - 575003",0824-2222222
+Fracture,Govt,Community Health Centre Kadaba,14500,Kadaba,Kadaba Town - 574221,08257-265100
+Fever,Private,Coastal Nursing Home Panemangalore,3500,Panemangalore,Panemangalore - 574236,0824-2239400
+Typhoid,Govt,Primary Health Centre Kateel,5500,Kateel,"Kateel, Dakshina Kannada - 574272",0824-2298011
+Heart Disease,Private,Shree Kshethra Dharmasthala RDPR Hospital,147000,Dharmasthala,Dharmasthala - 574216,08256-277444
+Heart Disease,Private,Srinivasa Hospital Venur,154000,Venur,Venur - 574237,08256-262400
+Surgery,Govt,Primary Health Centre Venur,42500,Venur,Venur Town - 574237,08256-262100
+Kidney Stone,Govt,Primary Health Centre Dharmasthala,17500,Dharmasthala,Dharmasthala Town - 574216,08256-277100
+Skin Disease,Govt,Urban Primary Health Centre Bunder,2000,Mangaluru,"Bunder, Mangaluru - 575001",0824-2440101
+Typhoid,Private,Srinivasa Clinic Panemangalore,13000,Panemangalore,Panemangalore - 574236,0824-2239300
+Dengue,Private,Shridhar Hospital Mulki,14000,Mulki,Mulki Junction - 574154,0824-2296300
+Kidney Stone,Govt,Primary Health Centre Ullal,20500,Ullal,"Chitrapu, Ullal - 574146",0824-2279022
+Dengue,Govt,Community Health Centre Belthangady,7500,Belthangady,Belthangady Town - 574214,08256-230100
+Tuberculosis,Govt,Government Dispensary Moodabidri,5500,Moodabidri,"Main Road, Moodabidri - 574227",0824-2386200
+Pneumonia,Private,Mahalasa Hospital Nelyadi,25500,Nelyadi,Nelyadi - 574221,08257-265900
+Surgery,Govt,Primary Health Centre Panambur,55000,Surathkal,"Panambur, Mangaluru - 575010",0824-2408001
+Fracture,Private,Saraswathi Hospital Uppinangady,25500,Uppinangady,Uppinangady - 574241,08251-232500
+Jaundice,Private,Coastal Hospital Surathkal,18000,Surathkal,"Surathkal Road, Mangaluru - 575014",0824-2478002
+UTI,Govt,Community Health Centre Mulki,5500,Mulki,"Mulki, Dakshina Kannada - 574154",0824-2296011
+Thyroid Disorder,Private,Srinivasa Hospital Mulki,12000,Mulki,"Main Road, Mulki - 574154",0824-2296200
+Malaria,Private,Bhagavathi Hospital Belthangady,16000,Belthangady,Belthangady - 574214,08256-230600
+Kidney Stone,Private,Canara Hospital Puttur,32000,Puttur,Puttur Main Road - 574201,08251-231500
+Tuberculosis,Govt,Community Health Centre Kadaba,4500,Kadaba,Kadaba Town - 574221,08257-265100
+Liver Disease,Private,Mahalasa Hospital Nelyadi,57500,Nelyadi,Nelyadi - 574221,08257-265900
+Thyroid Disorder,Govt,Community Health Centre Puttur,5500,Puttur,Puttur Town - 574201,08251-230300
+Asthma,Govt,Primary Health Centre Bellare,7000,Sullia,"Bellare, Sullia Taluk - 574212",08257-233200
+Typhoid,Govt,Community Health Centre Puttur,6000,Puttur,Puttur Town - 574201,08251-230300
+Thyroid Disorder,Private,Durgaparameshwari Hospital Kateel,12500,Kateel,"Temple Road, Kateel - 574272",0824-2298200
+Diabetes,Private,Venur Hospital,11500,Venur,"Main Road, Venur - 574237",08256-262200
+Pneumonia,Govt,Government Hospital Ujire,11000,Ujire,Ujire Town - 574240,08256-248100
+Kidney Stone,Private,Prakash Hospital Surathkal,37500,Surathkal,"NH 66 Surathkal, Mangaluru - 575014",0824-2476001
+Diabetes,Govt,Primary Health Centre Panambur,6500,Panambur,"Panambur Beach Road, Mangaluru - 575010",0824-2408001
+Jaundice,Private,KVG Medical College & Hospital Puttur Road,27000,Puttur,"Sullia Road, Puttur - 574201",08251-230600
+Asthma,Private,Mahalasa Hospital Nelyadi,19000,Nelyadi,Nelyadi - 574221,08257-265900
+Gastroenteritis,Govt,Community Health Centre Belthangady,6000,Belthangady,Belthangady Town - 574214,08256-230100
+Pneumonia,Private,Prashanth Hospital Puttur,20000,Puttur,"Town Hall Road, Puttur - 574201",08251-231200
+Appendicitis,Private,Shridhar Hospital Nanthoor,63500,Nanthoor,"Main Road, Nanthoor - 574219",08255-239200
+Hypertension,Private,Dharmasthala Rural Hospital,19000,Dharmasthala,"Temple Road, Dharmasthala - 574216",08256-277555
+Jaundice,Govt,Primary Health Centre Bellare,9500,Sullia,"Bellare, Sullia Taluk - 574212",08257-233200
+Tuberculosis,Govt,Primary Health Centre Panambur,4000,Surathkal,"Panambur, Mangaluru - 575010",0824-2408001
+Kidney Stone,Govt,Government Hospital Kukke Subramanya,17500,Subramanya,Subramanya Town - 574238,08257-258011
+Hypertension,Private,Srinivasa Hospital Mulki,12000,Mulki,"Main Road, Mulki - 574154",0824-2296200
+Kidney Stone,Govt,Community Health Sub-Centre Panemangalore,17000,Panemangalore,Panemangalore - 574236,0824-2239100
+Pneumonia,Private,Dharmasthala Rural Hospital,25000,Dharmasthala,"Temple Road, Dharmasthala - 574216",08256-277555
+Eye Disease,Govt,Taluk Hospital Sullia,11500,Sullia,"Hospital Road, Sullia - 574239",08257-233010
+Malaria,Govt,Community Health Centre Moodabidri,7000,Moodabidri,Moodabidri Town - 574227,0824-2386100
+Tuberculosis,Govt,Community Health Centre Dharmasthala,5500,Dharmasthala,Dharmasthala - 574216,08256-277011
+Fever,Private,Netravathi Hospital Uppinangady,5000,Uppinangady,"Main Road, Uppinangady - 574241",08251-232200
+Eye Disease,Govt,Government Hospital Uppinangady,14500,Uppinangady,"Uppinangady, Puttur Taluk - 574241",08251-232011
+Eye Disease,Private,Durgaparameshwari Hospital Subramanya,26500,Subramanya,Subramanya - 574238,08257-258300
+Dengue,Private,Mahalasa Hospital Nelyadi,13000,Nelyadi,Nelyadi - 574221,08257-265900
+Kidney Stone,Govt,Primary Health Centre Naravi,21000,Belthangady,"Naravi, Belthangady - 574214",08256-230200
+Pregnancy,Govt,Primary Health Centre Venur,27000,Venur,Venur Town - 574237,08256-262100
+Dengue,Private,Sharada Hospital Puttur,16500,Puttur,Puttur - 574201,08251-231400
+Kidney Stone,Govt,Primary Health Centre Vittal,23000,Vittal,"Vittal Town, Bantwal Taluk - 574243",08255-231011
+Dengue,Govt,Primary Health Centre Paladka,6000,Mulki,"Paladka, Mulki - 574154",0824-2296100
+Malaria,Private,Srinivasa Clinic Panemangalore,14000,Panemangalore,Panemangalore - 574236,0824-2239300
+Anaemia,Private,Srinivasa Hospital Venur,11500,Venur,Venur - 574237,08256-262400
+Appendicitis,Govt,Primary Health Centre Ujire,20000,Ujire,"Ujire, Belthangady Taluk - 574240",08256-248011
+Fever,Private,Narayana Hospital Panambur,5500,Panambur,"Baikampady, Panambur - 575011",0824-2408300
+Pregnancy,Govt,Primary Health Centre Dharmasthala,16500,Dharmasthala,Dharmasthala Town - 574216,08256-277100
+Ear Infection,Private,Dhanvanthari Hospital Puttur,9500,Puttur,Puttur - 574201,08251-231300
+Kidney Stone,Govt,Primary Health Centre Nelyadi,20500,Kadaba,"Nelyadi, Kadaba - 574221",08257-265200
+Fracture,Private,Sai Sanjeevini Hospital Gurupura,23000,Gurupura,Gurupura - 575016,0824-2284300
+Typhoid,Private,Ullal Nursing Home,8500,Ullal,"Main Road, Ullal - 574146",0824-2279400
+Gastroenteritis,Govt,Community Health Centre Sullia,6000,Sullia,Sullia Town - 574239,08257-233100
+Malaria,Private,Sahyadri Clinic Bellare,13500,Bellare,Bellare - 574212,08257-261400
+Heart Disease,Govt,Primary Health Centre Bellare,78000,Sullia,"Bellare, Sullia Taluk - 574212",08257-233200
+Typhoid,Private,Shree Hospital Uppinangady,9000,Uppinangady,Uppinangady - 574241,08251-232300
+Asthma,Govt,Government Hospital Kukke Subramanya,8000,Subramanya,Subramanya Town - 574238,08257-258011
+Hypertension,Private,Shanthi Hospital Gurupura,13500,Gurupura,Gurupura - 575016,0824-2284400
+Skin Disease,Private,Yenepoya Specialty Hospital,6500,Mangaluru,"Deralakatte, Mangaluru - 575018",0824-2204000
+Malaria,Govt,Government Maternity Hospital Puttur,7000,Puttur,Puttur - 574201,08251-230400
+Thyroid Disorder,Govt,Government Hospital Venur,6000,Belthangady,"Venur, Belthangady Taluk - 574237",08256-230300
+Anaemia,Govt,Community Health Sub-Centre Kinnigoli,4000,Kinnigoli,Kinnigoli Town - 574150,0824-2293100
+Appendicitis,Govt,Primary Health Centre Subramanya,34000,Subramanya,Subramanya - 574238,08257-258100
+Appendicitis,Private,Ullal Nursing Home,63500,Ullal,"Main Road, Ullal - 574146",0824-2279400
+Skin Disease,Govt,Government Dispensary Moodabidri,2500,Moodabidri,"Main Road, Moodabidri - 574227",0824-2386200
+Gastroenteritis,Private,Karavali Hospital Mulki,11000,Mulki,"NH 66, Mulki - 574154",0824-2296400
+Diabetes,Govt,Primary Health Centre Vittal,5500,Vittal,"Vittal Town, Bantwal Taluk - 574243",08255-231011
+Dengue,Private,Alva's Health Centre Moodabidri,15500,Moodabidri,"Alva's Education Foundation, Moodabidri - 574227",0824-2386500
+Ear Infection,Private,Pooja Hospital Uppinangady,9500,Uppinangady,Uppinangady - 574241,08251-232400
+Cancer,Private,AJ Hospital & Research Centre Bejai,195500,Mangaluru,"NH 66, Kuntikana, Bejai, Mangaluru - 575004",0824-2225533
+Dengue,Private,Sealand Hospital Ullal,14500,Ullal,"Someshwara, Ullal - 574146",0824-2278001
+Thyroid Disorder,Private,Kinnigoli Hospital,16000,Kinnigoli,"Main Road, Kinnigoli - 574150",0824-2293200
+Asthma,Private,Prakash Hospital Bantwal,17500,Bantwal,"Main Road, Bantwal - 574219",08255-232800
+Cancer,Private,Srinivasa Hospital Mulki,166000,Mulki,"Main Road, Mulki - 574154",0824-2296200
+Cancer,Govt,Community Health Centre Vamanapadavu,88000,Bantwal,"Vamanapadavu, Bantwal - 574241",08255-232200
+Ear Infection,Private,Shree Kshethra Dharmasthala RDPR Hospital,7000,Dharmasthala,Dharmasthala - 574216,08256-277444
+Typhoid,Govt,Government Hospital Ullal,4000,Ullal,"Ullal Town, Dakshina Kannada - 574146",0824-2279011
+Malaria,Govt,Taluk Hospital Belthangady,6000,Belthangady,"Hospital Road, Belthangady - 574214",08256-230011
+Ear Infection,Govt,Government Ayurvedic Hospital Mangaluru,4000,Mangaluru,"Court Road, Mangaluru - 575001",0824-2426555
+Kidney Stone,Private,Srinivasa Hospital Venur,35500,Venur,Venur - 574237,08256-262400
+UTI,Private,Kalanjali Hospital Vittal,11500,Vittal,Vittal - 574243,08255-231500
+Ear Infection,Private,Crescent Hospital Ullal,11000,Ullal,Ullal - 574146,0824-2279300
+Pneumonia,Private,Pooja Hospital Uppinangady,15500,Uppinangady,Uppinangady - 574241,08251-232400
+Pregnancy,Govt,Primary Health Centre Nelyadi,27500,Nelyadi,"Nelyadi, Kadaba Taluk - 574221",08257-265201
+Appendicitis,Private,Narayana Hrudayalaya Surathkal,64000,Surathkal,"NITK Road, Surathkal, Mangaluru - 575014",0824-2470000
+Asthma,Private,Shree Kshethra Dharmasthala RDPR Hospital,18500,Dharmasthala,Dharmasthala - 574216,08256-277444
+Surgery,Govt,Primary Health Centre Subramanya,51500,Subramanya,Subramanya - 574238,08257-258100
+Hypertension,Govt,Government Hospital Kateel,4500,Kateel,Kateel Town - 574272,0824-2298100
+Cancer,Govt,Urban Primary Health Centre Bunder,93000,Mangaluru,"Bunder, Mangaluru - 575001",0824-2440101
+Fever,Private,City Medical Centre Moodabidri,4500,Moodabidri,Moodabidri - 574227,0824-2386900
+Cancer,Private,Narayana Hrudayalaya Surathkal,186000,Surathkal,"NITK Road, Surathkal, Mangaluru - 575014",0824-2470000
+Eye Disease,Private,SDM Ayurvedic Hospital Dharmasthala,36500,Dharmasthala,Dharmasthala - 574216,08256-277333
+Fracture,Private,Dawa Hospital Ullal,23000,Ullal,Ullal Town Road - 574146,0824-2279200
+Cancer,Govt,Primary Health Centre Nanthoor,120500,Nanthoor,"Nanthoor, Bantwal Taluk - 574219",08255-239011
+Heart Disease,Govt,Primary Health Centre Nanthoor,78000,Nanthoor,"Nanthoor, Bantwal Taluk - 574219",08255-239011
+Diabetes,Private,Srinivasa Hospital Mulki,15000,Mulki,"Main Road, Mulki - 574154",0824-2296200
+Kidney Stone,Private,Kateel Medical Centre,40500,Kateel,"Main Road, Kateel - 574272",0824-2298300
+Surgery,Private,Dharmasthala Rural Hospital,67500,Dharmasthala,"Temple Road, Dharmasthala - 574216",08256-277555
+Eye Disease,Private,Shanthi Hospital Kadaba,29500,Kadaba,Kadaba Town - 574221,08257-265700
+Heart Disease,Private,Kateel Medical Centre,163500,Kateel,"Main Road, Kateel - 574272",0824-2298300
+Eye Disease,Private,Srinivas Hospital Surathkal,37500,Surathkal,"Surathkal Main Road, Mangaluru - 575014",0824-2474500
+Asthma,Private,Prakash Hospital Surathkal,20000,Surathkal,"NH 66 Surathkal, Mangaluru - 575014",0824-2476001
+Jaundice,Govt,Primary Health Centre Panambur,9000,Surathkal,"Panambur, Mangaluru - 575010",0824-2408001
+Skin Disease,Private,Dharmasthala Rural Hospital,11500,Dharmasthala,"Temple Road, Dharmasthala - 574216",08256-277555
+Surgery,Govt,Primary Health Centre Dharmasthala,38000,Dharmasthala,Dharmasthala Town - 574216,08256-277100
+Hypertension,Govt,Community Health Centre Mulki,4500,Mulki,"Mulki, Dakshina Kannada - 574154",0824-2296011
+Fracture,Govt,Primary Health Centre Ujire,13000,Ujire,"Ujire, Belthangady Taluk - 574240",08256-248011
+Anaemia,Govt,Government Hospital Kukke Subramanya,4500,Subramanya,Subramanya Town - 574238,08257-258011
+Skin Disease,Govt,Government Ayurvedic Dispensary Puttur,3000,Puttur,"Market Road, Puttur - 574201",08251-230500
+Surgery,Private,Kinnigoli Hospital,81500,Kinnigoli,"Main Road, Kinnigoli - 574150",0824-2293200
+Fever,Private,Panemangalore Hospital,5000,Panemangalore,"Main Road, Panemangalore - 574236",0824-2239200
+Pregnancy,Private,Shree Kshethra Dharmasthala RDPR Hospital,57000,Dharmasthala,Dharmasthala - 574216,08256-277444
+Heart Disease,Govt,Primary Health Centre Nelyadi,82500,Nelyadi,"Nelyadi, Kadaba Taluk - 574221",08257-265201
+Fracture,Private,Kalanjali Hospital Vittal,29000,Vittal,Vittal - 574243,08255-231500
+Heart Disease,Govt,Government Hospital Vittal,96000,Vittal,"Main Road, Vittal - 574243",08255-231100
+Hypertension,Private,Lourdes Hospital Mangaluru,12500,Mangaluru,"Bendore, Mangaluru - 575002",0824-2443333
+Anaemia,Private,Sai Sanjeevini Hospital Gurupura,9500,Gurupura,Gurupura - 575016,0824-2284300
+Thyroid Disorder,Govt,Government Hospital Surathkal,6000,Surathkal,"Surathkal, Mangaluru - 575014",0824-2474133
+Fever,Govt,Government Hospital Kateel,1500,Kateel,Kateel Town - 574272,0824-2298100
+Ear Infection,Govt,Government Dispensary Bellare,4500,Bellare,Bellare Town - 574212,08257-261100
+Cancer,Private,Sri Krishna Hospital Sullia,163500,Sullia,Sullia Main Road - 574239,08257-234400
+UTI,Govt,Wenlock District Hospital,4500,Mangaluru,"Bibi Alabi Road, Hampankatta, Mangaluru - 575001",0824-2421351
+Anaemia,Govt,Government Hospital Kateel,5000,Kateel,Kateel Town - 574272,0824-2298100
+Jaundice,Private,Shanthi Hospital Kadaba,25500,Kadaba,Kadaba Town - 574221,08257-265700
+Hypertension,Private,Srinivasa Hospital Panambur,13500,Panambur,"Panambur Road, Mangaluru - 575010",0824-2408200
+Kidney Stone,Govt,Primary Health Centre Nanthoor,21000,Nanthoor,"Nanthoor, Bantwal Taluk - 574219",08255-239011
+Cancer,Govt,Primary Health Centre Bellare,123500,Sullia,"Bellare, Sullia Taluk - 574212",08257-233200
+Fever,Private,Father Muller Medical College Hospital,4500,Mangaluru,"Father Muller Road, Kankanady, Mangaluru - 575002",0824-2238000
+Typhoid,Private,Sahyadri Clinic Bellare,12500,Bellare,Bellare - 574212,08257-261400
+Gastroenteritis,Private,Shridhar Hospital Nanthoor,10000,Nanthoor,"Main Road, Nanthoor - 574219",08255-239200
+Gastroenteritis,Govt,Community Health Centre Kadaba,3500,Kadaba,Kadaba Town - 574221,08257-265100
+Thyroid Disorder,Private,Kalanjali Hospital Vittal,13000,Vittal,Vittal - 574243,08255-231500
+Kidney Stone,Private,Durgaparameshwari Hospital Kadaba,36500,Kadaba,Kadaba - 574221,08257-265600
+Cancer,Private,Sai Sanjeevini Hospital Kinnigoli,168000,Kinnigoli,Kinnigoli - 574150,0824-2293300
+Gastroenteritis,Private,Ullal Nursing Home,8500,Ullal,"Main Road, Ullal - 574146",0824-2279400
+Appendicitis,Govt,Primary Health Centre Bellare,28000,Sullia,"Bellare, Sullia Taluk - 574212",08257-233200
+Thyroid Disorder,Govt,Government Hospital Uppinangady,6000,Uppinangady,"Uppinangady, Puttur Taluk - 574241",08251-232011
+Surgery,Govt,Taluk Hospital BC Road Bantwal,48000,Bantwal,"BC Road, Bantwal - 574219",08255-232024
+Diabetes,Govt,Port Trust Hospital Panambur,9500,Panambur,"NMPT Colony, Panambur - 575010",0824-2407700
+Typhoid,Private,Netravathi Hospital Ujire,9000,Ujire,"Main Road, Ujire - 574240",08256-248200
+Asthma,Govt,Community Health Centre Mulki,8000,Mulki,"Mulki, Dakshina Kannada - 574154",0824-2296011
+Ear Infection,Govt,Government Hospital Mulki,4000,Mulki,"Town Road, Mulki - 574154",0824-2296022
+Diabetes,Private,Narayana Hospital Panambur,13500,Panambur,"Baikampady, Panambur - 575011",0824-2408300
+Tuberculosis,Private,Sri Sai Hospital Nanthoor,16500,Nanthoor,Nanthoor - 574219,08255-239400
+Pregnancy,Private,Narayana Hospital Panambur,59000,Panambur,"Baikampady, Panambur - 575011",0824-2408300
+Pneumonia,Govt,Primary Health Centre Nanthoor,13000,Nanthoor,"Nanthoor, Bantwal Taluk - 574219",08255-239011
+Typhoid,Govt,Government Hospital Bantwal PHC,5500,Bantwal,"Bantwal Town, DK - 574219",08255-232100
+Anaemia,Govt,Primary Health Centre Dharmasthala,3500,Dharmasthala,Dharmasthala Town - 574216,08256-277100
+Appendicitis,Private,Netravathi Hospital Uppinangady,43000,Uppinangady,"Main Road, Uppinangady - 574241",08251-232200
+Skin Disease,Private,Prashanth Hospital Puttur,6500,Puttur,"Town Hall Road, Puttur - 574201",08251-231200
+Kidney Stone,Govt,Government Hospital Ujire,22000,Ujire,Ujire Town - 574240,08256-248100
+Thyroid Disorder,Private,Pooja Hospital Uppinangady,11500,Uppinangady,Uppinangady - 574241,08251-232400
+Gastroenteritis,Govt,Primary Health Centre Uppinangady,3000,Uppinangady,Uppinangady Town - 574241,08251-232100
+Hypertension,Govt,Taluk Hospital BC Road Bantwal,6500,Bantwal,"BC Road, Bantwal - 574219",08255-232024
+Eye Disease,Govt,Community Health Centre Mulki,6000,Mulki,"Mulki, Dakshina Kannada - 574154",0824-2296011
+Liver Disease,Private,KVG Medical College Hospital Sullia,53500,Sullia,"Kurunjibag, Sullia - 574327",08257-232608
+Kidney Stone,Govt,Government Hospital Surathkal,22500,Surathkal,"Surathkal, Mangaluru - 575014",0824-2474133
+Pregnancy,Private,Coastal Nursing Home Panemangalore,55500,Panemangalore,Panemangalore - 574236,0824-2239400
+Diabetes,Private,Saraswathi Hospital Uppinangady,15500,Uppinangady,Uppinangady - 574241,08251-232500
+Malaria,Private,Sri Krishna Hospital Sullia,17000,Sullia,Sullia Main Road - 574239,08257-234400
+Fever,Private,SDM Ayurvedic Hospital Dharmasthala,5500,Dharmasthala,Dharmasthala - 574216,08256-277333
+Typhoid,Private,Dharmasthala Rural Hospital,9000,Dharmasthala,"Temple Road, Dharmasthala - 574216",08256-277555
+Jaundice,Private,Sealand Hospital Ullal,16500,Ullal,"Someshwara, Ullal - 574146",0824-2278001
+UTI,Private,Sai Sanjeevini Hospital Gurupura,7500,Gurupura,Gurupura - 575016,0824-2284300
+Eye Disease,Govt,Primary Health Centre Venur,7000,Venur,Venur Town - 574237,08256-262100
+Cancer,Govt,Community Health Sub-Centre Panemangalore,103500,Panemangalore,Panemangalore - 574236,0824-2239100
+Pneumonia,Govt,Community Health Centre Gurupura,8500,Gurupura,Gurupura - 575016,0824-2284100
+Fracture,Govt,Government Hospital Venur,14500,Venur,"Venur, Belthangady Taluk - 574237",08256-262011
+Dengue,Private,Narayana Hrudayalaya Surathkal,12500,Surathkal,"NITK Road, Surathkal, Mangaluru - 575014",0824-2470000
+Eye Disease,Private,Saraswathi Hospital Uppinangady,31500,Uppinangady,Uppinangady - 574241,08251-232500
+Pregnancy,Govt,Community Health Centre Moodabidri,27500,Moodabidri,Moodabidri Town - 574227,0824-2386100
+Thyroid Disorder,Private,Coastal Hospital Surathkal,16000,Surathkal,"Surathkal Road, Mangaluru - 575014",0824-2478002
+Liver Disease,Private,Bhagavathi Hospital Belthangady,77500,Belthangady,Belthangady - 574214,08256-230600
+Dengue,Govt,Primary Health Centre Uppinangady,7000,Uppinangady,Uppinangady Town - 574241,08251-232100
+Ear Infection,Govt,Port Trust Hospital Panambur,3000,Panambur,"NMPT Colony, Panambur - 575010",0824-2407700
+Jaundice,Govt,Community Health Sub-Centre Kinnigoli,7500,Kinnigoli,Kinnigoli Town - 574150,0824-2293100
+Appendicitis,Govt,Government Hospital Uppinangady,23500,Uppinangady,"Uppinangady, Puttur Taluk - 574241",08251-232011
+Tuberculosis,Govt,Government Dispensary Bellare,4000,Bellare,Bellare Town - 574212,08257-261100
+Hypertension,Private,Srinivasa Hospital Sullia,19500,Sullia,"Main Road, Sullia - 574239",08257-234001
+Thyroid Disorder,Private,Srinivasa Hospital Venur,15000,Venur,Venur - 574237,08256-262400
+Tuberculosis,Private,Yenepoya Medical College Hospital,18000,Mangaluru,"University Road, Deralakatte, Mangaluru - 575018",0824-2204668
+Appendicitis,Private,Kateel Medical Centre,51500,Kateel,"Main Road, Kateel - 574272",0824-2298300
+Typhoid,Govt,Government Dispensary Nelyadi,6000,Nelyadi,Nelyadi Town - 574221,08257-265300
+Pneumonia,Private,Bellare Hospital,21500,Bellare,"Main Road, Bellare - 574212",08257-261200
+Cancer,Govt,Government Hospital Surathkal,96000,Surathkal,"Surathkal, Mangaluru - 575014",0824-2474133
+Surgery,Private,Mahalasa Hospital Nelyadi,66500,Nelyadi,Nelyadi - 574221,08257-265900
+Pregnancy,Govt,Government Hospital Surathkal,26500,Surathkal,"Surathkal, Mangaluru - 575014",0824-2474133
+Eye Disease,Govt,Primary Health Centre Kateel,10000,Kateel,"Kateel, Dakshina Kannada - 574272",0824-2298011
+Gastroenteritis,Govt,Primary Health Centre Vittal,4500,Vittal,"Vittal Town, Bantwal Taluk - 574243",08255-231011
+Pregnancy,Govt,Urban Primary Health Centre Bunder,24000,Mangaluru,"Bunder, Mangaluru - 575001",0824-2440101
+UTI,Private,Narayana Hospital Panambur,7500,Panambur,"Baikampady, Panambur - 575011",0824-2408300
+Liver Disease,Govt,Primary Health Centre Vittal,33000,Bantwal,"Vittal, Bantwal Taluk - 574243",08255-231011
+Malaria,Private,Panchalingeshwara Hospital Vittal,11500,Vittal,Vittal Town - 574243,08255-231300
+Dengue,Govt,Government Hospital Bantwal PHC,7000,Bantwal,"Bantwal Town, DK - 574219",08255-232100
+Asthma,Govt,Government Dispensary Nelyadi,7000,Nelyadi,Nelyadi Town - 574221,08257-265300
+Liver Disease,Private,Coastal Care Hospital Panambur,82000,Panambur,Baikampady Industrial Area - 575011,0824-2408400
+Tuberculosis,Govt,Government Hospital Kateel,5500,Kateel,Kateel Town - 574272,0824-2298100
+Ear Infection,Govt,Community Health Centre Puttur,4500,Puttur,Puttur Town - 574201,08251-230300
+Heart Disease,Private,Nanthoor Community Hospital,158000,Nanthoor,Nanthoor - 574219,08255-239300
+Liver Disease,Private,Justice KS Hegde Charitable Hospital,76000,Mangaluru,"Deralakatte, Mangaluru - 575018",0824-2204360
+Cancer,Private,Sahyadri Hospital Vittal,155000,Vittal,"NH 75, Vittal - 574243",08255-231400
+Hypertension,Private,Srinivasa Clinic Panemangalore,15500,Panemangalore,Panemangalore - 574236,0824-2239300
+Cancer,Govt,Community Health Centre Ullal,119000,Ullal,Ullal Main Road - 574146,0824-2279100
+Appendicitis,Private,Sahyadri Clinic Bellare,44000,Bellare,Bellare - 574212,08257-261400
+Gastroenteritis,Private,Mahalasa Hospital Nelyadi,12500,Nelyadi,Nelyadi - 574221,08257-265900
+Pneumonia,Private,SDM Medical College Hospital Ujire,22500,Ujire,"SDM Campus, Ujire - 574240",08256-248500
+Asthma,Govt,Primary Health Centre Panambur,8500,Surathkal,"Panambur, Mangaluru - 575010",0824-2408001
+Thyroid Disorder,Govt,Primary Health Centre Kinnigoli,6500,Kinnigoli,"Kinnigoli, Mangaluru Taluk - 574150",0824-2293011
+Fracture,Private,Coastal Care Hospital Panambur,32000,Panambur,Baikampady Industrial Area - 575011,0824-2408400
+Jaundice,Private,City Medical Centre Moodabidri,26500,Moodabidri,Moodabidri - 574227,0824-2386900
+Anaemia,Govt,Primary Health Centre Venur,4500,Venur,Venur Town - 574237,08256-262100
+Heart Disease,Private,Srinivasa Hospital Panambur,155000,Panambur,"Panambur Road, Mangaluru - 575010",0824-2408200
+Liver Disease,Private,Sharavathi Hospital Subramanya,89000,Subramanya,"Temple Road, Subramanya - 574238",08257-258400
+Pregnancy,Private,Crescent Hospital Ullal,52500,Ullal,Ullal - 574146,0824-2279300
+Eye Disease,Govt,Community Health Centre Moodabidri,10500,Moodabidri,Moodabidri Town - 574227,0824-2386100
+Cancer,Private,Durgaparameshwari Hospital Kadaba,193500,Kadaba,Kadaba - 574221,08257-265600
+Eye Disease,Govt,Primary Health Centre Naravi,12000,Belthangady,"Naravi, Belthangady - 574214",08256-230200

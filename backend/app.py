@@ -22,7 +22,8 @@ app = Flask(
 CORS(app)
 
 # Load dataset
-data = pd.read_csv("../dataset/hospital_data.csv")
+raw_data = pd.read_csv("../dataset/hospital_data.csv")
+data = raw_data.copy()
 
 # Label Encoders
 le_disease = LabelEncoder()
@@ -110,9 +111,27 @@ def predict():
 
         predicted_hospital = le_hospital.inverse_transform([predicted_hospital_encoded])[0]
         
+        # Look up additional details from raw_data matching the predicted hospital name and city
+        matched_rows = raw_data[(raw_data["Hospital_Name"] == predicted_hospital) & (raw_data["City"] == matched_city)]
+        if matched_rows.empty:
+            # Fallback to name only if city mismatch (should not happen normally)
+            matched_rows = raw_data[raw_data["Hospital_Name"] == predicted_hospital]
+            
+        if not matched_rows.empty:
+            address = matched_rows.iloc[0]["Address"]
+            contact = matched_rows.iloc[0]["Contact"]
+            h_type_str = matched_rows.iloc[0]["Hospital_Type"]
+        else:
+            address = "N/A"
+            contact = "N/A"
+            h_type_str = h_type
+            
         results[h_type.lower()] = {
             "hospital_name": predicted_hospital,
-            "predicted_cost": predicted_cost
+            "predicted_cost": predicted_cost,
+            "hospital_type": h_type_str,
+            "address": address,
+            "contact": contact
         }
 
     return jsonify({

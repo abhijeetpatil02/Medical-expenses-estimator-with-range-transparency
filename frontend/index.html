@@ -51,6 +51,9 @@
                 resultHTML += `
                     <strong>Government Hospital</strong><br>
                     Hospital Name: ${data.predictions.govt.hospital_name}<br>
+                    Hospital Type: ${data.predictions.govt.hospital_type}<br>
+                    Address: ${data.predictions.govt.address}<br>
+                    Contact: ${data.predictions.govt.contact}<br>
                     Estimated Minimum Cost: ₹${data.predictions.govt.predicted_cost}<br><br>
                 `;
             }
@@ -58,6 +61,9 @@
                 resultHTML += `
                     <strong>Private Hospital</strong><br>
                     Hospital Name: ${data.predictions.private.hospital_name}<br>
+                    Hospital Type: ${data.predictions.private.hospital_type}<br>
+                    Address: ${data.predictions.private.address}<br>
+                    Contact: ${data.predictions.private.contact}<br>
                     Estimated Minimum Cost: ₹${data.predictions.private.predicted_cost}<br>
                 `;
             }
