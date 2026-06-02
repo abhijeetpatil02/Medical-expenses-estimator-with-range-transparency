@@ -1,18 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hospital Cost Predictor - Dashboard</title>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div class="dashboard-container">
         <div class="top-nav">
             <a href="/logout" class="logout-btn">
-                <svg xmlns="http://www.w3.org/2000/svg" class="logout-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1" />
+                <svg xmlns="http://www.w3.org/2000/svg" class="logout-icon" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                        d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1" />
                 </svg>
                 <span>Logout</span>
             </a>
@@ -30,18 +35,22 @@
             <form id="predictForm">
                 <div class="input-group">
                     <label for="disease">Disease Name</label>
-                    <input type="text" id="disease" placeholder="e.g. Fever, Malaria, Heart Disease" required autocomplete="off">
+                    <input type="text" id="disease" placeholder="e.g. Fever, Malaria, Heart Disease" required
+                        autocomplete="off">
                 </div>
 
                 <div class="input-group">
                     <label for="city">City Name</label>
-                    <input type="text" id="city" placeholder="e.g. Pune, Mumbai, Delhi" required autocomplete="off">
+                    <input type="text" id="city" placeholder="e.g. Mangaluru, Surathkal, Bantwal" required
+                        autocomplete="off">
                 </div>
 
                 <button type="submit" class="submit-btn">
                     <span>Estimate & Compare</span>
-                    <svg xmlns="http://www.w3.org/2000/svg" class="btn-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                    <svg xmlns="http://www.w3.org/2000/svg" class="btn-icon" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                            d="M14 5l7 7m0 0l-7 7m7-7H3" />
                     </svg>
                 </button>
             </form>
@@ -53,7 +62,7 @@
     </div>
 
     <script>
-        document.getElementById("predictForm").addEventListener("submit", async function(e) {
+        document.getElementById("predictForm").addEventListener("submit", async function (e) {
             e.preventDefault();
 
             const disease = document.getElementById("disease").value.trim();
@@ -186,4 +195,5 @@
         });
     </script>
 </body>
+
 </html>
