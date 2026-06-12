@@ -61,11 +61,34 @@ def predict():
 
     # Helper function to fix spelling mistakes using fuzzy matching
     def get_match(user_input, valid_classes):
-        capitalized_input = user_input.title()
-        # Find the closest match to handle typos
-        matches = difflib.get_close_matches(capitalized_input, valid_classes, n=1, cutoff=0.7)
+        capitalized_input = user_input.strip().title()
+        # 1. Exact match check
+        if capitalized_input in valid_classes:
+            return capitalized_input
+
+        # 2. Case-insensitive exact match
+        lower_input = user_input.strip().lower()
+        for c in valid_classes:
+            if c.lower() == lower_input:
+                return c
+
+        # 3. Find the closest match to handle typos using a lower cutoff
+        matches = difflib.get_close_matches(capitalized_input, valid_classes, n=1, cutoff=0.4)
         if matches:
             return matches[0]
+
+        # 4. Fallback: find the single best match by SequenceMatcher ratio
+        best_match = None
+        best_ratio = -1.0
+        for c in valid_classes:
+            ratio = difflib.SequenceMatcher(None, lower_input, c.lower()).ratio()
+            if ratio > best_ratio:
+                best_ratio = ratio
+                best_match = c
+
+        if best_ratio > 0.2:
+            return best_match
+
         return capitalized_input # Fallback if no close match is found
 
     try:
@@ -135,8 +158,10 @@ def predict():
         }
 
     return jsonify({
-        "city": user_data["city"],
-        "disease": user_data["disease"],
+        "city": matched_city,
+        "disease": matched_disease,
+        "original_city": user_data["city"],
+        "original_disease": user_data["disease"],
         "predictions": results
     })
 
