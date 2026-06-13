@@ -1,6 +1,7 @@
 /* Import Outfit Font */
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap');
 
+
 * {
     margin: 0;
     padding: 0;
@@ -317,11 +318,13 @@ body {
     letter-spacing: -0.5px;
 }
 
-.govt .cost-currency, .govt .cost-value {
+.govt .cost-currency,
+.govt .cost-value {
     color: #10b981;
 }
 
-.private .cost-currency, .private .cost-value {
+.private .cost-currency,
+.private .cost-value {
     color: #6366f1;
 }
 
@@ -370,15 +373,15 @@ body {
     .dashboard-container {
         gap: 20px;
     }
-    
+
     .header h1 {
         font-size: 28px;
     }
-    
+
     .results-wrapper {
         grid-template-columns: 1fr;
     }
-    
+
     .card {
         padding: 25px;
     }
