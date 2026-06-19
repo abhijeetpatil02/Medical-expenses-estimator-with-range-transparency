@@ -1,5 +1,19 @@
-/* CSS Variables Design Tokens */
+/*
+Hospital Cost Estimator - Authentication Layout Stylesheet (auth.css)
+==================================================================
+This sheet controls the layout and styles of the landing/authentication page:
+1. Design variables (Tokens) for CSS properties, enabling light and dark modes.
+2. Split-screen layout (left panel image backdrop, right panel input form).
+3. Sliding transition animations for toggle switches and modal fades.
+4. Input fields, validation, error messages, and hover behaviors.
+5. Responsive breakpoints for tablets and mobile devices.
+*/
+
+/* ==========================================
+   1. Design Tokens & CSS Variables
+   ========================================== */
 :root {
+    /* Light Mode Palette */
     --bg-primary: #f3f6fd;
     --bg-secondary: #ffffff;
     --bg-tertiary: #f8fafc;
@@ -15,6 +29,7 @@
 }
 
 body.dark-theme {
+    /* Dark Mode Palette overrides */
     --bg-primary: #080c14;
     --bg-secondary: #111722;
     --bg-tertiary: #19212f;
@@ -27,6 +42,9 @@ body.dark-theme {
     --shadow-lg: 0 20px 40px rgba(0, 0, 0, 0.3);
 }
 
+/* ==========================================
+   2. Core Document Styles
+   ========================================== */
 * {
     margin: 0;
     padding: 0;
@@ -45,7 +63,9 @@ body {
     transition: background-color var(--transition-speed) ease, color var(--transition-speed) ease;
 }
 
-/* Floating dark mode toggle */
+/* ==========================================
+   3. Float Theme Toggle Switch
+   ========================================== */
 .theme-toggle-btn {
     position: absolute;
     top: 20px;
@@ -77,6 +97,9 @@ body {
     height: 18px;
 }
 
+/* ==========================================
+   4. Split-Screen Main Wrapper Container
+   ========================================== */
 .container {
     width: 1000px;
     height: 600px;
@@ -90,6 +113,7 @@ body {
     position: relative;
 }
 
+/* Left Panel - Graphical Info display */
 .left-panel {
     flex: 1;
     background: url('auth_bg.png') no-repeat center center;
@@ -100,6 +124,7 @@ body {
     padding: 40px;
 }
 
+/* Dark gradient overlay to ensure text remains legible against backdrop */
 .overlay {
     position: absolute;
     top: 0;
@@ -127,6 +152,7 @@ body {
     opacity: 0.9;
 }
 
+/* Right Panel - Input Form Display */
 .right-panel {
     flex: 1;
     padding: 60px 50px;
@@ -143,6 +169,9 @@ body {
     margin: 0 auto;
 }
 
+/* ==========================================
+   5. Authentication Toggle Selector Tabs
+   ========================================== */
 .toggle-container {
     display: flex;
     position: relative;
@@ -171,6 +200,7 @@ body {
     color: var(--text-primary);
 }
 
+/* Sliding tab indicator under the current selection */
 .toggle-indicator {
     position: absolute;
     top: 4px;
@@ -185,6 +215,9 @@ body {
     border: 1px solid var(--border-color);
 }
 
+/* ==========================================
+   6. Input Forms & Form Elements
+   ========================================== */
 .auth-form {
     display: none;
     animation: fadeIn 0.4s ease forwards;
@@ -247,7 +280,7 @@ h2 {
     box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.1);
 }
 
-/* Password eye toggle */
+/* Password eye toggle positioning */
 .password-toggle-icon {
     position: absolute;
     right: 14px;
@@ -300,6 +333,7 @@ h2 {
     color: var(--accent-blue-hover);
 }
 
+/* Submit Action Button styling */
 .primary-btn {
     width: 100%;
     padding: 14px;
@@ -323,7 +357,7 @@ h2 {
     transform: scale(0.98);
 }
 
-/* Custom Alert Banner style */
+/* Custom Alert Banner layout */
 .custom-alert {
     background-color: var(--danger-red-light);
     border: 1px solid var(--danger-red-border);
@@ -337,7 +371,9 @@ h2 {
     animation: fadeIn 0.3s ease forwards;
 }
 
-/* Responsive */
+/* ==========================================
+   7. Responsive Rules (Mobile & Tablet)
+   ========================================== */
 @media (max-width: 900px) {
     .container {
         width: 90%;

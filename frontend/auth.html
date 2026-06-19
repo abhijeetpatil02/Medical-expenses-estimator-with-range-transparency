@@ -1,3 +1,12 @@
+<!-- 
+Hospital Cost Estimator - Landing and Authentication Page (auth.html)
+==================================================================
+This page serves as the entrypoint for users, providing:
+1. Dual forms for User Signup and User Login.
+2. Client-side theme switching (Light vs Dark mode) persisting in localStorage.
+3. Password visibility toggle (show/hide password input).
+4. Fetch-based asynchronous submissions communicating with Flask backend API endpoints.
+-->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,22 +14,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hospital Cost Predictor - Welcome</title>
+    <!-- Premium Font family selection from Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Links to auth.css which handles split layout and theme variables styling -->
     <link rel="stylesheet" href="auth.css">
 </head>
 
 <body>
-    <!-- Theme Toggle Button -->
+    <!-- 
+      Theme Toggle Button
+      Allows toggle between light/dark themes by toggling '.dark-theme' class on <body>
+    -->
     <button id="themeToggle" class="theme-toggle-btn" aria-label="Toggle Theme">
+        <!-- SVG icon for Light Mode (Sun) -->
         <svg id="sunIcon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" style="display: none;">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 9H3m15.364-6.364l-.707.707M6.343 17.657l-.707.707m12.728 0l-.707-.707M6.343 6.343l-.707-.707M14 12a2 2 0 11-4 0 2 2 0 014 0z" />
         </svg>
+        <!-- SVG icon for Dark Mode (Moon) -->
         <svg id="moonIcon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
         </svg>
     </button>
 
+    <!-- Split Screen Main Wrapper Container -->
     <div class="container">
+        <!-- Left Panel: Graphic overlay and brand description -->
         <div class="left-panel">
             <div class="overlay"></div>
             <div class="content">
@@ -28,14 +46,18 @@
                 <p>Empowering you to make informed decisions about healthcare costs. Access accurate predictions instantly.</p>
             </div>
         </div>
+
+        <!-- Right Panel: Authentication Forms box -->
         <div class="right-panel">
             <div class="auth-box">
-                <!-- Custom Alert Banner -->
+                <!-- Custom Alert Banner for UI notification messages -->
                 <div id="authAlert" class="custom-alert"></div>
 
+                <!-- Tab Toggle Controls (Login vs Sign Up) -->
                 <div class="toggle-container">
                     <button class="toggle-btn active" id="btn-login" onclick="switchTab('login')">Login</button>
                     <button class="toggle-btn" id="btn-signup" onclick="switchTab('signup')">Sign Up</button>
+                    <!-- Visual slider indicator that moves under the active tab -->
                     <div class="toggle-indicator" id="indicator"></div>
                 </div>
 
@@ -53,8 +75,8 @@
                         <label for="login-password">Password</label>
                         <div class="input-wrapper">
                             <input type="password" id="login-password" name="password" placeholder="Enter your password" required>
+                            <!-- Clickable element to show/hide plaintext password -->
                             <span class="password-toggle-icon" onclick="togglePasswordVisibility('login-password')">
-                                <!-- Eye Icon -->
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                                     <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
                                     <path stroke-linecap="round" stroke-linejoin="round" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
@@ -91,6 +113,7 @@
                         <label for="signup-password">Password</label>
                         <div class="input-wrapper">
                             <input type="password" id="signup-password" name="password" placeholder="Create a password" required>
+                            <!-- Clickable element to show/hide plaintext password -->
                             <span class="password-toggle-icon" onclick="togglePasswordVisibility('signup-password')">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                                     <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
@@ -105,13 +128,16 @@
         </div>
     </div>
 
+    <!-- Client-side Logic Script -->
     <script>
-        // --- Light / Dark Mode Toggle Logic ---
+        // =====================================================================
+        // Theme Toggle Manager
+        // =====================================================================
         const themeToggleBtn = document.getElementById('themeToggle');
         const sunIcon = document.getElementById('sunIcon');
         const moonIcon = document.getElementById('moonIcon');
 
-        // Apply saved theme
+        // Check localStorage to apply user's preferred layout theme
         if (localStorage.getItem('theme') === 'dark') {
             document.body.classList.add('dark-theme');
             sunIcon.style.display = 'block';
@@ -122,6 +148,7 @@
             moonIcon.style.display = 'block';
         }
 
+        // Toggle stylesheet classes and icons on click
         themeToggleBtn.addEventListener('click', () => {
             document.body.classList.toggle('dark-theme');
             const isDark = document.body.classList.contains('dark-theme');
@@ -135,7 +162,9 @@
             }
         });
 
-        // --- Alert Helper ---
+        // =====================================================================
+        // Alert Banners Helper Functions
+        // =====================================================================
         const alertDiv = document.getElementById('authAlert');
         function hideAlert() {
             alertDiv.style.display = 'none';
@@ -145,7 +174,9 @@
             alertDiv.style.display = 'block';
         }
 
-        // --- Tab switching ---
+        // =====================================================================
+        // Tab Navigation Toggle Logic
+        // =====================================================================
         function switchTab(tab) {
             hideAlert();
             const loginForm = document.getElementById('login-form');
@@ -169,7 +200,9 @@
             }
         }
 
-        // --- Password Visibility Toggle ---
+        // =====================================================================
+        // Password Visibility show/hide logic
+        // =====================================================================
         function togglePasswordVisibility(inputId) {
             const passwordInput = document.getElementById(inputId);
             if (passwordInput.type === 'password') {
@@ -179,14 +212,17 @@
             }
         }
 
-        // --- Handle Login form with Flask API ---
+        // =====================================================================
+        // Sign In Request Submit API Call
+        // =====================================================================
         document.getElementById('login-form').addEventListener('submit', function (e) {
-            e.preventDefault();
+            e.preventDefault(); // Prevent standard page reloads
             hideAlert();
 
             const email = document.getElementById('login-email').value;
             const password = document.getElementById('login-password').value;
 
+            // Submit values asynchronously using Fetch API
             fetch('/api/login', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
@@ -200,7 +236,8 @@
                 })
                 .then(data => {
                     if (data.success) {
-                        window.location.href = '/index.html'; // Go to dashboard
+                        // Redirect to prediction tool dashboard on success
+                        window.location.href = '/index.html'; 
                     } else {
                         showAlert(data.message || 'Invalid email or password.');
                     }
@@ -211,9 +248,11 @@
                 });
         });
 
-        // --- Handle Signup form with Flask API ---
+        // =====================================================================
+        // Account Creation (Sign Up) Submit API Call
+        // =====================================================================
         document.getElementById('signup-form').addEventListener('submit', function (e) {
-            e.preventDefault();
+            e.preventDefault(); // Prevent page refresh
             hideAlert();
 
             const name = document.getElementById('signup-name').value;
@@ -233,6 +272,7 @@
                 })
                 .then(data => {
                     if (data.success) {
+                        // Immediately navigate into the index dashboard since signup automatically starts a session
                         window.location.href = '/index.html';
                     } else {
                         showAlert(data.message || 'Account creation failed.');

@@ -1,8 +1,23 @@
-/* Import Outfit Font */
+/*
+Hospital Cost Estimator - Main Dashboard Stylesheet (style.css)
+============================================================
+This stylesheet manages the visual systems and layouts of the dashboard:
+1. Palette and design tokens (variables) for Light and Dark Modes.
+2. Form entry card styling with autocomplete suggestions list.
+3. Loading skeletons shimmer animation structures.
+4. Results card comparisons (Government Green vs Private Indigo).
+5. Visual cost range meters tracking average cost offsets.
+6. Accordion drawers and action calling/mapping anchor inputs.
+7. Mobile screen adaptations (responsive media queries).
+*/
+
+/* Import Outfit Font from Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap');
 
+/* ==========================================
+   1. Design Tokens & Variables (Light Mode)
+   ========================================== */
 :root {
-    /* Design Tokens - Light Mode */
     --bg-primary: #f3f6fd;
     --bg-secondary: #ffffff;
     --bg-tertiary: #f8fafc;
@@ -13,15 +28,21 @@
     --accent-blue: #3b82f6;
     --accent-blue-hover: #2563eb;
     --accent-blue-light: #eff6ff;
+    
+    /* Branding color categories */
     --govt-green: #10b981;
     --govt-green-hover: #059669;
     --govt-green-light: #ecfdf5;
     --private-indigo: #6366f1;
     --private-indigo-hover: #4f46e5;
     --private-indigo-light: #e0e7ff;
+    
+    /* Danger/Alert styles */
     --danger-red: #ef4444;
     --danger-red-light: #fef2f2;
     --danger-red-border: #fecaca;
+    
+    /* Shadows and corners */
     --shadow-sm: 0 4px 6px rgba(0, 0, 0, 0.02);
     --shadow-md: 0 10px 35px rgba(0, 0, 0, 0.04);
     --shadow-lg: 0 20px 40px rgba(0, 0, 0, 0.06);
@@ -30,8 +51,10 @@
     --transition-speed: 0.3s;
 }
 
+/* ==========================================
+   2. Design Tokens & Variables (Dark Mode overrides)
+   ========================================== */
 body.dark-theme {
-    /* Design Tokens - Dark Mode */
     --bg-primary: #080c14;
     --bg-secondary: #111722;
     --bg-tertiary: #19212f;
@@ -42,20 +65,26 @@ body.dark-theme {
     --accent-blue: #3b82f6;
     --accent-blue-hover: #60a5fa;
     --accent-blue-light: rgba(59, 130, 246, 0.15);
+    
     --govt-green: #10b981;
     --govt-green-hover: #34d399;
     --govt-green-light: rgba(16, 185, 129, 0.15);
     --private-indigo: #818cf8;
     --private-indigo-hover: #a5b4fc;
     --private-indigo-light: rgba(99, 102, 241, 0.15);
+    
     --danger-red: #f87171;
     --danger-red-light: rgba(239, 68, 68, 0.1);
     --danger-red-border: rgba(239, 68, 68, 0.25);
+    
     --shadow-sm: 0 4px 6px rgba(0, 0, 0, 0.1);
     --shadow-md: 0 10px 35px rgba(0, 0, 0, 0.2);
     --shadow-lg: 0 20px 40px rgba(0, 0, 0, 0.3);
 }
 
+/* ==========================================
+   3. Document Resets
+   ========================================== */
 * {
     margin: 0;
     padding: 0;
@@ -83,6 +112,9 @@ body {
     gap: 30px;
 }
 
+/* ==========================================
+   4. Navigation & Layout Header
+   ========================================== */
 .top-nav {
     width: 100%;
     display: flex;
@@ -91,7 +123,7 @@ body {
     margin-bottom: -10px;
 }
 
-/* Theme Toggle Button */
+/* Floating dark mode toggle button */
 .theme-toggle-btn {
     display: flex;
     align-items: center;
@@ -119,6 +151,7 @@ body {
     height: 20px;
 }
 
+/* Logout action button link */
 .logout-btn {
     display: flex;
     align-items: center;
@@ -174,7 +207,9 @@ body {
     margin-bottom: 8px;
 }
 
-/* Card layout for the estimator form */
+/* ==========================================
+   5. Form Card & Autocomplete styling
+   ========================================== */
 .card {
     background: var(--bg-secondary);
     border-radius: var(--card-border-radius);
@@ -225,7 +260,7 @@ body {
     box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.1);
 }
 
-/* Suggestions dropdown styling */
+/* Dropdown overlay menu for query suggestions */
 .suggestions-list {
     position: absolute;
     top: 100%;
@@ -261,6 +296,7 @@ body {
     border-bottom: 1px solid var(--border-color);
 }
 
+/* Compare submit button rules */
 .submit-btn {
     width: 100%;
     padding: 15px;
@@ -306,7 +342,7 @@ body {
     transform: translateX(4px);
 }
 
-/* Spinner Loader */
+/* Spinner Loader animation keyframe triggers */
 .spinner-btn {
     width: 20px;
     height: 20px;
@@ -321,7 +357,9 @@ body {
     to { transform: rotate(360deg); }
 }
 
-/* Results Section styling */
+/* ==========================================
+   6. Estimation Outputs & Grid Wrapper
+   ========================================== */
 .results-wrapper {
     display: none;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -330,6 +368,7 @@ body {
     margin-top: 10px;
 }
 
+/* Banner detailing location matches */
 .city-info-banner {
     grid-column: 1 / -1;
     background: var(--accent-blue-light);
@@ -351,6 +390,9 @@ body {
     color: var(--accent-blue);
 }
 
+/* ==========================================
+   7. Hospital Estimate Card Styles
+   ========================================== */
 .hospital-card {
     background: var(--bg-secondary);
     border-radius: var(--card-border-radius);
@@ -370,6 +412,7 @@ body {
     border-color: var(--accent-blue-light);
 }
 
+/* Accent top lines to differentiate govt and private institutions */
 .hospital-card.govt {
     border-top: 6px solid var(--govt-green);
 }
@@ -378,6 +421,7 @@ body {
     border-top: 6px solid var(--private-indigo);
 }
 
+/* Entrance fade and slide animation properties */
 .animate-card {
     opacity: 0;
     transform: translateY(20px);
@@ -470,7 +514,9 @@ body {
     color: var(--private-indigo);
 }
 
-/* Range transparency visual meter styling */
+/* ==========================================
+   8. Visual Cost Range transparency bar
+   ========================================== */
 .range-container {
     margin-top: 10px;
     margin-bottom: 24px;
@@ -504,6 +550,7 @@ body {
     background: linear-gradient(90deg, #a5b4fc, var(--private-indigo));
 }
 
+/* Average cost indicator pointer dot */
 .range-pointer {
     position: absolute;
     top: 50%;
@@ -527,6 +574,7 @@ body {
     box-shadow: 0 0 10px rgba(99, 102, 241, 0.3);
 }
 
+/* Price tooltip pointing downwards to the slider dot */
 .predicted-pointer-val {
     position: absolute;
     top: -26px;
@@ -566,7 +614,9 @@ body {
     font-weight: 700;
 }
 
-/* Details list and accordion panels */
+/* ==========================================
+   9. Details Drawer and Action hooks
+   ========================================== */
 .details-list {
     display: flex;
     flex-direction: column;
@@ -591,7 +641,7 @@ body {
     margin-top: 1px;
 }
 
-/* Accordion details trigger */
+/* Collapsible Details headers */
 .accordion-header {
     display: flex;
     justify-content: space-between;
@@ -625,6 +675,7 @@ body {
     color: var(--text-muted);
 }
 
+/* Accordion expand transitions */
 .accordion-content {
     max-height: 0;
     overflow: hidden;
@@ -643,7 +694,7 @@ body {
     transform: rotate(180deg);
 }
 
-/* Action contact/maps buttons */
+/* Interactive anchor buttons layout (call, view coordinates) */
 .action-buttons-group {
     display: flex;
     gap: 10px;
@@ -691,7 +742,9 @@ body {
     height: 16px;
 }
 
-/* Skeleton Loaders */
+/* ==========================================
+   10. Skeleton Loader Shimmering
+   ========================================== */
 .skeleton-card {
     background: var(--bg-secondary);
     border-radius: var(--card-border-radius);
@@ -768,7 +821,9 @@ body:not(.dark-theme) .skeleton-shimmer {
     width: 45%;
 }
 
-/* Response message/error styling */
+/* ==========================================
+   11. Alerts, Messages, Banners
+   ========================================== */
 .error-message {
     background-color: var(--danger-red-light);
     border: 1.5px solid var(--danger-red-border);
@@ -784,7 +839,6 @@ body:not(.dark-theme) .skeleton-shimmer {
     margin-top: 10px;
 }
 
-/* Auto-correction Notice Styles */
 .correction-notice-banner {
     grid-column: 1 / -1;
     background: #fffbeb;
@@ -820,7 +874,9 @@ body.dark-theme .correction-notice-banner svg {
     color: #f59e0b;
 }
 
-/* Responsive adjust */
+/* ==========================================
+   12. Responsive Adjustments (Phones & Tablets)
+   ========================================== */
 @media (max-width: 768px) {
     .dashboard-container {
         gap: 20px;

@@ -1,3 +1,13 @@
+<!--
+Hospital Cost Estimator - Main User Dashboard (index.html)
+=========================================================
+This dashboard is the primary tool interface. It features:
+1. Fuzzy search input fields with dynamic autocomplete suggestion dropdowns.
+2. Search suggestion list rendering and keyboard arrow key navigation (ArrowUp, ArrowDown, Enter, Escape).
+3. Visual estimation compare card templates dynamically populated by the backend JSON responses.
+4. "Range Transparency" visualization bar meters showing where the average cost sits relative to the minimum and maximum boundaries.
+5. Action hooks for immediate hospital communications (tel dialers) and localization navigation (Google Maps links).
+-->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,13 +15,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hospital Cost Predictor - Dashboard</title>
+    <!-- Outfit Font Family from Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap"
         rel="stylesheet">
+    <!-- Main page styles layout (style.css) -->
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <div class="dashboard-container">
+        <!-- Top Navigation bar containing Logout and Theme buttons -->
         <div class="top-nav">
             <!-- Theme Toggle Button -->
             <button id="themeToggle" class="theme-toggle-btn" aria-label="Toggle Theme">
@@ -23,6 +36,7 @@
                 </svg>
             </button>
 
+            <!-- Redirection trigger to session termination route -->
             <a href="/logout" class="logout-btn">
                 <svg xmlns="http://www.w3.org/2000/svg" class="logout-icon" fill="none" viewBox="0 0 24 24"
                     stroke="currentColor">
@@ -40,28 +54,35 @@
             <h1>Medical Expenses Estimator</h1>
         </header>
 
+        <!-- Form entry card containing inputs for autocomplete fields -->
         <div class="card search-card">
             <form id="predictForm">
+                <!-- Disease Input -->
                 <div class="input-group">
                     <label for="disease">Disease Name</label>
                     <div class="autocomplete-container">
                         <input type="text" id="disease" placeholder="e.g. Fever, Malaria, Heart Disease" required
                             autocomplete="off">
+                        <!-- Autocomplete Suggestions Dropdown List -->
                         <ul id="diseaseSuggestions" class="suggestions-list"></ul>
                     </div>
                 </div>
 
+                <!-- City Input -->
                 <div class="input-group">
                     <label for="city">City Name</label>
                     <div class="autocomplete-container">
                         <input type="text" id="city" placeholder="e.g. Mangaluru, Surathkal, Bantwal" required
                             autocomplete="off">
+                        <!-- Autocomplete Suggestions Dropdown List -->
                         <ul id="citySuggestions" class="suggestions-list"></ul>
                     </div>
                 </div>
 
+                <!-- Submission Compare Trigger -->
                 <button type="submit" id="submitBtn" class="submit-btn">
                     <span>Estimate & Compare</span>
+                    <!-- Spinner loading wheel, hidden by default -->
                     <div class="spinner-btn" id="submitSpinner"></div>
                     <svg xmlns="http://www.w3.org/2000/svg" class="btn-icon" id="submitIcon" fill="none" viewBox="0 0 24 24"
                         stroke="currentColor">
@@ -72,18 +93,23 @@
             </form>
         </div>
 
+        <!-- System Error alert notices container -->
         <div id="errorMessage" class="error-message"></div>
 
+        <!-- Dynamic Results injection wrapper -->
         <div id="resultsWrapper" class="results-wrapper"></div>
     </div>
 
+    <!-- Interface Controller Scripts -->
     <script>
-        // --- Light / Dark Mode Toggle Logic ---
+        // =====================================================================
+        // Theme Toggle Manager
+        // =====================================================================
         const themeToggleBtn = document.getElementById('themeToggle');
         const sunIcon = document.getElementById('sunIcon');
         const moonIcon = document.getElementById('moonIcon');
 
-        // Apply saved theme
+        // Check local preferences on document load
         if (localStorage.getItem('theme') === 'dark') {
             document.body.classList.add('dark-theme');
             sunIcon.style.display = 'block';
@@ -107,14 +133,18 @@
             }
         });
 
-        // --- Search Autocomplete / Suggestions ---
+        // =====================================================================
+        // Autocomplete & Query Suggestion Lists Manager
+        // =====================================================================
         let suggestionsData = { diseases: [], cities: [] };
 
+        // Pull category indices from backend route to feed suggestion dropdown lists
         async function fetchSuggestions() {
             try {
                 const response = await fetch('/api/suggestions');
                 if (response.ok) {
                     suggestionsData = await response.json();
+                    // Connect suggestions arrays to matching DOM inputs
                     setupAutocomplete("disease", "diseaseSuggestions", suggestionsData.diseases);
                     setupAutocomplete("city", "citySuggestions", suggestionsData.cities);
                 }
@@ -126,8 +156,9 @@
         function setupAutocomplete(inputId, listId, dataList) {
             const input = document.getElementById(inputId);
             const list = document.getElementById(listId);
-            let activeIndex = -1;
+            let activeIndex = -1; // Tracks current highlight keyboard index for user selection
 
+            // Renders match outputs inside the list box
             function renderSuggestions(matches) {
                 list.innerHTML = "";
                 if (matches.length === 0) {
@@ -138,9 +169,9 @@
                 matches.forEach((item, index) => {
                     const li = document.createElement("li");
                     li.textContent = item;
+                    // Mouse selection handling
                     li.addEventListener("mousedown", (e) => {
-                        // Prevent loss of focus before click handles
-                        e.preventDefault();
+                        e.preventDefault(); // Prevents loss of input focus triggers prior to clicks
                         input.value = item;
                         list.style.display = "none";
                         activeIndex = -1;
@@ -150,6 +181,7 @@
                 list.style.display = "block";
             }
 
+            // Filters lookup arrays matching user entry characters
             function filterMatches() {
                 const query = input.value.trim().toLowerCase();
                 if (!query) {
@@ -157,21 +189,24 @@
                     activeIndex = -1;
                     return;
                 }
+                // Fetch up to 8 matched values
                 const matches = dataList.filter(item => item.toLowerCase().includes(query)).slice(0, 8);
                 renderSuggestions(matches);
                 activeIndex = -1;
             }
 
+            // Key interaction and blur hooks
             input.addEventListener("input", filterMatches);
             input.addEventListener("focus", filterMatches);
 
-            // Hide suggestions on input blur
+            // Close suggestion list box when focus is lost
             input.addEventListener("blur", () => {
                 setTimeout(() => {
                     list.style.display = "none";
                 }, 150);
             });
 
+            // Keyboard navigation listener (ArrowUp, ArrowDown, Enter, Escape)
             input.addEventListener("keydown", (e) => {
                 const items = list.querySelectorAll("li");
                 if (list.style.display === "block" && items.length > 0) {
@@ -197,6 +232,7 @@
                 }
             });
 
+            // Add highlight visibility class to active list element
             function setActive(items) {
                 items.forEach(el => el.classList.remove("active"));
                 if (activeIndex > -1 && items[activeIndex]) {
@@ -206,10 +242,12 @@
             }
         }
 
-        // Fetch suggestions lists on load
+        // Initialize autocompletes when DOM completes loading
         window.addEventListener("DOMContentLoaded", fetchSuggestions);
 
-        // --- Details Accordion Panel Toggle ---
+        // =====================================================================
+        // Accordion Section Toggle Drawer (Hospital Details)
+        // =====================================================================
         window.toggleDetailsAccordion = function(id) {
             const accordionContent = document.getElementById(id);
             if (accordionContent) {
@@ -217,9 +255,11 @@
             }
         };
 
-        // --- Submit Estimation Form Handler ---
+        // =====================================================================
+        // Prediction Submission Controller
+        // =====================================================================
         document.getElementById("predictForm").addEventListener("submit", async function (e) {
-            e.preventDefault();
+            e.preventDefault(); // Stop standard form navigation
 
             const disease = document.getElementById("disease").value.trim();
             const city = document.getElementById("city").value.trim();
@@ -230,12 +270,12 @@
             const submitSpinner = document.getElementById("submitSpinner");
             const submitIcon = document.getElementById("submitIcon");
 
-            // Enter loading state
+            // UI enter loading state
             submitBtn.disabled = true;
             submitSpinner.style.display = "block";
             submitIcon.style.display = "none";
 
-            // Show skeleton loader
+            // Inject temporary HTML skeleton shimmers to convey estimation activity to user
             errorMessage.style.display = "none";
             resultsWrapper.style.display = "grid";
             resultsWrapper.innerHTML = `
@@ -264,6 +304,7 @@
             `;
 
             try {
+                // Submit inputs to predictive estimator API route
                 const response = await fetch("/predict", {
                     method: "POST",
                     headers: {
@@ -278,7 +319,7 @@
                     throw new Error(data.error || "An error occurred. Please verify inputs and try again.");
                 }
 
-                // Render Results
+                // Render matching comparison banner
                 let htmlContent = `
                     <div class="city-info-banner">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -289,6 +330,7 @@
                     </div>
                 `;
 
+                // If fuzzy spelling match modified inputs, notify user of corrections
                 if (data.original_disease && data.original_city) {
                     const diseaseCorrected = data.disease.toLowerCase() !== data.original_disease.toLowerCase().trim();
                     const cityCorrected = data.city.toLowerCase() !== data.original_city.toLowerCase().trim();
@@ -308,13 +350,14 @@
                     }
                 }
 
+                // Loop and draw estimation cards
                 if (data.predictions) {
-                    // Function to build a card
                     const buildCard = (type, info, delayClass) => {
                         const predicted = info.predicted_cost;
                         const min = info.min_cost || Math.round(predicted * 0.8);
                         const max = info.max_cost || Math.round(predicted * 1.25);
                         
+                        // Calculate offset percentage positioning for visual indicator line
                         const rangeWidth = max - min;
                         const positionPct = rangeWidth > 0 ? ((predicted - min) / rangeWidth) * 100 : 50;
 
@@ -333,20 +376,24 @@
                                     </div>
                                 </div>
 
-                                <!-- Range Transparency visual meter -->
+                                <!-- Range Transparency Visual Meter -->
                                 <div class="range-container">
                                     <div class="range-bar-wrapper">
+                                        <!-- Width filled up to the average predicted cost percentage -->
                                         <div class="range-bar-fill" style="left: 0; width: ${positionPct}%;"></div>
+                                        <!-- Marker pointing to average value -->
                                         <div class="range-pointer" style="left: ${positionPct}%;">
                                             <div class="predicted-pointer-val">₹${predicted.toLocaleString('en-IN')}</div>
                                         </div>
                                     </div>
+                                    <!-- Boundary labels layout -->
                                     <div class="range-labels">
                                         <span class="range-label-min">Min: <span class="range-label-val">₹${min.toLocaleString('en-IN')}</span></span>
                                         <span class="range-label-max">Max: <span class="range-label-val">₹${max.toLocaleString('en-IN')}</span></span>
                                     </div>
                                 </div>
 
+                                <!-- Accordion details list containing map coordinates and calling features -->
                                 <div class="details-list">
                                     <div class="accordion-content" id="${type}-details-accordion">
                                         <div class="detail-item">
@@ -368,7 +415,9 @@
                                             </svg>
                                             <div><strong>Contact:</strong> ${info.contact}</div>
                                         </div>
+                                        <!-- Action hooks panel -->
                                         <div class="action-buttons-group">
+                                            <!-- Tel hook for mobile dialers -->
                                             ${info.contact !== 'N/A' && info.contact !== 'N/A' ? `
                                                 <a href="tel:${info.contact.replace(/[^0-9-]/g, '')}" class="action-link-btn call-btn">
                                                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -377,6 +426,7 @@
                                                     Call Hospital
                                                 </a>
                                             ` : ''}
+                                            <!-- Maps hook query based on hospital name and address location -->
                                             <a href="https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(info.hospital_name + ' ' + info.address)}" target="_blank" class="action-link-btn map-btn">
                                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7" />
@@ -385,6 +435,7 @@
                                             </a>
                                         </div>
                                     </div>
+                                    <!-- Accordion control header toggle -->
                                     <div class="accordion-header" onclick="toggleDetailsAccordion('${type}-details-accordion')">
                                         <div class="accordion-title">
                                             <span>Hospital Details & Actions</span>
@@ -398,6 +449,7 @@
                         `;
                     };
 
+                    // Draw cards sequentially
                     if (data.predictions.govt) {
                         htmlContent += buildCard('govt', data.predictions.govt, null);
                     }
@@ -407,6 +459,7 @@
                 }
 
                 resultsWrapper.innerHTML = htmlContent;
+                // Scroll page smoothly down to the comparison outputs
                 resultsWrapper.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
 
             } catch (err) {
