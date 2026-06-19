@@ -1,3 +1,32 @@
+/* CSS Variables Design Tokens */
+:root {
+    --bg-primary: #f3f6fd;
+    --bg-secondary: #ffffff;
+    --bg-tertiary: #f8fafc;
+    --text-primary: #0f172a;
+    --text-secondary: #475569;
+    --text-muted: #94a3b8;
+    --border-color: #e2e8f0;
+    --accent-blue: #3b82f6;
+    --accent-blue-hover: #2563eb;
+    --shadow-lg: 0 20px 40px rgba(0, 0, 0, 0.08);
+    --input-border-radius: 10px;
+    --transition-speed: 0.3s;
+}
+
+body.dark-theme {
+    --bg-primary: #080c14;
+    --bg-secondary: #111722;
+    --bg-tertiary: #19212f;
+    --text-primary: #f1f5f9;
+    --text-secondary: #94a3b8;
+    --text-muted: #57657a;
+    --border-color: #242f41;
+    --accent-blue: #3b82f6;
+    --accent-blue-hover: #60a5fa;
+    --shadow-lg: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -6,21 +35,59 @@
 }
 
 body {
-    background-color: #f3f6fd;
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+    padding: 20px;
+    transition: background-color var(--transition-speed) ease, color var(--transition-speed) ease;
+}
+
+/* Floating dark mode toggle */
+.theme-toggle-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    color: var(--text-secondary);
+    cursor: pointer;
+    transition: all var(--transition-speed) ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.02);
+    z-index: 100;
+}
+
+.theme-toggle-btn:hover {
+    color: var(--accent-blue);
+    border-color: var(--accent-blue);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.05);
+}
+
+.theme-toggle-btn svg {
+    width: 18px;
+    height: 18px;
 }
 
 .container {
     width: 1000px;
     height: 600px;
-    background: #fff;
+    background: var(--bg-secondary);
     border-radius: 24px;
-    box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+    box-shadow: var(--shadow-lg);
     display: flex;
     overflow: hidden;
+    border: 1px solid var(--border-color);
+    transition: background-color var(--transition-speed) ease, border-color var(--transition-speed) ease;
+    position: relative;
 }
 
 .left-panel {
@@ -35,14 +102,17 @@ body {
 
 .overlay {
     position: absolute;
-    top: 0; left: 0; right: 0; bottom: 0;
-    background: linear-gradient(to bottom, rgba(10, 37, 64, 0.2), rgba(10, 37, 64, 0.9));
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to bottom, rgba(10, 37, 64, 0.15), rgba(10, 37, 64, 0.85));
 }
 
 .left-panel .content {
     position: relative;
     z-index: 1;
-    color: #fff;
+    color: #ffffff;
 }
 
 .left-panel h1 {
@@ -64,6 +134,7 @@ body {
     flex-direction: column;
     justify-content: center;
     position: relative;
+    background: var(--bg-secondary);
 }
 
 .auth-box {
@@ -75,10 +146,11 @@ body {
 .toggle-container {
     display: flex;
     position: relative;
-    background: #f1f5f9;
+    background: var(--bg-primary);
     border-radius: 12px;
     padding: 4px;
     margin-bottom: 40px;
+    border: 1px solid var(--border-color);
 }
 
 .toggle-btn {
@@ -88,15 +160,15 @@ body {
     padding: 12px 0;
     font-size: 15px;
     font-weight: 600;
-    color: #64748b;
+    color: var(--text-secondary);
     cursor: pointer;
     position: relative;
     z-index: 2;
-    transition: color 0.3s ease;
+    transition: color var(--transition-speed) ease;
 }
 
 .toggle-btn.active {
-    color: #0f172a;
+    color: var(--text-primary);
 }
 
 .toggle-indicator {
@@ -105,11 +177,12 @@ body {
     left: 4px;
     width: calc(50% - 4px);
     height: calc(100% - 8px);
-    background: #fff;
+    background: var(--bg-secondary);
     border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.04);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
     z-index: 1;
-    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: transform var(--transition-speed) cubic-bezier(0.4, 0, 0.2, 1);
+    border: 1px solid var(--border-color);
 }
 
 .auth-form {
@@ -122,20 +195,21 @@ body {
 }
 
 @keyframes fadeIn {
-    from { opacity: 0; transform: translateY(10px); }
-    to { opacity: 1; transform: translateY(0); }
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 h2 {
     font-size: 28px;
-    color: #0f172a;
+    color: var(--text-primary);
     margin-bottom: 8px;
-}
-
-.subtitle {
-    color: #64748b;
-    font-size: 14px;
-    margin-bottom: 30px;
+    font-weight: 700;
 }
 
 .input-group {
@@ -145,27 +219,53 @@ h2 {
 .input-group label {
     display: block;
     font-size: 13px;
-    font-weight: 500;
-    color: #334155;
+    font-weight: 600;
+    color: var(--text-secondary);
     margin-bottom: 8px;
+}
+
+.input-wrapper {
+    position: relative;
+    width: 100%;
 }
 
 .input-group input {
     width: 100%;
     padding: 14px 16px;
-    border: 1px solid #e2e8f0;
-    border-radius: 10px;
+    border: 1.5px solid var(--border-color);
+    border-radius: var(--input-border-radius);
     font-size: 14px;
-    color: #0f172a;
-    background: #f8fafc;
-    transition: all 0.3s ease;
+    color: var(--text-primary);
+    background: var(--bg-tertiary);
+    transition: all var(--transition-speed) ease;
 }
 
 .input-group input:focus {
     outline: none;
-    border-color: #3b82f6;
-    background: #fff;
+    border-color: var(--accent-blue);
+    background: var(--bg-secondary);
     box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.1);
+}
+
+/* Password eye toggle */
+.password-toggle-icon {
+    position: absolute;
+    right: 14px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: var(--text-muted);
+    transition: color var(--transition-speed) ease;
+}
+
+.password-toggle-icon:hover {
+    color: var(--text-secondary);
+}
+
+.password-toggle-icon svg {
+    width: 20px;
+    height: 20px;
+    display: block;
 }
 
 .options {
@@ -179,7 +279,7 @@ h2 {
     display: flex;
     align-items: center;
     font-size: 13px;
-    color: #64748b;
+    color: var(--text-secondary);
     cursor: pointer;
 }
 
@@ -190,34 +290,51 @@ h2 {
 
 .forgot {
     font-size: 13px;
-    color: #3b82f6;
+    color: var(--accent-blue);
     text-decoration: none;
-    font-weight: 500;
+    font-weight: 600;
 }
 
 .forgot:hover {
     text-decoration: underline;
+    color: var(--accent-blue-hover);
 }
 
 .primary-btn {
     width: 100%;
     padding: 14px;
-    background: #3b82f6;
-    color: #fff;
+    background: var(--accent-blue);
+    color: #ffffff;
     border: none;
-    border-radius: 10px;
+    border-radius: var(--input-border-radius);
     font-size: 15px;
-    font-weight: 600;
+    font-weight: 700;
     cursor: pointer;
-    transition: background 0.3s ease, transform 0.1s ease;
+    transition: all var(--transition-speed) ease, transform 0.1s ease;
+    box-shadow: 0 4px 10px rgba(59, 130, 246, 0.15);
 }
 
 .primary-btn:hover {
-    background: #2563eb;
+    background: var(--accent-blue-hover);
+    box-shadow: 0 6px 15px rgba(59, 130, 246, 0.25);
 }
 
 .primary-btn:active {
     transform: scale(0.98);
+}
+
+/* Custom Alert Banner style */
+.custom-alert {
+    background-color: var(--danger-red-light);
+    border: 1px solid var(--danger-red-border);
+    color: var(--danger-red);
+    padding: 12px 16px;
+    border-radius: 8px;
+    font-size: 13.5px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    display: none;
+    animation: fadeIn 0.3s ease forwards;
 }
 
 /* Responsive */
@@ -227,12 +344,12 @@ h2 {
         height: auto;
         flex-direction: column;
     }
-    
+
     .left-panel {
-        height: 200px;
+        height: 180px;
         padding: 30px;
     }
-    
+
     .right-panel {
         padding: 40px 30px;
     }

@@ -13,6 +13,16 @@
 <body>
     <div class="dashboard-container">
         <div class="top-nav">
+            <!-- Theme Toggle Button -->
+            <button id="themeToggle" class="theme-toggle-btn" aria-label="Toggle Theme">
+                <svg id="sunIcon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" style="display: none;">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 9H3m15.364-6.364l-.707.707M6.343 17.657l-.707.707m12.728 0l-.707-.707M6.343 6.343l-.707-.707M14 12a2 2 0 11-4 0 2 2 0 014 0z" />
+                </svg>
+                <svg id="moonIcon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+                </svg>
+            </button>
+
             <a href="/logout" class="logout-btn">
                 <svg xmlns="http://www.w3.org/2000/svg" class="logout-icon" fill="none" viewBox="0 0 24 24"
                     stroke="currentColor">
@@ -28,26 +38,32 @@
                 <img src="logo.png" alt="Logo" class="app-logo">
             </div>
             <h1>Medical Expenses Estimator</h1>
-            <!-- <p class="subtitle">Enter disease and city to compare Government vs. Private hospital estimates</p> -->
         </header>
 
         <div class="card search-card">
             <form id="predictForm">
                 <div class="input-group">
                     <label for="disease">Disease Name</label>
-                    <input type="text" id="disease" placeholder="e.g. Fever, Malaria, Heart Disease" required
-                        autocomplete="off">
+                    <div class="autocomplete-container">
+                        <input type="text" id="disease" placeholder="e.g. Fever, Malaria, Heart Disease" required
+                            autocomplete="off">
+                        <ul id="diseaseSuggestions" class="suggestions-list"></ul>
+                    </div>
                 </div>
 
                 <div class="input-group">
                     <label for="city">City Name</label>
-                    <input type="text" id="city" placeholder="e.g. Mangaluru, Surathkal, Bantwal" required
-                        autocomplete="off">
+                    <div class="autocomplete-container">
+                        <input type="text" id="city" placeholder="e.g. Mangaluru, Surathkal, Bantwal" required
+                            autocomplete="off">
+                        <ul id="citySuggestions" class="suggestions-list"></ul>
+                    </div>
                 </div>
 
-                <button type="submit" class="submit-btn">
+                <button type="submit" id="submitBtn" class="submit-btn">
                     <span>Estimate & Compare</span>
-                    <svg xmlns="http://www.w3.org/2000/svg" class="btn-icon" fill="none" viewBox="0 0 24 24"
+                    <div class="spinner-btn" id="submitSpinner"></div>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="btn-icon" id="submitIcon" fill="none" viewBox="0 0 24 24"
                         stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
                             d="M14 5l7 7m0 0l-7 7m7-7H3" />
@@ -62,6 +78,146 @@
     </div>
 
     <script>
+        // --- Light / Dark Mode Toggle Logic ---
+        const themeToggleBtn = document.getElementById('themeToggle');
+        const sunIcon = document.getElementById('sunIcon');
+        const moonIcon = document.getElementById('moonIcon');
+
+        // Apply saved theme
+        if (localStorage.getItem('theme') === 'dark') {
+            document.body.classList.add('dark-theme');
+            sunIcon.style.display = 'block';
+            moonIcon.style.display = 'none';
+        } else {
+            document.body.classList.remove('dark-theme');
+            sunIcon.style.display = 'none';
+            moonIcon.style.display = 'block';
+        }
+
+        themeToggleBtn.addEventListener('click', () => {
+            document.body.classList.toggle('dark-theme');
+            const isDark = document.body.classList.contains('dark-theme');
+            localStorage.setItem('theme', isDark ? 'dark' : 'light');
+            if (isDark) {
+                sunIcon.style.display = 'block';
+                moonIcon.style.display = 'none';
+            } else {
+                sunIcon.style.display = 'none';
+                moonIcon.style.display = 'block';
+            }
+        });
+
+        // --- Search Autocomplete / Suggestions ---
+        let suggestionsData = { diseases: [], cities: [] };
+
+        async function fetchSuggestions() {
+            try {
+                const response = await fetch('/api/suggestions');
+                if (response.ok) {
+                    suggestionsData = await response.json();
+                    setupAutocomplete("disease", "diseaseSuggestions", suggestionsData.diseases);
+                    setupAutocomplete("city", "citySuggestions", suggestionsData.cities);
+                }
+            } catch (err) {
+                console.error("Error fetching search suggestions list: ", err);
+            }
+        }
+
+        function setupAutocomplete(inputId, listId, dataList) {
+            const input = document.getElementById(inputId);
+            const list = document.getElementById(listId);
+            let activeIndex = -1;
+
+            function renderSuggestions(matches) {
+                list.innerHTML = "";
+                if (matches.length === 0) {
+                    list.style.display = "none";
+                    return;
+                }
+
+                matches.forEach((item, index) => {
+                    const li = document.createElement("li");
+                    li.textContent = item;
+                    li.addEventListener("mousedown", (e) => {
+                        // Prevent loss of focus before click handles
+                        e.preventDefault();
+                        input.value = item;
+                        list.style.display = "none";
+                        activeIndex = -1;
+                    });
+                    list.appendChild(li);
+                });
+                list.style.display = "block";
+            }
+
+            function filterMatches() {
+                const query = input.value.trim().toLowerCase();
+                if (!query) {
+                    list.style.display = "none";
+                    activeIndex = -1;
+                    return;
+                }
+                const matches = dataList.filter(item => item.toLowerCase().includes(query)).slice(0, 8);
+                renderSuggestions(matches);
+                activeIndex = -1;
+            }
+
+            input.addEventListener("input", filterMatches);
+            input.addEventListener("focus", filterMatches);
+
+            // Hide suggestions on input blur
+            input.addEventListener("blur", () => {
+                setTimeout(() => {
+                    list.style.display = "none";
+                }, 150);
+            });
+
+            input.addEventListener("keydown", (e) => {
+                const items = list.querySelectorAll("li");
+                if (list.style.display === "block" && items.length > 0) {
+                    if (e.key === "ArrowDown") {
+                        e.preventDefault();
+                        activeIndex = (activeIndex + 1) % items.length;
+                        setActive(items);
+                    } else if (e.key === "ArrowUp") {
+                        e.preventDefault();
+                        activeIndex = (activeIndex - 1 + items.length) % items.length;
+                        setActive(items);
+                    } else if (e.key === "Enter") {
+                        if (activeIndex > -1) {
+                            e.preventDefault();
+                            input.value = items[activeIndex].textContent;
+                            list.style.display = "none";
+                            activeIndex = -1;
+                        }
+                    } else if (e.key === "Escape") {
+                        list.style.display = "none";
+                        activeIndex = -1;
+                    }
+                }
+            });
+
+            function setActive(items) {
+                items.forEach(el => el.classList.remove("active"));
+                if (activeIndex > -1 && items[activeIndex]) {
+                    items[activeIndex].classList.add("active");
+                    items[activeIndex].scrollIntoView({ block: "nearest" });
+                }
+            }
+        }
+
+        // Fetch suggestions lists on load
+        window.addEventListener("DOMContentLoaded", fetchSuggestions);
+
+        // --- Details Accordion Panel Toggle ---
+        window.toggleDetailsAccordion = function(id) {
+            const accordionContent = document.getElementById(id);
+            if (accordionContent) {
+                accordionContent.classList.toggle('expanded');
+            }
+        };
+
+        // --- Submit Estimation Form Handler ---
         document.getElementById("predictForm").addEventListener("submit", async function (e) {
             e.preventDefault();
 
@@ -69,6 +225,43 @@
             const city = document.getElementById("city").value.trim();
             const resultsWrapper = document.getElementById("resultsWrapper");
             const errorMessage = document.getElementById("errorMessage");
+            
+            const submitBtn = document.getElementById("submitBtn");
+            const submitSpinner = document.getElementById("submitSpinner");
+            const submitIcon = document.getElementById("submitIcon");
+
+            // Enter loading state
+            submitBtn.disabled = true;
+            submitSpinner.style.display = "block";
+            submitIcon.style.display = "none";
+
+            // Show skeleton loader
+            errorMessage.style.display = "none";
+            resultsWrapper.style.display = "grid";
+            resultsWrapper.innerHTML = `
+                <div class="city-info-banner">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                    </svg>
+                    <span>Estimating healthcare costs, please wait...</span>
+                </div>
+                <div class="skeleton-card">
+                    <div class="skeleton-shimmer"></div>
+                    <div class="skeleton-badge"></div>
+                    <div class="skeleton-title"></div>
+                    <div class="skeleton-price-box"></div>
+                    <div class="skeleton-line"></div>
+                    <div class="skeleton-line short"></div>
+                </div>
+                <div class="skeleton-card">
+                    <div class="skeleton-shimmer"></div>
+                    <div class="skeleton-badge"></div>
+                    <div class="skeleton-title"></div>
+                    <div class="skeleton-price-box"></div>
+                    <div class="skeleton-line"></div>
+                    <div class="skeleton-line short"></div>
+                </div>
+            `;
 
             try {
                 const response = await fetch("/predict", {
@@ -85,10 +278,7 @@
                     throw new Error(data.error || "An error occurred. Please verify inputs and try again.");
                 }
 
-                // Hide error message
-                errorMessage.style.display = "none";
-                resultsWrapper.style.display = "grid";
-
+                // Render Results
                 let htmlContent = `
                     <div class="city-info-banner">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -119,86 +309,100 @@
                 }
 
                 if (data.predictions) {
-                    // Govt Hospital Card
-                    if (data.predictions.govt) {
-                        const govt = data.predictions.govt;
-                        htmlContent += `
-                            <div class="hospital-card govt animate-card">
-                                <div class="card-header">
-                                    <span class="badge">Government Hospital</span>
-                                </div>
-                                <h3 class="hospital-name">${govt.hospital_name}</h3>
-                                <div class="cost-section">
-                                    <div class="cost-label">Estimated Minimum Cost</div>
-                                    <div class="cost-value-wrapper">
-                                        <span class="cost-currency">₹</span>
-                                        <span class="cost-value">${Number(govt.predicted_cost).toLocaleString('en-IN')}</span>
-                                    </div>
-                                </div>
-                                <div class="details-list">
-                                    <div class="detail-item">
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="detail-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
-                                        </svg>
-                                        <div><strong>Type:</strong> ${govt.hospital_type}</div>
-                                    </div>
-                                    <div class="detail-item">
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="detail-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-                                        </svg>
-                                        <div><strong>Address:</strong> ${govt.address}</div>
-                                    </div>
-                                    <div class="detail-item">
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="detail-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.94.725l.548 2.2a1 1 0 01-.321.988l-1.305.98a10.582 10.582 0 004.872 4.872l.98-1.305a1 1 0 01.988-.321l2.2.548a1 1 0 01.725.94V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
-                                        </svg>
-                                        <div><strong>Contact:</strong> ${govt.contact}</div>
-                                    </div>
-                                </div>
-                            </div>
-                        `;
-                    }
+                    // Function to build a card
+                    const buildCard = (type, info, delayClass) => {
+                        const predicted = info.predicted_cost;
+                        const min = info.min_cost || Math.round(predicted * 0.8);
+                        const max = info.max_cost || Math.round(predicted * 1.25);
+                        
+                        const rangeWidth = max - min;
+                        const positionPct = rangeWidth > 0 ? ((predicted - min) / rangeWidth) * 100 : 50;
 
-                    // Private Hospital Card
-                    if (data.predictions.private) {
-                        const pvt = data.predictions.private;
-                        htmlContent += `
-                            <div class="hospital-card private animate-card" style="animation-delay: 0.1s;">
+                        return `
+                            <div class="hospital-card ${type} animate-card" ${delayClass ? `style="animation-delay: ${delayClass};"` : ''}>
                                 <div class="card-header">
-                                    <span class="badge">Private Hospital</span>
+                                    <span class="badge">${type === 'govt' ? 'Government Hospital' : 'Private Hospital'}</span>
                                 </div>
-                                <h3 class="hospital-name">${pvt.hospital_name}</h3>
+                                <h3 class="hospital-name">${info.hospital_name}</h3>
+                                
                                 <div class="cost-section">
-                                    <div class="cost-label">Estimated Minimum Cost</div>
+                                    <div class="cost-label">Estimated Cost</div>
                                     <div class="cost-value-wrapper">
                                         <span class="cost-currency">₹</span>
-                                        <span class="cost-value">${Number(pvt.predicted_cost).toLocaleString('en-IN')}</span>
+                                        <span class="cost-value">${predicted.toLocaleString('en-IN')}</span>
                                     </div>
                                 </div>
+
+                                <!-- Range Transparency visual meter -->
+                                <div class="range-container">
+                                    <div class="range-bar-wrapper">
+                                        <div class="range-bar-fill" style="left: 0; width: ${positionPct}%;"></div>
+                                        <div class="range-pointer" style="left: ${positionPct}%;">
+                                            <div class="predicted-pointer-val">₹${predicted.toLocaleString('en-IN')}</div>
+                                        </div>
+                                    </div>
+                                    <div class="range-labels">
+                                        <span class="range-label-min">Min: <span class="range-label-val">₹${min.toLocaleString('en-IN')}</span></span>
+                                        <span class="range-label-max">Max: <span class="range-label-val">₹${max.toLocaleString('en-IN')}</span></span>
+                                    </div>
+                                </div>
+
                                 <div class="details-list">
-                                    <div class="detail-item">
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="detail-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
-                                        </svg>
-                                        <div><strong>Type:</strong> ${pvt.hospital_type}</div>
+                                    <div class="accordion-content" id="${type}-details-accordion">
+                                        <div class="detail-item">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="detail-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+                                            </svg>
+                                            <div><strong>Type:</strong> ${info.hospital_type}</div>
+                                        </div>
+                                        <div class="detail-item">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="detail-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                                            </svg>
+                                            <div><strong>Address:</strong> ${info.address}</div>
+                                        </div>
+                                        <div class="detail-item">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="detail-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.94.725l.548 2.2a1 1 0 01-.321.988l-1.305.98a10.582 10.582 0 004.872 4.872l.98-1.305a1 1 0 01.988-.321l2.2.548a1 1 0 01.725.94V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                                            </svg>
+                                            <div><strong>Contact:</strong> ${info.contact}</div>
+                                        </div>
+                                        <div class="action-buttons-group">
+                                            ${info.contact !== 'N/A' && info.contact !== 'N/A' ? `
+                                                <a href="tel:${info.contact.replace(/[^0-9-]/g, '')}" class="action-link-btn call-btn">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.94.725l.548 2.2a1 1 0 01-.321.988l-1.305.98a10.582 10.582 0 004.872 4.872l.98-1.305a1 1 0 01.988-.321l2.2.548a1 1 0 01.725.94V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                                                    </svg>
+                                                    Call Hospital
+                                                </a>
+                                            ` : ''}
+                                            <a href="https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(info.hospital_name + ' ' + info.address)}" target="_blank" class="action-link-btn map-btn">
+                                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7" />
+                                                </svg>
+                                                Directions
+                                            </a>
+                                        </div>
                                     </div>
-                                    <div class="detail-item">
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="detail-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                                    <div class="accordion-header" onclick="toggleDetailsAccordion('${type}-details-accordion')">
+                                        <div class="accordion-title">
+                                            <span>Hospital Details & Actions</span>
+                                        </div>
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="accordion-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7" />
                                         </svg>
-                                        <div><strong>Address:</strong> ${pvt.address}</div>
-                                    </div>
-                                    <div class="detail-item">
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="detail-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.94.725l.548 2.2a1 1 0 01-.321.988l-1.305.98a10.582 10.582 0 004.872 4.872l.98-1.305a1 1 0 01.988-.321l2.2.548a1 1 0 01.725.94V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
-                                        </svg>
-                                        <div><strong>Contact:</strong> ${pvt.contact}</div>
                                     </div>
                                 </div>
                             </div>
                         `;
+                    };
+
+                    if (data.predictions.govt) {
+                        htmlContent += buildCard('govt', data.predictions.govt, null);
+                    }
+                    if (data.predictions.private) {
+                        htmlContent += buildCard('private', data.predictions.private, '0.1s');
                     }
                 }
 
@@ -210,10 +414,14 @@
                 errorMessage.textContent = err.message;
                 errorMessage.style.display = "block";
                 errorMessage.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+            } finally {
+                // Exit loading state
+                submitBtn.disabled = false;
+                submitSpinner.style.display = "none";
+                submitIcon.style.display = "block";
             }
         });
     </script>
 </body>
-
 
 </html>

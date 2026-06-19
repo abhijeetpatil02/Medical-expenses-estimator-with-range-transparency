@@ -54,6 +54,18 @@ hospital_model.fit(X, y_hospital)
 def serve_static(filename):
     return send_from_directory(FRONTEND_DIR, filename)
 
+@app.route("/api/suggestions", methods=["GET"])
+def api_suggestions():
+    try:
+        diseases = sorted(list(le_disease.classes_))
+        cities = sorted(list(le_city.classes_))
+        return jsonify({
+            "diseases": diseases,
+            "cities": cities
+        })
+    except Exception as e:
+        return jsonify({"error": str(e)}), 500
+
 @app.route("/predict", methods=["POST"])
 def predict():
     user_data = request.json
@@ -148,10 +160,55 @@ def predict():
             address = "N/A"
             contact = "N/A"
             h_type_str = h_type
+
+        # Range calculations
+        history_match = data[
+            (data["Disease"] == disease) & 
+            (data["City"] == city) & 
+            (data["Hospital_Type"] == h_type_encoded)
+        ]
+        
+        if not history_match.empty:
+            min_cost = int(history_match["Cost"].min())
+            max_cost = int(history_match["Cost"].max())
+            if min_cost == max_cost:
+                min_cost = int(predicted_cost * 0.85)
+                max_cost = int(predicted_cost * 1.15)
+        else:
+            # Check for disease and city across all hospital types
+            disease_city_match = data[
+                (data["Disease"] == disease) & 
+                (data["City"] == city)
+            ]
+            if not disease_city_match.empty:
+                min_cost = int(disease_city_match["Cost"].min())
+                max_cost = int(disease_city_match["Cost"].max())
+                if min_cost == max_cost or h_type.lower() == "govt":
+                    if h_type.lower() == "govt":
+                        min_cost = int(predicted_cost * 0.8)
+                        max_cost = int(predicted_cost * 1.1)
+                    else:
+                        min_cost = int(predicted_cost * 0.9)
+                        max_cost = int(predicted_cost * 1.25)
+            else:
+                if h_type.lower() == "govt":
+                    min_cost = int(predicted_cost * 0.8)
+                    max_cost = int(predicted_cost * 1.1)
+                else:
+                    min_cost = int(predicted_cost * 0.9)
+                    max_cost = int(predicted_cost * 1.25)
+
+        # Bounds and sanity checks
+        min_cost = min(min_cost, predicted_cost)
+        max_cost = max(max_cost, predicted_cost)
+        min_cost = max(min_cost, 1)
+        max_cost = max(max_cost, min_cost + 1)
             
         results[h_type.lower()] = {
             "hospital_name": predicted_hospital,
             "predicted_cost": predicted_cost,
+            "min_cost": min_cost,
+            "max_cost": max_cost,
             "hospital_type": h_type_str,
             "address": address,
             "contact": contact
