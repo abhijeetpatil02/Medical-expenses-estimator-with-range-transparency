@@ -10,7 +10,6 @@ This is the main entry point for the backend server. It executes the following r
 3. Provides a search suggestions endpoint (/api/suggestions) for UI autocompletes.
 4. Hosts the core cost estimator endpoint (/predict) which matches spelling errors 
    using difflib and performs inference.
-   
 5. Implements user signups and logins in coordination with the database module.
 """
 
