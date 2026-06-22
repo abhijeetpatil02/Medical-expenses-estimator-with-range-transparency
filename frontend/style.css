@@ -374,21 +374,74 @@ body {
     background: var(--accent-blue-light);
     border: 1px solid var(--border-color);
     border-radius: 12px;
-    padding: 12px 20px;
+    padding: 10px 20px;
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    gap: 8px;
+    flex-wrap: wrap;
+    gap: 12px;
     font-size: 15px;
     color: var(--accent-blue);
     font-weight: 500;
     margin-bottom: 4px;
 }
 
-.city-info-banner svg {
+.city-info-banner .banner-title {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.city-info-banner .banner-title svg {
     width: 20px;
     height: 20px;
     color: var(--accent-blue);
+    flex-shrink: 0;
 }
+
+.city-info-banner .banner-actions {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.city-info-banner .download-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 6px 12px;
+    border-radius: 8px;
+    font-size: 12.5px;
+    font-weight: 700;
+    cursor: pointer;
+    border: 1px solid var(--border-color);
+    background: var(--bg-secondary);
+    color: var(--text-secondary);
+    transition: all var(--transition-speed) ease;
+}
+
+.city-info-banner .download-btn svg {
+    width: 15px;
+    height: 15px;
+    color: var(--text-muted);
+    transition: color var(--transition-speed) ease;
+}
+
+.city-info-banner .download-btn:hover {
+    color: var(--accent-blue);
+    border-color: var(--accent-blue);
+    box-shadow: var(--shadow-sm);
+    transform: translateY(-1px);
+}
+
+.city-info-banner .download-btn:hover svg {
+    color: var(--accent-blue);
+}
+
+.city-info-banner .download-btn:active {
+    transform: translateY(0);
+}
+
 
 /* ==========================================
    7. Hospital Estimate Card Styles
