@@ -28,11 +28,15 @@ This dashboard is the primary tool interface. It features:
         <div class="top-nav">
             <!-- Theme Toggle Button -->
             <button id="themeToggle" class="theme-toggle-btn" aria-label="Toggle Theme">
-                <svg id="sunIcon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" style="display: none;">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 9H3m15.364-6.364l-.707.707M6.343 17.657l-.707.707m12.728 0l-.707-.707M6.343 6.343l-.707-.707M14 12a2 2 0 11-4 0 2 2 0 014 0z" />
+                <svg id="sunIcon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor" style="display: none;">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M12 3v1m0 16v1m9-9h-1M4 9H3m15.364-6.364l-.707.707M6.343 17.657l-.707.707m12.728 0l-.707-.707M6.343 6.343l-.707-.707M14 12a2 2 0 11-4 0 2 2 0 014 0z" />
                 </svg>
-                <svg id="moonIcon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+                <svg id="moonIcon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
                 </svg>
             </button>
 
@@ -84,8 +88,8 @@ This dashboard is the primary tool interface. It features:
                     <span>Estimate & Compare</span>
                     <!-- Spinner loading wheel, hidden by default -->
                     <div class="spinner-btn" id="submitSpinner"></div>
-                    <svg xmlns="http://www.w3.org/2000/svg" class="btn-icon" id="submitIcon" fill="none" viewBox="0 0 24 24"
-                        stroke="currentColor">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="btn-icon" id="submitIcon" fill="none"
+                        viewBox="0 0 24 24" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
                             d="M14 5l7 7m0 0l-7 7m7-7H3" />
                     </svg>
@@ -249,7 +253,7 @@ This dashboard is the primary tool interface. It features:
         // =====================================================================
         // Accordion Section Toggle Drawer (Hospital Details)
         // =====================================================================
-        window.toggleDetailsAccordion = function(id) {
+        window.toggleDetailsAccordion = function (id) {
             const accordionContent = document.getElementById(id);
             if (accordionContent) {
                 accordionContent.classList.toggle('expanded');
@@ -266,7 +270,7 @@ This dashboard is the primary tool interface. It features:
             const city = document.getElementById("city").value.trim();
             const resultsWrapper = document.getElementById("resultsWrapper");
             const errorMessage = document.getElementById("errorMessage");
-            
+
             const submitBtn = document.getElementById("submitBtn");
             const submitSpinner = document.getElementById("submitSpinner");
             const submitIcon = document.getElementById("submitIcon");
@@ -376,7 +380,7 @@ This dashboard is the primary tool interface. It features:
                         const predicted = info.predicted_cost;
                         const min = info.min_cost || Math.round(predicted * 0.8);
                         const max = info.max_cost || Math.round(predicted * 1.25);
-                        
+
                         // Calculate offset percentage positioning for visual indicator line
                         const rangeWidth = max - min;
                         const positionPct = rangeWidth > 0 ? ((predicted - min) / rangeWidth) * 100 : 50;
@@ -498,12 +502,12 @@ This dashboard is the primary tool interface. It features:
         // =====================================================================
         // Data Download Functions (CSV & PDF)
         // =====================================================================
-        
+
         /**
          * Generates and downloads a CSV (Comma-Separated Values) spreadsheet containing prediction results.
          * This function runs entirely on the client side without making additional server requests.
          */
-        window.downloadCSV = function() {
+        window.downloadCSV = function () {
             // Step 1: Ensure that there is valid prediction data available to download
             if (!latestPredictionData || !latestPredictionData.predictions) {
                 alert("No prediction data available to download.");
@@ -512,10 +516,10 @@ This dashboard is the primary tool interface. It features:
 
             const data = latestPredictionData;
             const csvRows = [];
-            
+
             // Step 2: Define the column headers for the spreadsheet
             csvRows.push(['Disease', 'City', 'Hospital Type', 'Recommended Hospital', 'Estimated Cost (INR)', 'Min Cost (INR)', 'Max Cost (INR)', 'Address', 'Contact'].join(','));
-            
+
             // Step 3: Iterate through predictions (both Govt and Private) to create rows
             for (const [key, info] of Object.entries(data.predictions)) {
                 // We wrap strings in double quotes and replace any existing double quotes with escaped quotes ("")
@@ -534,28 +538,28 @@ This dashboard is the primary tool interface. It features:
                 // Combine cells in this row using a comma and add to our rows list
                 csvRows.push(row.join(','));
             }
-            
+
             // Step 4: Convert the rows array into a single multiline string
             const csvContent = csvRows.join("\n");
-            
+
             // Step 5: Create a raw data Blob of type 'text/csv' from the string
             const blob = new Blob([csvContent], { type: 'text/csv;charset=utf-8;' });
-            
+
             // Step 6: Create a temporary URL pointing to the Blob object in browser memory
             const url = URL.createObjectURL(blob);
-            
+
             // Step 7: Create a temporary virtual anchor (<a>) element to trigger download
             const link = document.createElement("a");
             link.setAttribute("href", url);
-            
+
             // Name the file based on the searched disease (spaces replaced with underscores)
             link.setAttribute("download", `medical_expense_estimate_${data.disease.toLowerCase().replace(/\s+/g, '_')}.csv`);
-            
+
             // Step 8: Append the link, trigger a click programmatically to start download, and remove it
             document.body.appendChild(link);
             link.click();
             document.body.removeChild(link);
-            
+
             // Step 9: Revoke the Object URL to free up browser memory allocation
             URL.revokeObjectURL(url);
         };
@@ -564,7 +568,7 @@ This dashboard is the primary tool interface. It features:
          * Generates a beautifully styled, print-ready HTML page of estimates and triggers
          * the browser's printing/save-as-PDF system in a new window.
          */
-        window.downloadPDF = function() {
+        window.downloadPDF = function () {
             // Step 1: Ensure that there is valid prediction data available
             if (!latestPredictionData || !latestPredictionData.predictions) {
                 alert("No prediction data available to download.");
@@ -572,7 +576,7 @@ This dashboard is the primary tool interface. It features:
             }
 
             const data = latestPredictionData;
-            
+
             // Step 2: Open a new blank browser tab where we will write the print layout
             const printWindow = window.open('', '_blank');
             if (!printWindow) {

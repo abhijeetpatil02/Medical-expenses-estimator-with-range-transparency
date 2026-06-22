@@ -28,7 +28,7 @@ This stylesheet manages the visual systems and layouts of the dashboard:
     --accent-blue: #3b82f6;
     --accent-blue-hover: #2563eb;
     --accent-blue-light: #eff6ff;
-    
+
     /* Branding color categories */
     --govt-green: #10b981;
     --govt-green-hover: #059669;
@@ -36,12 +36,12 @@ This stylesheet manages the visual systems and layouts of the dashboard:
     --private-indigo: #6366f1;
     --private-indigo-hover: #4f46e5;
     --private-indigo-light: #e0e7ff;
-    
+
     /* Danger/Alert styles */
     --danger-red: #ef4444;
     --danger-red-light: #fef2f2;
     --danger-red-border: #fecaca;
-    
+
     /* Shadows and corners */
     --shadow-sm: 0 4px 6px rgba(0, 0, 0, 0.02);
     --shadow-md: 0 10px 35px rgba(0, 0, 0, 0.04);
@@ -65,18 +65,18 @@ body.dark-theme {
     --accent-blue: #3b82f6;
     --accent-blue-hover: #60a5fa;
     --accent-blue-light: rgba(59, 130, 246, 0.15);
-    
+
     --govt-green: #10b981;
     --govt-green-hover: #34d399;
     --govt-green-light: rgba(16, 185, 129, 0.15);
     --private-indigo: #818cf8;
     --private-indigo-hover: #a5b4fc;
     --private-indigo-light: rgba(99, 102, 241, 0.15);
-    
+
     --danger-red: #f87171;
     --danger-red-light: rgba(239, 68, 68, 0.1);
     --danger-red-border: rgba(239, 68, 68, 0.25);
-    
+
     --shadow-sm: 0 4px 6px rgba(0, 0, 0, 0.1);
     --shadow-md: 0 10px 35px rgba(0, 0, 0, 0.2);
     --shadow-lg: 0 20px 40px rgba(0, 0, 0, 0.3);
@@ -354,7 +354,9 @@ body {
 }
 
 @keyframes spin {
-    to { transform: rotate(360deg); }
+    to {
+        transform: rotate(360deg);
+    }
 }
 
 /* ==========================================
@@ -743,7 +745,7 @@ body {
     margin-bottom: 10px;
 }
 
-.accordion-content.expanded + .accordion-header .accordion-icon {
+.accordion-content.expanded+.accordion-header .accordion-icon {
     transform: rotate(180deg);
 }
 
@@ -817,23 +819,19 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(
-        90deg,
-        transparent,
-        rgba(255, 255, 255, 0.08) 50%,
-        transparent
-    );
+    background: linear-gradient(90deg,
+            transparent,
+            rgba(255, 255, 255, 0.08) 50%,
+            transparent);
     transform: translateX(-100%);
     animation: shimmer 1.5s infinite;
 }
 
 body:not(.dark-theme) .skeleton-shimmer {
-    background: linear-gradient(
-        90deg,
-        transparent,
-        rgba(0, 0, 0, 0.03) 50%,
-        transparent
-    );
+    background: linear-gradient(90deg,
+            transparent,
+            rgba(0, 0, 0, 0.03) 50%,
+            transparent);
 }
 
 @keyframes shimmer {
