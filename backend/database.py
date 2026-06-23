@@ -36,13 +36,26 @@ app.secret_key = 'hospital_predictor_secret_key'
 def get_db_connection():
     """
     Establishes and returns a new connection to the MySQL database.
-    Note: Replace credentials below with your local MySQL setup details.
+    Supports environment variables for secure deployment (e.g., Render + TiDB Cloud).
     """
+    host = os.environ.get("DB_HOST", "localhost")
+    port = int(os.environ.get("DB_PORT", 3306))
+    user = os.environ.get("DB_USER", "root")
+    password = os.environ.get("DB_PASSWORD", "Abhijeet@123")
+    database = os.environ.get("DB_NAME", "hospital_db")
+    
+    # Configure SSL for secure connections (e.g., to TiDB Cloud)
+    ssl_config = None
+    if os.environ.get("DB_SSL") == "true" or "tidbcloud" in host:
+        ssl_config = {}  # Enables SSL/TLS in PyMySQL
+        
     return pymysql.connect(
-        host="localhost",
-        user="root",             # Change to your MySQL username
-        password="Abhijeet@123", # Change to your MySQL password
-        database="hospital_db"
+        host=host,
+        port=port,
+        user=user,
+        password=password,
+        database=database,
+        ssl=ssl_config
     )
 
 # ==========================================
