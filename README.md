@@ -7,22 +7,6 @@
 [![HTML](https://img.shields.io/badge/HTML-38.8%25-E34F26?style=for-the-badge&logo=html5&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/HTML)
 [![CSS](https://img.shields.io/badge/CSS-17.3%25-1572B6?style=for-the-badge&logo=css3&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/CSS)
 
----
-
-## 📋 Table of Contents
-
-- [About the Project](#about-the-project)
-- [Features](#features)
-- [Tech Stack](#tech-stack)
-- [Project Structure](#project-structure)
-- [Getting Started](#getting-started)
-- [How It Works](#how-it-works)
-- [Screenshots](#screenshots)
-- [Live Demo](#live-demo)
-- [Contributing](#contributing)
-- [License](#license)
-
----
 
 ## 📌 About the Project
 
