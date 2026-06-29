@@ -44,7 +44,7 @@ def get_db_connection():
     password = os.environ.get("DB_PASSWORD", "Abhijeet@123")
     database = os.environ.get("DB_NAME", "hospital_db")
     
-    # Configure SSL for secure connections (e.g., to TiDB Cloud)
+    # Configure SSL for secure connections (e.g., to TiDB Cloud) 
     ssl_config = None
     if os.environ.get("DB_SSL") == "true" or "tidbcloud" in host:
         ssl_config = {}  # Enables SSL/TLS in PyMySQL
