@@ -9,9 +9,9 @@ model to estimate costs, and serializes both the trained model and label encoder
 to pickle files for subsequent API production usage.
 
 Execute this script whenever:
+
 1. The underlying dataset '../dataset/hospital_data.csv' is updated or replaced.
 2. Model parameters (hyperparameters) or selected algorithms are modified.
-
 """
 
 
@@ -24,7 +24,7 @@ import pickle
 import os
 
 # ==========================================
-# 1. Dataset Loading
+# 1. Dataset Loading 
 # ==========================================
 # Reads the training dataset containing records of Disease, City, Hospital_Type, Cost, and Hospital_Name
 data = pd.read_csv('../dataset/hospital_data.csv')
