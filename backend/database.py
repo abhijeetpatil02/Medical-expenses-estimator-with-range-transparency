@@ -59,7 +59,7 @@ def get_db_connection():
     )
 
 # ==========================================
-# Static Resource Routing 
+# Static Resource Routing  
 # ==========================================
 @app.route('/auth.css')
 def serve_css():
