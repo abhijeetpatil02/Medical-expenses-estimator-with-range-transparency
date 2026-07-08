@@ -89,7 +89,7 @@ forest_r2 = r2_score(y_test, forest_predictions)
 forest_mae = mean_absolute_error(y_test, forest_predictions)
 
 # ==========================================
-# 8. Output Results
+# 8. Output Results 
 # ==========================================
 print("=== Validation Results ===")
 print("\n[1] Linear Regression:")
