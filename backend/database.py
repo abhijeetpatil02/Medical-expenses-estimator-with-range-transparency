@@ -34,7 +34,7 @@ app.secret_key = 'hospital_predictor_secret_key'
 # MySQL Database Connection configuration
 # ==========================================
 def get_db_connection():
-    """
+    """ 
     Establishes and returns a new connection to the MySQL database.
     Supports environment variables for secure deployment (e.g., Render + TiDB Cloud).
     """
