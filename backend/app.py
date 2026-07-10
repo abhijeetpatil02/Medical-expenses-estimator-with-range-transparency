@@ -56,7 +56,6 @@ data["City"] = le_city.fit_transform(data["City"])
 data["Hospital_Type"] = le_type.fit_transform(data["Hospital_Type"])
 data["Hospital_Name"] = le_hospital.fit_transform(data["Hospital_Name"])
 
-
 # Extract feature columns (inputs) and target columns (outputs) 
 X = data[["Disease", "City", "Hospital_Type"]]
 y_cost = data["Cost"]
