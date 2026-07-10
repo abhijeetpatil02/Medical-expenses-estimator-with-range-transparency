@@ -1,6 +1,5 @@
 /*
 Hospital Cost Estimator - Authentication Layout Stylesheet (auth.css)
-
 ==================================================================
 This sheet controls the layout and styles of the landing/authentication page:
 1. Design variables (Tokens) for CSS properties, enabling light and dark modes.
@@ -233,6 +232,7 @@ body {
         opacity: 0;
         transform: translateY(10px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
