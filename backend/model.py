@@ -14,7 +14,6 @@ Execute this script whenever:
 
 """
 
-
 import pandas as pd
 from sklearn.linear_model import LinearRegression
 from sklearn.tree import DecisionTreeRegressor
@@ -24,7 +23,7 @@ import pickle
 import os
 
 # ==========================================
-# 1. Dataset Loading 
+# 1. Dataset Loading  
 # ==========================================
 # Reads the training dataset containing records of Disease, City, Hospital_Type, Cost, and Hospital_Name
 data = pd.read_csv('../dataset/hospital_data.csv')
@@ -42,6 +41,7 @@ le_type = LabelEncoder()
 data['Disease'] = le_disease.fit_transform(data['Disease'])
 data['City'] = le_city.fit_transform(data['City'])
 data['Hospital_Type'] = le_type.fit_transform(data['Hospital_Type'])
+
 
 # ==========================================
 # 3. Feature Selection & Target Definition
