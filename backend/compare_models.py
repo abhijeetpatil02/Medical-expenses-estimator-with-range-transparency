@@ -62,7 +62,7 @@ decision_tree_model.fit(X_train, y_train)
 random_forest_model.fit(X_train, y_train)
 
 # ==========================================
-# 6. Predict on the test set
+# 6. Predict on the test set 
 # ==========================================
 linear_predictions = linear_model.predict(X_test)
 tree_predictions = decision_tree_model.predict(X_test)
