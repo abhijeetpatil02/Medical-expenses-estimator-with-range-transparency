@@ -31,7 +31,7 @@ app = Flask(__name__, template_folder='.')
 app.secret_key = 'hospital_predictor_secret_key'
 
 # ==========================================
-# MySQL Database Connection configuration
+# MySQL Database Connection configuration 
 # ==========================================
 def get_db_connection():
     """ 
