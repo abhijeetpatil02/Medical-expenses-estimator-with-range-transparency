@@ -69,7 +69,6 @@ cost_model.fit(X, y_cost)
 hospital_model = RandomForestClassifier()
 hospital_model.fit(X, y_hospital)
 
-
 # =====================================================================
 # 2. Static Asset Hosting
 # =====================================================================
