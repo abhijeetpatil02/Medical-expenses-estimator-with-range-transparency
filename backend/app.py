@@ -99,7 +99,6 @@ def api_suggestions():
     except Exception as e:
         return jsonify({"error": str(e)}), 500
 
-
 # =====================================================================
 # 4. Estimation and Comparison API (/predict)
 # =====================================================================
