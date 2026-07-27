@@ -1,7 +1,6 @@
 """
 Hospital Cost Estimator - Model Comparison & Validation Utility
 ==============================================================
-
 This script serves as a diagnostics tool. It evaluates and compares the accuracy 
 of three different Machine Learning algorithms:
 1. Linear Regression (baseline parametric model)
@@ -60,6 +59,7 @@ random_forest_model = RandomForestRegressor(random_state=42)
 linear_model.fit(X_train, y_train)
 decision_tree_model.fit(X_train, y_train)
 random_forest_model.fit(X_train, y_train)
+
 
 # ==========================================
 # 6. Predict on the test set 
