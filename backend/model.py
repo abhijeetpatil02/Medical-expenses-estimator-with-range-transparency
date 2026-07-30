@@ -1,7 +1,7 @@
 
 """
 Hospital Cost Estimator - Model Training & Export Script
-=======================================================
+========================================================
 
 This script loads the raw healthcare dataset, performs preprocessing by encoding 
 textual/categorical features to numerical codes, trains a Random Forest Regressor 
