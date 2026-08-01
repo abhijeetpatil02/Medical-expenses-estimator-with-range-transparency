@@ -467,7 +467,7 @@ body {
     border-color: var(--accent-blue-light);
 }
 
-/* Accent top lines to differentiate govt and private institutions */
+/* Accent top lines to differentiate govt and  private institutions */
 .hospital-card.govt {
     border-top: 6px solid var(--govt-green);
 }
