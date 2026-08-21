@@ -9,7 +9,7 @@ model to estimate costs, and serializes both the trained model and label  encode
 to pickle files for subsequent API  production usage..
 Execute this script whenever:
 1. The underlying dataset '../dataset/hospital_data.csv' is updated or replaced.
-2. Model parameters (hyperparameters) or selected algorithms are modifieeed
+2. Model parameters (hyperparameters) or selected algorithms are modifieeed..
 """
 
 import pandas as pd
