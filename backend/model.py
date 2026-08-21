@@ -21,13 +21,13 @@ import pickle
 import os
 
 # ==========================================
-# 1. Dataset Loading  
+# 1. Dataset Loading   loading 
 # ==========================================
 # Reads the training dataset containing records of Disease, City, Hospital_Type, Cost, and Hospital_Name
 data = pd.read_csv('../dataset/hospital_data.csv')
 
 # ==========================================
-# 2. Preprocessing (Label Encoding)
+# 2. Preprocessing (label  Encoding) 
 # ==========================================
 # Since Machine Learning algorithms require numerical inputs, LabelEncoder transforms
 # non-numerical categorical columns (like "Malaria", "Mangaluru", "Govt") into integer values (0, 1, 2, ...).
