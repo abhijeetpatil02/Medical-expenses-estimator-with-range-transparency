@@ -7,7 +7,7 @@ This script loads the raw healthcare dataset, performs preprocessing by encoding
 textual/categorical features to numerical codes, trains a Random Forest Regressor 
 model to estimate costs, and serializes both the trained model and label  encoders 
 to pickle files for subsequent API  production usage..
-Execute this script whenever:...
+Execute this script whenever:....
 1. The underlying dataset '../dataset/hospital_data.csv' is updated or replaced.
 2. Model parameters (hyperparameters) or selected algorithms are modifieeed..
 """
