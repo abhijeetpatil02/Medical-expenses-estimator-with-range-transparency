@@ -11,7 +11,7 @@ of three different Machine Learning algorithms:
 
 It splits the source dataset into training (80%) and testing (20%) sets. 
 Testing on unseen data helps evaluate how well the models will generalize 
-to new user-submitted records in production..
+to new user-submitted records inn production..
 """
 
 import pandas as pd
