@@ -1,6 +1,6 @@
 """
 Hospital Cost Estimator - Database & Basic Authentication Module
-================================================================
+==================================================
 
 This module handles the core database configurations and standard authentication operations 
 (Login, Signup, and Session Verification) for the Flask backend application using PyMySQL.
