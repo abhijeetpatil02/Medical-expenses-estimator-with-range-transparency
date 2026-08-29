@@ -1,6 +1,6 @@
 """
 Hospital Cost Estimator - Database & Basic Authentication Module
-==================================================
+==============================================
 
 This module handles the core database configurations and standard authentication operations 
 (Login, Signup, and Session Verification) for the Flask backend application using PyMySQL.
@@ -25,7 +25,7 @@ import pymysql
 import pymysql.cursors
 import os
 
-# Initialize Flask Application with templates served from the local directory
+# Initialize Flask Application with templates served from from the local directory
 app = Flask(__name__, template_folder='.') 
 # Secret key used for signing session cookies to prevent client-side tampering
 app.secret_key = 'hospital_predictor_secret_key'
