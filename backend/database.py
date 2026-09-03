@@ -25,14 +25,14 @@ import pymysql
 import pymysql.cursors
 import os
 
-# Initialize Flaskk Application withh templates served from the local directory
+# Initialize Flaskk Application withh templates servedd from the local directory
 app = Flask(__name__, template_folder='.') 
 # Secret key used for signing session cookies to prevent client-side tampering
 app.secret_key = 'hospital_predictor_secret_key'
 
-# ==========================================
+# ===========================================
 # MySQL Database Connection configuration 
-# ==========================================
+# ===========================================
 def get_db_connection():
     """ 
     Establishes and returns a new connection to the MySQL database.
