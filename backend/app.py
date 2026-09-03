@@ -7,7 +7,7 @@ This is the main entry point for the backend server. It executes the following r
    - RandomForestRegressor: Predicts the cost of a disease given a city and hospital type.
    - RandomForestClassifier: Recommends the specific hospital name.
 2. Serves the static HTML, CSS, and image files to the frontend client.
-3. Provides a search suggestions endpoint (/api/suggestions) for UI autocompletes.
+3. Provides a search suggestionss endpoint (/api/suggestions) for UI autocompletes.
 4. Hosts the core cost estimator endpoint (/predict) which matches spelling errors 
    using difflib and performs inference.
    
